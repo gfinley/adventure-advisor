@@ -1,1 +1,834 @@
-[]
+[
+  {
+    "monthId": "2027-04",
+    "prompt": "Norway Gulen Dive Resort cold-water WWII wreck scuba and Sognefjord alpine cabin solitude in April",
+    "createdAt": "2026-11-21T06:25:00Z",
+    "adventure": {
+      "id": "custom-2027-04-norway-gulen-sognefjord-scuba",
+      "title": "Norway: Gulen Dive Resort & Sognefjord Cold-Water Scuba + Aurland Alpine Cabins",
+      "country": "Norway",
+      "region": "Gulen (Outer Sognefjord) & Aurlandsfjord / Nærøyfjord, Vestland",
+      "coordinates": "60.96° N, 5.14° E",
+      "isNordic": true,
+      "categories": [
+        "Scuba",
+        "Mountains",
+        "Cold Solitude Resort",
+        "4x4 Overland"
+      ],
+      "window": "Apr 14–24, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 94,
+      "crowdLevel": "Ultra-Low",
+      "activityIntensity": "High",
+      "calendarFit": "April 2027 is completely open on your Adventure Calendar — ideal 10-day spring cold-water scuba & fjord alpine solitude expedition following your March NOLS New Zealand reset.",
+      "heroImage": "arctic_scuba",
+      "tagline": "Dive Norway's intact upright WWII freighter SS Frankenwald and nudibranch-covered kelp walls at Gulen Dive Resort, then drive east into snow-rimmed Aurlandsdalen timber cabins before the summer cruise ships arrive.",
+      "whyNow": "Mid-April hits Western Norway's golden off-season intersection: Gulen's cold coastal waters (6–7°C) sit right in peak spring nudibranch season (70+ documented species) with crisp 15–25m pre-bloom underwater clarity on the 122m SS Frankenwald and twin wrecks SS Ferndale & Parat, while Flåm and Aurlandsfjord are virtually empty of summer cruise ships yet have 15 hours of daylight for high-fjord snow-ridge treks.",
+      "flights": {
+        "route": "SEA → KEF/CPH/AMS → BGO (Bergen Flesland)",
+        "airlines": "Icelandair / SAS / KLM–Delta",
+        "duration": "12h 30m–15h 15m (1 stop)",
+        "estimatedRoundtripUsd": 760,
+        "notes": "Verified April 2027 Economy Light roundtrips on Icelandair (SEA–KEF–BGO) start at $564 and SAS/KLM from $612–$621; budgeting $760 covers main cabin plus a checked cold-water drysuit/regulator duffel."
+      },
+      "hotels": [
+        {
+          "name": "Gulen Dive Resort",
+          "location": "Glosvikvegen 134, Dalsøyra, Gulen (Outer Sognefjord)",
+          "style": "Waterfront Cold-Water Dive Lodge",
+          "roomType": "Fjord-View Waterfront Twin Room (Solo Occupancy)",
+          "nightlyRateUsd": 165,
+          "soloFriendly": true,
+          "highlights": [
+            "Dedicated waterfront dive center just 20 meters from your room, with house reef steps away (home to resident wolffish and 70+ spring nudibranch species)",
+            "Purpose-built drying room, camera charging station, Nitrox/Trimix gas-blending bank, and post-dive waffles in the '200Bar' lounge",
+            "Waterfront hot tub and sauna overlooking the narrow coastal strait after cold-water drysuit wreck dives"
+          ],
+          "bookingUrl": "https://www.gulendiveresort.com/accommodation/"
+        },
+        {
+          "name": "29|2 Aurland",
+          "location": "Tokvamsvegen 12, Aurlandsvangen (Aurlandsdalen Valley)",
+          "style": "Historic Timber Eco-Lodge & Mountain Farm",
+          "roomType": "The Fisherman's Cabin Double Room (Solo Half-Board Rate)",
+          "nightlyRateUsd": 385,
+          "soloFriendly": true,
+          "highlights": [
+            "Restored early-18th-century cog-jointed timber buildings on a former riverside farm at the mouth of Aurlandsdalen ('The Great Canyon of the North')",
+            "Rate includes mandatory farm-to-table half-board: hearty Nordic breakfast, 4 PM coffee/cake, and a daily 3-course seasonal dinner in the converted Smokehouse",
+            "Private wood-fired sauna and outdoor riverside hot tub bookable overlooking waterfalls and snow-draped fjord walls (2-night minimum stay)"
+          ],
+          "bookingUrl": "https://www.292aurland.com/booking"
+        },
+        {
+          "name": "Flåmsbrygga Hotel",
+          "location": "A-Feltvegen 25, Flåm Harbour (Aurlandsfjord)",
+          "style": "Nordic Timber Harbourfront Boutique Hotel",
+          "roomType": "Standard Fjord-View Balcony Room (Solo Rate, Breakfast Included)",
+          "nightlyRateUsd": 255,
+          "soloFriendly": true,
+          "highlights": [
+            "Renovated warm-timber rooms with private balconies directly facing Aurlandsfjord and snow-dusted peaks — peacefully quiet in mid-April",
+            "Part of the Ægir courtyard complex, giving walk-over access to Ægir Viking BrewPub for post-hike craft ales and Viking-plank dinners",
+            "Four-minute walk to FjordSafari RIB dock, Njord Kayak Centre, Flåm floating sauna, and Flåmsbana mountain railway"
+          ],
+          "bookingUrl": "https://en.flamsbrygga.no/"
+        }
+      ],
+      "vehicle": {
+        "needed": true,
+        "recommendedClass": "Compact/Midsize AWD SUV (Volvo XC40 AWD / Toyota RAV4 AWD)",
+        "provider": "Sixt / Hertz at Bergen Airport Flesland (BGO)",
+        "dailyRateUsd": 82,
+        "days": 10,
+        "insuranceAndFuelUsd": 280,
+        "notes": "Essential for hauling drysuit/dive gear 2h north from Bergen to Gulen (via E39 & Rutledal/Oppedal ferry), driving the dramatic Sognefjord north/south shores to Aurland via Hella–Vangsnes ferry and Lærdal Tunnel, and returning to BGO (~650 km total). Insurance/fuel estimate includes AutoPASS tolls, fjord car ferries, and zero-excess CDW."
+      },
+      "activities": [
+        {
+          "name": "4-Day Guided Cold-Water WWII Wreck & Macro Boat Diving Package (8 Boat Dives on SS Frankenwald, SS Ferndale/Parat & Kelp Walls + Unlimited House Reef, Nitrox 32% & Drysuit Gear)",
+          "operator": "Gulen Dive Resort (MS Vikingfjord)",
+          "costUsd": 890,
+          "optional": false,
+          "url": "https://www.gulendiveresort.com/gulen-highlights/"
+        },
+        {
+          "name": "Guided Aurlandsfjord & Nærøyfjord Spring Ridge Hike + RIB Fjord Safari (6h Boat-Accessed Fjord Rim Trail & Undredal Valley)",
+          "operator": "FjordSafari Norway AS",
+          "costUsd": 220,
+          "optional": false,
+          "url": "https://www.fjordsafari.com/"
+        },
+        {
+          "name": "3-Hour Guided Aurlandsfjord Cold-Water Sea Kayak Paddle & Flåm Floating Fjord Sauna",
+          "operator": "Njord Kayak Centre & Flåm Fjord Sauna",
+          "costUsd": 180,
+          "optional": true,
+          "url": "https://www.seakayaknorway.com/"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 95,
+      "theoreticalBooking": {
+        "targetBookBy": "November 2026 – January 2027 (Gulen Dive Resort has only 8 rooms and MS Vikingfjord caps at 12 divers; 29|2 Aurland has just 8 rooms/suites)",
+        "cancellationFlex": "29|2 Aurland refunds 1–3 room bookings up to 30 days before arrival; Flåmsbrygga offers free-cancellation flex tiers; Gulen Dive Resort requires deposit at booking with weather-flexible dive site selection.",
+        "budgetNote": "Canonical solo baseline (using Gulen Dive Resort $165/nt across 9 nights) totals ~$5,405 ($5,585 with optional kayak + floating sauna). Actual recommended split stay — 5 nights Gulen ($825) + 2 nights 29|2 Aurland half-board ($770) + 2 nights Flåmsbrygga ($510) = $2,105 lodging, offset by included dinners at 29|2 Aurland — lands at ~$5,865 USD all-in."
+      },
+      "itinerary": [
+        "Day 1 (Apr 14): Depart Seattle (SEA) on afternoon/evening 1-stop transatlantic flight to Bergen (BGO) via Reykjavik (KEF) or Amsterdam (AMS).",
+        "Day 2 (Apr 15): Land at Bergen Flesland (BGO), collect AWD SUV, provision groceries for self-catering, and drive 2 hrs north through coastal fjords to Gulen Dive Resort; drysuit check dive on the magic house reef and hot tub soak.",
+        "Day 3 (Apr 16): Dive Day 1 aboard MS Vikingfjord — two guided boat dives on the 122m intact upright WWII German freighter SS Frankenwald (deck 24–34m, anemone-draped mast safety stop), coffee & waffles between dives, evening beers in 200Bar.",
+        "Day 4 (Apr 17): Dive Day 2 — twin WWII wrecks SS Ferndale (10–40m) and Sail Rock (Seglsteinen) covered in dead man's finger coral and dahlia anemones, followed by an afternoon macro hunt on the house reef for spring nudibranchs.",
+        "Day 5 (Apr 18): Dive Day 3 — kelp forest canyons, soft-coral drift wall dive, and second wreck rotation (SS Havda or Bandak depending on swell & certification); sauna and fjord plunge back at the dock.",
+        "Day 6 (Apr 19): Dive Day 4 — morning deep/recreational wreck dive + afternoon photography dive on Gulen's macro reef; dry out kit overnight in the heated drying room (24h+ pre-mountain-pass surface interval).",
+        "Day 7 (Apr 20): Scenic 4-hour 4x4 fjord overland drive east from Gulen along Sognefjord via Rutledal/Lavik–Oppedal or Hella–Vangsnes ferry to Aurland; check into 29|2 Aurland's Fisherman's Cabin for 4 PM cake and a 3-course Smokehouse dinner.",
+        "Day 8 (Apr 21): Full-day spring mountain & fjord adventure — drive up to Stegastein Viewpoint (650m above Aurlandsfjord) and join FjordSafari's 6h RIB Fjord Safari & Nærøyfjord mountain trail hike along snow-rimmed cliff terraces; private wood-fired sauna back at 29|2 Aurland.",
+        "Day 9 (Apr 22): Transfer 10 minutes to Flåmsbrygga Hotel on Flåm Harbour; morning optional 3-hour guided sea kayak paddle on mirror-calm Aurlandsfjord with Njord Kayak Centre + floating Fjord Sauna, or hike Brekkefossen & lower Aurlandsdalen; Viking dinner at Ægir BrewPub.",
+        "Day 10 (Apr 23–24): Early scenic drive back through Voss and Hardangerfjord outskirts to Bergen Airport (BGO, 2h 45m), return AWD SUV, and fly home to Seattle (SEA)."
+      ],
+      "sources": [
+        "Gulen Dive Resort Accommodation & Facilities: https://www.gulendiveresort.com/accommodation/",
+        "Gulen Dive Resort Highlights & WWII Wrecks (SS Frankenwald, Ferndale & Parat): https://www.gulendiveresort.com/gulen-highlights/",
+        "Gulen Dive Resort Cold-Water Package Reference (3d/6 dives from €480): https://pixidia.com/en/cold-water-diving-2026-silfra-iceland-norwegian-fjords/",
+        "29|2 Aurland Boutique Farm Hotel Rooms & Half-Board Policy: https://www.292aurland.com/booking",
+        "Flåmsbrygga Hotel & Fjord Tours Pricing (Standard Balcony from 2,500–3,190 NOK; Fjord Safari & Hike from 2,060 NOK): https://www.fjordtours.com/en/norway/accommodation/hotels/flam-flamsbrygga-hotell",
+        "Icelandair SEA–BGO April 2027 Fares (from $564 RT): https://www.icelandair.com/en-us/flights/flights-from-seattle-to-bergen"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-05",
+    "prompt": "Scottish Highlands Torridon and Isle of Skye supported ridge trek with optional Scapa Flow WWII wreck drysuit scuba in May",
+    "createdAt": "2026-11-21T06:25:00Z",
+    "adventure": {
+      "id": "custom-2027-05-scotland-torridon-skye-scapa",
+      "title": "Scottish Highlands: Torridon & Skye Supported Ridge Trek + Scapa Flow Scuba Option",
+      "country": "Scotland (United Kingdom)",
+      "region": "Wester Ross (Torridon), Isle of Skye & Orkney (Scapa Flow)",
+      "coordinates": "57.55° N, 5.52° W",
+      "isNordic": false,
+      "categories": [
+        "Mountains",
+        "Scuba",
+        "Cold Solitude Resort",
+        "4x4 Overland"
+      ],
+      "window": "May 12–22, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 89,
+      "crowdLevel": "Low",
+      "activityIntensity": "High",
+      "calendarFit": "May 2027 is completely open on your Adventure Calendar — prime 10-day pre-midge Scottish Highland ridge scrambling & optional Scapa Flow drysuit wreck dive expedition.",
+      "heroImage": "norway_fjords",
+      "tagline": "Scramble the 750-million-year-old sandstone battlements of Liathach and Skye's jagged Cuillin/Quiraing ridges with local WMCI guides, then cross the Pentland Firth to optionally dive the scuttled WWI German High Seas Fleet in Scapa Flow.",
+      "whyNow": "Mid-May is Scotland's undisputed insider sweet spot: statistically the driest, brightest month in the Northwest Highlands with 17+ hours of daylight, snow-free sandstone scrambles, zero Highland midges (which hatch in June), far lower crowds than July–August, and Scapa Flow's clearest pre-plankton-bloom underwater visibility (10–15m+ in 7–9°C water).",
+      "flights": {
+        "route": "SEA → LHR/AMS → INV (Inverness, Scottish Highlands)",
+        "airlines": "British Airways / KLM–Delta",
+        "duration": "12h 35m–15h 40m (1 stop)",
+        "estimatedRoundtripUsd": 820,
+        "notes": "Verified Google Flights & Expedia SEA–INV 1-stop roundtrips start around $755–$756 (fastest 12h 35m); budgeting $820 includes checked mountain/dive luggage and saves 7+ hours of roundtrip driving compared to flying into Edinburgh (EDI)."
+      },
+      "hotels": [
+        {
+          "name": "The Torridon (The Stables & Estate Resort)",
+          "location": "Annat, By Achnasheen, Upper Loch Torridon, Wester Ross",
+          "style": "Highland Mountain Solitude Estate",
+          "roomType": "The Stables Classic King Room (Solo B&B Rate; Main House Classic from $455/nt)",
+          "nightlyRateUsd": 225,
+          "soloFriendly": true,
+          "highlights": [
+            "Set on 58 secluded lochside acres directly beneath Liathach and Beinn Alligin with zero public transit and true Highland solitude",
+            "Full access to the 365-whisky bar, Bo & Muc hearty Highland brasserie, 1887 fine-dining restaurant (open Wed–Sun), and on-site Torridon Outdoors",
+            "10-minute drive to the Glen Torridon Liathach trailhead — itinerary scheduled Thu–Sun to align with full estate restaurant operations"
+          ],
+          "bookingUrl": "https://www.thetorridon.com/"
+        },
+        {
+          "name": "Bosville Hotel",
+          "location": "9–13 Bosville Terrace, Portree, Isle of Skye",
+          "style": "Harbourfront Highland Boutique Hotel",
+          "roomType": "Superior Sea-View Room (Solo B&B Rate)",
+          "nightlyRateUsd": 315,
+          "soloFriendly": true,
+          "highlights": [
+            "Contemporary 19-room boutique property built from restored 19th-century cottages overlooking Portree Harbour",
+            "Real-fire lounge bar and acclaimed Dulse & Brose restaurant serving Skye langoustines and Highland venison after long ridge days",
+            "Ideal 25-minute launch point for sunrise Old Man of Storr and Quiraing hikes plus Sligachan / Black Cuillin trailheads"
+          ],
+          "bookingUrl": "https://perlehotels.com/the-bosville/"
+        },
+        {
+          "name": "The Stromness Hotel",
+          "location": "The Pierhead, 15 Victoria Street, Stromness, Orkney",
+          "style": "Historic Pierhead Diver's Harbour Hotel",
+          "roomType": "Harbour-View Single/Double Room (Solo B&B Rate)",
+          "nightlyRateUsd": 165,
+          "soloFriendly": true,
+          "highlights": [
+            "Positioned directly at Stromness Pierhead — steps from the NorthLink Scrabster ferry landing and 06:30 Scapa Flow dive boat departures",
+            "Walkable to Scapa Scuba dive shop (twin-set, drysuit & Nitrox hire) and historic flagstone-lane Stromness pubs",
+            "Just 6 km from the UNESCO Ring of Brodgar, Standing Stones of Stenness, and Maeshowe Chambered Cairn for surface intervals"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/gb/stromness.en-gb.html"
+        }
+      ],
+      "vehicle": {
+        "needed": true,
+        "recommendedClass": "Midsize AWD SUV (Volvo XC40 AWD / Land Rover Discovery Sport or similar)",
+        "provider": "Sixt / Enterprise at Inverness Airport (INV)",
+        "dailyRateUsd": 75,
+        "days": 10,
+        "insuranceAndFuelUsd": 320,
+        "notes": "Single-track mountain passes (Bealach na Bà, Glen Torridon, Quiraing road) and remote NC500 north coast driving make an AWD SUV ideal (~780 miles total). Insurance/fuel budget includes full CDW excess waiver, fuel, plus roundtrip NorthLink Hamnavoe car+driver ferry from Scrabster to Stromness (~£160/$205 USD)."
+      },
+      "activities": [
+        {
+          "name": "Private Guided Classic Liathach Ridge Traverse & Am Fasarinen Pinnacles (Grade 2 Scramble, 2 Munros, 7–9h, 1,238m Ascent, Rope & Helmet Included)",
+          "operator": "Climb Torridon (WMCI/MCI Local Guides)",
+          "costUsd": 440,
+          "optional": false,
+          "url": "https://www.climbtorridon.co.uk/courses/liathach/"
+        },
+        {
+          "name": "Private Guided Isle of Skye Black Cuillin / Trotternish Ridge Traverse (Full-Day Guided Mountain Scramble or Quiraing–Storr High Link)",
+          "operator": "Climb Torridon / Isle of Skye Mountain Guides",
+          "costUsd": 440,
+          "optional": false,
+          "url": "https://www.climbtorridon.co.uk/courses/skye-cuillin/"
+        },
+        {
+          "name": "Scapa Flow 2-Tank Scuttled WWI German High Seas Fleet & WWII Blockship Drysuit Dive Day Charter (Incl. Full Drysuit/Twin-Set Kit Hire & Nitrox 32%)",
+          "operator": "MV Invincible / Kraken Diving & Scapa Scuba (Stromness)",
+          "costUsd": 395,
+          "optional": true,
+          "url": "https://www.scapa-flow.co.uk/"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 85,
+      "theoreticalBooking": {
+        "targetBookBy": "September – November 2026 (The Torridon, Skye boutique hotels, and individual walk-on Scapa Flow dive berths book out 6–9 months ahead for May)",
+        "cancellationFlex": "Bosville Hotel and Stromness Hotel offer refundable May B&B rates; Climb Torridon adjusts ridge objectives dynamically to Highland weather windows; Scapa Flow charter deposits are typically non-refundable inside 12 weeks.",
+        "budgetNote": "Canonical solo baseline (using The Torridon Stables $225/nt across 9 nights) totals ~$5,645 ($6,040 with optional Scapa Flow 2-tank wreck dive). Actual split stay — 4n Torridon Stables ($900) + 3n Bosville Skye ($945) + 2n Stromness Orkney ($330) = $2,175 — tracks within $150 of the baseline (~$5,795 core / ~$6,190 with Scapa scuba)."
+      },
+      "itinerary": [
+        "Day 1 (May 12): Depart Seattle (SEA) on afternoon/evening 1-stop flight to Inverness (INV) via London Heathrow (LHR) or Amsterdam (AMS).",
+        "Day 2 (May 13): Arrive Inverness (INV), collect AWD SUV, drive 1h 30m west through Glen Docherty and Kinlochewe into Glen Torridon; check into The Torridon (Thu–Sun open schedule), sunset shoreline walk along Upper Loch Torridon, dinner at Bo & Muc.",
+        "Day 3 (May 14): Flagship mountain day — meet your Climb Torridon WMCI guide at Glen Torridon trailhead for the 7–9h Classic Liathach Ridge Traverse (1,238m ascent across Spidean a' Choire Leith, roped Grade 2 scrambling on Am Fasarinen Pinnacles, and Mullach an Rathain); celebratory dram in the 365-whisky bar.",
+        "Day 4 (May 15): Active recovery & 4x4 overland day — drive the hairpins of Bealach na Bà to Applecross peninsula for coastal views across to Raasay and Skye, or tackle a self-guided ascent of Beinn Alligin's Horns of Alligin.",
+        "Day 5 (May 16): Depart Torridon south past Eilean Donan Castle and over the Skye Bridge to Portree; check into Bosville Hotel and hike the Old Man of Storr at golden evening light when day-trippers have cleared.",
+        "Day 6 (May 17): Full-day guided Isle of Skye ridge traverse — roped Black Cuillin Munro/scramble objective (e.g., Sgùrr nan Gillean or Bruach na Frìthe) or wild full Trotternish escarpment traverse with your local mountain guide; dinner at Dulse & Brose.",
+        "Day 7 (May 18): Dawn solo circuit of the Quiraing landslip (The Table, The Needle, and Prison ridge) before 08:30, followed by afternoon sea-cliff walk at Neist Point or Talisker Distillery tasting on Loch Harport.",
+        "Day 8 (May 19): Epic Highland overland drive northeast from Skye along the coastal North Coast 500 corridor (Ullapool–Tongue–Thurso, ~4.5–5h) to Scrabster; board the 90-minute NorthLink Hamnavoe ferry past the Old Man of Hoy to Stromness, Orkney (check into The Stromness Hotel).",
+        "Day 9 (May 20): Optional Scapa Flow 2-tank cold-water drysuit wreck dive charter from Stromness Pierhead (diving WWI German High Seas Fleet cruisers like SMS Karlsruhe/Brummer or WWII Tabarka/F2 blockships in crisp 10–15m May visibility), OR full surface exploration of Hoy's Old Man of Hoy sea-stack cliff trek, Skara Brae, and Ring of Brodgar.",
+        "Day 10 (May 21–22): Morning ferry back from Stromness to Scrabster (allowing 24h+ no-fly buffer after May 20 dives), scenic A9 drive south to Inverness Airport (INV, 2h 45m), return SUV, and fly home INV → LHR/AMS → SEA."
+      ],
+      "sources": [
+        "The Torridon Hotel & The Stables Rates (£155–£400/nt, Wed–Sun schedule): https://www.thetorridon.com/stay/the-hotel/",
+        "Climb Torridon Guided Liathach Traverse & Skye Cuillin Guiding (£340/day): https://www.climbtorridon.co.uk/courses/liathach/",
+        "Bosville Hotel Portree Isle of Skye (Perle Hotels): https://perlehotels.com/the-bosville/",
+        "Scapa Flow Wreck Diving 2026 Operators, Depths & Day-Boat Prices (£140–£180/day + kit hire): https://www.orkneystays.com/blog/diving-scapa-flow-wwi-wrecks-marine-life",
+        "MV Invincible & Scapa Flow Diving Charters: https://www.scapa-flow.co.uk/",
+        "Google Flights & Expedia SEA–INV Roundtrip Overview (from $755–$756, 12h 35m fastest): https://www.google.com/travel/flights/flights-from-seattle-to-inverness.html"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-07",
+    "prompt": "East Greenland small-ship Arctic expedition cruise from Reykjavik with glacier hikes in July",
+    "createdAt": "2026-11-21T06:25:00Z",
+    "adventure": {
+      "id": "custom-2027-07-east-greenland-expedition-cruise",
+      "title": "East Greenland & Denmark Strait: Arctic Fjord Small-Ship Expedition Cruise (Ex-Reykjavík)",
+      "country": "Greenland (Nordic)",
+      "region": "East Greenland (Ammassalik / Tasiilaq, Sermilik Icefjord, Blosseville Coast & Denmark Strait Ice Edge)",
+      "coordinates": "65.6145° N, 37.6368° W",
+      "isNordic": true,
+      "categories": [
+        "Cruise",
+        "Mountains"
+      ],
+      "window": "Jul 10–21, 2027",
+      "days": 11,
+      "nights": 10,
+      "offSeasonScore": 91,
+      "crowdLevel": "Ultra-Low",
+      "activityIntensity": "Expedition",
+      "calendarFit": "July 2027 is completely open between tentative NOLS Denali (Jun 4–29) and Norway NOLS (Aug) — prime navigable high-Arctic window with nonstop SEA→KEF access.",
+      "heroImage": "arctic_cruise",
+      "tagline": "Cross the Denmark Strait pack-ice edge from Reykjavík aboard an ice-strengthened expedition vessel for Zodiac glacier landings and basalt ridge hikes across uninhabited East Greenland.",
+      "whyNow": "Mid-July delivers 22+ hours of sub-Arctic daylight, active sea-ice breakup along the East Greenland Current, and surging tabular icebergs pouring out of Helheim Glacier into Sermilik Icefjord. Because East Greenland has zero roads and fewer than 3,500 residents across a thousand miles of alpine coast, small expedition ships (108–189 guests) unlock raw solitude even in high summer. Note: mid-July voyages focus on Denmark Strait pack ice, Ammassalik/Tasiilaq, Sermilik Icefjord, Ikateq, and the Blosseville Coast (plus Iceland's Westfjords on Lindblad's exact Jul 10, 2027 sailing), whereas deep inner Scoresby Sund opens reliably from late July into August–September.",
+      "flights": {
+        "route": "SEA → KEF (Nonstop) → Reykjavík Old Harbour Embarkation",
+        "airlines": "Icelandair (Daily Nonstop SEA ↔ KEF)",
+        "duration": "7h 25m nonstop each way",
+        "estimatedRoundtripUsd": 980,
+        "notes": "Icelandair operates daily 7h 25m nonstop flights from Seattle (SEA) to Keflavík (KEF). Google Flights typical fares span $590–$1,350; peak mid-July Economy Standard with checked expedition duffel averages ~$960–$1,050. Flybus connects KEF to central Reykjavík in 45 minutes."
+      },
+      "hotels": [
+        {
+          "name": "Oceanwide Expeditions (m/v Plancius / m/v Hondius) — Zero-Supplement Twin-Share Solo Tier (+ 1n Exeter Hotel Reykjavík)",
+          "location": "Reykjavík Old Harbour → Denmark Strait & East Greenland",
+          "style": "Ice-Strengthened Polar Expedition Vessel (108–170 Guests) + Harbour Boutique Hotel",
+          "roomType": "Twin Porthole Cabin (Same-Gender Share — Zero Single Supplement, Full Board) + Exeter Hotel Standard Room (1n)",
+          "nightlyRateUsd": 795,
+          "soloFriendly": true,
+          "highlights": [
+            "True zero single supplement via Oceanwide's guaranteed same-gender Twin Porthole share program (Quad Porthole share trims ~$1,400 further)",
+            "All meals, twice-daily Zodiac landings, polar rubber boots, and multi-hour guided basalt/tundra hikes included aboard ice-class Plancius or Hondius",
+            "Paired with 1 pre-embarkation night at Exeter Hotel (Tryggvagata 12, ~$270/n in July) 5 minutes on foot from Old Harbour with on-site sauna & sourdough bakery"
+          ],
+          "bookingUrl": "https://oceanwide-expeditions.com/the-arctic/greenland"
+        },
+        {
+          "name": "Albatros Expeditions (Ocean Albatros) / HX Expeditions (MS Fridtjof Nansen) — Dedicated Solo Outside Tier (+ 1n Sand Hotel)",
+          "location": "Reykjavík Port → East Greenland Fjords & Pack-Ice Edge",
+          "style": "Modern X-BOW / Hybrid Ice-Class Expedition Ship (189–500 Guests) + Downtown Boutique Pre-Night",
+          "roomType": "Dedicated Single Stateroom with Porthole / Reduced-Supplement Polar Outside Cabin (Full Board) + Sand Hotel Room (1n)",
+          "nightlyRateUsd": 1185,
+          "soloFriendly": true,
+          "highlights": [
+            "Ocean Albatros features dedicated Category G Single Staterooms built for solo travelers; HX Expeditions periodically runs 0%–25% reduced solo-supplement promos ex-Reykjavík",
+            "Private en-suite ocean-view stateroom, panoramic observation decks, full-board expedition dining, and onboard science center",
+            "Paired with 1 pre-embarkation night at Sand Hotel by Keahotels on Laugavegur (~$300/n in July)"
+          ],
+          "bookingUrl": "https://www.travelhx.com/en-us/destinations/greenland-cruises/"
+        },
+        {
+          "name": "National Geographic-Lindblad Expeditions (National Geographic Explorer) — Private Solo Cabin (+ 1n Hotel Borg)",
+          "location": "Reykjavík → Iceland Westfjords, Denmark Strait & East Greenland",
+          "style": "Flagship Ice-Class Polar Research Vessel (148 Guests) + Historic Art Deco Hotel",
+          "roomType": "Category A Solo Outside Cabin (Private Solo Occupancy, All-Inclusive) + Hotel Borg Deluxe Room (1n)",
+          "nightlyRateUsd": 1620,
+          "soloFriendly": true,
+          "highlights": [
+            "Confirmed July 10, 2027 Reykjavík departure on 'Arctic Edges: Iceland Westfjords to East Greenland' with dedicated Category A Solo ($15,900) & Category B Solo ($17,600) cabins",
+            "All-inclusive expedition with Zodiac fleet, onboard sea kayaks, undersea ROV specialist, open bridge access, and complimentary polar parka",
+            "Paired with 1 pre-embarkation night at historic Art Deco Hotel Borg overlooking Austurvöllur Square with Nordic spa"
+          ],
+          "bookingUrl": "https://world.expeditions.com/en/expeditions/arctic-edges-iceland-westfjords-to-east-greenland"
+        }
+      ],
+      "vehicle": {
+        "needed": false,
+        "recommendedClass": "No Rental Car Needed (Flybus KEF Transfer + Expedition Ship & Zodiac Fleet)",
+        "provider": "Reykjavik Excursions Flybus / Ship Port Transfers",
+        "dailyRateUsd": 0,
+        "days": 0,
+        "insuranceAndFuelUsd": 95,
+        "notes": "Zero rental car required. Flybus runs nonstop from Keflavík (KEF) to downtown Reykjavík (~$70 roundtrip) and Exeter Hotel sits a 5-minute walk from Reykjavík Old Harbour embarkation piers (~$25 buffered for harbour luggage taxi)."
+      },
+      "activities": [
+        {
+          "name": "Daily Zodiac Pack-Ice Cruising & Guided East Greenland Basalt Ridge / Tundra Hikes (2x Daily, Included in Voyage Fare)",
+          "operator": "Oceanwide Expeditions / HX / Lindblad Expedition Team",
+          "costUsd": 0,
+          "optional": false,
+          "url": "https://oceanwide-expeditions.com/the-arctic/greenland"
+        },
+        {
+          "name": "Pre-Embarkation Mount Esja (914m) Summit Conditioning Hike & Sky Lagoon Saman Geothermal Cold-Plunge (Reykjavík)",
+          "operator": "Sky Lagoon Iceland (Saman Pass w/ 7-Step Skjól Ritual) & Esja Trail Transit",
+          "costUsd": 145,
+          "optional": false,
+          "url": "https://www.skylagoon.com/packages/"
+        },
+        {
+          "name": "Optional Multi-Session Polar Sea-Kayaking Program Among East Greenland Icebergs & Tidewater Glacier Fronts",
+          "operator": "Oceanwide Expeditions / Polar Kayak Guides (Pre-Booked Supplement)",
+          "costUsd": 600,
+          "optional": true,
+          "url": "https://oceanwide-expeditions.com/to-do/experiences/greenland-coastline-kayaking"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 55,
+      "theoreticalBooking": {
+        "targetBookBy": "December 2026 – January 2027 (6–7 months out — dedicated solo cabins and limited polar kayak spots sell out first)",
+        "cancellationFlex": "Polar operators typically require a 20% deposit at booking with final balance due 90–120 days prior; comprehensive travel insurance with $150,000+ emergency medical evacuation is mandatory.",
+        "budgetNote": "TRANSPARENT HIGH-ARCTIC PRICING NOTE: Genuine small-ship East Greenland expeditions exceed the $3,000–$6,000 land-trip sweet spot. The smartest solo play is Oceanwide Expeditions' zero-supplement Twin-Share Cabin (~$7,950 blended 10n ship + Exeter Hotel + $980 SEA–KEF nonstop + $95 transfers + $145 Reykjavík conditioning/lagoon + $550 onboard misc/gratuities = ~$9,720 all-in, or ~$10,320 with optional polar kayaking; Quad-Share drops total near ~$8,350). Dedicated private solo cabins on Albatros/HX run ~$13,600+ all-in, while Lindblad's exact Jul 10, 2027 Solo A departure totals ~$17,900+. Note: if deep inner Scoresby Sund is your #1 priority over mid-July pack ice, target Oceanwide's late-July/Aug–Sep sailings (HDS11-27 / PLA11-27)."
+      },
+      "itinerary": [
+        "Day 1: Arrive Keflavík (KEF) morning off overnight Icelandair nonstop from SEA (7h 25m); Flybus into Reykjavík, check into Exeter Hotel by Old Harbour, climb Mount Esja (914m) for sea-level leg shakeout, and recover with Sky Lagoon's 7-step geothermal cold-plunge ritual.",
+        "Day 2: Morning sourdough breakfast at Exeter's Deig bakery, last-minute waterproof layer check in Reykjavík, and afternoon embarkation at Old Harbour; mandatory polar safety & AECO briefings before sailing northwest into Faxaflói Bay.",
+        "Day 3: At sea crossing the Denmark Strait along the East Greenland Current; watch for fin, humpback, and blue whales plus northern fulmars from the outer decks while attending glaciology and polar navigation lectures.",
+        "Day 4: First encounter with East Greenland's drifting pack-ice edge; Captain probes leads toward the Ammassalik coast for an afternoon Zodiac ice-floe cruise and initial shoreline landing on glacier-scoured gneiss bedrock.",
+        "Day 5: Sermilik Icefjord & Tinit (Tiilerilaaq) — navigate dense brash ice fed by the mighty Helheim Glacier (one of Greenland's fastest-flowing tidewater glaciers) with a steep tundra ridge hike overlooking the berg-choked fjord.",
+        "Day 6: Tasiilaq & Valley of Flowers — visit East Greenland's dramatic alpine hub surrounded by jagged 1,000m granite spires; embark on a strenuous guided half-day mountain hike above the harbor followed by optional fjord kayaking.",
+        "Day 7: Ikateq & Johan Petersen Fjord — Zodiac landing at the haunting abandoned WWII US Air Force 'Bluie East Two' airstrip, followed by an afternoon glacier-moraine hike and kayak session near calving tidewater ice faces.",
+        "Day 8: Blosseville Coast Pack-Ice Exploration — push northeast beneath Greenland's steepest basalt sea cliffs and cascading hanging glaciers; expedition team scouts remote uncharted coves for polar bears, ringed seals, and steep scree ridge hikes.",
+        "Day 9: Outer East Greenland Fjords & Pack-Ice Edge — final high-Arctic Zodiac cruise weaving between sculpted blue tabular icebergs and guided upland tundra traverse under endless sub-Arctic twilight.",
+        "Day 10: Southbound Denmark Strait Crossing — return toward Iceland with seabird photography on the open bridge, expedition recap presentations, and farewell dinner with the expedition team.",
+        "Day 11: Morning disembarkation at Reykjavík Old Harbour; coffee walk along the waterfront, Flybus to KEF, and afternoon Icelandair nonstop flight back to Seattle (SEA) arriving same evening."
+      ],
+      "sources": [
+        "https://oceanwide-expeditions.com/the-arctic/greenland",
+        "https://oceanwide-expeditions.com/to-do/experiences/greenland-coastline-kayaking",
+        "https://world.expeditions.com/en/expeditions/arctic-edges-iceland-westfjords-to-east-greenland",
+        "https://www.travelhx.com/en-us/destinations/greenland-cruises/",
+        "https://exeterhotel.is/",
+        "https://www.skylagoon.com/packages/",
+        "https://www.icelandair.com/en-us/flights/flights-from-seattle-to-reykjavik"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-09",
+    "prompt": "Norway Rondane National Park golden-tundra DNT hut-to-hut trek with mountain solitude lodge finale in September",
+    "createdAt": "2026-11-21T06:25:00Z",
+    "adventure": {
+      "id": "custom-2027-09-norway-rondane-dnt-huts",
+      "title": "Norway: Rondane National Park Golden-Tundra DNT Hut-to-Hut + Mountain Solitude Finale",
+      "country": "Norway (Nordic)",
+      "region": "Rondane National Park, Dovrefjell Edge & Valdres / Jotunheimen Gateway (Innlandet)",
+      "coordinates": "61.8832° N, 9.8054° E",
+      "isNordic": true,
+      "categories": [
+        "Hut Hiking",
+        "Mountains",
+        "Cold Solitude Resort"
+      ],
+      "window": "Sep 12–22, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 94,
+      "crowdLevel": "Ultra-Low",
+      "activityIntensity": "High",
+      "calendarFit": "September 2027 is completely open after August Norway NOLS — ideal golden-tundra autumn timing catching DNT Rondane's closing week before winter solitude sets in.",
+      "heroImage": "lapland_huts",
+      "tagline": "Traverse Norway's oldest national park across blazing crimson-and-gold alpine tundra from DNT hut to hut, climb 2,178m Rondeslottet, track Dovrefjell musk oxen, and decompress in a timber solitude lodge.",
+      "whyNow": "Mid-September transforms Rondane's high lichen plateaus and dwarf birch valleys into electric gold, rust, and crimson (*fjellhøst*) with zero mosquitoes, crisp 3–10°C hiking air, and nearly empty trails after Norwegian summer holidays end. CRITICAL 2026/2027 LOGISTICS NOTE: To protect Norway's endangered wild reindeer, DNT permanently closed the self-service quarters at Rondvassbu, Bjørnhollia, and Grimsdalshytta after Easter 2026, meaning huts operate strictly during staffed season (closing mid-September — Sep 13 in 2026). Confirm DNT's exact 2027 closing Sunday when published (shift 4–5 days earlier to ~Sep 6–16 if huts close Sep 12, 2027), and note that Spranget car park closes permanently from summer 2027, shifting trailhead access to Mysusæter.",
+      "flights": {
+        "route": "SEA → OSL (1-Stop via KEF, CPH, or AMS) → 4x4 Pickup at OSL (or Dovre Line Train OSL→Otta)",
+        "airlines": "Icelandair (via KEF), SAS (via CPH), or KLM / Delta (via AMS)",
+        "duration": "12h 30m – 14h 40m (1-stop)",
+        "estimatedRoundtripUsd": 790,
+        "notes": "September shoulder fares SEA–OSL average ~$750–$820 roundtrip. Oslo Gardermoen (OSL) offers direct on-airport AWD rental pickup (3h 15m scenic drive north on E6 to Mysusæter) OR direct rail access from inside the airport terminal via the SJ Norge Dovre Line train to Otta (~3h 20m, $36–$55 each way) if skipping the Valdres lodge finale."
+      },
+      "hotels": [
+        {
+          "name": "DNT Rondane Staffed Mountain Lodges (Rondvassbu, Bjørnhollia & Dørålseter)",
+          "location": "Rondane National Park Interior (1,173m / 914m / 1,050m)",
+          "style": "Historic Staffed Norwegian Mountain Huts (Full-Board Alpine Traverse)",
+          "roomType": "DNT Member Bed in 1–3 Bed Room (Full Board: 3-Course Dinner, Breakfast, Packed Lunch & Shower)",
+          "nightlyRateUsd": 140,
+          "soloFriendly": true,
+          "highlights": [
+            "DNT Oslo og Omegn member full-board runs NOK 1,315 (~$122) in dorms to ~NOK 1,490 (~$140) in small 1–3 bed rooms — includes hot 3-course dinner, breakfast buffet, thermos refill & packed lunch",
+            "Rondvassbu sits directly beneath Rondeslottet (2,178m) at Lake Rondvatnet, linking seamlessly across Rondane's classic triangle to Bjørnhollia and Dørålseter",
+            "DNT adult membership (NOK 885 / ~$82 in 2027) pays for itself after 3 nights compared to non-member rates (NOK 1,475–1,765/night)"
+          ],
+          "bookingUrl": "https://www.dnt.no/en/Cabins/staffed-cabins/rondvassbu/"
+        },
+        {
+          "name": "Rondane River Lodge",
+          "location": "Sollia / Enden (National Scenic Route Rondane Fv27)",
+          "style": "Riverside Wilderness Lodge & Log Cabins",
+          "roomType": "Single Superior Hotel Room (Breakfast Included, River & Forest View)",
+          "nightlyRateUsd": 160,
+          "soloFriendly": true,
+          "highlights": [
+            "Published dedicated solo room pricing (NOK 1,550–1,750 / ~$145–$165 including breakfast; standard single from NOK 1,250) with zero single-supplement gouging",
+            "Wood-fired riverside sauna, icy Atna River plunge, and hearty homemade Norwegian game & trout dinners right on eastern Rondane's Fv27 Scenic Route",
+            "Open throughout September — ideal base for Sohlbergplassen viewpoint, eastern Rondane ridges, and driving 45 min north to Dovrefjell for musk oxen"
+          ],
+          "bookingUrl": "https://rondaneriverlodge.no/stay-2/prices-2/"
+        },
+        {
+          "name": "Herangtunet Mountain Lodge (Boutique Hotel)",
+          "location": "Heggenes, Valdres (Jotunheimen Southern Gateway)",
+          "style": "Cold Mountain Solitude Timber Boutique Hotel (9 Rooms & Suites)",
+          "roomType": "Rondane Room (258 sq ft, Private Balcony, Forest View & Breakfast)",
+          "nightlyRateUsd": 225,
+          "soloFriendly": true,
+          "highlights": [
+            "Intimate 9-room family-run Norwegian timber design lodge tucked in quiet pine/birch forest near Heggefjord (9.2+ comfort rating)",
+            "Wood-stove dining room serving slow-cooked Valdres alpine cuisine, private sauna, and steaming outdoor hot tub for post-trek leg recovery",
+            "15 minutes south of Beitostølen & Valdresflye Scenic Route (1,389m) for a crisp golden-autumn Jotunheimen plateau day hike before returning to OSL"
+          ],
+          "bookingUrl": "https://www.herangtunet.com/rooms"
+        }
+      ],
+      "vehicle": {
+        "needed": true,
+        "recommendedClass": "Compact AWD / 4x4 SUV (Toyota RAV4 AWD, Suzuki Vitara 4x4, or Volvo XC40 AWD)",
+        "provider": "Hertz / Sixt at Oslo Airport Gardermoen (OSL)",
+        "dailyRateUsd": 82,
+        "days": 10,
+        "insuranceAndFuelUsd": 185,
+        "notes": "Because Otta–Spranget summer mountain bus #205 stops mid-August and Spranget parking closes from Summer 2027 (shifting trailhead parking to Mysusæter), an OSL AWD SUV cleanly links Mysusæter (park 4 nights while hiking the hut loop), Rondane Scenic Route Fv27 (Rondane River Lodge), Dovrefjell/Hjerkinn, and Herangtunet in Valdres. Alternative car-free option: SJ Norge Dovre Line train OSL→Otta ($36–$55) + Otta taxi to Mysusæter if focusing strictly on the Rondane hut loop."
+      },
+      "activities": [
+        {
+          "name": "2027 DNT Membership + Rondane Triangle Full-Board Hut Reservations, 'Rondejenta' Rondvatnet Ferry & Rondeslottet (2,178m) Solo Ascent",
+          "operator": "DNT Oslo og Omegn (Den Norske Turistforening)",
+          "costUsd": 125,
+          "optional": false,
+          "url": "https://www.dnt.no/en/Cabins/staffed-cabins/rondvassbu/Prices/"
+        },
+        {
+          "name": "Guided Dovrefjell National Park Musk Ox Safari (5–6h / 7–15 km Arctic Tundra Wildlife Trek from Hjerkinn)",
+          "operator": "Dovre & Lesja Aktiv (Basecamp Frich's Hjerkinn)",
+          "costUsd": 85,
+          "optional": false,
+          "url": "https://frich.no/dovre-lesja-aktiv/"
+        },
+        {
+          "name": "Optional Riverside Wood-Fired Sauna, Cold Atna Plunge & Guided Autumn Wilderness Canoe / Packraft Outing",
+          "operator": "Rondane River Lodge (Sollia)",
+          "costUsd": 110,
+          "optional": true,
+          "url": "https://rondaneriverlodge.no/"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 55,
+      "theoreticalBooking": {
+        "targetBookBy": "March – April 2027 (immediately once DNT publishes 2027 Rondane hut opening/closing calendar & VisBook inventory)",
+        "cancellationFlex": "DNT staffed huts allow full refund minus NOK 300 (~$28) admin fee up to 8 days before arrival; Herangtunet and Rondane River Lodge offer flexible refundable rates; Dovre & Lesja Aktiv allows free cancellation up to 48 hours prior.",
+        "budgetNote": "Standout mid-sweet-spot value (~$4,110 solo all-in): SEA–OSL flights ($790) + 9n blended lodging ($1,555: 4n DNT full-board huts $560 + 2n Rondane River Lodge $320 + 3n Herangtunet Boutique Hotel $675) + 10d OSL AWD SUV/fuel/tolls ($1,005) + core activities ($210) + 5 lodge dinners & trail misc ($550). Adding the optional sauna/canoe outing lands at ~$4,220. Note: verify exact 2027 DNT Rondvassbu/Bjørnhollia closing Sunday and slide trip 4–5 days earlier if huts close on Sep 12."
+      },
+      "itinerary": [
+        "Day 1: Arrive Oslo Gardermoen (OSL) morning; pick up AWD SUV, grab trail snacks/linens in Otta, drive up to Mysusæter (new permanent trailhead parking from summer 2027), and hike ~10–11 km in across glowing golden heather to DNT Rondvassbu (1,173m) for a 3-course hut dinner.",
+        "Day 2: Alpine Summit Day — depart Rondvassbu early with a light daypack to summit Rondeslottet (2,178m, highest peak in Rondane) via Vinjeronden (2,044m) across stark Arctic gneiss boulders; return to Rondvassbu for hot shower, dry room, and 3-course dinner.",
+        "Day 3: Rondvassbu to Dørålseter (16 km, ~5–6h) — catch the morning 'Rondejenta' boat across emerald Lake Rondvatnet (weekend September service; or hike the lakeshore) and traverse wild Bergedalen past snow-dusted 2,000m spires to historic Dørålseter.",
+        "Day 4: Dørålseter to Bjørnhollia via Langglupdalen (22 km, ~7h) — Rondane's crown-jewel golden-tundra trek skirting the east flank of Rondeslottet & Høgronden through prime wild reindeer terrain to Bjørnhollia's timber courtyard (tun).",
+        "Day 5: Bjørnhollia to Rondvassbu & Mysusæter Exit (13 km via Illmanndalen + exit walk) — traverse the shimmering glacial tarns of Illmanndalen, retrieve AWD SUV at Mysusæter, and drive the dramatic National Scenic Route Rondane (Fv27) past Sohlbergplassen viewpoint to Rondane River Lodge.",
+        "Day 6: Dovrefjell Musk Ox Expedition — drive 45 min north to Basecamp Frich's Hjerkinn for a 5–6h guided tundra trek with Dovre & Lesja Aktiv tracking Norway's only wild Ice Age musk ox herd (200+ animals) plus Viewpoint Snøhetta; evening wood-fired sauna & Atna River cold plunge at Rondane River Lodge.",
+        "Day 7: Slow Sollia morning (optional Atna River autumn canoe/packraft paddle), then drive south over the high-alpine Venabygdsfjellet & Valdresflye Scenic Route (1,389m) into Valdres; check into the Rondane Room at Herangtunet Mountain Lodge for fireside dinner & outdoor hot tub.",
+        "Day 8: Jotunheimen Southern Edge Hike — drive 20 minutes from Herangtunet up onto Valdresflye for an uncrowded autumn ridge ascent of Bitihorn (1,607m) or Rasletinden (2,105m) overlooking turquoise Lake Bygdin; sauna & slow-cooked Norwegian tasting dinner back at Herangtunet.",
+        "Day 9: Pure Cold-Mountain Solitude Day — forest trail walk along misty Heggefjord, crisp autumn reading by Herangtunet's wood-burning hearth, afternoon sauna session, and pack up expedition gear for the morning return.",
+        "Day 10: Leisurely Norwegian breakfast at Herangtunet, scenic 2h 45m drive back to Oslo Gardermoen (OSL) dropping off the AWD SUV, and midday flight home to Seattle (SEA)."
+      ],
+      "sources": [
+        "https://www.dnt.no/en/Cabins/staffed-cabins/rondvassbu/",
+        "https://www.dnt.no/en/Cabins/staffed-cabins/rondvassbu/Getting-here/",
+        "https://www.dnt.no/en/Cabins/staffed-cabins/bjornhollia/",
+        "https://ut.no/hytte/101111/rondvassbu",
+        "https://rondaneriverlodge.no/stay-2/prices-2/",
+        "https://www.herangtunet.com/rooms",
+        "https://frich.no/dovre-lesja-aktiv/",
+        "https://www.sj.no/en/strekning/dovrebanen-2/"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-10",
+    "prompt": "Iceland Westfjords deep off-season 4x4 overland with remote hot pots and sea-cliff hikes in October",
+    "createdAt": "2026-11-21T06:25:00Z",
+    "adventure": {
+      "id": "custom-2027-10-iceland-westfjords-overland",
+      "title": "Iceland: Westfjords Deep Off-Season 4x4 Overland, Empty Fjord Hot Pots & Sea-Cliff Hikes",
+      "country": "Iceland",
+      "region": "Westfjords (Patreksfjörður, Ísafjörður & Mjóifjörður)",
+      "coordinates": "66.0749° N, 23.1350° W",
+      "isNordic": true,
+      "categories": [
+        "4x4 Overland",
+        "Mountains",
+        "Cold Solitude Resort"
+      ],
+      "window": "Oct 15–25, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 98,
+      "crowdLevel": "Ultra-Low",
+      "activityIntensity": "High",
+      "calendarFit": "October 2027 is completely open on your Adventure Calendar — the Westfjords are virtually empty after cruise season ends and before deep winter passes close.",
+      "heroImage": "iceland_winter",
+      "tagline": "1,600 km of empty basalt fjord switchbacks by winter-ready 4x4, steaming seaside hot pots under dark October auroras, and Europe's westernmost sea cliffs without a soul in sight.",
+      "whyNow": "Mid-October hits the Westfjords' narrow solitude sweet spot: summer campervans and Ísafjörður cruise ships are completely gone, hotel and 4x4 rates drop 25–40% to official winter tariffs, dark post-equinox nights deliver prime northern lights over glassy fjords, and core routes (60, 61, 62, 63) to Dynjandi and Látrabjarg typically remain passable by winter-tire 4x4 before heavy November snows seal the mountain heaths.",
+      "flights": {
+        "route": "SEA → KEF (Nonstop)",
+        "airlines": "Icelandair",
+        "duration": "7h 35m – 7h 50m (Nonstop)",
+        "estimatedRoundtripUsd": 595,
+        "notes": "Icelandair flies nonstop SEA–KEF in ~7h 40m; off-season October fares typically price $520–$640 roundtrip with standard baggage (winter deals dip to $449–$591). Overnight eastbound lands ~06:30 AM for immediate KEF 4x4 pickup."
+      },
+      "hotels": [
+        {
+          "name": "Fosshotel Westfjords",
+          "location": "Patreksfjörður, Southern Westfjords",
+          "style": "Modern Fjord-Front Expedition Hotel",
+          "roomType": "Double Room Sea View (20m², Solo Occupancy)",
+          "nightlyRateUsd": 195,
+          "soloFriendly": true,
+          "highlights": [
+            "Off-season October solo rate ~$185–$210/night (vs. $315+ summer peak) with fjord views, kettle, and reliable autumn restaurant service",
+            "Prime southern base: 45 min to Látrabjarg 440m sea cliffs, 40 min to Rauðasandur headland, and 20 min to Pollurinn hillside hot pots",
+            "Steps from harbour fuel and provisioning before tackling Dynjandisheiði pass north"
+          ],
+          "bookingUrl": "https://www.islandshotel.is/hotels-in-iceland/fosshotel-westfjords/"
+        },
+        {
+          "name": "Hótel Ísafjörður – Horn",
+          "location": "Ísafjörður Old Town, Northern Westfjords",
+          "style": "Boutique Nordic Harbour Town Hotel",
+          "roomType": "Standard Single / Double Room (Breakfast Included)",
+          "nightlyRateUsd": 235,
+          "soloFriendly": true,
+          "highlights": [
+            "Verified October Expedia rates $221/night (sister Hótel Torg) to $249/night (Hótel Horn) with full breakfast buffet and free 4x4 parking",
+            "Walkable to 18th-century Neðstikaupstaður timber harbour, Borea Adventures, West Tours, and Naustahvilft ('Troll Seat') cliff trailhead",
+            "Easy access to Gamla Bakarí sourdough bakery, Bónus supermarket provisioning, and Ísafjörður's geothermal town pool"
+          ],
+          "bookingUrl": "https://www.isafjordurhotels.is/en/h%C3%B3tel-horn"
+        },
+        {
+          "name": "Country Hotel Heydalur",
+          "location": "Mjóifjörður Valley, Ísafjarðardjúp",
+          "style": "Remote Geothermal Valley Solitude Lodge",
+          "roomType": "Superior Room with Thermally Heated Floors & Valley Views",
+          "nightlyRateUsd": 215,
+          "soloFriendly": true,
+          "highlights": [
+            "Verified direct winter tariff from Oct 1 on heydalur.is: Standard Single 23,100 ISK (~$168) and Superior Room 33,400 ISK (~$242); Expedia Oct rate $209/night",
+            "Ultra-quiet fjord valley with three on-site thermal pools: natural meadow hot spring, outdoor hot pot, and indoor greenhouse geothermal pool",
+            "Pitch-black Ísafjarðardjúp skies for aurora soaking right outside your door, with seal colonies along the nearby fjord shoreline"
+          ],
+          "bookingUrl": "https://www.heydalur.is/en/accommodation"
+        }
+      ],
+      "vehicle": {
+        "needed": true,
+        "recommendedClass": "Mid-Size Winter-Ready 4x4 SUV (Dacia Duster 4x4 or Toyota RAV4 AWD with Winter Tires)",
+        "provider": "Blue Car Rental / Lotus Car Rental (KEF Airport)",
+        "dailyRateUsd": 86,
+        "days": 10,
+        "insuranceAndFuelUsd": 460,
+        "notes": "4x4 with winter tires is mandatory for October Westfjords gravel and mountain passes (Dynjandisheiði, Klettsháls, Steingrímsfjarðarheiði). Blue Car Rental winter/shoulder 4x4 rates run ~$82–$148/day with 24/7 KEF key-box pickup and zero deposit. $460 estimate covers full zero-excess gravel/wind insurance (~$200), ~1,750 km fuel (~$135), and Iceland's mandatory 2027 per-km road tax (kílómetragjald, 1,770 ISK/day, ~$125 total). Monitor umferdin.is and vedur.is daily."
+      },
+      "activities": [
+        {
+          "name": "Guided Cold-Water Fjord Sea Kayaking from Ísafjörður (Drysuit & Thermal Layers Included, 3–4h)",
+          "operator": "Borea Adventures",
+          "costUsd": 160,
+          "optional": false,
+          "url": "https://borea.is/"
+        },
+        {
+          "name": "Guided Westfjords Mountain Pass, Dynjandi Cascade & Coastal Cliff Trek (Small-Group / Private Autumn Departure)",
+          "operator": "West Tours",
+          "costUsd": 185,
+          "optional": false,
+          "url": "https://westtours.is/"
+        },
+        {
+          "name": "Baldur Car Ferry Breiðafjörður Shortcut (Stykkishólmur → Brjánslækur) + Regional Hot-Pot & Pool Honesty-Box Fund",
+          "operator": "Seatours Iceland & Westfjords Geothermal Pools",
+          "costUsd": 135,
+          "optional": true,
+          "url": "https://www.westfjords.is/en/travel-info/information/road-conditions"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 100,
+      "theoreticalBooking": {
+        "targetBookBy": "May 2027 (5 months ahead — October has ample availability, but Patreksfjörður and Heydalur have limited winter-open rooms)",
+        "cancellationFlex": "Fosshotel Westfjords, Hótel Ísafjörður, and Blue Car Rental offer free cancellation up to 24–48 hours prior; weather-flexible booking protects against early autumn storms.",
+        "budgetNote": "Estimated core solo total ~$5,195 (flights $595 + 9n blended lodging $1,935 across Fosshotel/Hótel Horn/Heydalur + 10d 4x4 w/ full insurance, fuel & 2027 km road tax $1,320 + core guided activities $345 + food/misc $1,000). Adding optional Baldur ferry shortcut & hot-pot fund brings total to ~$5,330."
+      },
+      "itinerary": [
+        "Day 1: Overnight nonstop SEA → KEF; pick up winter-ready 4x4 SUV from Blue Car Rental and drive north along Snæfellsnes or Route 60 into the southern Westfjords (optional Baldur car ferry from Stykkishólmur to Brjánslækur), stopping for a sunset soak at Hellulaug shoreline hot spring before checking into Fosshotel Westfjords in Patreksfjörður.",
+        "Day 2: Dawn 4x4 gravel run to Látrabjarg—Europe's westernmost point—for an empty 10 km out-and-back sea-cliff ridge hike high above pounding North Atlantic swells; afternoon detour to Rauðasandur amber tidal flats and evening soak at Pollurinn hillside hot pots overlooking Tálknafjörður.",
+        "Day 3: Explore Patreksfjörður's Garðar BA 64 shipwreck and coastal headlands, then hike the windswept ridge above Ketildalir before a quiet harbour seafood dinner and aurora watch from Patreksfjörður fjord.",
+        "Day 4: Overland north via Route 63 and Route 60 over Dynjandisheiði pass (checking umferdin.is); hike all seven tiers of thundering 100m Dynjandi waterfall completely crowd-free, stop at Þingeyri's fjord trailhead, and continue through the Dýrafjarðargöng tunnel into Ísafjörður (check into Hótel Ísafjörður – Horn).",
+        "Day 5: Morning drysuit fjord sea-kayaking excursion with Borea Adventures along Ísafjörður's sheer basalt walls spotting harbour seals; afternoon steep ridge hike up to Naustahvilft ('The Troll Seat') for panoramic fjord views followed by Ísafjörður's outdoor geothermal lap pool.",
+        "Day 6: Full-day guided autumn mountain and coastal cliff excursion with West Tours (customizable to Bolafjall/Skálavík sea-cliff saddle or Valagil canyon depending on October snowline); warm up at Gamla Bakarí and explore the 18th-century timber warehouses at Neðstikaupstaður.",
+        "Day 7: Drive the dramatic glacial-carved coastline of Ísafjarðardjúp via Súðavík and seal-spotted headlands to remote Country Hotel Heydalur in Mjóifjörður; soak under the stars in Heydalur's natural river-meadow hot spring and greenhouse geothermal pool.",
+        "Day 8: Unhurried solitude day around Mjóifjörður and Reykjanes peninsula—hike frosty valley ridgelines above the fjord, scan Ísafjarðardjúp for Arctic foxes and seals, and spend the evening rotating between Heydalur's outdoor hot pot and aurora viewing.",
+        "Day 9: Overland east over Steingrímsfjarðarheiði to Hólmavík and coastal Drangsnes for a final steamy soak in the year-round Drangsnes seaside hot pots (note: Krossneslaug on northern Strandir closes after late summer and Route 643 is unmaintained in autumn snow—only attempt the Strandir spur if umferdin.is shows dry roads); continue south toward Borgarnes/KEF for final overnight.",
+        "Day 10: Return 4x4 SUV at KEF Airport (24/7 drop-off) and board afternoon nonstop Icelandair flight KEF → SEA, arriving Seattle same evening."
+      ],
+      "sources": [
+        "https://www.islandshotel.is/hotels-in-iceland/fosshotel-westfjords/",
+        "https://www.isafjordurhotels.is/en/h%C3%B3tel-horn",
+        "https://www.heydalur.is/en/accommodation",
+        "https://www.bluecarrental.is/blog/prices-in-iceland-car-hire-costs-and-what-to-expect/",
+        "https://borea.is/",
+        "https://westtours.is/",
+        "https://www.theicelandicguide.com/things-to-do/natural-hot-springs-iceland/",
+        "https://umferdin.is/en/region/westfjords"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-11",
+    "prompt": "Finnish Lapland Pyhä-Luosto and Riisitunturi pre-Christmas polar solitude sanctuary with fell huts in November",
+    "createdAt": "2026-11-21T06:25:00Z",
+    "adventure": {
+      "id": "custom-2027-11-finland-pyha-riisitunturi-solitude",
+      "title": "Finnish Lapland: Pyhä-Luosto & Riisitunturi Pre-Christmas Polar Solitude Sanctuary + Fell Huts",
+      "country": "Finland",
+      "region": "Pyhä-Luosto National Park, Posio (Riisitunturi) & Kainuu Taiga",
+      "coordinates": "67.0186° N, 27.2244° E",
+      "isNordic": true,
+      "categories": [
+        "Cold Solitude Resort",
+        "Mountains",
+        "Hut Hiking",
+        "4x4 Overland"
+      ],
+      "window": "Nov 10–20, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 97,
+      "crowdLevel": "Ultra-Low",
+      "activityIntensity": "High",
+      "calendarFit": "November 2027 is completely open on your Adventure Calendar — beating the December Santa-tourism surge saves 40–60% on boutique sanctuaries and delivers empty snow-dusted fell trails.",
+      "heroImage": "solitude_lodge",
+      "tagline": "Pre-Christmas polar solitude above the Arctic Circle: boutique fell sanctuaries, crown-snow Riisitunturi spruces, Noitatunturi ridge treks, wood-stove day huts, and ice-hole smoke sauna plunges.",
+      "whyNow": "Mid-November is Finnish Lapland's purest deep off-season sanctuary window before December Santa-charter flights arrive and triple lodging and AWD rental prices. Sunday Morning Resort explicitly designates mid-November as its quietest best-value period, permanent snowpack settles across Pyhä-Luosto and Riisitunturi National Parks, early 'tykky' crown-snow sculpts ridge spruces, and 18+ hours of twilight and polar night deliver crisp blue-hour hikes and dark-sky northern lights.",
+      "flights": {
+        "route": "SEA → HEL → RVN (Rovaniemi) or KAO (Kuusamo)",
+        "airlines": "Finnair / Alaska Airlines + Finnair",
+        "duration": "14h 55m – 16h 45m (1–2 stops via Helsinki)",
+        "estimatedRoundtripUsd": 1020,
+        "notes": "Connect SEA–HEL onto Finnair's short domestic hop to Rovaniemi (RVN, 90 min drive to Pyhä) or Kuusamo (KAO, 45 min from Riisitunturi). Mid-November avoids December charter spikes; advance bookings track $935–$1,150 roundtrip."
+      },
+      "hotels": [
+        {
+          "name": "Sunday Morning Resort",
+          "location": "Lake Pyhäjärvi, Pyhätunturi (Pyhä-Luosto National Park)",
+          "style": "5-Star Eco-Luxury Polar Solitude Sanctuary",
+          "roomType": "Deluxe Double Room (Main Lodge, Steam/Sauna Shower & Lake Balcony)",
+          "nightlyRateUsd": 245,
+          "soloFriendly": true,
+          "highlights": [
+            "Verified pre-Christmas off-season value: Winter Flexible Deal from €199/night (~$215–$260 USD solo incl. breakfast vs. €644–€904/night in December)",
+            "Carbon-neutral lakeside sanctuary with private sauna sessions, drying cabinet, gym, and optional upgrade to 47m² double-height glass-wall Aamu-Suite for aurora viewing from bed",
+            "On-site Restaurant Aihki (4.9★ Nordic tasting kitchen sourcing 85%+ local Arctic char, reindeer & wild berries) just 10 min from Pyhä-Luosto trailheads"
+          ],
+          "bookingUrl": "https://sundaymorning.fi/accommodation/sunday-morning-resort-rooms"
+        },
+        {
+          "name": "Kurula's Resort",
+          "location": "Lake Pyhäjärvi, Pyhätunturi",
+          "style": "Boutique Lakeside Suite & Sauna Retreat",
+          "roomType": "Premier Suite with Private Sauna, Kitchenette & Fell/Lake Deck (40m²)",
+          "nightlyRateUsd": 215,
+          "soloFriendly": true,
+          "highlights": [
+            "Verified off-season November rate ~$207–$220/night all-in for a spacious 40m² lakefront suite with private Finnish sauna, heated floors, and gear drying cabinet",
+            "Only 600m walk from Pyhä North Slope and Pyhä-Luosto National Park trail network; lakeside handcrafted Lohkare Amethyst Sauna & ice-hole plunge on site",
+            "Intimate 17-suite geothermally heated lodge reopening its winter bistro in November before ski-season crowds arrive"
+          ],
+          "bookingUrl": "https://kurulas.com/"
+        },
+        {
+          "name": "Arctic Giant Birdhouse Hotel (Jättiläisenmaa)",
+          "location": "Kivesvaara Hilltop, Paltamo (Kainuu Taiga — South of Riisitunturi)",
+          "style": "Hilltop Panoramic Cabin Solitude Lodge",
+          "roomType": "Birdhouse Cabin Queen / Junior Suite with Mountain & Lake Views (30m²)",
+          "nightlyRateUsd": 215,
+          "soloFriendly": true,
+          "highlights": [
+            "Elevated hilltop solitude cabins open year-round in mid-November with panoramic taiga windows, private entrance, kitchenette, and forest sauna with cold plunge",
+            "Direct access to 2–15 km quiet snow-dusted Kivesvaara and Pahalouhos boulder-gorge trails between Riisitunturi and Oulu/Kajaani",
+            "Timing note: adults-only Wilderness Hotel Nangu on Lake Inari (from €479/night) opens Nov 27 for winter—shift trip to Nov 22–Dec 2 if swapping this stop for Lake Inari"
+          ],
+          "bookingUrl": "https://arcticgiant.fi/en/"
+        }
+      ],
+      "vehicle": {
+        "needed": true,
+        "recommendedClass": "Studded-Tire Winter AWD SUV (Toyota RAV4 AWD or Volvo XC40 AWD)",
+        "provider": "Sixt / Hertz Finland (Rovaniemi Airport RVN)",
+        "dailyRateUsd": 98,
+        "days": 10,
+        "insuranceAndFuelUsd": 230,
+        "notes": "KAYAK data confirms November is the cheapest winter month for SUV rentals in Rovaniemi (from ~$91/day vs. ~€248/day in December). Studded winter tires and engine block heater cords are standard across Finnish Lapland fleets; AWD handles early-season snowpack on forest roads into Riisitunturi trailhead and Pyhä-Luosto."
+      },
+      "activities": [
+        {
+          "name": "Private Guided Crown-Snow ('Tykky') Snowshoe Expedition & Campfire Meal in Riisitunturi National Park (5h)",
+          "operator": "MyTrail Finland",
+          "costUsd": 295,
+          "optional": false,
+          "url": "https://www.mytrailfinland.com/riisitunturi-with-snowshoes"
+        },
+        {
+          "name": "Guided Pyhä-Luosto National Park Snowshoe Ridge Trek (Isokuru Gorge / Noitatunturi + Extra Solo Snowshoe Rental Day)",
+          "operator": "Bliss Adventure Pyhä",
+          "costUsd": 215,
+          "optional": false,
+          "url": "https://blissadventure.fi/activity/premium-snowshoeing-in-pyha-luosto-national-park/"
+        },
+        {
+          "name": "Traditional Finnish Smoke Sauna & Frozen Lake Ice-Hole ('Avanto') Plunge Experience (Private Session)",
+          "operator": "Karu Lodge / Experience Pyhä",
+          "costUsd": 185,
+          "optional": true,
+          "url": "https://www.pyha.fi/en/experience-enjoy/pampering-and-wellbeing"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 85,
+      "theoreticalBooking": {
+        "targetBookBy": "May 2027 (6 months ahead — locks Sunday Morning Resort Winter Flexible Deal and sub-$100/day November AWD rates before winter demand builds)",
+        "cancellationFlex": "Sunday Morning Resort, Kurula's Resort, and Sixt/Hertz offer flexible cancellation up to 7–14 days prior on standard November shoulder rates.",
+        "budgetNote": "Estimated core solo total ~$5,645 (flights $1,020 + 9n blended lodging $2,055 [4n Sunday Morning Resort + 3n Kurula's + 2n Arctic Giant] + 10d studded AWD $1,210 + core guided treks $510 + food/misc $850). Optional private smoke sauna & ice plunge adds $185 (~$5,830 total); Restaurant Aihki 7-course Nordic tasting dinner is an optional €155 splurge."
+      },
+      "itinerary": [
+        "Day 1: Overnight flight SEA → HEL → RVN (Rovaniemi); pick up studded-tire AWD SUV from Sixt/Hertz and drive 90 minutes northeast across the Arctic Circle to Lake Pyhäjärvi, checking into Kurula's Resort for an immediate private in-suite sauna.",
+        "Day 2: Blue-hour warmup trek from Visitor Centre Naava into 220m-deep Isokuru Gorge, climbing wooden walkways past frozen Pyhänkasteenputous waterfall to Karhunjuomalampi wilderness day hut for a wood-stove thermos break; evening lakeside Lohkare sauna and avanto plunge.",
+        "Day 3: Guided 4-hour snowshoe trek with Bliss Adventure across Pyhä-Luosto National Park's sacred quartzite fells toward Noitatunturi (540m) ridge and hidden old-growth spruce valleys; dusk return and fireside dinner at Kurula's Bistro.",
+        "Day 4: Self-guided snowshoe day loop on Luosto's Tunturiaapa open mire trail (5.5 km) and Lampivaara fell viewpoints, warming up by the open fire at Huttuloma wilderness hut before transferring 5 minutes down the lake to Sunday Morning Resort.",
+        "Day 5: Slow polar morning at Sunday Morning Resort overlooking Lake Pyhäjärvi; midday snowshoe expedition along quiet eastern fell ridges around Uhriharju, followed by optional private smoke sauna and ice-hole plunge at Karu Lodge / Experience Pyhä and evening aurora vigil.",
+        "Day 6: Active wilderness hut day in Pyhä-Luosto—link Yli-Luosto's historic 1949 open wilderness hut (autiotupa) through silent snow-laden taiga pines; return for a signature locally foraged Nordic dinner at Restaurant Aihki.",
+        "Day 7: Scenic 2-hour AWD drive south through frozen Lapland timberlands to Posio and Riisitunturi National Park; meet MyTrail Finland guide for a 5-hour private snowshoe expedition among early-winter 'tykky' crown-snow spruces, stopping at the Riisitunturi Open Wilderness Hut for a wood-fired campfire lunch.",
+        "Day 8: Return to Riisitunturi at dawn (08:30–13:30 twilight golden hour) for an unguided solo loop over Pikku Riisitunturi and Ikkunalampi overlooking Lake Kitkajärvi, then drive south through peaceful Kainuu forests to Arctic Giant Birdhouse Hotel atop Kivesvaara hill.",
+        "Day 9: Hike the frost-covered Pahalouhos boulder gorge and Kivesvaara ridge trails straight from your Birdhouse cabin, unwind in the hilltop forest sauna and cold plunge, and enjoy a final dark-sky northern lights watch.",
+        "Day 10: Morning AWD drive back to Rovaniemi Airport (RVN; or optional open-jaw drop at Oulu OUL / Kuusamo KAO) for return Finnair flights via Helsinki to Seattle (SEA)."
+      ],
+      "sources": [
+        "https://sundaymorning.fi/accommodation/sunday-morning-resort-rooms",
+        "https://sundaymorning.fi/lapland-guide/lapland-holiday-packages/lapland-package-deals-best-value-weeks-in-pyha-finland",
+        "https://kurulas.com/",
+        "https://arcticgiant.fi/en/",
+        "https://wildernesshotels.fi/news-and-tips/winter-2026-27-opening-dates-nellim-nangu-kelo-lodge-saariselkae-and-juutua-reopen-in-november",
+        "https://www.mytrailfinland.com/riisitunturi-with-snowshoes",
+        "https://blissadventure.fi/activity/premium-snowshoeing-in-pyha-luosto-national-park/",
+        "https://www.luontoon.fi/en/destinations/riisitunturi-national-park/service/riisitunturi-open-wilderness-hut-open-wilderness-hut-1042-en"
+      ]
+    }
+  }
+]

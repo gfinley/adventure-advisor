@@ -247,7 +247,9 @@
 
     if (pricing.totalUsd > state.maxBudget) return false;
 
-    if (state.category !== "all" && !adv.categories.includes(state.category)) {
+    if (state.category === "custom") {
+      if (!adv.isCustomResearch) return false;
+    } else if (state.category !== "all" && !adv.categories.includes(state.category)) {
       return false;
     }
 
