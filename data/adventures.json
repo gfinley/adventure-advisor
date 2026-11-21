@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nordic & Off-Season Adventure Advisor",
-    "generatedAt": "2026-11-21T06:39:56Z",
+    "generatedAt": "2026-11-21T06:46:04Z",
     "homeAirport": "SEA (Seattle-Tacoma International)",
     "travelerProfile": "Solo active adventurer — mountains, supported hut hiking, cold-water drysuit scuba, Arctic cruises & cold mountain solitude lodges",
     "targetSweetSpotUsd": [
@@ -11,9 +11,9 @@
     "calendarSource": "Google Calendar: Adventure Calendar",
     "coverage": "December 2026 – November 2027",
     "monthCount": 12,
-    "adventureCount": 43,
-    "nordicCount": 35,
-    "customResearchCount": 7,
+    "adventureCount": 44,
+    "nordicCount": 36,
+    "customResearchCount": 8,
     "researchAgents": [
       {
         "id": "q1-agent",
@@ -3584,6 +3584,150 @@
       ],
       "advisorNote": "July has IPMS 2027 anchored mid-month (Jul 13–18), leaving two generous 10–12 day expedition windows: Jul 1–12 (early July) and Jul 19–31 (late July before Norway NOLS in August).",
       "adventures": [
+        {
+          "id": "custom-2027-07-iceland-geothermal-recovery",
+          "title": "Post-Denali Recovery: Iceland Geothermal Solitude & Volcanic Hot Springs",
+          "country": "Iceland",
+          "region": "Reykjanes, Hvalfjörður & West Iceland",
+          "coordinates": "64.35° N, 21.45° W",
+          "isNordic": true,
+          "categories": [
+            "Cold Solitude Resort",
+            "4x4 Overland"
+          ],
+          "window": "Jul 2–9, 2027",
+          "days": 7,
+          "nights": 6,
+          "offSeasonScore": 80,
+          "crowdLevel": "Low",
+          "activityIntensity": "Moderate",
+          "calendarFit": "Timed right between Denali (ends Jun 29) and IPMS 2027 (Jul 13–18): 7 days of volcanic mineral baths, Nordic saunas, and effortless recovery sleep.",
+          "heroImage": "solitude_lodge",
+          "tagline": "Trade 26 days of Denali glacier sleds and snow tents for steaming volcanic mineral pools, Nordic dry saunas, deep down duvets, and unhurried 4x4 coastal cruising across Iceland's quietest fjords.",
+          "whyNow": "Early July delivers 20+ hours of soft sub-Arctic daylight and crisp 50–55°F (10–13°C) mountain air that makes 100–104°F volcanic hot springs deeply restorative for fatigued expedition muscles. Summer unlocks the dramatic Nesjavallaleið mountain pass (Route 435) and Húsafell highland edge, while basing at private geothermal sanctuaries in Nesjavellir, Hvalfjörður, and Borgarfjörður sidesteps Golden Circle tour-bus crowds and returns you home four full days before IPMS 2027.",
+          "flights": {
+            "route": "SEA → KEF",
+            "airlines": "Icelandair nonstop",
+            "duration": "7h 30m",
+            "estimatedRoundtripUsd": 910,
+            "notes": "Verified Icelandair July 2027 nonstop SEA–KEF Economy Light fares start at $744 roundtrip (carry-on only); budgeting $910 covers Economy Standard with one checked 23 kg bag, seat selection, and change flexibility. Evening departures from Seattle land at KEF early morning for a seamless drive straight to your first thermal soak."
+          },
+          "hotels": [
+            {
+              "name": "ION Adventure Hotel",
+              "location": "Nesjavellir við Þingvallavatn, Selfoss (Mount Hengill, 45 min from Reykjavík)",
+              "style": "Cold Mountain Solitude Resort",
+              "roomType": "Standard Mountain/Lava View Room (Solo Occupancy; Single Sub-Parterre also available)",
+              "nightlyRateUsd": 485,
+              "soloFriendly": true,
+              "highlights": [
+                "Cantilevered outdoor geothermal pool and Lava Spa dry sauna suspended above mossy Mount Hengill lava fields and Lake Þingvellir",
+                "Silfra Restaurant (modern Nordic farm-to-table) and 180° glass Northern Lights Bar built for unhurried post-expedition reading and recovery",
+                "Direct summer access via scenic Nesjavallaleið mountain pass (Route 435, open May–Sep), 45 min from Reykjavík and 80 min from KEF"
+              ],
+              "bookingUrl": "https://ioniceland.is/adventure/"
+            },
+            {
+              "name": "Hótel Húsafell",
+              "location": "Stórarjóður, Húsafell (West Iceland, Borgarfjörður)",
+              "style": "Geothermal Highland-Edge Sanctuary",
+              "roomType": "Standard Room (22 m², Solo Occupancy, Nordic Breakfast Buffet Included)",
+              "nightlyRateUsd": 520,
+              "soloFriendly": true,
+              "highlights": [
+                "100% geothermally and hydroelectrically self-sustainable retreat tucked inside a quiet 25,000-acre birch-forest and lava reserve beneath Langjökull",
+                "Heated floors, Sóley organic Icelandic bath amenities, and steps-away access to Lindin Geothermal Baths (cascading pools, hot tubs, steam room & cold plunge)",
+                "Departure hub for the remote Húsafell Canyon Baths and 15 minutes by car from Hraunfossar lava waterfalls and Deildartunguhver / Krauma baths"
+              ],
+              "bookingUrl": "https://www.husafell.com/accommodation/hotel-husafell"
+            },
+            {
+              "name": "The Retreat at Blue Lagoon Iceland",
+              "location": "Norðurljósavegur 11, Grindavík (Reykjanes Peninsula, 20 min from KEF)",
+              "style": "Subterranean Geothermal Luxury Spa Resort",
+              "roomType": "Moss Junior Suite (40 m², Official Summer Rate Card — 280,000 ISK/nt)",
+              "nightlyRateUsd": 2240,
+              "soloFriendly": true,
+              "highlights": [
+                "Ultimate post-Denali splurge: unlimited access to the private subterranean Retreat Spa, guests-only Retreat Lagoon carved into 800-year-old lava, and full Blue Lagoon Ritual",
+                "Rate includes daily à la carte breakfast, afternoon Icelandic coffee & cake, morning yoga, and priority seating at Michelin-starred Moss Restaurant",
+                "Just 20 minutes from KEF airport for an effortless final recovery night (mid-luxury alternative next door: Silica Hotel Lava Deluxe with private Silica Lagoon at ~$960/nt / 120,000 ISK)"
+              ],
+              "bookingUrl": "https://www.bluelagoon.com/accommodation/retreat-hotel"
+            }
+          ],
+          "vehicle": {
+            "needed": true,
+            "recommendedClass": "Midsize AWD SUV (Toyota RAV4 AWD / Kia Sportage AWD Automatic)",
+            "provider": "Blue Car Rental / Lotus Car Rental at Keflavík (KEF)",
+            "dailyRateUsd": 120,
+            "days": 7,
+            "insuranceAndFuelUsd": 295,
+            "notes": "Key-box pickup directly at KEF with Blue Car Rental (zero deposit, free cancellation). An automatic AWD SUV delivers relaxed, fatigue-free cruising along Reykjanes lava roads, Nesjavallaleið (Route 435), the empty Hvalfjörður coastal fjord road (Route 47), and Borgarfjörður gravel pullouts (~700 km total). Insurance/fuel estimate includes zero-excess full coverage (Gravel + Sand & Ash Protection), petrol, and Iceland's 2026 road kilometer fee (6.95 ISK/km)."
+          },
+          "activities": [
+            {
+              "name": "Hvammsvík Hot Springs Oceanic Geothermal Soak (Comfort Pass — 8 Natural Tidal Pools, Steam Bath, Towel, Wading Shoes & Drink)",
+              "operator": "Hvammsvík Hot Springs (Hvalfjörður)",
+              "costUsd": 105,
+              "optional": false,
+              "url": "https://hvammsvik.com/hot-springs/"
+            },
+            {
+              "name": "Húsafell Canyon Baths Guided Geothermal Soak (Remote Highland Canyon Pools, 4x4 Shuttle from Hótel Húsafell & Towel)",
+              "operator": "Húsafell Canyon Baths",
+              "costUsd": 88,
+              "optional": false,
+              "url": "https://www.husafell.com/activities/husafell-canyon-baths"
+            },
+            {
+              "name": "Sky Lagoon Sér Pass & Seven-Step Skjól Geothermal Ritual (Oceanfront Infinity Lagoon, Cold Plunge, Panoramic Sauna & Private Changing Suite)",
+              "operator": "Sky Lagoon (Kópavogur)",
+              "costUsd": 152,
+              "optional": true,
+              "url": "https://www.skylagoon.com/packages/"
+            }
+          ],
+          "foodAndMiscPerDayUsd": 125,
+          "theoreticalBooking": {
+            "targetBookBy": "January – February 2027 (ION Adventure Hotel has only 2 solo Single Sub-Parterre rooms and 45 rooms total; Hótel Húsafell has 48 rooms and early July books up 4–6 months out)",
+            "cancellationFlex": "Hótel Húsafell allows free individual cancellation up to 48 hours prior; ION Adventure Hotel collects payment 16 days before arrival; Blue Car Rental and Lotus offer free cancellation up to 24–48 hours before KEF pickup.",
+            "budgetNote": "Canonical solo baseline (6 nights at ION Adventure Hotel $485/nt = $2,910 + $910 flights + $1,135 AWD SUV/insurance/fuel + $193 core spas + $875 dining/misc) totals $6,023 ($6,175 with optional Sky Lagoon Sér Pass). Recommended mid-upper split stay (3 nights ION $1,455 + 3 nights Hótel Húsafell $1,560) lands at $6,128 core ($6,280 with Sky Lagoon). Adding a 1-night ultimate post-Denali finale splurge at The Retreat at Blue Lagoon (2n ION + 3n Húsafell + 1n Retreat = $4,770 lodging) totals $7,883 core, or swap the finale night to Silica Hotel ($960/nt) for $6,603 core."
+          },
+          "itinerary": [
+            "Day 1 (Jul 2–3): Depart Seattle (SEA) late afternoon on Icelandair nonstop to Keflavík (KEF, 7h 30m). Land early morning Jul 3, collect AWD SUV via Blue Car Rental key-box, grab specialty coffee & pastries in Reykjanes, and take the slow scenic Route 435 drive over Mount Hengill to ION Adventure Hotel (Nesjavellir). Check in, nap deeply, and melt off Denali stiffness in the outdoor lava-field thermal pool and Lava Spa sauna.",
+            "Day 2 (Jul 4): Pure zero-alarm recovery day at Nesjavellir. Late Nordic breakfast at Silfra Restaurant, optional gentle 20-minute stroll along Lake Þingvellir's lakeside boardwalk (zero elevation gain), afternoon contrast sessions between the outdoor thermal pool and dry sauna, and slow dinner overlooking the midnight-sun lava horizon.",
+            "Day 3 (Jul 5): Leisurely drive north around the quiet, tunnel-bypassed Hvalfjörður coastal fjord road (Route 47) — towering green walls, waterfalls, and almost zero traffic. Spend 3 unhurried hours soaking across Hvammsvík Hot Springs' eight oceanfront tidal geothermal pools and steam bath with seafood soup at Stormur Bistro, then cruise 75 minutes inland to Hótel Húsafell in West Iceland.",
+            "Day 4 (Jul 6): Sleep in under blackout curtains beneath Langjökull glacier. Join the afternoon guided 4x4 shuttle from Hótel Húsafell to the remote Húsafell Canyon Baths (only a short, gentle canyon walkway) to soak in two stone-built highland hot pools overlooking a glacial river gorge, followed by happy hour and Nordic dinner back at Hótel Húsafell.",
+            "Day 5 (Jul 7): Effortless scenic West Iceland 4x4 loop at your own pace: 10-minute paved walk to view Hraunfossar's turquoise lava-field cascades and Barnafoss, stop by Europe's most powerful hot spring at Deildartunguhver (optional drop-in at Krauma geothermal baths), and unwind back at Hótel Húsafell's Lindin thermal pools and steam room.",
+            "Day 6 (Jul 8): Leisurely coastal drive south toward Reykjavík and the Reykjanes Peninsula. Optional afternoon stop at Sky Lagoon (Sér Pass with private changing suite and 7-step Skjól Ritual: ocean infinity soak, cold plunge, panoramic glass sauna, cold mist, sea-salt scrub & steam), then check into your final night at The Retreat at Blue Lagoon (or Silica Hotel) just 20 minutes from KEF for an unforgettable subterranean spa evening.",
+            "Day 7 (Jul 9): Final sunrise soak in the steaming silica waters, unhurried à la carte breakfast, 20-minute drive to KEF to drop the AWD SUV, and afternoon Icelandair nonstop back to Seattle (arriving home Jul 9 evening with 3 full recovery days before IPMS 2027 kicks off Jul 13)."
+          ],
+          "sources": [
+            "ION Adventure Hotel (ioniceland.is / Design Hotels)",
+            "Hótel Húsafell (husafell.com)",
+            "The Retreat & Silica Hotel at Blue Lagoon Iceland (2026 Official Rate Cards)",
+            "Hvammsvík Hot Springs (hvammsvik.com)",
+            "Húsafell Canyon Baths (husafell.com)",
+            "Sky Lagoon Iceland (skylagoon.com)",
+            "Icelandair SEA–KEF 2027 Fare Calendar",
+            "Blue Car Rental Iceland (2026 Rates & Road Fee Guide)",
+            "Wise USD/ISK Exchange Rate (Nov 2026: 125 ISK/USD)"
+          ],
+          "isCustomResearch": true,
+          "researchPrompt": "Relaxing Post-Denali recovery trip in early July before IPMS — Iceland geothermal cold-mountain solitude resorts, hot springs, and deep rest",
+          "researchedAt": "2026-11-21T06:45:00Z",
+          "computedCosts": {
+            "flightsUsd": 910,
+            "lodgingUsd": 2910,
+            "vehicleAndTransportUsd": 1135,
+            "coreActivitiesUsd": 193,
+            "allActivitiesUsd": 345,
+            "foodAndMiscUsd": 875,
+            "baseTotalUsd": 6023,
+            "fullTotalUsd": 6175
+          }
+        },
         {
           "id": "custom-2027-07-east-greenland-expedition-cruise",
           "title": "East Greenland & Denmark Strait: Arctic Fjord Small-Ship Expedition Cruise (Ex-Reykjavík)",

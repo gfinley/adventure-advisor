@@ -21,7 +21,10 @@ CALENDAR_CONTEXT = """
 Traveler Profile:
 - Home base: Seattle / Kitsap Peninsula, WA (home airport: SEA).
 - Solo traveler, mid-to-upper boutique hotels & 4x4 rentals (target sweet spot: $3,000–$6,000 per trip, honest off-season USD pricing).
-- Passions: mountains, supported hut-to-hut hiking (DNT/STF/FÍ/DOC/Rifugi), cold-water drysuit scuba diving, off-season Nordic/Arctic travel, Arctic cruises, and cold mountain solitude lodges. NO beach/resort lounging.
+- Passions: mountains, supported hut-to-hut hiking (DNT/STF/FÍ/DOC/Rifugi), off-season Nordic/Arctic travel, Arctic cruises, and cold mountain solitude lodges (scuba only when explicitly requested).
+- Denali Conditioning & Recovery Periodization:
+  * Apr – Mid-May 2027: Peak Denali vertical & pack-weight conditioning (active mountain trips welcome).
+  * Mid-to-Late Mar 2027 (post-NOLS NZ), Late May 2027 (May 19–31 pre-Denali taper), and Early Jul 2027 (Jul 1–11 post-Denali recovery): Actively welcome relaxing, low-injury-risk cold-mountain solitude resorts, thermal/sauna sanctuaries, and scenic coastal cruises!
 - Committed 2026–2027 Google Calendar anchors (Adventure + Primary calendars):
   * Dec 2026 (2026-12): Japan Fukuoka Dec 5–11, Wilderness Medicine Bainbridge Dec 19–23 (Open: Dec 12–17, Dec 24–31; 5–6d strike)
   * Jan 2027 (2027-01): Avy Safety Jan 9–10 & Jan 30–31, Rainier Denali Prep Jan 17–22 (Open: Jan 1–8, Jan 23–29; 4–6d strike)
