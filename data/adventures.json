@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nordic & Off-Season Adventure Advisor",
-    "generatedAt": "2026-11-21T05:29:39Z",
+    "generatedAt": "2026-11-21T06:15:48Z",
     "homeAirport": "SEA (Seattle-Tacoma International)",
     "travelerProfile": "Solo active adventurer — mountains, supported hut hiking, cold-water drysuit scuba, Arctic cruises & cold mountain solitude lodges",
     "targetSweetSpotUsd": [
@@ -13,6 +13,7 @@
     "monthCount": 12,
     "adventureCount": 36,
     "nordicCount": 29,
+    "customResearchCount": 0,
     "researchAgents": [
       {
         "id": "q1-agent",
@@ -37,6 +38,12 @@
         "scope": "Sep 2027 – Nov 2027",
         "focus": "Ruska autumn huts, deep off-season 4x4 & polar night whale/cruise voyages",
         "file": "data/q4.json"
+      },
+      {
+        "id": "live-cloud-run-agents",
+        "scope": "On-Demand (Any Month)",
+        "focus": "3 parallel Gemini Google-Search-grounded agents spawned from the web app & auto-saved to data/custom.json",
+        "file": "data/custom.json"
       }
     ]
   },

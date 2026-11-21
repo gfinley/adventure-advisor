@@ -15,6 +15,8 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="config.js"></script>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -33,9 +35,13 @@
       </a>
 
       <nav class="main-nav" aria-label="Primary">
-        <a href="#calendar-section" class="nav-link">12-Month Calendar</a>
+        <a href="#agent-studio-section" class="nav-link">Spawn Agents</a>
+        <a href="#calendar-section" class="nav-link">Calendar</a>
         <a href="#expeditions-section" class="nav-link">Expeditions</a>
-        <button type="button" class="nav-link nav-btn" id="open-agents-btn">Research Agents</button>
+        <button type="button" class="nav-link nav-btn" id="open-agents-btn">Fleet</button>
+        <div class="auth-header-slot" id="auth-header-slot">
+          <button type="button" class="auth-btn" id="open-connect-btn">Connect Backend</button>
+        </div>
         <button type="button" class="shortlist-pill" id="open-planner-btn">
           <span class="shortlist-dot" aria-hidden="true"></span>
           <span>My Plan</span>
@@ -99,6 +105,107 @@
             </ul>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <!-- Live On-Demand Multi-Agent Research Studio -->
+    <section class="agent-studio-section" id="agent-studio-section" aria-labelledby="studio-heading">
+      <div class="container">
+        <div class="studio-card">
+          <div class="studio-top">
+            <div>
+              <p class="section-kicker">On-Demand Cloud Run Research · Google AI Ultra Credits</p>
+              <h2 id="studio-heading">Spawn Parallel Agents for Any Custom Trip</h2>
+            </div>
+            <div class="studio-auth-status" id="studio-auth-status">
+              <!-- Populated dynamically with Google Sign-In button or verified owner chip -->
+            </div>
+          </div>
+
+          <form class="studio-form" id="studio-form">
+            <div class="studio-input-row">
+              <label for="agent-prompt-input" class="sr-only">Describe the trip to research</label>
+              <input
+                type="text"
+                id="agent-prompt-input"
+                placeholder='e.g. "Iceland trip in May with drysuit scuba, 4x4 rental, and cold mountain solitude lodges"'
+                maxlength="500"
+                required
+              />
+              <select id="agent-month-select" aria-label="Target month">
+                <option value="auto">Month: Auto-detect</option>
+                <option value="2026-12">Dec 2026 (Strike)</option>
+                <option value="2027-01">Jan 2027 (Strike)</option>
+                <option value="2027-02">Feb 2027 (Pre-NZ)</option>
+                <option value="2027-03">Mar 2027 (Post-NZ)</option>
+                <option value="2027-04">Apr 2027 (Open)</option>
+                <option value="2027-05">May 2027 (Open)</option>
+                <option value="2027-06">Jun 2027 (Strike)</option>
+                <option value="2027-07">Jul 2027 (Open)</option>
+                <option value="2027-08">Aug 2027 (Post-Norway)</option>
+                <option value="2027-09">Sep 2027 (Open)</option>
+                <option value="2027-10">Oct 2027 (Open)</option>
+                <option value="2027-11">Nov 2027 (Open)</option>
+              </select>
+              <select id="agent-duration-select" aria-label="Trip duration preference">
+                <option value="auto">Length: Auto</option>
+                <option value="4-6 day short strike">4–6d Strike</option>
+                <option value="8-12 day full expedition">8–12d Expedition</option>
+              </select>
+              <button type="submit" class="btn btn-primary studio-submit-btn" id="spawn-agents-btn">
+                Spawn 3 Agents
+              </button>
+            </div>
+
+            <div class="studio-examples-row">
+              <span class="studio-examples-label">Try:</span>
+              <button type="button" class="example-prompt-chip" data-prompt="Iceland Westfjords 9-day 4x4 trip in May with Strýtan drysuit scuba and remote solitude lodges">Iceland Westfjords + Scuba (May)</button>
+              <button type="button" class="example-prompt-chip" data-prompt="Faroe Islands 8-day supported ridge hiking trip in September with boutique sea-view rooms">Faroe Islands Ridges (Sep)</button>
+              <button type="button" class="example-prompt-chip" data-prompt="Northern Norway Senja & Lofoten 6-day winter storm-watching and drysuit dive in November">Senja &amp; Lofoten Scuba (Nov)</button>
+              <button type="button" class="example-prompt-chip" data-prompt="Scottish Highlands Skye & Torridon 10-day off-season bothy/hut trek in April">Scottish Highlands Trek (Apr)</button>
+              <span class="studio-autosave-note mono" id="studio-autosave-note">Auto-saves to GitHub · Owner-only Google Auth</span>
+            </div>
+          </form>
+
+          <!-- Live Parallel Agent Progress Panel -->
+          <div class="studio-stream" id="studio-stream" hidden aria-live="polite">
+            <div class="studio-stream-head">
+              <strong id="studio-stream-headline">Spawning parallel research agents…</strong>
+              <span class="mono" id="studio-stream-timer">0.0s</span>
+            </div>
+            <div class="agent-tracks" id="agent-tracks">
+              <div class="agent-track" data-track="lodging">
+                <span class="track-indicator"></span>
+                <div>
+                  <strong>1. Lodging &amp; Solitude Agent</strong>
+                  <p class="track-msg">Queued — boutique rooms, huts &amp; solo rates</p>
+                </div>
+              </div>
+              <div class="agent-track" data-track="logistics">
+                <span class="track-indicator"></span>
+                <div>
+                  <strong>2. Flights &amp; 4x4 Agent</strong>
+                  <p class="track-msg">Queued — SEA routes, AWD rentals &amp; calendar fit</p>
+                </div>
+              </div>
+              <div class="agent-track" data-track="field_ops">
+                <span class="track-indicator"></span>
+                <div>
+                  <strong>3. Field Ops &amp; Scuba Agent</strong>
+                  <p class="track-msg">Queued — drysuit dives, guides &amp; itinerary</p>
+                </div>
+              </div>
+              <div class="agent-track" data-track="synthesizer">
+                <span class="track-indicator"></span>
+                <div>
+                  <strong>4. Synthesizer &amp; GitHub Auto-Save</strong>
+                  <p class="track-msg">Waiting for grounded agent reports</p>
+                </div>
+              </div>
+            </div>
+            <div class="studio-result-banner" id="studio-result-banner" hidden></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -307,6 +414,52 @@
       </div>
       <div class="modal-content" id="agents-modal-body">
         <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Backend Connection & Single-User Auth Setup Modal -->
+  <div class="modal-backdrop" id="connect-modal" hidden role="dialog" aria-modal="true" aria-labelledby="connect-modal-title">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">Cloud Run &amp; Google Sign-In</p>
+          <h2 id="connect-modal-title">Connect Live Research Backend</h2>
+        </div>
+        <button type="button" class="icon-close" id="close-connect-btn" aria-label="Close connection settings">✕</button>
+      </div>
+      <div class="modal-content">
+        <p style="margin-top:0;color:var(--ink-secondary);font-size:0.9rem">
+          Your live research backend runs on <strong>Google Cloud Run</strong> (paid by your Google AI Ultra monthly Cloud credits), verifies your <strong>Google Sign-In ID token</strong> server-side (locked exclusively to <code>matthewgfinley@gmail.com</code>), spawns 3 parallel Google-Search-grounded Gemini agents, and auto-commits results into <code>gfinley/adventure-advisor</code>.
+        </p>
+
+        <form id="connect-form" class="connect-form">
+          <label class="connect-field">
+            <span>Cloud Run Backend URL</span>
+            <input type="url" id="cfg-backend-url" placeholder="https://nordic-atlas-agents-xxxx-uw.a.run.app" />
+          </label>
+          <label class="connect-field">
+            <span>Google OAuth 2.0 Web Client ID (public)</span>
+            <input type="text" id="cfg-google-client-id" placeholder="1234567890-xxxxxxxx.apps.googleusercontent.com" />
+          </label>
+          <div class="connect-actions">
+            <button type="submit" class="btn btn-primary btn-sm">Save &amp; Connect</button>
+            <button type="button" class="btn btn-subtle btn-sm" id="test-backend-btn">Test /health</button>
+            <a href="https://github.com/gfinley/adventure-advisor/blob/main/backend/SETUP.md" target="_blank" rel="noopener noreferrer" class="btn btn-subtle btn-sm">Full 5-Min Setup Guide ↗</a>
+          </div>
+          <div id="connect-status-msg" class="connect-status-msg mono" hidden></div>
+        </form>
+
+        <div class="setup-checklist">
+          <h4>Quick 5-Minute Deployment Checklist</h4>
+          <ol>
+            <li>Claim your monthly Google AI Ultra Cloud credits in <a href="https://aistudio.google.com" target="_blank" rel="noopener noreferrer">Google AI Studio</a> and generate a <code>GEMINI_API_KEY</code>.</li>
+            <li>Create a Web OAuth Client ID in <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener noreferrer">Cloud Console</a> with JavaScript origin <code>https://gfinley.github.io</code>.</li>
+            <li>Create a fine-grained <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub PAT</a> scoped <em>only</em> to <code>gfinley/adventure-advisor</code> (Contents: Read &amp; Write).</li>
+            <li>Run <code>./backend/deploy.sh</code> from Google Cloud Shell — it stores secrets in Secret Manager and deploys Cloud Run (scales to 0 when idle).</li>
+            <li>Paste the resulting Cloud Run URL &amp; Client ID above (or commit them in <code>config.js</code> for every device).</li>
+          </ol>
+        </div>
       </div>
     </div>
   </div>

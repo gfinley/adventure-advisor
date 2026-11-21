@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge and validate quarterly Antigravity research datasets into data/adventures.json."""
+"""Merge and validate quarterly Antigravity research datasets + custom on-demand trips into data/adventures.json."""
 
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 QUARTER_FILES = ["q1.json", "q2.json", "q3.json", "q4.json"]
+CUSTOM_FILE = DATA_DIR / "custom.json"
 
 VALID_CATEGORIES = {
     "Mountains",
@@ -66,6 +67,24 @@ def compute_base_total(adv: dict) -> dict:
     }
 
 
+def normalize_adventure(adv: dict, seen_ids: set[str]) -> dict:
+    adv_id = adv["id"]
+    if adv_id in seen_ids:
+        raise ValueError(f"Duplicate adventure ID: {adv_id}")
+    seen_ids.add(adv_id)
+
+    adv["categories"] = [
+        c for c in adv.get("categories", []) if c in VALID_CATEGORIES
+    ] or ["Mountains"]
+    if adv.get("heroImage") not in VALID_HERO_IMAGES:
+        adv["heroImage"] = "norway_fjords"
+    if len(adv.get("hotels", [])) < 1:
+        raise ValueError(f"Adventure {adv_id} has no hotels")
+
+    adv["computedCosts"] = compute_base_total(adv)
+    return adv
+
+
 def main() -> None:
     months: list[dict] = []
     seen_ids: set[str] = set()
@@ -80,26 +99,32 @@ def main() -> None:
             raise ValueError(f"{fname} must contain a JSON array of months")
 
         for month in q_data:
-            for adv in month["adventures"]:
-                adv_id = adv["id"]
-                if adv_id in seen_ids:
-                    raise ValueError(f"Duplicate adventure ID: {adv_id}")
-                seen_ids.add(adv_id)
-
-                # Normalize categories & heroImage safely
-                adv["categories"] = [
-                    c for c in adv.get("categories", []) if c in VALID_CATEGORIES
-                ] or ["Mountains"]
-                if adv.get("heroImage") not in VALID_HERO_IMAGES:
-                    adv["heroImage"] = "norway_fjords"
-
-                if len(adv.get("hotels", [])) < 1:
-                    raise ValueError(f"Adventure {adv_id} has no hotels")
-
-                adv["computedCosts"] = compute_base_total(adv)
+            month["adventures"] = [
+                normalize_adventure(adv, seen_ids) for adv in month["adventures"]
+            ]
             months.append(month)
 
     months.sort(key=lambda m: m["monthId"])
+    month_map = {m["monthId"]: m for m in months}
+
+    custom_count = 0
+    if CUSTOM_FILE.exists():
+        with CUSTOM_FILE.open("r", encoding="utf-8") as fh:
+            custom_entries = json.load(fh)
+        if isinstance(custom_entries, list):
+            for entry in custom_entries:
+                month_id = entry.get("monthId")
+                adv = entry.get("adventure")
+                if not month_id or not isinstance(adv, dict):
+                    continue
+                target_month = month_map.get(month_id) or months[0]
+                adv["isCustomResearch"] = True
+                if entry.get("prompt"):
+                    adv["researchPrompt"] = entry["prompt"]
+                if entry.get("createdAt"):
+                    adv["researchedAt"] = entry["createdAt"]
+                target_month["adventures"].insert(0, normalize_adventure(adv, seen_ids))
+                custom_count += 1
 
     total_adventures = sum(len(m["adventures"]) for m in months)
     nordic_count = sum(
@@ -118,6 +143,7 @@ def main() -> None:
             "monthCount": len(months),
             "adventureCount": total_adventures,
             "nordicCount": nordic_count,
+            "customResearchCount": custom_count,
             "researchAgents": [
                 {
                     "id": "q1-agent",
@@ -143,6 +169,12 @@ def main() -> None:
                     "focus": "Ruska autumn huts, deep off-season 4x4 & polar night whale/cruise voyages",
                     "file": "data/q4.json",
                 },
+                {
+                    "id": "live-cloud-run-agents",
+                    "scope": "On-Demand (Any Month)",
+                    "focus": "3 parallel Gemini Google-Search-grounded agents spawned from the web app & auto-saved to data/custom.json",
+                    "file": "data/custom.json",
+                },
             ],
         },
         "months": months,
@@ -154,7 +186,7 @@ def main() -> None:
 
     print(
         f"Built {out_path} successfully: {len(months)} months, "
-        f"{total_adventures} adventures ({nordic_count} Nordic/Arctic)."
+        f"{total_adventures} adventures ({nordic_count} Nordic/Arctic, {custom_count} custom on-demand)."
     )
 
 

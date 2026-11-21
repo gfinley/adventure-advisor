@@ -31,6 +31,15 @@ python3 scripts/build_dataset.py
 
 Commit and push to `main` to automatically republish GitHub Pages.
 
+## Live On-Demand Research Backend (Cloud Run + Google AI Ultra Credits)
+
+Type any custom trip directly into the **Spawn Parallel Agents** bar on the web app (e.g., *"Iceland trip in May with drysuit scuba and cold solitude lodges"*):
+
+- **Single-User Google Sign-In:** Cryptographically verifies Google ID tokens server-side and locks all `/api/*` endpoints exclusively to `matthewgfinley@gmail.com`.
+- **3 Parallel Grounded Gemini Agents:** Runs concurrent Google-Search-grounded agents for **Lodging & Solitude**, **Flights & 4x4**, and **Field Ops & Scuba**, streams live progress over SSE, and synthesizes a validated booking card in ~10–20s.
+- **GitHub Auto-Save:** Atomically commits each researched trip to [`data/custom.json`](data/custom.json) and [`data/adventures.json`](data/adventures.json) so it persists permanently on GitHub Pages.
+- **Setup & 1-Command Deploy:** See [`backend/SETUP.md`](backend/SETUP.md) and [`backend/deploy.sh`](backend/deploy.sh).
+
 ## Local Preview
 
 ```bash

@@ -6,6 +6,8 @@
   "use strict";
 
   const STORAGE_KEY = "nordic-atlas-state-v1";
+  const BACKEND_STORAGE_KEY = "nordic-atlas-backend-v1";
+  const SESSION_TOKEN_KEY = "nordic-atlas-google-idtoken";
 
   const state = {
     dataset: null,
@@ -22,19 +24,43 @@
     // Per-adventure user customizations:
     // { [advId]: { hotelIndex: 0, nights: number, includeVehicle: boolean, travelerMode: "solo"|"split", enabledActivities: number[] } }
     configs: {},
+    // Cloud Run live agent backend + Single-user Google Sign-In state
+    backendUrl: "",
+    googleClientId: "",
+    idToken: "",
+    authUser: null, // { email, name, picture, githubAutoSave, researchModel }
+    isResearching: false,
   };
 
   // ---------- Persistence ----------
   function loadPersisted() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) return;
-      const parsed = JSON.parse(raw);
-      if (Array.isArray(parsed.shortlistIds)) state.shortlistIds = parsed.shortlistIds;
-      if (Array.isArray(parsed.compareIds)) state.compareIds = parsed.compareIds.slice(0, 4);
-      if (parsed.configs && typeof parsed.configs === "object") state.configs = parsed.configs;
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed.shortlistIds)) state.shortlistIds = parsed.shortlistIds;
+        if (Array.isArray(parsed.compareIds)) state.compareIds = parsed.compareIds.slice(0, 4);
+        if (parsed.configs && typeof parsed.configs === "object") state.configs = parsed.configs;
+      }
     } catch {
       // ignore storage errors
+    }
+
+    // Load backend URL & Google Client ID (config.js defaults, overridden by localStorage if set)
+    const fileCfg = window.NORDIC_ATLAS_CONFIG || {};
+    state.backendUrl = String(fileCfg.backendUrl || "").trim().replace(/\/+$/, "");
+    state.googleClientId = String(fileCfg.googleClientId || "").trim();
+    try {
+      const savedBackend = localStorage.getItem(BACKEND_STORAGE_KEY);
+      if (savedBackend) {
+        const b = JSON.parse(savedBackend);
+        if (b.backendUrl) state.backendUrl = String(b.backendUrl).trim().replace(/\/+$/, "");
+        if (b.googleClientId) state.googleClientId = String(b.googleClientId).trim();
+      }
+      const savedTok = sessionStorage.getItem(SESSION_TOKEN_KEY);
+      if (savedTok) state.idToken = savedTok;
+    } catch {
+      // ignore
     }
   }
 
@@ -50,6 +76,22 @@
       );
     } catch {
       // ignore storage errors
+    }
+  }
+
+  function saveBackendConfig(backendUrl, googleClientId) {
+    state.backendUrl = String(backendUrl || "").trim().replace(/\/+$/, "");
+    state.googleClientId = String(googleClientId || "").trim();
+    try {
+      localStorage.setItem(
+        BACKEND_STORAGE_KEY,
+        JSON.stringify({
+          backendUrl: state.backendUrl,
+          googleClientId: state.googleClientId,
+        })
+      );
+    } catch {
+      // ignore
     }
   }
 
@@ -437,9 +479,16 @@
           />
           <div class="card-media-overlay">
             <div class="media-top">
-              <span class="media-badge ${adv.isNordic ? "nordic" : ""}">
-                ${adv.isNordic ? "Nordic / Arctic" : "Mountain Wildcard"}
-              </span>
+              <div style="display:flex;gap:6px;flex-wrap:wrap">
+                <span class="media-badge ${adv.isNordic ? "nordic" : ""}">
+                  ${adv.isNordic ? "Nordic / Arctic" : "Mountain Wildcard"}
+                </span>
+                ${
+                  adv.isCustomResearch
+                    ? `<span class="media-badge custom-agent" title="Researched live via your Cloud Run Gemini agents">Live Agent Research</span>`
+                    : ""
+                }
+              </div>
               <span class="media-score" title="Off-Season Optimality Score">
                 Off-Season ${adv.offSeasonScore}/100
               </span>
@@ -941,6 +990,11 @@
             <button type="button" class="btn btn-subtle" id="eval-ics-btn">
               ↓ Export Tentative Event (.ics)
             </button>
+            ${
+              adv.isCustomResearch && state.authUser
+                ? `<button type="button" class="text-btn" id="eval-delete-custom-btn" style="color:var(--accent-copper);margin-top:4px">Delete Custom Trip from Repo</button>`
+                : ""
+            }
           </div>
         </aside>
       </div>
@@ -1023,6 +1077,11 @@
     document.getElementById("eval-ics-btn").addEventListener("click", () => {
       downloadIcs([adv]);
     });
+
+    const delBtn = document.getElementById("eval-delete-custom-btn");
+    if (delBtn) {
+      delBtn.addEventListener("click", () => deleteCustomAdventure(adv.id, delBtn));
+    }
   }
 
   // ---------- Side-by-Side Compare Modal ----------
@@ -1459,9 +1518,28 @@
       }
     });
 
+    // Connect Backend modal
+    document.getElementById("close-connect-btn").addEventListener("click", closeConnectModal);
+    document.getElementById("connect-modal").addEventListener("click", (e) => {
+      if (e.target.id === "connect-modal") closeConnectModal();
+    });
+    document.getElementById("connect-form").addEventListener("submit", handleSaveBackendConfig);
+    document.getElementById("test-backend-btn").addEventListener("click", handleTestBackendHealth);
+
+    // Live Agent Research Studio form & example chips
+    document.getElementById("studio-form").addEventListener("submit", handleSpawnAgentsSubmit);
+    document.querySelectorAll(".example-prompt-chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const input = document.getElementById("agent-prompt-input");
+        input.value = chip.dataset.prompt || "";
+        input.focus();
+      });
+    });
+
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         closeEvaluator();
+        closeConnectModal();
         document.getElementById("compare-modal").hidden = true;
         document.getElementById("planner-modal").hidden = true;
         document.getElementById("agents-modal").hidden = true;
@@ -1470,9 +1548,422 @@
     });
   }
 
+  // ---------- Single-User Google Sign-In & Backend Connection ----------
+  function isBackendConfigured() {
+    return Boolean(state.backendUrl && state.googleClientId);
+  }
+
+  function openConnectModal() {
+    document.getElementById("cfg-backend-url").value = state.backendUrl;
+    document.getElementById("cfg-google-client-id").value = state.googleClientId;
+    const msg = document.getElementById("connect-status-msg");
+    msg.hidden = true;
+    document.getElementById("connect-modal").hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeConnectModal() {
+    document.getElementById("connect-modal").hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  function showConnectMsg(text, kind) {
+    const msg = document.getElementById("connect-status-msg");
+    msg.hidden = false;
+    msg.className = `connect-status-msg mono ${kind || ""}`;
+    msg.textContent = text;
+  }
+
+  async function handleTestBackendHealth() {
+    const url = document.getElementById("cfg-backend-url").value.trim().replace(/\/+$/, "");
+    if (!url) {
+      showConnectMsg("Enter a Cloud Run Backend URL first.", "err");
+      return;
+    }
+    showConnectMsg(`Checking ${url}/health …`, "");
+    try {
+      const res = await fetch(`${url}/health`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      showConnectMsg(
+        `Connected! Model: ${data.researchModel} · GitHub Auto-Save: ${data.githubAutoSave ? "Enabled" : "Off"}`,
+        "ok"
+      );
+    } catch (err) {
+      showConnectMsg(`Connection failed: ${err.message}`, "err");
+    }
+  }
+
+  async function handleSaveBackendConfig(e) {
+    e.preventDefault();
+    const url = document.getElementById("cfg-backend-url").value.trim();
+    const cid = document.getElementById("cfg-google-client-id").value.trim();
+    saveBackendConfig(url, cid);
+    state.authUser = null;
+    initGoogleIdentity();
+    renderAuthUI();
+    showConnectMsg("Saved! Now click Sign in with Google to verify your owner account.", "ok");
+    if (state.idToken && isBackendConfigured()) {
+      await verifySessionWithBackend();
+    }
+  }
+
+  async function handleGoogleCredentialResponse(response) {
+    const token = response && response.credential;
+    if (!token) return;
+    state.idToken = token;
+    try {
+      sessionStorage.setItem(SESSION_TOKEN_KEY, token);
+    } catch {
+      // ignore
+    }
+    await verifySessionWithBackend();
+  }
+
+  async function verifySessionWithBackend() {
+    if (!state.idToken || !state.backendUrl) {
+      renderAuthUI();
+      return;
+    }
+    try {
+      const res = await fetch(`${state.backendUrl}/api/me`, {
+        headers: { Authorization: `Bearer ${state.idToken}` },
+      });
+      if (!res.ok) {
+        const errBody = await res.json().catch(() => ({}));
+        throw new Error(errBody.detail || `HTTP ${res.status}`);
+      }
+      state.authUser = await res.json();
+      renderAuthUI();
+    } catch (err) {
+      state.authUser = null;
+      state.idToken = "";
+      try {
+        sessionStorage.removeItem(SESSION_TOKEN_KEY);
+      } catch {
+        // ignore
+      }
+      renderAuthUI(err.message);
+    }
+  }
+
+  function signOutGoogle() {
+    state.authUser = null;
+    state.idToken = "";
+    try {
+      sessionStorage.removeItem(SESSION_TOKEN_KEY);
+    } catch {
+      // ignore
+    }
+    if (window.google && window.google.accounts && window.google.accounts.id) {
+      window.google.accounts.id.disableAutoSelect();
+    }
+    renderAuthUI();
+  }
+
+  function initGoogleIdentity() {
+    if (!state.googleClientId) return;
+    const tryInit = () => {
+      if (!window.google || !window.google.accounts || !window.google.accounts.id) {
+        return false;
+      }
+      window.google.accounts.id.initialize({
+        client_id: state.googleClientId,
+        callback: handleGoogleCredentialResponse,
+        auto_select: false,
+      });
+      renderAuthUI();
+      return true;
+    };
+    if (!tryInit()) {
+      let attempts = 0;
+      const timer = setInterval(() => {
+        attempts++;
+        if (tryInit() || attempts > 25) clearInterval(timer);
+      }, 250);
+    }
+  }
+
+  function renderAuthUI(authErrorMsg) {
+    const headerSlot = document.getElementById("auth-header-slot");
+    const studioSlot = document.getElementById("studio-auth-status");
+    const autoSaveNote = document.getElementById("studio-autosave-note");
+
+    if (!isBackendConfigured()) {
+      headerSlot.innerHTML = `<button type="button" class="auth-btn" id="open-connect-btn">Connect Backend</button>`;
+      studioSlot.innerHTML = `
+        <span class="studio-status-pill locked">Backend Not Connected</span>
+        <button type="button" class="btn btn-subtle btn-sm" id="studio-connect-btn">Setup Cloud Run &amp; Google Auth</button>
+      `;
+      document.getElementById("open-connect-btn").addEventListener("click", openConnectModal);
+      document.getElementById("studio-connect-btn").addEventListener("click", openConnectModal);
+      return;
+    }
+
+    if (state.authUser) {
+      const initial = (state.authUser.name || state.authUser.email || "M")[0].toUpperCase();
+      const avatarHtml = state.authUser.picture
+        ? `<img class="auth-avatar" src="${escapeHtml(state.authUser.picture)}" alt="" referrerpolicy="no-referrer" />`
+        : `<span class="auth-avatar">${escapeHtml(initial)}</span>`;
+
+      headerSlot.innerHTML = `
+        <span class="auth-owner-chip" title="Verified owner: ${escapeHtml(state.authUser.email)}">
+          ${avatarHtml}
+          <span>Owner Ready</span>
+          <button type="button" class="auth-signout-btn" id="header-signout-btn">Sign out</button>
+        </span>
+      `;
+      studioSlot.innerHTML = `
+        <span class="studio-status-pill ready">✓ Verified: ${escapeHtml(state.authUser.email)}</span>
+        <button type="button" class="text-btn" id="studio-settings-btn">Backend Settings</button>
+      `;
+      if (autoSaveNote) {
+        autoSaveNote.textContent = state.authUser.githubAutoSave
+          ? `Model: ${state.authUser.researchModel} · Auto-saves to gfinley/adventure-advisor`
+          : `Model: ${state.authUser.researchModel} · GitHub token not set (browser-only)`;
+      }
+      document.getElementById("header-signout-btn").addEventListener("click", signOutGoogle);
+      document.getElementById("studio-settings-btn").addEventListener("click", openConnectModal);
+      return;
+    }
+
+    // Configured, waiting for owner Google Sign-In
+    headerSlot.innerHTML = `<button type="button" class="auth-btn" id="open-connect-btn">Owner Sign-In</button>`;
+    studioSlot.innerHTML = `
+      ${
+        authErrorMsg
+          ? `<span class="studio-status-pill locked" title="${escapeHtml(authErrorMsg)}">Access Denied / Expired</span>`
+          : `<span class="studio-status-pill locked">Sign in as Owner to Spawn Agents</span>`
+      }
+      <div id="gsi-button-container"></div>
+      <button type="button" class="text-btn" id="studio-settings-btn">Settings</button>
+    `;
+
+    document.getElementById("open-connect-btn").addEventListener("click", () => {
+      document.getElementById("agent-studio-section").scrollIntoView({ behavior: "smooth" });
+    });
+    document.getElementById("studio-settings-btn").addEventListener("click", openConnectModal);
+
+    if (window.google && window.google.accounts && window.google.accounts.id) {
+      const btnWrap = document.getElementById("gsi-button-container");
+      if (btnWrap) {
+        window.google.accounts.id.renderButton(btnWrap, {
+          theme: "outline",
+          size: "medium",
+          shape: "pill",
+          text: "signin_with",
+        });
+      }
+    }
+  }
+
+  // ---------- Live SSE Multi-Agent Research Stream ----------
+  function resetTracks() {
+    const defaults = {
+      lodging: "Queued — boutique rooms, huts & solo rates",
+      logistics: "Queued — SEA routes, AWD rentals & calendar fit",
+      field_ops: "Queued — drysuit dives, guides & itinerary",
+      synthesizer: "Waiting for grounded agent reports",
+    };
+    document.querySelectorAll("#agent-tracks .agent-track").forEach((el) => {
+      el.classList.remove("running", "done", "error");
+      const key = el.dataset.track;
+      el.querySelector(".track-msg").textContent = defaults[key] || "Queued";
+    });
+  }
+
+  function updateTrack(trackKey, status, message) {
+    const mapped = trackKey === "github_sync" ? "synthesizer" : trackKey;
+    const el = document.querySelector(`#agent-tracks .agent-track[data-track="${mapped}"]`);
+    if (!el) return;
+    el.classList.remove("running", "done", "error");
+    if (status) el.classList.add(status);
+    if (message) el.querySelector(".track-msg").textContent = message;
+  }
+
+  async function handleSpawnAgentsSubmit(e) {
+    e.preventDefault();
+    if (state.isResearching) return;
+
+    const promptInput = document.getElementById("agent-prompt-input");
+    const prompt = promptInput.value.trim();
+    if (!prompt) return;
+
+    if (!isBackendConfigured()) {
+      openConnectModal();
+      return;
+    }
+
+    if (!state.idToken || !state.authUser) {
+      const stream = document.getElementById("studio-stream");
+      const banner = document.getElementById("studio-result-banner");
+      stream.hidden = false;
+      banner.hidden = false;
+      banner.className = "studio-result-banner error";
+      banner.innerHTML = `<span>Please click <strong>Sign in with Google</strong> above to verify your owner account before spawning research agents.</span>`;
+      return;
+    }
+
+    const monthId = document.getElementById("agent-month-select").value;
+    const duration = document.getElementById("agent-duration-select").value;
+
+    state.isResearching = true;
+    const submitBtn = document.getElementById("spawn-agents-btn");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Agents Researching…";
+
+    const streamEl = document.getElementById("studio-stream");
+    const headlineEl = document.getElementById("studio-stream-headline");
+    const timerEl = document.getElementById("studio-stream-timer");
+    const bannerEl = document.getElementById("studio-result-banner");
+
+    streamEl.hidden = false;
+    bannerEl.hidden = true;
+    bannerEl.className = "studio-result-banner";
+    resetTracks();
+    headlineEl.textContent = `Researching: "${prompt}"`;
+
+    const startedAt = performance.now();
+    const tick = setInterval(() => {
+      timerEl.textContent = `${((performance.now() - startedAt) / 1000).toFixed(1)}s`;
+    }, 100);
+
+    try {
+      const res = await fetch(`${state.backendUrl}/api/research/stream`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${state.idToken}`,
+        },
+        body: JSON.stringify({
+          prompt,
+          monthId,
+          duration,
+          autoSave: true,
+        }),
+      });
+
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        throw new Error(errData.detail || `Backend returned HTTP ${res.status}`);
+      }
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const parts = buffer.split("\n\n");
+        buffer = parts.pop() || "";
+
+        for (const chunk of parts) {
+          const line = chunk.split("\n").find((l) => l.startsWith("data: "));
+          if (!line) continue;
+          const evt = JSON.parse(line.slice(6));
+
+          if (evt.type === "status") {
+            headlineEl.textContent = evt.message;
+          } else if (evt.type === "agent_start") {
+            updateTrack(evt.agent, "running", evt.message);
+          } else if (evt.type === "agent_done") {
+            updateTrack(evt.agent, "done", evt.message);
+          } else if (evt.type === "error") {
+            throw new Error(evt.message || "Agent execution failed");
+          } else if (evt.type === "complete") {
+            injectResearchedAdventure(evt.monthId, evt.adventure);
+            const total = calculatePricing(evt.adventure).totalUsd;
+            const gh = evt.github || {};
+            const ghNote = gh.saved
+              ? `Auto-saved to GitHub (<a href="${escapeHtml(gh.commitUrl)}" target="_blank" rel="noopener noreferrer" style="color:#8fd3c8">commit ${escapeHtml(gh.commitSha)} ↗</a>)`
+              : "Loaded live in browser";
+
+            headlineEl.textContent = `Research complete in ${((performance.now() - startedAt) / 1000).toFixed(1)}s`;
+            bannerEl.hidden = false;
+            bannerEl.innerHTML = `
+              <div>
+                <strong>${escapeHtml(evt.adventure.title)}</strong>
+                <span class="mono" style="margin-left:8px;color:#8fd3c8">${fmtUsd(total)} solo</span>
+                <div style="font-size:0.78rem;color:#c2d2dc;margin-top:2px">${ghNote}</div>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" id="open-new-adv-btn">
+                Open Room &amp; Cost Evaluator →
+              </button>
+            `;
+            document.getElementById("open-new-adv-btn").addEventListener("click", () => {
+              openEvaluator(evt.adventure.id);
+            });
+          }
+        }
+      }
+    } catch (err) {
+      headlineEl.textContent = "Agent research stopped";
+      bannerEl.hidden = false;
+      bannerEl.className = "studio-result-banner error";
+      bannerEl.innerHTML = `<span><strong>Error:</strong> ${escapeHtml(err.message)}</span>`;
+    } finally {
+      clearInterval(tick);
+      state.isResearching = false;
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Spawn 3 Agents";
+    }
+  }
+
+  function injectResearchedAdventure(monthId, adventure) {
+    if (!state.dataset) return;
+    const targetMonth =
+      state.dataset.months.find((m) => m.monthId === monthId) || state.dataset.months[0];
+    targetMonth.adventures = [
+      adventure,
+      ...targetMonth.adventures.filter((a) => a.id !== adventure.id),
+    ];
+    state.dataset.meta.adventureCount = getAllAdventures().length;
+    state.dataset.meta.nordicCount = getAllAdventures().filter((a) => a.isNordic).length;
+    state.selectedMonth = targetMonth.monthId;
+    renderHeaderStats();
+    renderAll();
+  }
+
+  async function deleteCustomAdventure(advId, btnEl) {
+    if (!state.backendUrl || !state.idToken) return;
+    if (!window.confirm("Remove this custom researched trip from your GitHub repo?")) return;
+    btnEl.disabled = true;
+    btnEl.textContent = "Deleting from GitHub…";
+    try {
+      const res = await fetch(`${state.backendUrl}/api/adventures/${encodeURIComponent(advId)}`, {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${state.idToken}` },
+      });
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.detail || `HTTP ${res.status}`);
+      }
+      for (const m of state.dataset.months) {
+        m.adventures = m.adventures.filter((a) => a.id !== advId);
+      }
+      state.shortlistIds = state.shortlistIds.filter((id) => id !== advId);
+      state.compareIds = state.compareIds.filter((id) => id !== advId);
+      savePersisted();
+      state.dataset.meta.adventureCount = getAllAdventures().length;
+      closeEvaluator();
+      renderHeaderStats();
+      renderAll();
+    } catch (err) {
+      btnEl.disabled = false;
+      btnEl.textContent = `Delete failed: ${err.message}`;
+    }
+  }
+
   async function init() {
     loadPersisted();
     bindGlobalUI();
+    renderAuthUI();
+    initGoogleIdentity();
+    if (state.idToken && isBackendConfigured()) {
+      verifySessionWithBackend();
+    }
 
     try {
       const res = await fetch("data/adventures.json", { cache: "no-cache" });
