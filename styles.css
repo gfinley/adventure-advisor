@@ -2289,6 +2289,183 @@ a:hover {
 }
 
 /* ==========================================================================
+   Interactive Route Map & Itinerary Travel Math
+   ========================================================================== */
+
+.card-route-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  background: var(--accent-fjord-soft);
+  border-radius: var(--radius-sm);
+  font-size: 0.74rem;
+  color: var(--ink-primary);
+}
+
+.card-route-strip strong {
+  color: var(--accent-fjord);
+}
+
+.card-gmaps-link {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-pine);
+  white-space: nowrap;
+}
+
+.route-map-shell {
+  position: relative;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 14px;
+  background: #e5ebe8;
+}
+
+.eval-route-map {
+  width: 100%;
+  height: 290px;
+  z-index: 1;
+}
+
+.route-map-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  background: var(--bg-canvas);
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+}
+
+.map-layer-toggle {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.map-layer-toggle button {
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  border-radius: 4px;
+  padding: 3px 9px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.map-layer-toggle button.active {
+  background: var(--bg-slate);
+  border-color: var(--bg-slate);
+  color: #ffffff;
+}
+
+.route-pin-icon {
+  background: var(--accent-pine);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.route-pin-icon.end-pin {
+  background: var(--accent-copper);
+}
+
+.route-math-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.route-math-stat {
+  background: var(--bg-canvas);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 9px 11px;
+}
+
+.route-math-stat span {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+  margin-bottom: 2px;
+}
+
+.route-math-stat strong {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  color: var(--ink-primary);
+}
+
+.route-pace-verdict {
+  font-size: 0.82rem;
+  color: var(--ink-secondary);
+  background: var(--accent-pine-soft);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+.route-legs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.route-legs-table th,
+.route-legs-table td {
+  padding: 7px 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: left;
+  vertical-align: top;
+}
+
+.route-legs-table th {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  background: var(--bg-canvas);
+}
+
+.leg-mode-pill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--bg-subtle);
+  color: var(--ink-secondary);
+}
+
+.leg-mode-pill.drive { background: var(--accent-copper-soft); color: var(--accent-copper); }
+.leg-mode-pill.hike { background: var(--accent-pine-soft); color: var(--accent-pine); }
+.leg-mode-pill.cruise,
+.leg-mode-pill.ferry { background: var(--accent-fjord-soft); color: var(--accent-fjord); }
+
+@media (max-width: 720px) {
+  .route-math-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
 

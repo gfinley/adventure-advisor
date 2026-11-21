@@ -515,6 +515,8 @@
             ${adv.categories.map((c) => `<span class="${tagClass(c)}">${escapeHtml(c)}</span>`).join("")}
           </div>
 
+          ${renderCardRouteStrip(adv)}
+
           <div class="card-lodging-preview">
             <div class="lodging-preview-row">
               <span class="lodging-preview-name" title="${escapeHtml(p.hotel.name)}">${escapeHtml(p.hotel.name)}</span>
@@ -741,6 +743,7 @@
   }
 
   function closeEvaluator() {
+    destroyEvalRouteMap();
     state.activeAdventureId = null;
     document.getElementById("evaluator-modal").hidden = true;
     document.body.style.overflow = "";
@@ -895,6 +898,8 @@
               ${activitiesHtml}
             </div>
           </section>
+
+          ${renderEvaluatorRouteSection(adv)}
 
           <section class="eval-section">
             <div class="eval-section-head">
@@ -1089,6 +1094,273 @@
     const delBtn = document.getElementById("eval-delete-custom-btn");
     if (delBtn) {
       delBtn.addEventListener("click", () => deleteCustomAdventure(adv.id, delBtn));
+    }
+
+    mountEvalRouteMap(adv);
+  }
+
+  // ---------- Interactive Route Map & Itinerary Travel Math ----------
+  let activeRouteMap = null;
+
+  function destroyEvalRouteMap() {
+    if (activeRouteMap) {
+      try {
+        activeRouteMap.remove();
+      } catch {
+        // ignore
+      }
+      activeRouteMap = null;
+    }
+  }
+
+  function kmToMi(km) {
+    return Math.round((Number(km) || 0) * 0.621371);
+  }
+
+  function mToFt(m) {
+    return Math.round((Number(m) || 0) * 3.28084);
+  }
+
+  function fmtHours(hrs) {
+    const val = Number(hrs) || 0;
+    const h = Math.floor(val);
+    const m = Math.round((val - h) * 60);
+    if (h === 0) return `${m}m`;
+    if (m === 0) return `${h}h`;
+    return `${h}h ${m}m`;
+  }
+
+  function buildGoogleMapsRouteUrl(routePlan) {
+    const wps = (routePlan && routePlan.waypoints) || [];
+    if (wps.length === 0) return "https://www.google.com/maps";
+    if (wps.length === 1) {
+      return `https://www.google.com/maps/search/?api=1&query=${wps[0].lat},${wps[0].lng}`;
+    }
+    const origin = `${wps[0].lat},${wps[0].lng}`;
+    const destination = `${wps[wps.length - 1].lat},${wps[wps.length - 1].lng}`;
+    const middle = wps
+      .slice(1, -1)
+      .slice(0, 8)
+      .map((w) => `${w.lat},${w.lng}`)
+      .join("|");
+    const mode = routePlan.googleMapsTravelMode || "driving";
+    const params = new URLSearchParams({
+      api: "1",
+      origin,
+      destination,
+      travelmode: mode,
+    });
+    if (middle) params.set("waypoints", middle);
+    return `https://www.google.com/maps/dir/?${params.toString()}`;
+  }
+
+  function renderCardRouteStrip(adv) {
+    const rp = adv.routePlan;
+    if (!rp) return "";
+    const mi = kmToMi(rp.totalDistanceKm);
+    const gmapsUrl = buildGoogleMapsRouteUrl(rp);
+    const hikePart =
+      rp.totalHikingKm && rp.totalHikingKm > 0
+        ? ` · 🥾 ${rp.totalHikingKm} km (+${Number(rp.totalElevationGainM || 0).toLocaleString()}m)`
+        : "";
+    return `
+      <div class="card-route-strip">
+        <span>
+          <strong>${escapeHtml(rp.primaryMode)}</strong> ·
+          <span class="mono">${mi.toLocaleString()} mi</span> (${Number(rp.totalDistanceKm).toLocaleString()} km) ·
+          <span class="mono">${fmtHours(rp.totalTransitHours)}</span>${hikePart}
+        </span>
+        <a
+          class="card-gmaps-link"
+          href="${escapeHtml(gmapsUrl)}"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="event.stopPropagation()"
+          title="Open full multi-stop route in Google Maps"
+        >Google Maps ↗</a>
+      </div>
+    `;
+  }
+
+  function renderEvaluatorRouteSection(adv) {
+    const rp = adv.routePlan;
+    if (!rp || !Array.isArray(rp.waypoints) || rp.waypoints.length === 0) return "";
+
+    const totalMi = kmToMi(rp.totalDistanceKm);
+    const hikeMi = kmToMi(rp.totalHikingKm || 0);
+    const gainFt = mToFt(rp.totalElevationGainM || 0);
+    const gmapsUrl = buildGoogleMapsRouteUrl(rp);
+
+    const legsRows = (rp.legs || [])
+      .map(
+        (leg) => `
+          <tr>
+            <td><strong>${escapeHtml(leg.from)}</strong> → <strong>${escapeHtml(leg.to)}</strong></td>
+            <td><span class="leg-mode-pill ${escapeHtml(leg.mode)}">${escapeHtml(leg.mode)}</span></td>
+            <td class="mono">${kmToMi(leg.distanceKm)} mi <span style="color:var(--ink-muted)">(${leg.distanceKm} km)</span></td>
+            <td class="mono">${fmtHours(leg.durationHours)}</td>
+            <td style="color:var(--ink-secondary)">${escapeHtml(leg.notes || "")}</td>
+          </tr>
+        `
+      )
+      .join("");
+
+    return `
+      <section class="eval-section">
+        <div class="eval-section-head">
+          <h3>Route Map &amp; Itinerary Travel Math</h3>
+          <span class="eval-section-hint">${rp.waypoints.length} GPS waypoints · ${escapeHtml(rp.primaryMode)}</span>
+        </div>
+
+        <div class="route-map-shell">
+          <div id="eval-route-map" class="eval-route-map" aria-label="Interactive route map"></div>
+          <div class="route-map-toolbar">
+            <div class="map-layer-toggle" role="group" aria-label="Map style">
+              <button type="button" id="map-style-voyager" class="active">Map</button>
+              <button type="button" id="map-style-topo">Topo Relief</button>
+            </div>
+            <a href="${escapeHtml(gmapsUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              Open Multi-Stop Route in Google Maps ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="route-math-grid">
+          <div class="route-math-stat">
+            <span>Total Distance</span>
+            <strong>${totalMi.toLocaleString()} mi</strong>
+            <div class="mono" style="font-size:0.7rem;color:var(--ink-muted)">${Number(rp.totalDistanceKm).toLocaleString()} km</div>
+          </div>
+          <div class="route-math-stat">
+            <span>Total Transit Time</span>
+            <strong>${fmtHours(rp.totalTransitHours)}</strong>
+            <div class="mono" style="font-size:0.7rem;color:var(--ink-muted)">~${rp.dailyAvgTransitHours}h / day avg</div>
+          </div>
+          <div class="route-math-stat">
+            <span>Hiking &amp; Vertical</span>
+            <strong>${rp.totalHikingKm || 0} km</strong>
+            <div class="mono" style="font-size:0.7rem;color:var(--ink-muted)">${hikeMi} mi · +${gainFt.toLocaleString()} ft</div>
+          </div>
+          <div class="route-math-stat">
+            <span>Longest Single Leg</span>
+            <strong style="font-size:0.78rem;line-height:1.25;display:block">${escapeHtml(rp.longestLegSummary || "—")}</strong>
+          </div>
+        </div>
+
+        ${
+          rp.paceVerdict
+            ? `<div class="route-pace-verdict"><strong>Pace Assessment:</strong> ${escapeHtml(rp.paceVerdict)}</div>`
+            : ""
+        }
+
+        ${
+          legsRows
+            ? `
+              <div style="overflow-x:auto">
+                <table class="route-legs-table">
+                  <thead>
+                    <tr>
+                      <th>Leg</th>
+                      <th>Mode</th>
+                      <th>Distance</th>
+                      <th>Est. Time</th>
+                      <th>Route Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>${legsRows}</tbody>
+                </table>
+              </div>
+            `
+            : ""
+        }
+      </section>
+    `;
+  }
+
+  function mountEvalRouteMap(adv) {
+    destroyEvalRouteMap();
+    const rp = adv.routePlan;
+    const container = document.getElementById("eval-route-map");
+    if (!container || !rp || !Array.isArray(rp.waypoints) || rp.waypoints.length === 0) return;
+    if (typeof window.L === "undefined") {
+      container.innerHTML = `<div style="padding:24px;text-align:center;color:var(--ink-muted)">Map tiles loading…</div>`;
+      return;
+    }
+
+    const L = window.L;
+    const map = L.map(container, { scrollWheelZoom: false });
+    activeRouteMap = map;
+
+    const voyager = L.tileLayer(
+      "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+      {
+        attribution: "&copy; OpenStreetMap &copy; CARTO",
+        maxZoom: 18,
+      }
+    );
+    const topo = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap &copy; OpenTopoMap",
+      maxZoom: 16,
+    });
+    voyager.addTo(map);
+
+    const coords = [];
+    rp.waypoints.forEach((wp, idx) => {
+      const lat = Number(wp.lat);
+      const lng = Number(wp.lng);
+      if (Number.isNaN(lat) || Number.isNaN(lng)) return;
+      coords.push([lat, lng]);
+      const isEnd = idx === rp.waypoints.length - 1;
+      const icon = L.divIcon({
+        className: `route-pin-icon ${isEnd ? "end-pin" : ""}`,
+        html: String(wp.stop || idx + 1),
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
+      });
+      L.marker([lat, lng], { icon })
+        .addTo(map)
+        .bindPopup(
+          `<strong>${wp.stop || idx + 1}. ${escapeHtml(wp.name)}</strong><br/>` +
+            `<span style="color:#475866">${escapeHtml(wp.day || "")} — ${escapeHtml(wp.note || "")}</span>`
+        );
+    });
+
+    if (coords.length >= 2) {
+      const isWater =
+        rp.primaryMode &&
+        (rp.primaryMode.toLowerCase().includes("cruise") ||
+          rp.primaryMode.toLowerCase().includes("ferry"));
+      L.polyline(coords, {
+        color: isWater ? "#28557a" : "#195c53",
+        weight: 3.5,
+        opacity: 0.88,
+        dashArray: isWater ? "7, 7" : null,
+      }).addTo(map);
+      map.fitBounds(L.latLngBounds(coords), { padding: [32, 32], maxZoom: 11 });
+    } else if (coords.length === 1) {
+      map.setView(coords[0], 9);
+    }
+
+    // Ensure proper layout inside modal transition
+    setTimeout(() => {
+      if (activeRouteMap === map) map.invalidateSize();
+    }, 120);
+
+    const btnV = document.getElementById("map-style-voyager");
+    const btnT = document.getElementById("map-style-topo");
+    if (btnV && btnT) {
+      btnV.addEventListener("click", () => {
+        if (map.hasLayer(topo)) map.removeLayer(topo);
+        if (!map.hasLayer(voyager)) voyager.addTo(map);
+        btnV.classList.add("active");
+        btnT.classList.remove("active");
+      });
+      btnT.addEventListener("click", () => {
+        if (map.hasLayer(voyager)) map.removeLayer(voyager);
+        if (!map.hasLayer(topo)) topo.addTo(map);
+        btnT.classList.add("active");
+        btnV.classList.remove("active");
+      });
     }
   }
 

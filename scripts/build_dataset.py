@@ -12,11 +12,17 @@ DATA_DIR = ROOT / "data"
 QUARTER_FILES = ["q1.json", "q2.json", "q3.json", "q4.json"]
 CUSTOM_FILE = DATA_DIR / "custom.json"
 PHOTO_CREDITS_FILE = DATA_DIR / "photo_credits.json"
+ROUTES_FILE = DATA_DIR / "routes.json"
 
 PHOTO_CREDITS: dict[str, dict] = {}
 if PHOTO_CREDITS_FILE.exists():
     with PHOTO_CREDITS_FILE.open("r", encoding="utf-8") as _pfh:
         PHOTO_CREDITS = json.load(_pfh)
+
+ROUTES_DATA: dict[str, dict] = {}
+if ROUTES_FILE.exists():
+    with ROUTES_FILE.open("r", encoding="utf-8") as _rfh:
+        ROUTES_DATA = json.load(_rfh)
 
 VALID_CATEGORIES = {
     "Mountains",
@@ -92,6 +98,9 @@ def normalize_adventure(adv: dict, seen_ids: set[str]) -> dict:
         adv["photoPath"] = credit["photoPath"]
         adv["photoCredit"] = f"{credit.get('artist', 'Wikimedia Commons')} ({credit.get('license', 'CC')})"
         adv["photoSourceUrl"] = credit.get("sourceUrl", "https://commons.wikimedia.org/")
+
+    if adv_id in ROUTES_DATA and not adv.get("routePlan"):
+        adv["routePlan"] = ROUTES_DATA[adv_id]
 
     adv["computedCosts"] = compute_base_total(adv)
     return adv

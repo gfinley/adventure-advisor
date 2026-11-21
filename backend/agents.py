@@ -96,6 +96,40 @@ class TheoreticalBookingSchema(BaseModel):
     budgetNote: str
 
 
+class WaypointSchema(BaseModel):
+    stop: int
+    name: str
+    lat: float
+    lng: float
+    day: str
+    note: str
+
+
+class RouteLegSchema(BaseModel):
+    from_stop: str = Field(alias="from")
+    to: str
+    mode: str
+    distanceKm: int
+    durationHours: float
+    notes: str
+
+    model_config = {"populate_by_name": True}
+
+
+class RoutePlanSchema(BaseModel):
+    primaryMode: str
+    googleMapsTravelMode: str
+    totalDistanceKm: int
+    totalTransitHours: float
+    totalHikingKm: int = 0
+    totalElevationGainM: int = 0
+    longestLegSummary: str
+    dailyAvgTransitHours: float
+    paceVerdict: str
+    waypoints: list[WaypointSchema] = Field(min_length=3, max_length=7)
+    legs: list[RouteLegSchema] = Field(min_length=2, max_length=7)
+
+
 class AdventureSchema(BaseModel):
     monthId: str
     id: str
@@ -121,6 +155,7 @@ class AdventureSchema(BaseModel):
     activities: list[ActivitySchema] = Field(min_length=2, max_length=4)
     foodAndMiscPerDayUsd: int
     theoreticalBooking: TheoreticalBookingSchema
+    routePlan: RoutePlanSchema
     itinerary: list[str] = Field(min_length=3)
     sources: list[str] = Field(min_length=2)
 
@@ -349,6 +384,7 @@ STRICT RULES:
 - `activities` MUST contain 3 real activities with integer `costUsd` and real `url` starting with https:// (2 with `optional: false`, 1 with `optional: true`).
 - `days` MUST equal `nights + 1`, and `itinerary` MUST have `days` concise "Day X: ..." entries.
 - `window` MUST use concrete dates matching `monthId` and open calendar windows, e.g. "May 9–17, 2027".
+- `routePlan` MUST include 4–6 chronological GPS waypoints (`lat`, `lng` in decimal degrees) and 3–6 realistic legs (`from`, `to`, `mode` in drive/hike/ferry/train/cruise/flight, `distanceKm`, `durationHours`), with `totalDistanceKm` and `totalTransitHours` matching the leg sums, `dailyAvgTransitHours = round(totalTransitHours / days, 1)`, and `googleMapsTravelMode` in driving/walking/transit.
 - `sources` should list 3–5 concise source names from the researched properties/operators.
 - Return ONLY valid JSON matching the AdventureSchema.
 """
@@ -367,7 +403,7 @@ STRICT RULES:
     synth_resp = await asyncio.to_thread(_synthesize)
     raw_json = (getattr(synth_resp, "text", None) or "").strip()
     parsed = AdventureSchema.model_validate_json(raw_json)
-    adv_dict = parsed.model_dump()
+    adv_dict = parsed.model_dump(by_alias=True)
 
     month_id = adv_dict.pop("monthId")
     if month_id not in VALID_MONTHS:
