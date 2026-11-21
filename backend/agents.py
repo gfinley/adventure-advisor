@@ -21,7 +21,7 @@ CALENDAR_CONTEXT = """
 Traveler Profile:
 - Home base: Seattle / Kitsap Peninsula, WA (home airport: SEA).
 - Solo traveler, mid-to-upper boutique hotels & 4x4 rentals (target sweet spot: $3,000–$6,000 per trip, honest off-season USD pricing).
-- Passions: mountains, supported hut-to-hut hiking (DNT/STF/FÍ/DOC/Rifugi), off-season Nordic/Arctic travel, Arctic cruises, and cold mountain solitude lodges (scuba only when explicitly requested).
+- Passions: mountains, guided or loosely guided (self-guided with daily luggage transfer) inn-to-inn & hut-to-hut treks (DNT/STF/FÍ/Rifugi, Camino de Santiago, Japan Kumano Kodo, Tour du Mont Blanc, Rota Vicentina), off-season Nordic/Arctic travel, Arctic cruises, and cold mountain solitude lodges (scuba only when explicitly requested).
 - Denali Conditioning & Recovery Periodization:
   * Apr – Mid-May 2027: Peak Denali vertical & pack-weight conditioning (active mountain trips welcome).
   * Mid-to-Late Mar 2027 (post-NOLS NZ), Late May 2027 (May 19–31 pre-Denali taper), and Early Jul 2027 (Jul 1–11 post-Denali recovery): Actively welcome relaxing, low-injury-risk cold-mountain solitude resorts, thermal/sauna sanctuaries, and scenic coastal cruises!

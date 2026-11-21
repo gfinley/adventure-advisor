@@ -1,6 +1,143 @@
 [
   {
     "monthId": "2027-04",
+    "prompt": "Japan Kumano Kodo Nakahechi Trail (Camino sister route) loosely guided ryokan and onsen trek in April",
+    "createdAt": "2026-11-21T06:55:00Z",
+    "adventure": {
+      "id": "custom-2027-04-japan-kumano-kodo-nakahechi",
+      "title": "Japan: Kumano Kodo Nakahechi Trail — Loosely Guided Ryokan & Onsen Trek",
+      "country": "Japan",
+      "region": "Kii Peninsula (Wakayama)",
+      "coordinates": "33.84° N, 135.77° E",
+      "isNordic": false,
+      "categories": [
+        "Hut Hiking",
+        "Mountains",
+        "Cold Solitude Resort"
+      ],
+      "window": "Apr 12–22, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 87,
+      "crowdLevel": "Low",
+      "activityIntensity": "High",
+      "calendarFit": "April 2027 is completely open on your calendar — ideal high-mileage forested mountain conditioning (~70 km, 3,300m+ cumulative ascent across the full Nakahechi and Ogumotori-goe pass) ahead of Denali, and completes the Japan half of the UNESCO Dual Pilgrim credential if paired with Spain's Camino Primitivo in May.",
+      "heroImage": "lapland_huts",
+      "tagline": "Walk the full 70 km imperial Nakahechi pilgrimage from Takijiri-oji over misty Wakayama cedar ridges and the punishing Ogumotori-goe pass to Nachi Falls — hands-free with daily Kumano Travel luggage shuttles, multi-course kaiseki dinners, and centuries-old mountain onsen ryokans.",
+      "whyNow": "Mid-April (Apr 12–22) threads the needle right between Kansai's urban cherry-blossom surge (late March–early April) and Japan's Golden Week crush (Apr 29–May 5): mountain trails stay crisp (10–19°C) with fresh spring cedar foliage, wild azaleas along the ridgelines, strong snowmelt flow over 133m Nachi Falls, and low trail traffic across the demanding Kogumotori-goe and Ogumotori-goe stages.",
+      "flights": {
+        "route": "SEA → HND/NRT → KIX/ITM (Osaka Kansai/Itami)",
+        "airlines": "Japan Airlines (JAL) / ANA",
+        "duration": "12h 45m–15h 20m (1 stop)",
+        "estimatedRoundtripUsd": 1050,
+        "notes": "Verified JAL April 2027 roundtrip Economy fares SEA–OSA start at $1,046 and ANA SEA–OSA from $1,023 (includes 2 checked bags, ideal for trekking poles and trail duffel). Arriving at KIX connects directly to the JR Kuroshio Limited Express south to Kii-Tanabe."
+      },
+      "hotels": [
+        {
+          "name": "Kiri-no-Sato Takahara Lodge (\"Organic Hotel\")",
+          "location": "826 Takahara, Nakahechi-cho, Tanabe, Wakayama",
+          "style": "Boutique Ridgeline Mountain Ryokan & Organic Lodge",
+          "roomType": "Western or Japanese Mountain-View Room (Solo Half-Board, Supper & Breakfast)",
+          "nightlyRateUsd": 195,
+          "soloFriendly": true,
+          "highlights": [
+            "Perched on the famous 'Village in the Mist' ridgeline directly on the Nakahechi trail with panoramic morning sea-of-clouds views over the Hatenashi mountain range",
+            "Verified 2026 Kumano Travel solo half-board tariff (¥28,600 weekdays / ¥31,900 peak, ~$185–$205 USD) includes locally sourced organic multi-course kaiseki supper and hearty Japanese breakfast",
+            "Stone-lined hot spring bath fed by mineral waters trucked from Wataze Onsen plus optional ¥1,000 trail bento lunch prepared for the next morning's hike"
+          ],
+          "bookingUrl": "https://www.kumano-travel.com/en/accommodations/kiri-no-sato-takahara"
+        },
+        {
+          "name": "Ryokan Adumaya",
+          "location": "122 Yunomine, Hongu-cho, Tanabe, Wakayama",
+          "style": "18th-Century Historic Onsen Ryokan",
+          "roomType": "Classic Tatami Room (Solo Half-Board, Supper & Breakfast)",
+          "nightlyRateUsd": 165,
+          "soloFriendly": true,
+          "highlights": [
+            "Founded by a Kumano shrine priest in the 18th century inside 1,800-year-old Yunomine Onsen, steps from the UNESCO World Heritage Tsuboyu sulfur bath",
+            "Lofty timber-beamed indoor baths and rock-lined garden rotenburo fed by natural milky sulfur spring water — ideal muscle recovery after the 24.5 km Chikatsuyu-to-Hongu push",
+            "Verified Kumano Travel half-board plans start from ¥19,900/person (~$165 solo average), featuring traditional kaiseki cuisine cooked with 100% Yunomine hot-spring water"
+          ],
+          "bookingUrl": "https://www.kumano-travel.com/en/search?area=14&kumano_kodo=on&category_type=categorytypeaccommodation"
+        },
+        {
+          "name": "Kumano-Bettei Nakanoshima",
+          "location": "1179-9 Katsuura, Nachikatsuura, Wakayama",
+          "style": "Private-Island Cliffside Onsen Ryokan",
+          "roomType": "Chomontei Ocean-View Japanese Room (Solo Half-Board)",
+          "nightlyRateUsd": 380,
+          "soloFriendly": true,
+          "highlights": [
+            "Occupies its own forested island in Katsuura Bay, accessed via a 5-minute complimentary wooden hotel ferry from Kii-Katsuura Pier right at the end of the Nakahechi route",
+            "Signature Kishu-Chomon-no-Yu open-air oceanfront rotenburo tucked right beside crashing Pacific surf, plus an island headland walking trail and footbath",
+            "Celebratory post-trek seafood kaiseki featuring fresh-landed Katsuura bluefin tuna and Wakayama coastal delicacies, complimentary lounge drinks, and station shuttle coordination"
+          ],
+          "bookingUrl": "https://www.kumano-travel.com/en/accommodations/kumano-bettei-nakanoshima"
+        }
+      ],
+      "vehicle": {
+        "needed": false,
+        "recommendedClass": "Car-Free Rail & Regional Bus (JR Kuroshio Limited Express + Ryujin / Kumano Gobo Nankai Buses)",
+        "provider": "JR West + Ryujin Bus & Kumano Gobo Nankai Bus",
+        "dailyRateUsd": 0,
+        "days": 0,
+        "insuranceAndFuelUsd": 185,
+        "notes": "100% car-free point-to-point transit. Covers Kansai Airport to Kii-Tanabe via JR Kuroshio Limited Express (~¥5,500), return JR Kuroshio from Kii-Katsuura to Osaka/KIX (~¥7,500, or the 5-day ¥16,500 JR Ise-Kumano-Wakayama Area Tourist Pass), plus regional trailhead buses (Tanabe→Takijiri-oji, Yunomine↔Ukegawa/Hitari, Nachisan→Kii-Katsuura) totaling ~¥28,500 (~$185 USD)."
+      },
+      "activities": [
+        {
+          "name": "6-Stage Daily Luggage Shuttle Package (Kii-Tanabe → Takahara → Chikatsuyu → Yunomine Onsen → Koguchi → Nachikatsuura)",
+          "operator": "Kumano Travel Community Reservation System (Kodo-no-Mori / Kumano Luggage Express / Kuchikuma Transport)",
+          "costUsd": 185,
+          "optional": false,
+          "url": "https://www.kumano-travel.com/en/travel-services/kumano-luggage-express"
+        },
+        {
+          "name": "Dual Pilgrim Credential Pack, Kumano-gawa Traditional Wooden River Boat Descent (Hitari → Kumano Hayatama Taisha) & Nachi Sanctuary Entries",
+          "operator": "Tanabe City Kumano Tourism Bureau & Kumanogawa Kawafune",
+          "costUsd": 95,
+          "optional": false,
+          "url": "https://www.tb-kumano.jp/en/kumano-kodo/dual-pilgrim/"
+        },
+        {
+          "name": "Half-Day English-Speaking Kumano Local Guide (Hongu Taisha & Mountain Shinto Lore) + 2-Hour Private Riverfront Onsen at TOJI no Niwa Kawayu",
+          "operator": "Kumano Travel Local Guides & TOJI no Niwa Kumano Kawayu",
+          "costUsd": 225,
+          "optional": true,
+          "url": "https://www.kumano-travel.com/en/tours-activities/local-package-tours"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 55,
+      "theoreticalBooking": {
+        "targetBookBy": "October – December 2026 (Kumano Travel opens Spring 2027 bookings ~5–6 months ahead; Kiri-no-Sato Takahara and Koguchi village lodgings have very limited rooms and all luggage-shuttle inns must be booked through Kumano Travel)",
+        "cancellationFlex": "Kumano Travel requires full payment once itinerary requests are confirmed, with tiered refunds up to 14–21 days prior; JAL/ANA standard economy and Osaka city hotels offer flexible date-change tiers.",
+        "budgetNote": "Canonical solo baseline (using Kiri-no-Sato Takahara at $195/nt across 9 nights) totals ~$3,820 USD ($4,045 with optional private guide & TOJI no Niwa riverfront bath). Actual split-stay lodging — 1 nt Kii-Tanabe ($110) + 1 nt Kiri-no-Sato Takahara ($195) + 1 nt Chikatsuyu half-board minshuku ($125) + 2 nts Ryokan Adumaya ($330) + 1 nt Koguchi Shizen-no-Ie half-board ($110) + 2 nts Kumano-Bettei Nakanoshima ($760) + 1 nt Osaka boutique hotel ($160) = $1,790 — lands at ~$3,855 USD all-in ($4,080 with optional activity), with 7 of 9 nights including full kaiseki dinners and breakfasts."
+      },
+      "itinerary": [
+        "Day 1 (Apr 12–13): Depart Seattle (SEA) on JAL or ANA 1-stop flight to Osaka Kansai (KIX), crossing the International Date Line; arrive Day 2 afternoon, ride the JR Kuroshio Limited Express south along the Pacific coast to Kii-Tanabe (2h 15m), pick up your official Nakahechi map book and Dual Pilgrim Credential at Tanabe Tourist Information Center, and dine in Tanabe's Ajikoji izakaya quarter.",
+        "Day 2 (Apr 14): Drop main duffel at your inn lobby for the Kumano Travel Luggage Shuttle and take the morning Ryujin Bus (40 min) to the Takijiri-oji trailhead; hike Stage 1 steeply uphill through cedar roots (~4 km, +370m, 2–2.5h) to Takahara, checking into Kiri-no-Sato Takahara Lodge for organic mountain kaiseki dinner and Wataze-fed onsen overlooking the Hatenashi peaks.",
+        "Day 3 (Apr 15): Stage 2 — Takahara to Chikatsuyu-oji (~13.5 km, +650m / -620m, 5–6h) rolling along mossy forest ridges, Hashiori-toge Pass, and the iconic Gyuba-doji statue before descending into the terraced riverside hamlet of Chikatsuyu for half-board minshuku hospitality.",
+        "Day 4 (Apr 16): Stage 3 (Endurance Power Day) — Chikatsuyu-oji to Kumano Hongu Taisha & Yunomine Onsen (~24.5 km, +1,050m / -1,100m, 7.5–8.5h) past 800-year-old cedars at Tsugizakura-oji, Kobiro-toge Pass, Hosshinmon-oji, and Fushiogami-oji; collect your Hongu Taisha stamp, walk beneath Japan's tallest torii at Oyunohara, and cross Dainichi-goe into 1,800-year-old Yunomine Onsen for Night 1 at Ryokan Adumaya.",
+        "Day 5 (Apr 17): Active Recovery & Sacred River Pilgrimage — early soak in UNESCO-listed Tsuboyu bath, then bus to Hitari for the traditional wooden flat-bottom boat descent down the sacred Kumano-gawa River to Kumano Hayatama Taisha in Shingu; climb Kamikura Shrine's 538 steep stone steps to Gotobiki-iwa boulder and return to Ryokan Adumaya (optional private guide & TOJI no Niwa riverfront bath in Kawayu).",
+        "Day 6 (Apr 18): Stage 4 — Kogumotori-goe ('Little Cloud-Taking Pass', Ukegawa to Koguchi, ~13 km, +650m / -670m, 4.5–5.5h) climbing ancient stone staircases to the sweeping Hyakken-gura viewpoint over 3,600 peaks of the Kii Peninsula; overnight with hearty trail dinner at Koguchi Shizen-no-Ie.",
+        "Day 7 (Apr 19): Stage 5 (Denali Leg-Conditioning Finale) — Ogumotori-goe ('Big Cloud-Taking Pass', Koguchi to Kumano Nachi Taisha, ~14.5 km, +1,280m / -980m, 6.5–8h), conquering the legendary 800m vertical grind up Dogiri-zaka ('Body-Breaking Slope') to Echizen-toge Pass before descending into vermilion Seiganto-ji Pagoda and 133m Nachi Falls; bus to Kii-Katsuura Pier and ferry across to private-island Kumano-Bettei Nakanoshima.",
+        "Day 8 (Apr 20): Pacific Onsen Recovery — dawn soak in Nakanoshima's wave-washed Kishu-Chomon-no-Yu cliffside bath, stroll the island's forested headland trail, visit Katsuura's morning bluefin tuna auction market, and walk the cobbled 267-step Daimon-zaka cedar staircase at leisure before a second tuna-kaiseki dinner on the island.",
+        "Day 9 (Apr 21): Ride the scenic JR Kuroshio Limited Express north along Wakayama's rocky Pacific coastline back to Osaka (4h); check into a central boutique hotel for a celebratory street-food and izakaya evening in Namba and Hozenji Yokocho.",
+        "Day 10 (Apr 22): Morning JR Haruka Express from Tennoji/Shin-Osaka to Kansai International Airport (KIX) and return flight to Seattle (SEA), arriving home the same calendar day across the International Date Line."
+      ],
+      "sources": [
+        "Kumano Travel (Tanabe City Kumano Tourism Bureau)",
+        "Kiri-no-Sato Takahara Lodge Official Tariff (2026)",
+        "Kumano-Bettei Nakanoshima / Ryokan Adumaya",
+        "JR West Ise-Kumano-Wakayama & Kuroshio Express",
+        "Dual Pilgrim Official Program (tb-kumano.jp)",
+        "Japan Airlines / ANA SEA–OSA Pricing (2026/2027)"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-04",
     "prompt": "Norway Gulen Dive Resort cold-water WWII wreck scuba and Sognefjord alpine cabin solitude in April",
     "createdAt": "2026-11-21T06:25:00Z",
     "adventure": {
@@ -134,143 +271,6 @@
         "29|2 Aurland Boutique Farm Hotel Rooms & Half-Board Policy: https://www.292aurland.com/booking",
         "Flåmsbrygga Hotel & Fjord Tours Pricing (Standard Balcony from 2,500–3,190 NOK; Fjord Safari & Hike from 2,060 NOK): https://www.fjordtours.com/en/norway/accommodation/hotels/flam-flamsbrygga-hotell",
         "Icelandair SEA–BGO April 2027 Fares (from $564 RT): https://www.icelandair.com/en-us/flights/flights-from-seattle-to-bergen"
-      ]
-    }
-  },
-  {
-    "monthId": "2027-05",
-    "prompt": "Scottish Highlands Torridon and Isle of Skye supported ridge trek with optional Scapa Flow WWII wreck drysuit scuba in May",
-    "createdAt": "2026-11-21T06:25:00Z",
-    "adventure": {
-      "id": "custom-2027-05-scotland-torridon-skye-scapa",
-      "title": "Scottish Highlands: Torridon & Isle of Skye Supported Ridge Trek",
-      "country": "Scotland (United Kingdom)",
-      "region": "Wester Ross (Torridon), Isle of Skye & Orkney (Scapa Flow)",
-      "coordinates": "57.55° N, 5.52° W",
-      "isNordic": false,
-      "categories": [
-        "Mountains",
-        "Cold Solitude Resort",
-        "4x4 Overland"
-      ],
-      "window": "May 12–22, 2027",
-      "days": 10,
-      "nights": 9,
-      "offSeasonScore": 89,
-      "crowdLevel": "Low",
-      "activityIntensity": "High",
-      "calendarFit": "May 2027 is completely open on your Adventure Calendar — prime 10-day pre-midge Scottish Highland ridge scrambling & optional Scapa Flow drysuit wreck dive expedition.",
-      "heroImage": "norway_fjords",
-      "tagline": "Scotland’s driest pre-midge off-season window linking Torridon Munros, Skye’s Black Cuillin ridges, and classic Highland solitude lodges.",
-      "whyNow": "Mid-May is Scotland's undisputed insider sweet spot: statistically the driest, brightest month in the Northwest Highlands with 17+ hours of daylight, snow-free sandstone scrambles, zero Highland midges (which hatch in June), far lower crowds than July–August, and Scapa Flow's clearest pre-plankton-bloom underwater visibility (10–15m+ in 7–9°C water).",
-      "flights": {
-        "route": "SEA → LHR/AMS → INV (Inverness, Scottish Highlands)",
-        "airlines": "British Airways / KLM–Delta",
-        "duration": "12h 35m–15h 40m (1 stop)",
-        "estimatedRoundtripUsd": 820,
-        "notes": "Verified Google Flights & Expedia SEA–INV 1-stop roundtrips start around $755–$756 (fastest 12h 35m); budgeting $820 includes checked mountain/dive luggage and saves 7+ hours of roundtrip driving compared to flying into Edinburgh (EDI)."
-      },
-      "hotels": [
-        {
-          "name": "The Torridon (The Stables & Estate Resort)",
-          "location": "Annat, By Achnasheen, Upper Loch Torridon, Wester Ross",
-          "style": "Highland Mountain Solitude Estate",
-          "roomType": "The Stables Classic King Room (Solo B&B Rate; Main House Classic from $455/nt)",
-          "nightlyRateUsd": 225,
-          "soloFriendly": true,
-          "highlights": [
-            "Set on 58 secluded lochside acres directly beneath Liathach and Beinn Alligin with zero public transit and true Highland solitude",
-            "Full access to the 365-whisky bar, Bo & Muc hearty Highland brasserie, 1887 fine-dining restaurant (open Wed–Sun), and on-site Torridon Outdoors",
-            "10-minute drive to the Glen Torridon Liathach trailhead — itinerary scheduled Thu–Sun to align with full estate restaurant operations"
-          ],
-          "bookingUrl": "https://www.thetorridon.com/"
-        },
-        {
-          "name": "Bosville Hotel",
-          "location": "9–13 Bosville Terrace, Portree, Isle of Skye",
-          "style": "Harbourfront Highland Boutique Hotel",
-          "roomType": "Superior Sea-View Room (Solo B&B Rate)",
-          "nightlyRateUsd": 315,
-          "soloFriendly": true,
-          "highlights": [
-            "Contemporary 19-room boutique property built from restored 19th-century cottages overlooking Portree Harbour",
-            "Real-fire lounge bar and acclaimed Dulse & Brose restaurant serving Skye langoustines and Highland venison after long ridge days",
-            "Ideal 25-minute launch point for sunrise Old Man of Storr and Quiraing hikes plus Sligachan / Black Cuillin trailheads"
-          ],
-          "bookingUrl": "https://perlehotels.com/the-bosville/"
-        },
-        {
-          "name": "The Stromness Hotel",
-          "location": "The Pierhead, 15 Victoria Street, Stromness, Orkney",
-          "style": "Historic Pierhead Diver's Harbour Hotel",
-          "roomType": "Harbour-View Single/Double Room (Solo B&B Rate)",
-          "nightlyRateUsd": 165,
-          "soloFriendly": true,
-          "highlights": [
-            "Positioned directly at Stromness Pierhead — steps from the NorthLink Scrabster ferry landing and 06:30 Scapa Flow dive boat departures",
-            "Walkable to Scapa Scuba dive shop (twin-set, drysuit & Nitrox hire) and historic flagstone-lane Stromness pubs",
-            "Just 6 km from the UNESCO Ring of Brodgar, Standing Stones of Stenness, and Maeshowe Chambered Cairn for surface intervals"
-          ],
-          "bookingUrl": "https://www.booking.com/hotel/gb/stromness.en-gb.html"
-        }
-      ],
-      "vehicle": {
-        "needed": true,
-        "recommendedClass": "Midsize AWD SUV (Volvo XC40 AWD / Land Rover Discovery Sport or similar)",
-        "provider": "Sixt / Enterprise at Inverness Airport (INV)",
-        "dailyRateUsd": 75,
-        "days": 10,
-        "insuranceAndFuelUsd": 320,
-        "notes": "Single-track mountain passes (Bealach na Bà, Glen Torridon, Quiraing road) and remote NC500 north coast driving make an AWD SUV ideal (~780 miles total). Insurance/fuel budget includes full CDW excess waiver, fuel, plus roundtrip NorthLink Hamnavoe car+driver ferry from Scrabster to Stromness (~£160/$205 USD)."
-      },
-      "activities": [
-        {
-          "name": "Private Guided Classic Liathach Ridge Traverse & Am Fasarinen Pinnacles (Grade 2 Scramble, 2 Munros, 7–9h, 1,238m Ascent, Rope & Helmet Included)",
-          "operator": "Climb Torridon (WMCI/MCI Local Guides)",
-          "costUsd": 440,
-          "optional": false,
-          "url": "https://www.climbtorridon.co.uk/courses/liathach/"
-        },
-        {
-          "name": "Private Guided Isle of Skye Black Cuillin / Trotternish Ridge Traverse (Full-Day Guided Mountain Scramble or Quiraing–Storr High Link)",
-          "operator": "Climb Torridon / Isle of Skye Mountain Guides",
-          "costUsd": 440,
-          "optional": false,
-          "url": "https://www.climbtorridon.co.uk/courses/skye-cuillin/"
-        },
-        {
-          "name": "Guided Knoydart / Loch Coruisk Boat-In Remote Mountain Traverse",
-          "operator": "Skye Guides / Misty Isle Boat Trips",
-          "costUsd": 210,
-          "optional": true,
-          "url": "https://www.skyeguides.co.uk/"
-        }
-      ],
-      "foodAndMiscPerDayUsd": 85,
-      "theoreticalBooking": {
-        "targetBookBy": "September – November 2026 (The Torridon, Skye boutique hotels, and individual walk-on Scapa Flow dive berths book out 6–9 months ahead for May)",
-        "cancellationFlex": "Bosville Hotel and Stromness Hotel offer refundable May B&B rates; Climb Torridon adjusts ridge objectives dynamically to Highland weather windows; Scapa Flow charter deposits are typically non-refundable inside 12 weeks.",
-        "budgetNote": "Canonical solo baseline (using The Torridon Stables $225/nt across 9 nights) totals ~$5,645 ($6,040 with optional Scapa Flow 2-tank wreck dive). Actual split stay — 4n Torridon Stables ($900) + 3n Bosville Skye ($945) + 2n Stromness Orkney ($330) = $2,175 — tracks within $150 of the baseline (~$5,795 core / ~$6,190 with Scapa scuba)."
-      },
-      "itinerary": [
-        "Day 1 (May 12): Depart Seattle (SEA) on afternoon/evening 1-stop flight to Inverness (INV) via London Heathrow (LHR) or Amsterdam (AMS).",
-        "Day 2 (May 13): Arrive Inverness (INV), collect AWD SUV, drive 1h 30m west through Glen Docherty and Kinlochewe into Glen Torridon; check into The Torridon (Thu–Sun open schedule), sunset shoreline walk along Upper Loch Torridon, dinner at Bo & Muc.",
-        "Day 3 (May 14): Flagship mountain day — meet your Climb Torridon WMCI guide at Glen Torridon trailhead for the 7–9h Classic Liathach Ridge Traverse (1,238m ascent across Spidean a' Choire Leith, roped Grade 2 scrambling on Am Fasarinen Pinnacles, and Mullach an Rathain); celebratory dram in the 365-whisky bar.",
-        "Day 4 (May 15): Active recovery & 4x4 overland day — drive the hairpins of Bealach na Bà to Applecross peninsula for coastal views across to Raasay and Skye, or tackle a self-guided ascent of Beinn Alligin's Horns of Alligin.",
-        "Day 5 (May 16): Depart Torridon south past Eilean Donan Castle and over the Skye Bridge to Portree; check into Bosville Hotel and hike the Old Man of Storr at golden evening light when day-trippers have cleared.",
-        "Day 6 (May 17): Full-day guided Isle of Skye ridge traverse — roped Black Cuillin Munro/scramble objective (e.g., Sgùrr nan Gillean or Bruach na Frìthe) or wild full Trotternish escarpment traverse with your local mountain guide; dinner at Dulse & Brose.",
-        "Day 7 (May 18): Dawn solo circuit of the Quiraing landslip (The Table, The Needle, and Prison ridge) before 08:30, followed by afternoon sea-cliff walk at Neist Point or Talisker Distillery tasting on Loch Harport.",
-        "Day 8 (May 19): Epic Highland overland drive northeast from Skye along the coastal North Coast 500 corridor (Ullapool–Tongue–Thurso, ~4.5–5h) to Scrabster; board the 90-minute NorthLink Hamnavoe ferry past the Old Man of Hoy to Stromness, Orkney (check into The Stromness Hotel).",
-        "Day 9 (May 20): Optional Scapa Flow 2-tank cold-water drysuit wreck dive charter from Stromness Pierhead (diving WWI German High Seas Fleet cruisers like SMS Karlsruhe/Brummer or WWII Tabarka/F2 blockships in crisp 10–15m May visibility), OR full surface exploration of Hoy's Old Man of Hoy sea-stack cliff trek, Skara Brae, and Ring of Brodgar.",
-        "Day 10 (May 21–22): Morning ferry back from Stromness to Scrabster (allowing 24h+ no-fly buffer after May 20 dives), scenic A9 drive south to Inverness Airport (INV, 2h 45m), return SUV, and fly home INV → LHR/AMS → SEA."
-      ],
-      "sources": [
-        "The Torridon Hotel & The Stables Rates (£155–£400/nt, Wed–Sun schedule): https://www.thetorridon.com/stay/the-hotel/",
-        "Climb Torridon Guided Liathach Traverse & Skye Cuillin Guiding (£340/day): https://www.climbtorridon.co.uk/courses/liathach/",
-        "Bosville Hotel Portree Isle of Skye (Perle Hotels): https://perlehotels.com/the-bosville/",
-        "Scapa Flow Wreck Diving 2026 Operators, Depths & Day-Boat Prices (£140–£180/day + kit hire): https://www.orkneystays.com/blog/diving-scapa-flow-wwi-wrecks-marine-life",
-        "MV Invincible & Scapa Flow Diving Charters: https://www.scapa-flow.co.uk/",
-        "Google Flights & Expedia SEA–INV Roundtrip Overview (from $755–$756, 12h 35m fastest): https://www.google.com/travel/flights/flights-from-seattle-to-inverness.html"
       ]
     }
   },
@@ -552,6 +552,280 @@
     }
   },
   {
+    "monthId": "2027-05",
+    "prompt": "Scottish Highlands Torridon and Isle of Skye supported ridge trek with optional Scapa Flow WWII wreck drysuit scuba in May",
+    "createdAt": "2026-11-21T06:25:00Z",
+    "adventure": {
+      "id": "custom-2027-05-scotland-torridon-skye-scapa",
+      "title": "Scottish Highlands: Torridon & Isle of Skye Supported Ridge Trek",
+      "country": "Scotland (United Kingdom)",
+      "region": "Wester Ross (Torridon), Isle of Skye & Orkney (Scapa Flow)",
+      "coordinates": "57.55° N, 5.52° W",
+      "isNordic": false,
+      "categories": [
+        "Mountains",
+        "Cold Solitude Resort",
+        "4x4 Overland"
+      ],
+      "window": "May 12–22, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 89,
+      "crowdLevel": "Low",
+      "activityIntensity": "High",
+      "calendarFit": "May 2027 is completely open on your Adventure Calendar — prime 10-day pre-midge Scottish Highland ridge scrambling & optional Scapa Flow drysuit wreck dive expedition.",
+      "heroImage": "norway_fjords",
+      "tagline": "Scotland’s driest pre-midge off-season window linking Torridon Munros, Skye’s Black Cuillin ridges, and classic Highland solitude lodges.",
+      "whyNow": "Mid-May is Scotland's undisputed insider sweet spot: statistically the driest, brightest month in the Northwest Highlands with 17+ hours of daylight, snow-free sandstone scrambles, zero Highland midges (which hatch in June), far lower crowds than July–August, and Scapa Flow's clearest pre-plankton-bloom underwater visibility (10–15m+ in 7–9°C water).",
+      "flights": {
+        "route": "SEA → LHR/AMS → INV (Inverness, Scottish Highlands)",
+        "airlines": "British Airways / KLM–Delta",
+        "duration": "12h 35m–15h 40m (1 stop)",
+        "estimatedRoundtripUsd": 820,
+        "notes": "Verified Google Flights & Expedia SEA–INV 1-stop roundtrips start around $755–$756 (fastest 12h 35m); budgeting $820 includes checked mountain/dive luggage and saves 7+ hours of roundtrip driving compared to flying into Edinburgh (EDI)."
+      },
+      "hotels": [
+        {
+          "name": "The Torridon (The Stables & Estate Resort)",
+          "location": "Annat, By Achnasheen, Upper Loch Torridon, Wester Ross",
+          "style": "Highland Mountain Solitude Estate",
+          "roomType": "The Stables Classic King Room (Solo B&B Rate; Main House Classic from $455/nt)",
+          "nightlyRateUsd": 225,
+          "soloFriendly": true,
+          "highlights": [
+            "Set on 58 secluded lochside acres directly beneath Liathach and Beinn Alligin with zero public transit and true Highland solitude",
+            "Full access to the 365-whisky bar, Bo & Muc hearty Highland brasserie, 1887 fine-dining restaurant (open Wed–Sun), and on-site Torridon Outdoors",
+            "10-minute drive to the Glen Torridon Liathach trailhead — itinerary scheduled Thu–Sun to align with full estate restaurant operations"
+          ],
+          "bookingUrl": "https://www.thetorridon.com/"
+        },
+        {
+          "name": "Bosville Hotel",
+          "location": "9–13 Bosville Terrace, Portree, Isle of Skye",
+          "style": "Harbourfront Highland Boutique Hotel",
+          "roomType": "Superior Sea-View Room (Solo B&B Rate)",
+          "nightlyRateUsd": 315,
+          "soloFriendly": true,
+          "highlights": [
+            "Contemporary 19-room boutique property built from restored 19th-century cottages overlooking Portree Harbour",
+            "Real-fire lounge bar and acclaimed Dulse & Brose restaurant serving Skye langoustines and Highland venison after long ridge days",
+            "Ideal 25-minute launch point for sunrise Old Man of Storr and Quiraing hikes plus Sligachan / Black Cuillin trailheads"
+          ],
+          "bookingUrl": "https://perlehotels.com/the-bosville/"
+        },
+        {
+          "name": "The Stromness Hotel",
+          "location": "The Pierhead, 15 Victoria Street, Stromness, Orkney",
+          "style": "Historic Pierhead Diver's Harbour Hotel",
+          "roomType": "Harbour-View Single/Double Room (Solo B&B Rate)",
+          "nightlyRateUsd": 165,
+          "soloFriendly": true,
+          "highlights": [
+            "Positioned directly at Stromness Pierhead — steps from the NorthLink Scrabster ferry landing and 06:30 Scapa Flow dive boat departures",
+            "Walkable to Scapa Scuba dive shop (twin-set, drysuit & Nitrox hire) and historic flagstone-lane Stromness pubs",
+            "Just 6 km from the UNESCO Ring of Brodgar, Standing Stones of Stenness, and Maeshowe Chambered Cairn for surface intervals"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/gb/stromness.en-gb.html"
+        }
+      ],
+      "vehicle": {
+        "needed": true,
+        "recommendedClass": "Midsize AWD SUV (Volvo XC40 AWD / Land Rover Discovery Sport or similar)",
+        "provider": "Sixt / Enterprise at Inverness Airport (INV)",
+        "dailyRateUsd": 75,
+        "days": 10,
+        "insuranceAndFuelUsd": 320,
+        "notes": "Single-track mountain passes (Bealach na Bà, Glen Torridon, Quiraing road) and remote NC500 north coast driving make an AWD SUV ideal (~780 miles total). Insurance/fuel budget includes full CDW excess waiver, fuel, plus roundtrip NorthLink Hamnavoe car+driver ferry from Scrabster to Stromness (~£160/$205 USD)."
+      },
+      "activities": [
+        {
+          "name": "Private Guided Classic Liathach Ridge Traverse & Am Fasarinen Pinnacles (Grade 2 Scramble, 2 Munros, 7–9h, 1,238m Ascent, Rope & Helmet Included)",
+          "operator": "Climb Torridon (WMCI/MCI Local Guides)",
+          "costUsd": 440,
+          "optional": false,
+          "url": "https://www.climbtorridon.co.uk/courses/liathach/"
+        },
+        {
+          "name": "Private Guided Isle of Skye Black Cuillin / Trotternish Ridge Traverse (Full-Day Guided Mountain Scramble or Quiraing–Storr High Link)",
+          "operator": "Climb Torridon / Isle of Skye Mountain Guides",
+          "costUsd": 440,
+          "optional": false,
+          "url": "https://www.climbtorridon.co.uk/courses/skye-cuillin/"
+        },
+        {
+          "name": "Guided Knoydart / Loch Coruisk Boat-In Remote Mountain Traverse",
+          "operator": "Skye Guides / Misty Isle Boat Trips",
+          "costUsd": 210,
+          "optional": true,
+          "url": "https://www.skyeguides.co.uk/"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 85,
+      "theoreticalBooking": {
+        "targetBookBy": "September – November 2026 (The Torridon, Skye boutique hotels, and individual walk-on Scapa Flow dive berths book out 6–9 months ahead for May)",
+        "cancellationFlex": "Bosville Hotel and Stromness Hotel offer refundable May B&B rates; Climb Torridon adjusts ridge objectives dynamically to Highland weather windows; Scapa Flow charter deposits are typically non-refundable inside 12 weeks.",
+        "budgetNote": "Canonical solo baseline (using The Torridon Stables $225/nt across 9 nights) totals ~$5,645 ($6,040 with optional Scapa Flow 2-tank wreck dive). Actual split stay — 4n Torridon Stables ($900) + 3n Bosville Skye ($945) + 2n Stromness Orkney ($330) = $2,175 — tracks within $150 of the baseline (~$5,795 core / ~$6,190 with Scapa scuba)."
+      },
+      "itinerary": [
+        "Day 1 (May 12): Depart Seattle (SEA) on afternoon/evening 1-stop flight to Inverness (INV) via London Heathrow (LHR) or Amsterdam (AMS).",
+        "Day 2 (May 13): Arrive Inverness (INV), collect AWD SUV, drive 1h 30m west through Glen Docherty and Kinlochewe into Glen Torridon; check into The Torridon (Thu–Sun open schedule), sunset shoreline walk along Upper Loch Torridon, dinner at Bo & Muc.",
+        "Day 3 (May 14): Flagship mountain day — meet your Climb Torridon WMCI guide at Glen Torridon trailhead for the 7–9h Classic Liathach Ridge Traverse (1,238m ascent across Spidean a' Choire Leith, roped Grade 2 scrambling on Am Fasarinen Pinnacles, and Mullach an Rathain); celebratory dram in the 365-whisky bar.",
+        "Day 4 (May 15): Active recovery & 4x4 overland day — drive the hairpins of Bealach na Bà to Applecross peninsula for coastal views across to Raasay and Skye, or tackle a self-guided ascent of Beinn Alligin's Horns of Alligin.",
+        "Day 5 (May 16): Depart Torridon south past Eilean Donan Castle and over the Skye Bridge to Portree; check into Bosville Hotel and hike the Old Man of Storr at golden evening light when day-trippers have cleared.",
+        "Day 6 (May 17): Full-day guided Isle of Skye ridge traverse — roped Black Cuillin Munro/scramble objective (e.g., Sgùrr nan Gillean or Bruach na Frìthe) or wild full Trotternish escarpment traverse with your local mountain guide; dinner at Dulse & Brose.",
+        "Day 7 (May 18): Dawn solo circuit of the Quiraing landslip (The Table, The Needle, and Prison ridge) before 08:30, followed by afternoon sea-cliff walk at Neist Point or Talisker Distillery tasting on Loch Harport.",
+        "Day 8 (May 19): Epic Highland overland drive northeast from Skye along the coastal North Coast 500 corridor (Ullapool–Tongue–Thurso, ~4.5–5h) to Scrabster; board the 90-minute NorthLink Hamnavoe ferry past the Old Man of Hoy to Stromness, Orkney (check into The Stromness Hotel).",
+        "Day 9 (May 20): Optional Scapa Flow 2-tank cold-water drysuit wreck dive charter from Stromness Pierhead (diving WWI German High Seas Fleet cruisers like SMS Karlsruhe/Brummer or WWII Tabarka/F2 blockships in crisp 10–15m May visibility), OR full surface exploration of Hoy's Old Man of Hoy sea-stack cliff trek, Skara Brae, and Ring of Brodgar.",
+        "Day 10 (May 21–22): Morning ferry back from Stromness to Scrabster (allowing 24h+ no-fly buffer after May 20 dives), scenic A9 drive south to Inverness Airport (INV, 2h 45m), return SUV, and fly home INV → LHR/AMS → SEA."
+      ],
+      "sources": [
+        "The Torridon Hotel & The Stables Rates (£155–£400/nt, Wed–Sun schedule): https://www.thetorridon.com/stay/the-hotel/",
+        "Climb Torridon Guided Liathach Traverse & Skye Cuillin Guiding (£340/day): https://www.climbtorridon.co.uk/courses/liathach/",
+        "Bosville Hotel Portree Isle of Skye (Perle Hotels): https://perlehotels.com/the-bosville/",
+        "Scapa Flow Wreck Diving 2026 Operators, Depths & Day-Boat Prices (£140–£180/day + kit hire): https://www.orkneystays.com/blog/diving-scapa-flow-wwi-wrecks-marine-life",
+        "MV Invincible & Scapa Flow Diving Charters: https://www.scapa-flow.co.uk/",
+        "Google Flights & Expedia SEA–INV Roundtrip Overview (from $755–$756, 12h 35m fastest): https://www.google.com/travel/flights/flights-from-seattle-to-inverness.html"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-05",
+    "prompt": "Spain Camino Primitivo Asturian Mountains Oviedo to Santiago loosely guided Parador and mountain inn trek in May",
+    "createdAt": "2026-11-21T06:55:00Z",
+    "adventure": {
+      "id": "custom-2027-05-spain-camino-primitivo",
+      "title": "Spain: Camino Primitivo — Asturian Mountain & Parador Loosely Guided Trek",
+      "country": "Spain",
+      "region": "Asturias & Galicia (Cantabrian Mountains)",
+      "coordinates": "43.36° N, 5.85° W",
+      "isNordic": false,
+      "categories": [
+        "Hut Hiking",
+        "Mountains"
+      ],
+      "window": "May 5–16, 2027",
+      "days": 11,
+      "nights": 10,
+      "offSeasonScore": 84,
+      "crowdLevel": "Low",
+      "activityIntensity": "High",
+      "calendarFit": "May 2027 sits wide open just three weeks before your tentative June 4–29 Denali window — delivering 221 km and 5,200m+ vertical of sustained Asturian mountain endurance (including the uninhabited Hospitales Route) while completing the final 101 km to earn the Xacobeo 2027 Holy Year Compostela and UNESCO Dual Pilgrim Certificate.",
+      "heroImage": "lapland_huts",
+      "tagline": "Conquer the original, wildest Camino across Asturias' emerald Cantabrian peaks and the remote 1,146m Hospitales ridge — walking light with daily Correos Paq Mochila luggage transfer between historic stone palaces, rural mountain casas, and Spain's flagship 11th- and 15th-century Paradores.",
+      "whyNow": "2027 is a rare Xacobeo Compostelan Holy Year (July 25 falls on a Sunday, opening Santiago Cathedral's Holy Door for the first time since 2021–22), which will pack the Camino Francés all summer — yet early May on the rugged Camino Primitivo stays remarkably uncrowded (<5% of Francés traffic) with wildflower-lined mountain ridges, crisp 12–20°C hiking highs, and fresh snowmelt streams across Asturias and Galicia.",
+      "flights": {
+        "route": "SEA → LHR/FRA/AMS/JFK → MAD (Madrid Barajas)",
+        "airlines": "Iberia–British Airways / United–Lufthansa / Delta–Air France",
+        "duration": "13h 15m–15h 40m (1 stop)",
+        "estimatedRoundtripUsd": 940,
+        "notes": "Verified May SEA–MAD roundtrip fares start around $700–$888 on United and Iberia/BA; budgeting $940 covers main cabin with a checked bag for trekking poles. From Madrid Chamartín, Renfe AVE high-speed trains reach Oviedo in 3h 11m and return from Santiago de Compostela in 2h 57m."
+      },
+      "hotels": [
+        {
+          "name": "Parador de Corias (Monasterio de San Juan Bautista)",
+          "location": "Monasterio de Corias, s/n, Cangas del Narcea, Asturias",
+          "style": "11th-Century Benedictine Monastery Parador & Thermal Spa",
+          "roomType": "Standard Monastery View Room (Solo Occupancy, Breakfast Included)",
+          "nightlyRateUsd": 155,
+          "soloFriendly": true,
+          "highlights": [
+            "Dubbed 'The Asturian Escorial,' this monumental national-heritage monastery sits just 18 minutes by taxi from Pola de Allande and the Borres/Hospitales trailhead",
+            "Indoor monastic thermal spa pool, stone cloisters, and vaulted dining hall serving Asturian mountain stews and Cangas del Narcea mountain wines",
+            "Verified 2026 Paradores.es tariffs run €99–€124 room-only (~$155 USD solo with breakfast in May), offering unmatched historic luxury mid-trek"
+          ],
+          "bookingUrl": "https://paradores.es/en/parador-de-corias"
+        },
+        {
+          "name": "Eurostars Hotel de la Reconquista",
+          "location": "Calle Gil de Jaz 16, Oviedo, Asturias",
+          "style": "18th-Century Baroque National Monument Hotel",
+          "roomType": "Classic Double Room (Solo Occupancy, Breakfast Included)",
+          "nightlyRateUsd": 210,
+          "soloFriendly": true,
+          "highlights": [
+            "Oviedo's most prestigious heritage hotel (official home of the Princess of Asturias Awards), set around monumental stone courtyards 10 minutes on foot from Oviedo Cathedral",
+            "Verified 2026 rates with breakfast average $186–$236 USD/night, steps from Calle Gascona's traditional Asturian cidrerías for pre-trek fueling",
+            "Effortless 8-minute walk from Oviedo Renfe AVE rail station and seamless morning pickup point for Correos Paq Mochila baggage tags"
+          ],
+          "bookingUrl": "https://www.eurostarshotels.com/eurostars-hotel-de-la-reconquista.html"
+        },
+        {
+          "name": "Parador de Santiago de Compostela — Hostal dos Reis Católicos",
+          "location": "Praza do Obradoiro 1, Santiago de Compostela, Galicia",
+          "style": "5-Star 1499 Royal Pilgrim Hospital & Flagship Parador",
+          "roomType": "Historic Cloister Room (Solo Occupancy, Breakfast Included)",
+          "nightlyRateUsd": 285,
+          "soloFriendly": true,
+          "highlights": [
+            "Founded in 1499 by Ferdinand and Isabella as a royal refuge for arriving pilgrims — widely regarded as the oldest continuously operating luxury hotel in the world",
+            "Directly flanks Praza do Obradoiro and Santiago Cathedral's facade, letting you step from your finish-line arrival straight into four Renaissance granite cloisters",
+            "May Xacobeo 2027 Holy Year rates with breakfast budget at ~$285 USD solo (winter lows start from €116–€137, rising steeply for Holy Year spring/summer — book early)"
+          ],
+          "bookingUrl": "https://paradores.es/en/parador-de-santiago-de-compostela"
+        }
+      ],
+      "vehicle": {
+        "needed": false,
+        "recommendedClass": "Car-Free High-Speed Rail & Tactical Stage Transfers (Renfe AVE + Regional Bus/Taxi)",
+        "provider": "Renfe AVE + ALSA / Asturian Rural Taxis",
+        "dailyRateUsd": 0,
+        "days": 0,
+        "insuranceAndFuelUsd": 210,
+        "notes": "100% car-free loop via Madrid. Verified Renfe AVE tickets booked ahead run €25–€72 Madrid–Oviedo (3h 11m) and €18–€65 Santiago–Madrid (2h 57m) (~$110 roundtrip), plus ~$100 for three smart transfers (Oviedo→Salas bypass of suburban highway, Pola de Allande/Borres↔Parador de Corias taxi, and A Fonsagrada→Lugo bus to begin the unbroken final 101 km into Santiago)."
+      },
+      "activities": [
+        {
+          "name": "8-Stage Daily Luggage Transfer (Salas → Tineo → Pola de Allande → Berducedo → Grandas de Salime → A Fonsagrada/Lugo → Ponte Ferreira → Arzúa → Santiago)",
+          "operator": "Correos Paq Mochila (Spain National Post) / Jacotrans",
+          "costUsd": 75,
+          "optional": false,
+          "url": "https://www.correos.es/es/es/particulares/el-camino-con-correos/transporte-de-mochilas"
+        },
+        {
+          "name": "Camino Primitivo Credencial, Xacobeo 2027 Compostela & Dual Pilgrim Registration + Self-Guided GPX Route Pack & Cathedral Roof/Heritage Entries",
+          "operator": "Pilgrim's Reception Office Santiago / Oviedo Cathedral / MACs Adventure GPX Guide",
+          "costUsd": 115,
+          "optional": false,
+          "url": "https://www.macsadventure.com/en-us/tour/camino-primitivo-full-walk/"
+        },
+        {
+          "name": "Parador de Corias Monastic Spa Circuit & 60-Min Post-Mountain Recovery Massage + Asturian Cider & Melide Pulpo Tasting",
+          "operator": "Parador de Corias Spa & Pulpería Ezequiel",
+          "costUsd": 165,
+          "optional": true,
+          "url": "https://paradores.es/en/parador-de-corias"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 75,
+      "theoreticalBooking": {
+        "targetBookBy": "November 2026 – January 2027 (CRITICAL: 2027 is a Xacobeo Holy Year — Parador de Santiago, Parador de Corias, and the small number of boutique casas rurales in Berducedo, Grandas de Salime, and Ponte Ferreira will sell out 6+ months ahead)",
+        "cancellationFlex": "Paradores.es and Eurostars offer refundable flexible rates up to 48–72 hours prior; Correos Paq Mochila can be adjusted up to 20:00 the evening before each stage; Renfe Elige tickets allow fee-free date changes.",
+        "budgetNote": "Canonical solo baseline (using Parador de Corias at $155/nt across 10 nights) totals ~$3,715 USD ($3,880 with optional spa recovery & tastings). Actual split-stay lodging — 1 nt Eurostars Reconquista Oviedo ($210) + 1 nt Hotel Palacio de Merás Tineo ($105) + 1 nt Parador de Corias ($155) + 4 nts rural boutique casas in Berducedo, Grandas de Salime, Ponte Ferreira & Arzúa ($380) + 1 nt Hotel Méndez Núñez Lugo ($115) + 1 nt Parador de Santiago ($285) + 1 nt Madrid boutique hotel ($175) = $1,425 — lands at ~$3,590 USD all-in ($3,755 with optional spa). Preferring a single-invoice turnkey outfitter (MACs Adventure / Follow the Camino) adds ~$750–$950 over DIY booking."
+      },
+      "itinerary": [
+        "Day 1 (May 5): Depart Seattle (SEA) on an afternoon 1-stop transatlantic flight to Madrid-Barajas (MAD).",
+        "Day 2 (May 6): Land in Madrid, transfer to Chamartín station, and ride the Renfe AVE high-speed train north through the Cantabrian tunnels to Oviedo (3h 11m); collect your official Credencial del Peregrino at Oviedo Cathedral (San Salvador), check into Eurostars Hotel de la Reconquista, and toast your start with poured Asturian sidra on Calle Gascona.",
+        "Day 3 (May 7): Morning 40-min bus/taxi hop past suburban road sprawl to medieval Salas, dropping your main duffel for Correos Paq Mochila; hike Stage 1 (Salas → Tineo, 20.5 km, +700m) climbing steadily through chestnut forests and green pastures to the 16th-century Hotel Palacio de Merás in Tineo.",
+        "Day 4 (May 8): Stage 2 (Tineo → Borres → Pola de Allande, 28 km, +880m) traversing high forested ridges past the 8th-century Monastery of Santa María la Real de Obona; take an 18-minute rural taxi south into the Narcea River valley to check into the 11th-century Parador de Corias for monastic thermal spa recovery and Cangas mountain wine.",
+        "Day 5 (May 9): Stage 3 (Denali Conditioning Crown Jewel — Ruta de los Hospitales, 26.5 km, +1,050m): Early taxi back to Borres/Samblismo to climb the wild, uninhabited high mountain ridge over Puerto del Palo (1,146m), passing stone ruins of medieval pilgrim hospitals with sweeping Cantabrian panoramas before descending to a cozy rural mountain inn in Berducedo.",
+        "Day 6 (May 10): Stage 4 (Berducedo → Grandas de Salime, 20.5 km, +650m / -1,150m): Descend steeply through pine switchbacks to the emerald Grandas de Salime Reservoir dam before climbing back into misty Asturian highland meadows; overnight at a boutique stone casa rural in Grandas de Salime.",
+        "Day 7 (May 11): Stage 5 (Grandas de Salime → A Fonsagrada, 25.5 km, +920m): Ascend the dramatic Puerto del Acebo pass (1,030m) crossing from Asturias into Galicia; enjoy Galician octopus lunch in A Fonsagrada, then take the afternoon regional bus (55 min) into UNESCO-walled Lugo to walk atop its intact 2.2 km 3rd-century Roman Walls and stay at Hotel Méndez Núñez.",
+        "Day 8 (May 12): Stage 6 (Unbroken Final 101 km Begins — Lugo → Ponte Ferreira, 28 km, +520m): Collect your Lugo Cathedral stamp and hike southwest across rolling Galician hills, ancient Roman road flagstones, and San Román da Retorta to a restored stone casa rural in Ponte Ferreira.",
+        "Day 9 (May 13): Stage 7 (Ponte Ferreira → Melide → Arzúa, 33.5 km, +640m): Merge with the Camino Francés at Melide for a legendary mid-stage pulpo á feira lunch at Pulpería Ezequiel, then push through fragrant eucalyptus forests and granite hamlets to a boutique country inn in Arzúa.",
+        "Day 10 (May 14): Stage 8 (Endurance Finale — Arzúa → Santiago de Compostela, 39 km, +680m): Dawn departure for a big pre-Denali endurance push via O Pedrouzo and Monte do Gozo straight into Praza do Obradoiro; pass through Santiago Cathedral's open Xacobeo 2027 Holy Door, claim your Holy Year Compostela and UNESCO Dual Pilgrim Certificate, and check into 5-star Parador de Santiago — Hostal dos Reis Católicos.",
+        "Day 11 (May 15–16): Spend May 15 morning at Pilgrim Mass inside Santiago Cathedral and lingering over Galician seafood and Albariño before boarding the afternoon Renfe AVE high-speed train to Madrid (2h 57m) for your final night near Atocha/Barajas, then fly home MAD → SEA on May 16."
+      ],
+      "sources": [
+        "Paradores de Turismo de España (Parador de Corias & Parador de Santiago)",
+        "Correos Paq Mochila Official Tariff & FAQ (2026)",
+        "Eurostars Hotel de la Reconquista / Hotel Palacio de Merás / Hotel Méndez Núñez",
+        "MACs Adventure & CaminoWays Primitivo Guides (2026)",
+        "Renfe AVE Madrid–Oviedo & Santiago–Madrid Fares",
+        "Xacobeo 2027 Compostelan Holy Year Planning Guides"
+      ]
+    }
+  },
+  {
     "monthId": "2027-07",
     "prompt": "East Greenland small-ship Arctic expedition cruise from Reykjavik with glacier hikes in July",
     "createdAt": "2026-11-21T06:25:00Z",
@@ -822,6 +1096,145 @@
         "Icelandair SEA–KEF 2027 Fare Calendar",
         "Blue Car Rental Iceland (2026 Rates & Road Fee Guide)",
         "Wise USD/ISK Exchange Rate (Nov 2026: 125 ISK/USD)"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-09",
+    "prompt": "Tour du Mont Blanc late-season loosely guided refuge and luggage-transfer alpine trek in September",
+    "createdAt": "2026-11-21T06:55:00Z",
+    "adventure": {
+      "id": "custom-2027-09-alps-tour-du-mont-blanc",
+      "title": "France / Italy / Switzerland: Tour du Mont Blanc Late-Season Refuge & Valley Trek",
+      "country": "France / Italy / Switzerland",
+      "region": "Mont Blanc Massif (Chamonix, Courmayeur & Val Ferret)",
+      "coordinates": "45.92° N, 6.87° E",
+      "isNordic": false,
+      "categories": [
+        "Hut Hiking",
+        "Mountains"
+      ],
+      "window": "Sep 13–23, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 86,
+      "crowdLevel": "Moderate-Low",
+      "activityIntensity": "High",
+      "calendarFit": "September 2027 is completely open — catches the final crisp off-peak window right before TMB refuges close for winter.",
+      "heroImage": "lapland_huts",
+      "tagline": "Circumnavigate Western Europe's highest peak across three countries in the crisp, quiet final fortnight before alpine huts shutter — moving light with daily luggage transfers between high half-board refuges and boutique Chamonix/Courmayeur spa hotels.",
+      "whyNow": "Mid-September (Sep 13–23) threads the TMB's golden insider needle: July–August trail queues drop by roughly half, stable autumn high-pressure skies bring crystal visibility across the Grandes Jorasses and Mont Blanc glaciers, alpine larches begin turning gold in Swiss Val Ferret, and anchor huts like Refuge des Mottets (open Jun 10–Sep 20, 2027) and Rifugio Walter Bonatti (open through Sep 30) remain fully staffed. Hiking on foot over Col de la Seigne and Grand Col Ferret also bypasses the annual September–December Mont Blanc Tunnel maintenance closure completely.",
+      "flights": {
+        "route": "SEA → KEF/FRA/LHR/CDG → GVA (Geneva Airport)",
+        "airlines": "Icelandair / Lufthansa–SWISS / Delta–Air France",
+        "duration": "12h 30m–15h 15m (1 stop)",
+        "estimatedRoundtripUsd": 890,
+        "notes": "Icelandair SEA–KEF–GVA roundtrips start from $666 in shoulder season; budgeting $890 covers 1-stop main-cabin fares on SWISS/Lufthansa or Air France with a checked trekking duffel (for poles and daily point-to-point bag transfer)."
+      },
+      "hotels": [
+        {
+          "name": "Hôtel Heliopic & Spa",
+          "location": "610 Route Blanche, Chamonix-Mont-Blanc, France",
+          "style": "4-Star Modern Alpine Boutique & NUXE Spa Hotel",
+          "roomType": "Standard Double Mountain-View Room with Balcony (Solo Rate, Breakfast Included)",
+          "nightlyRateUsd": 225,
+          "soloFriendly": true,
+          "highlights": [
+            "Prime car-free trailhead base just 150m from the Aiguille du Midi cable car station and Chamonix Sud bus hub",
+            "500 m² NUXE wellness spa with heated indoor pool, Finnish sauna, Turkish hammam, ice grotto, and tea room — unmatched for pre- and post-TMB leg recovery",
+            "On-site luggage storage for extra travel bags during the circuit and seamless drop-off/pick-up for Mountain Drop-offs airport shuttles and Taxi Mont-Blanc"
+          ],
+          "bookingUrl": "https://www.heliopic.com/"
+        },
+        {
+          "name": "Hotel Maison Saint Jean",
+          "location": "Vicolo Dolonne 18, Courmayeur, Aosta Valley, Italy",
+          "style": "4-Star Family-Run Italian Alpine Chalet Hotel",
+          "roomType": "Classic Alpine Balcony Room (Solo Occupancy, Breakfast Included)",
+          "nightlyRateUsd": 195,
+          "soloFriendly": true,
+          "highlights": [
+            "Warm wood-beamed rooms in central Courmayeur 500m from the Mont Blanc cable car — the ideal mid-circuit Italian recovery night after crossing Col de la Seigne",
+            "Indoor heated swimming pool, sauna, and Turkish bath for soaking out 2,500m-pass fatigue",
+            "In-house traditional Valdostana restaurant serving homemade pasta, polenta, and local mountain cheeses just steps from Via Roma wine bars"
+          ],
+          "bookingUrl": "https://www.msj.it/"
+        },
+        {
+          "name": "Rifugio Walter Bonatti",
+          "location": "Località Malatrà, Val Ferret (2,025m), Courmayeur, Italy",
+          "style": "Iconic High-Altitude Privately Run Alpine Mountain Hut",
+          "roomType": "Semi-Private 2–4 Bed Alpine Room (Solo Half-Board: 3-Course Dinner & Breakfast)",
+          "nightlyRateUsd": 115,
+          "soloFriendly": true,
+          "highlights": [
+            "Perched on a panoramic 2,025m balcony directly facing the vertical granite spires and hanging glaciers of the Grandes Jorasses",
+            "One of the latest-closing high refuges on the TMB (summer season runs through September 30), paired earlier on Stage 2 with Refuge des Mottets (open through Sep 20, 2027)",
+            "Legendary multi-course Italian mountain half-board dinner (~€100/night in a 2–4 bed room, ~€80 in a dorm) with hot showers and crisp sunset terrace views"
+          ],
+          "bookingUrl": "https://www.rifugiobonatti.it/en/book-now/"
+        }
+      ],
+      "vehicle": {
+        "needed": false,
+        "recommendedClass": "None — 100% Car-Free Alpine Shuttle, Valley Train & Cable Car Network",
+        "provider": "Mountain Drop-offs (GVA ↔ Chamonix), Mont-Blanc Express & Val Ferret / Les Houches Buses",
+        "dailyRateUsd": 0,
+        "days": 0,
+        "insuranceAndFuelUsd": 175,
+        "notes": "Completely car-free expedition: Mountain Drop-offs shared door-to-door shuttle from Geneva Airport to Chamonix runs €47.50 each way (~$105 RT, 1h 15m), plus $70 covering the Chamonix valley bus pass (€10/week with hotel Guest Card; Mont-Blanc Express train is free), Les Houches transit, and the short La Fouly → Champex-Lac Swiss PostBus hop."
+      },
+      "activities": [
+        {
+          "name": "Daily TMB Point-to-Point Luggage Transfer & Self-Guided Route Logistics (1 Duffel up to 15 kg Across 8 Trail Stages + Offline GPX Support)",
+          "operator": "Taxi Mont-Blanc (formerly Taxi Besson) / Mont Blanc Treks",
+          "costUsd": 380,
+          "optional": false,
+          "url": "https://www.montblanctreks.com/tour-du-mont-blanc"
+        },
+        {
+          "name": "Compagnie du Mont-Blanc 2-Day MultiPass & Trailhead Lift Package (Aiguille du Midi 3,842m Summit Cable Car, Montenvers Cog Railway & Bellevue/Flégère Access)",
+          "operator": "Compagnie du Mont-Blanc",
+          "costUsd": 145,
+          "optional": false,
+          "url": "https://aiguilledumidi.montblancnaturalresort.com/en/timetables-rates"
+        },
+        {
+          "name": "Half-Day Guided Grand Balcon Nord & Mer de Glace Glacial Valley Discovery Hike (Montenvers Ice Grotto & Alpine Ecology)",
+          "operator": "Compagnie des Guides de Chamonix",
+          "costUsd": 145,
+          "optional": true,
+          "url": "https://www.chamonix-guides.com/en/"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 65,
+      "theoreticalBooking": {
+        "targetBookBy": "November 2026 – January 2027 (official Mon Tour du Mont-Blanc 2027 refuge reservations opened October 15, 2026; Rifugio Bonatti books directly — reserve thin-capacity mid-September huts first)",
+        "cancellationFlex": "Rifugio Bonatti offers flexible cancellation up to 24 hours before arrival; official TMB association refuges refund deposits on tiered notice; Chamonix & Courmayeur valley hotels offer free-cancellation flex rates; self-guided turnkey operators (MACs Adventure / Mont Blanc Treks / Pygmy Elephant) typically require a 20–25% deposit with balance 60–90 days prior.",
+        "budgetNote": "Canonical solo baseline (using Hôtel Heliopic $225/nt across all 9 nights) totals ~$4,265 ($4,410 with optional Mer de Glace guided hike). Actual realistic split stay — 2 nights Hôtel Heliopic ($450) + 1 night Hotel Maison Saint Jean ($195) + 1 night Les Contamines/Argentière boutique chalet ($185) + 5 nights half-board alpine refuges & Swiss inns including Refuge des Mottets and Rifugio Bonatti ($660) = $1,490 lodging — brings the true DIY loosely guided solo total to ~$3,730 USD all-in (or ~$4,850–$5,350 turnkey through MACs Adventure / Mont Blanc Treks with solo supplement)."
+      },
+      "itinerary": [
+        "Day 1 (Sep 13): Depart Seattle (SEA) on afternoon/evening 1-stop transatlantic flight to Geneva (GVA).",
+        "Day 2 (Sep 14): Arrive Geneva Airport (GVA) and ride Mountain Drop-offs door-to-door shuttle (1h 15m) to Chamonix; check into Hôtel Heliopic & Spa, tag your 15 kg transfer duffel, review late-season pass conditions at La Chamoniarde, and unwind in the NUXE thermal spa.",
+        "Day 3 (Sep 15 — Stage 1, 16 km / +700m / -1,250m): Bus to Les Houches, ride Bellevue cable car (or climb via Col de Voza if lift ends mid-September), cross the Himalayan suspension bridge below Bionnassay Glacier, and hike over Col du Tricot (2,120m) down into Les Contamines-Montjoie; reunite with your luggage at a family chalet inn.",
+        "Day 4 (Sep 16 — Stage 2, 23 km / +1,350m / -650m): Climb the historic Roman flagstone trail past Notre-Dame de la Gorge over Col du Bonhomme (2,329m) and Col de la Croix du Bonhomme (2,479m — noting Croix du Bonhomme hut is closed 2026–2029 for rebuilding), descending past Les Chapieux to Refuge des Mottets (1,864m, open through Sep 20, 2027) for a hearty Savoyard half-board dinner.",
+        "Day 5 (Sep 17 — Stage 3, 22 km / +820m / -1,450m): Hike over the dramatic Franco-Italian border at Col de la Seigne (2,516m) into Val Veny beneath the towering pillars of Aiguille Noire de Peuterey and Miage Glacier; traverse Lac Combal and Col Chécrouit down into Courmayeur (bypassing the Sep–Dec Mont Blanc Tunnel closure completely on foot) and check into Hotel Maison Saint Jean for pool, sauna, and Valdostana pasta.",
+        "Day 6 (Sep 18 — Stage 4, 12 km / +990m / -180m): Ascend steeply out of Courmayeur to Rifugio Bertone and contour along the world-famous Mont de la Saxe balcony directly across from the Grandes Jorasses massif to Rifugio Walter Bonatti (2,025m, open through Sep 30); carry a light overnight kit while your duffel leaps ahead to Switzerland.",
+        "Day 7 (Sep 19 — Stage 5, 20 km / +895m / -1,410m + PostBus): Walk high along Italian Val Ferret past Rifugio Elena and climb Grand Col Ferret (2,537m) into Switzerland; descend through early-autumn golden larch forests to La Fouly and take the short Swiss PostBus to lakeside Champex-Lac (1,477m) to reunite with your main bag.",
+        "Day 8 (Sep 20 — Stage 6, 16 km / +740m / -900m): Trek the classic Bovine high pasture route overlooking the Rhône Valley (or tackle the rugged 2,665m Fenêtre d'Arpette alpine variant if skies are crystal clear and snow-free) down to Trient / Col de la Forclaz for a peaceful Swiss half-board mountain inn stay.",
+        "Day 9 (Sep 21 — Stage 7, 18 km / +1,050m / -1,100m): Climb back into France over Col de Balme (2,191m) for a jaw-dropping head-on amphitheater view of Mont Blanc and the Chamonix Aiguilles; follow the Aiguillette des Posettes ridge to Argentière/Tré-le-Champ and transfer back into Chamonix (Hôtel Heliopic & Spa) for a celebratory fondue dinner.",
+        "Day 10 (Sep 22–23): Ride the first morning Aiguille du Midi cable car (3,842m) for 360° high-glacier views and optional Grand Balcon Nord / Mer de Glace hike with Compagnie des Guides de Chamonix; enjoy your final night at Hôtel Heliopic & Spa before boarding the early Sep 23 Mountain Drop-offs shuttle to Geneva (GVA) for your 1-stop flight home to Seattle (SEA)."
+      ],
+      "sources": [
+        "Mon Tour du Mont-Blanc Official 2027 Refuge Bookings & Refuge des Mottets Dates (Jun 10–Sep 20, 2027): https://www.montourdumontblanc.com/en/refuges/refuge-des-mottets",
+        "Rifugio Walter Bonatti Half-Board Rates & Season Dates (through Sep 30): https://www.rifugiobonatti.it/en/book-now/",
+        "TMB Off-Season Guide & Croix du Bonhomme 2026–2029 Rebuild Closure: https://tmb-alerts.com/guides/tmb-off-season-guide",
+        "Hôtel Heliopic & Spa Chamonix Official Site: https://www.heliopic.com/",
+        "Hotel Maison Saint Jean Courmayeur Official Site: https://www.msj.it/",
+        "TMB Luggage Transfer Pricing (Taxi Mont-Blanc / Peak Plus €310 solo 9-transfer reference): https://tmbtrailguide.com/tour-du-mont-blanc-luggage-transfer/",
+        "Mountain Drop-offs Geneva–Chamonix Shared Transfer (€47.50/way, Nov 2026 rates): https://www.chamonix.net/english/airport-transfers/geneva-airport-to-chamonix",
+        "Compagnie du Mont-Blanc Aiguille du Midi & MultiPass 2026/2027 Fares (€60.20–€83 RT; 2-day MultiPass €113): https://aiguilledumidi.montblancnaturalresort.com/en/timetables-rates",
+        "Icelandair SEA–GVA Roundtrip Fares (from $666): https://www.icelandair.com/en-us/flights/flights-from-seattle-to-geneva"
       ]
     }
   },
@@ -1100,6 +1513,146 @@
         "https://westtours.is/",
         "https://www.theicelandicguide.com/things-to-do/natural-hot-springs-iceland/",
         "https://umferdin.is/en/region/westfjords"
+      ]
+    }
+  },
+  {
+    "monthId": "2027-10",
+    "prompt": "Camino Portugues Coastal and Spiritual Variant loosely guided inn-to-inn trek from Porto to Santiago in October",
+    "createdAt": "2026-11-21T06:55:00Z",
+    "adventure": {
+      "id": "custom-2027-10-portugal-spain-camino-portugues",
+      "title": "Portugal & Spain: Camino Portugués Coastal & Spiritual Variant (Porto → Santiago)",
+      "country": "Portugal & Spain",
+      "region": "Northern Portugal (Porto & Minho Coast) & Galicia, Spain (Rías Baixas & Santiago)",
+      "coordinates": "42.12° N, 8.85° W",
+      "isNordic": false,
+      "categories": [
+        "Hut Hiking",
+        "Mountains"
+      ],
+      "window": "Oct 9–19, 2027",
+      "days": 10,
+      "nights": 9,
+      "offSeasonScore": 88,
+      "crowdLevel": "Low",
+      "activityIntensity": "High",
+      "calendarFit": "October 2027 is completely open — golden Iberian autumn temperatures, quiet Atlantic boardwalks, and 2027 Xacobeo Holy Year + UNESCO Dual Pilgrim eligibility.",
+      "heroImage": "norway_fjords",
+      "tagline": "Walk 175+ km of Atlantic boardwalks, Celtic granite headlands, and Galicia's forested Spiritual Variant from Portugal into Santiago de Compostela — sleeping in historic mountaintop Pousadas and castle Paradores while daily €7 bag transfers carry your pack.",
+      "whyNow": "Mid-October delivers Iberia's prime hiking climate (62–68°F crisp Atlantic air, zero summer heat, grape harvest across Rías Baixas Albariño vineyards) right after September's Camino rush subsides, yet before Correos and coastal luggage services scale back on November 1. Better still, 2027 is a rare Xacobeo Holy Year (when Santiago's Holy Door is open all year), and completing 100+ km on foot into Santiago unlocks the official UNESCO Dual Pilgrim credential when paired with Japan's Kumano Kodo.",
+      "flights": {
+        "route": "SEA → EWR/LHR/MAD/AMS → OPO (Porto) / SCQ (Santiago de Compostela) → MAD/LHR → SEA",
+        "airlines": "TAP Air Portugal / Iberia–British Airways / Delta–KLM",
+        "duration": "13h 45m–16h 30m (1–2 stops, open-jaw multi-city)",
+        "estimatedRoundtripUsd": 940,
+        "notes": "Open-jaw multi-city SEA → OPO inbound and SCQ → SEA return eliminates backtracking from Galicia to Porto; Google Flights shows SEA–OPO roundtrips from $784 and SEA–SCQ one-ways from $400, so $940 budgets main-cabin multi-city fares with a checked bag for daily luggage transfer."
+      },
+      "hotels": [
+        {
+          "name": "Pousada de Viana do Castelo",
+          "location": "Monte de Santa Luzia, Viana do Castelo, Portugal",
+          "style": "4-Star Historic Granite Hilltop Pousada & Monument Manor",
+          "roomType": "Classic Mountain/Ocean-View Room (Solo Rate, Breakfast Included)",
+          "nightlyRateUsd": 155,
+          "soloFriendly": true,
+          "highlights": [
+            "Perched dramatically atop Monte de Santa Luzia overlooking the Atlantic surf, Lima River estuary, and basilica — connected to the coastal trail by funicular or granite footpath",
+            "Granite arches, panoramic stone terraces, outdoor pool, and refined Minho regional dining with crisp Vinho Verde",
+            "Verified shoulder-season solo rates from €114–€145/night with direct luggage drop-off support"
+          ],
+          "bookingUrl": "https://www.pousadas.pt/pt/hotel/pousada-viana"
+        },
+        {
+          "name": "Parador de Baiona",
+          "location": "Avenida Arquitecto Jesús Valverde 3, Península de Monterreal, Baiona, Spain",
+          "style": "4-Star Fortified Medieval Atlantic Peninsula Castle Hotel",
+          "roomType": "Standard Castle/Bay-View Room (Solo Rate, Breakfast Included)",
+          "nightlyRateUsd": 175,
+          "soloFriendly": true,
+          "highlights": [
+            "Housed inside the walled 16th-century Fortress of Monterreal jutting directly into the Atlantic facing the Cíes Islands National Park",
+            "3 km of private sunset rampart walks around the medieval battlements directly off your room after hiking in from Portugal",
+            "Verified October solo rates starting from €119–€165/night, with Galician seafood dining room and effortless TuiTrans/Correos luggage delivery"
+          ],
+          "bookingUrl": "https://paradores.es/en/parador-de-baiona"
+        },
+        {
+          "name": "Parador de Santiago – Hostal dos Reis Católicos",
+          "location": "Praza do Obradoiro 1, Santiago de Compostela, Spain",
+          "style": "5-Star 1499 Royal Pilgrim Hospital & Grand Monument Hotel",
+          "roomType": "Standard Historic Cloister Room (Solo Rate, Breakfast Included)",
+          "nightlyRateUsd": 245,
+          "soloFriendly": true,
+          "highlights": [
+            "Built in 1499 by Ferdinand and Isabella specifically as a royal hospital for Camino pilgrims — widely regarded as the oldest continuously operating hotel in the world",
+            "Front doors open directly onto Praza do Obradoiro facing Santiago Cathedral and the 2027 Holy Year Door",
+            "Four serene Renaissance granite cloisters, vaulted stone dining hall, and unbeatable celebratory finish for a 2-night recovery stay"
+          ],
+          "bookingUrl": "https://paradores.es/en/parador-de-santiago-de-compostela"
+        }
+      ],
+      "vehicle": {
+        "needed": false,
+        "recommendedClass": "None — 100% Car-Free Coastal Rail, River Water Taxi & Airport Bus Network",
+        "provider": "Metro do Porto, CP Comboios de Portugal, Xacobeo Transfer (Minho River) & Monbus SCQ Shuttle",
+        "dailyRateUsd": 0,
+        "days": 0,
+        "insuranceAndFuelUsd": 75,
+        "notes": "Completely car-free point-to-point pilgrimage: Porto Airport Metro (€3), scenic CP coastal train Porto → Viana do Castelo (€12) to concentrate your 10-day window on the premier Atlantic & Spiritual Variant stages, Caminha → A Guarda Minho River pilgrim water taxi via Xacobeo Transfer (€6, pre-booked), short Vigo outskirts rail hop (€4), Santiago Airport shuttle (€3), plus local taxi buffer."
+      },
+      "activities": [
+        {
+          "name": "Door-to-Door Daily Luggage Transfer Across Portugal, Coastal Galicia & the Spiritual Variant (8 Stages, up to 20 kg per Bag)",
+          "operator": "TuiTrans & Correos Paq Mochila",
+          "costUsd": 70,
+          "optional": false,
+          "url": "https://tuitrans.com/?lang=en"
+        },
+        {
+          "name": "Variante Espiritual 'Ruta Traslatio' Maritime-Fluvial Pilgrim Boat Crossing (Vilanova de Arousa → Pontecesures) + Official Compostela & UNESCO Dual Pilgrim Credential",
+          "operator": "La Barca del Peregrino / Amare Turismo Náutico & Pilgrim's Reception Office",
+          "costUsd": 45,
+          "optional": false,
+          "url": "https://www.labarcadelperegrino.com/en/price-traslatio-route-pilgrim-ship-spiritual-variant/"
+        },
+        {
+          "name": "Rías Baixas Albariño Harvest Cellar Tour & Tasting at 17th-Century Pazo de Fefiñáns (Val do Salnés Self-Guided Detour)",
+          "operator": "Bodegas del Palacio de Fefiñáns (Cambados)",
+          "costUsd": 40,
+          "optional": true,
+          "url": "https://en.4vides.com/espana/ruta/rias-baixas"
+        }
+      ],
+      "foodAndMiscPerDayUsd": 65,
+      "theoreticalBooking": {
+        "targetBookBy": "January – March 2027 (2027 is a Xacobeo Holy Year — lock in Parador de Santiago, Parador de Baiona, and Pousada de Viana do Castelo 6–9 months ahead before Holy Year inventory tightens)",
+        "cancellationFlex": "Paradores and Pestana Pousadas offer flexible cancellation up to 48–72 hours prior on standard B&B tariffs; TuiTrans and Correos Paq Mochila allow day-before stage updates via WhatsApp/online; La Barca del Peregrino and Xacobeo Transfer allow flexible tide/weather adjustments.",
+        "budgetNote": "Canonical solo baseline (using Pousada de Viana do Castelo $155/nt across 9 nights) totals ~$3,175 ($3,215 with optional Albariño Pazo cellar tasting). Actual recommended historic split stay — 1 night Porto boutique ($160) + 1 night Pousada de Viana do Castelo ($155) + 1 night Caminha riverside inn ($125) + 1 night Parador de Baiona ($175) + 1 night Pontevedra boutique ($135) + 1 night Armenteira Galician Pazo ($145) + 1 night Vilanova de Arousa coastal inn ($120) + 2 nights 5-star Parador de Santiago ($490) = $1,505 lodging — lands at just ~$3,285 USD all-in (or ~$3,750–$4,250 turnkey via Macs Adventure / Inntravel with solo supplement)."
+      },
+      "itinerary": [
+        "Day 1 (Oct 9): Depart Seattle (SEA) on afternoon/evening 1–2 stop transatlantic flight to Porto (OPO).",
+        "Day 2 (Oct 10): Arrive Porto (OPO), ride the metro into historic Ribeira, pick up your official Pilgrim Credencial at Sé do Porto Cathedral, warm up with a 10 km Atlantic sunset walk along Foz do Douro to Matosinhos, and overnight at a boutique Porto inn.",
+        "Day 3 (Oct 11 — Coastal Rail Hop + 14 km Atlantic Walk): Take the morning CP coastal train north from Porto São Bento toward Viana do Castelo to focus your 10-day window on the finest coastal & Spiritual Variant stages; walk along quiet Atlantic dunes and Eiffel's iron bridge into town, then ascend Monte de Santa Luzia to stay at the hilltop Pousada de Viana do Castelo.",
+        "Day 4 (Oct 12 — Stage 2, 27 km / +310m): Walk the rugged Portuguese Atlantic Senda Litoral boardwalks and stone coastal tracks past Vila Praia de Âncora and pine-backed beaches to the walled Minho River mouth at Caminha; TuiTrans delivers your bag to your boutique riverside inn.",
+        "Day 5 (Oct 13 — Stage 3, 28 km / +460m + Minho River Boat): Cross from Portugal into Spain aboard the 10-minute Xacobeo Transfer pilgrim water taxi (€6) across the Minho River to A Guarda, hike past the Celtic hillfort of Monte Santa Tegra and the wave-washed 12th-century Monastery of Santa María de Oia, and follow Atlantic cliff paths into Baiona (option to trim 8 km by coastal bus) for a castle night at Parador de Baiona.",
+        "Day 6 (Oct 14 — Stage 4, 24 km + short rail bypass): Walk the scenic Ría de Vigo coastal headland past Nigrán and Playa América toward Vigo, take a 15-minute suburban train hop past industrial Vigo to Redondela/Arcade (famous for oysters), and hike medieval cobbled lanes across Ponte Sampaio's Roman bridge into pedestrianized Pontevedra.",
+        "Day 7 (Oct 15 — Spiritual Variant Day 1, 23 km / +540m): Branch onto the quiet Variante Espiritual; pause in seaside Combarro to photograph its granite hórreos (tidewater granaries) before climbing through chestnut forests and autumn vineyards to the tranquil 12th-century Cistercian Monastery of Santa María de Armenteira, overnighting in a restored rural Galician Pazo.",
+        "Day 8 (Oct 16 — Spiritual Variant Day 2, 24 km / +120m / -490m): Descend the mossy Ruta da Pedra e da Auga (Route of Stone and Water) past historic granite watermills and continue through Val do Salnés Albariño vineyards (optional afternoon cellar tasting at 17th-century Pazo de Fefiñáns in Cambados) to coastal Vilanova de Arousa.",
+        "Day 9 (Oct 17 — Traslatio Boat + Final 25 km Walk into Santiago): Board La Barca del Peregrino (€30) or Amare Turismo Náutico (€32) at sunrise to sail the maritime-fluvial Ruta Traslatio up the Ría de Arousa and Ulla River past 17 granite stone crosses to Pontecesures/Padrón; hike the final 25 km into Praza do Obradoiro (175+ km total walked), collect your Compostela, and register for the UNESCO Dual Pilgrim credential (pairing with Japan's Kumano Kodo). Check into the 1499 Parador de Santiago.",
+        "Day 10 (Oct 18–19): Enjoy a celebratory recovery day in Santiago de Compostela during the 2027 Xacobeo Holy Year — walk through the Cathedral's Holy Door, graze on Galician pulpo á feira and razor clams at Mercado de Abastos, and spend a final night at the Parador de Santiago before taking the morning shuttle to SCQ Airport on Oct 19 for your return flight to Seattle (SEA)."
+      ],
+      "sources": [
+        "Pousada de Viana do Castelo Official Pestana Pousadas Page (rates from €114): https://www.pousadas.pt/pt/hotel/pousada-viana",
+        "Parador de Baiona Official Paradores Page (rates from €119): https://paradores.es/en/parador-de-baiona",
+        "Parador de Santiago de Compostela – Hostal dos Reis Católicos Official Page: https://paradores.es/en/parador-de-santiago-de-compostela",
+        "TuiTrans Door-to-Door Camino Portugués & Spiritual Variant Luggage Transfer (~€7/stage): https://tuitrans.com/?lang=en",
+        "Correos Paq Mochila Camino Luggage Transfer (Full Coastal/Spiritual Service through Oct 31): https://www.elcaminoconcorreos.com/en/rucksack-transfer",
+        "La Barca del Peregrino – Ruta Traslatio Boat Crossing (€30; Amare Turismo Náutico €32): https://www.labarcadelperegrino.com/en/price-traslatio-route-pilgrim-ship-spiritual-variant/",
+        "Macs Adventure Camino Portugués Coastal Way & Xacobeo Transfer Minho River Ferry (€6): https://www.macsadventure.com/en-us/tour/camino-portugues-coastal-way/",
+        "Tanabe City Kumano Tourism Bureau – Official UNESCO Dual Pilgrim Program (Camino + Kumano Kodo): https://www.tb-kumano.jp/en/kumano-kodo/dual-pilgrim/",
+        "Camino de Santiago 2027 Xacobeo Holy Year Calendar & Crowd Data: https://luckyearth.org/city/camino-de-santiago-spain/",
+        "Google Flights SEA–OPO (from $784 RT) & SEA–SCQ (from $400 OW): https://www.google.com/travel/flights/flights-from-seattle-to-porto.html"
       ]
     }
   },
