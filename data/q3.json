@@ -1,0 +1,1201 @@
+[
+  {
+    "monthId": "2027-06",
+    "monthLabel": "June 2027",
+    "shortLabel": "Jun '27",
+    "seasonTag": "Midnight Sun Shoulder & Post-Denali Strike Window",
+    "availabilityStatus": "busy",
+    "recommendedDuration": "4–6 day strike",
+    "calendarEvents": [
+      {
+        "title": "NOLs Denali Tenative",
+        "start": "2027-06-04",
+        "end": "2027-06-29",
+        "status": "tentative"
+      }
+    ],
+    "openWindows": [
+      "Jun 1–3 (Pre-Denali Tune-Up)",
+      "Jun 29–Jul 4 (Post-Denali Alaska Add-On)",
+      "Backup Strike (if Denali shifts)"
+    ],
+    "advisorNote": "Because NOLS Denali tentatively anchors Jun 4–29, June works best as a precision 4–5 day strike: either tack on a zero-jetlag Kenai Fjords scuba + Harding Icefield decompression immediately out of Anchorage on Jun 29, warm up locally in the North Cascades & Hood Canal Jun 1–4, or trigger the early-June Iceland Midnight Sun backup if Denali slides.",
+    "adventures": [
+      {
+        "id": "jun-2027-kenai-fjords-scuba",
+        "title": "Post-Denali Alaska: Kenai Fjords Cold-Water Scuba & Harding Icefield Strike",
+        "country": "United States (Alaska)",
+        "region": "Kenai Peninsula / Seward & Resurrection Bay",
+        "coordinates": "60.1042° N, 149.4422° W",
+        "isNordic": false,
+        "categories": [
+          "Mountains",
+          "Scuba",
+          "4x4 Overland"
+        ],
+        "window": "Jun 29–Jul 4, 2027",
+        "days": 5,
+        "nights": 4,
+        "offSeasonScore": 76,
+        "crowdLevel": "Moderate-Low",
+        "activityIntensity": "High",
+        "calendarFit": "Seamless immediate add-on the moment NOLS Denali wraps in Anchorage on Jun 29 — zero extra trans-Pacific flight and only a 2.5-hour coastal 4x4 drive south to Seward.",
+        "heroImage": "arctic_scuba",
+        "tagline": "Trade Denali glacier ropes for Resurrection Bay drysuit kelp walls and an 8-mile alpine climb onto the Harding Icefield.",
+        "whyNow": "Late June delivers nearly 19 hours of daylight, newly snow-cleared upper switchbacks on the Harding Icefield Trail, and crisp 45–48°F Resurrection Bay visibility around Fox Island's pinnacles before peak July cruise-ship surges.",
+        "flights": {
+          "route": "Already in Anchorage (ANC) post-Denali → shift ANC–SEA return by 5 days",
+          "airlines": "Alaska Airlines (nonstop SEA ↔ ANC)",
+          "duration": "3h 40m return to SEA",
+          "estimatedRoundtripUsd": 150,
+          "notes": "Budgeted as ~$150 return-date fare delta since you are already flying SEA–ANC for NOLS Denali. Standalone June nonstop SEA–ANC roundtrip averages $420–$480."
+        },
+        "hotels": [
+          {
+            "name": "Seward Windsong Lodge",
+            "location": "Resurrection River Valley, Seward",
+            "style": "Rainforest Mountain Lodge",
+            "roomType": "Deck Room (King or Queen, Forest View)",
+            "nightlyRateUsd": 315,
+            "soloFriendly": true,
+            "highlights": [
+              "Tucked in quiet coastal spruce forest along the Resurrection River on Exit Glacier Rd",
+              "10-minute drive to Harding Icefield trailhead and 12 minutes to Seward dive docks",
+              "On-site Resurrection Roadhouse serves wild Alaska seafood & hearty post-dive breakfasts"
+            ],
+            "bookingUrl": "https://www.pursuit.com/stays/seward-windsong-lodge/"
+          },
+          {
+            "name": "Harbor 360 Hotel",
+            "location": "Seward Small Boat Harbor",
+            "style": "Waterfront Expedition Base Hotel",
+            "roomType": "Harbor View King Room",
+            "nightlyRateUsd": 285,
+            "soloFriendly": true,
+            "highlights": [
+              "Directly on Seward Small Boat Harbor steps from Dive Alaska water-taxi departure slips",
+              "Includes hot breakfast buffet, indoor pool, and post-dive soaking hot tub",
+              "Zero morning commute on early 7:00 AM Resurrection Bay dive charter days"
+            ],
+            "bookingUrl": "https://harbor360hotel.com/"
+          },
+          {
+            "name": "Exit Glacier Lodge",
+            "location": "Herman Leirer Road, Seward",
+            "style": "Quiet Trailhead Cabins & Lodge",
+            "roomType": "Deluxe Queen Lodge Room",
+            "nightlyRateUsd": 265,
+            "soloFriendly": true,
+            "highlights": [
+              "Closest boutique base to Kenai Fjords National Park Exit Glacier entrance",
+              "Peaceful wooded solitude away from cruise-port traffic with creekside views",
+              "Strong value for solo travelers seeking early trailhead starts and salmon pub dining"
+            ],
+            "bookingUrl": "https://www.alaska.org/destination/seward/hotels"
+          }
+        ],
+        "vehicle": {
+          "needed": true,
+          "recommendedClass": "Mid-Size AWD/4x4 SUV (Subaru Forester or Toyota RAV4)",
+          "provider": "National / Alamo at Anchorage (ANC)",
+          "dailyRateUsd": 115,
+          "days": 5,
+          "insuranceAndFuelUsd": 165,
+          "notes": "Pick up at ANC on Jun 29 for the scenic 125-mile Seward Highway drive along Turnagain Arm; AWD handles wet gravel pullouts and drysuit gear haul."
+        },
+        "activities": [
+          {
+            "name": "Fox Island Barge Cold-Water Drysuit Dive (2 Tanks, Resurrection Bay)",
+            "operator": "Dive Alaska",
+            "costUsd": 675,
+            "optional": false,
+            "url": "https://divealaska.net/guided-diving/"
+          },
+          {
+            "name": "Drysuit, Undergarment, Regulator & BCD Rental Package (2 Days)",
+            "operator": "Dive Alaska (Anchorage pickup en route to Seward)",
+            "costUsd": 220,
+            "optional": true,
+            "url": "https://divealaska.net/scuba-gear/"
+          },
+          {
+            "name": "Harding Icefield Trail & Guided Exit Glacier Ice Hike",
+            "operator": "Exit Glacier Guides / Kenai Fjords National Park",
+            "costUsd": 145,
+            "optional": true,
+            "url": "https://www.nps.gov/kefj/planyourvisit/harding_icefield_trail.htm"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 105,
+        "theoreticalBooking": {
+          "targetBookBy": "February 2027 (immediately once NOLS Denali dates lock)",
+          "cancellationFlex": "Pursuit / Harbor 360 offer refundable rates up to 7–14 days out; ANC car rental free cancellation.",
+          "budgetNote": "Total solo spend ~$3,230–$3,595 including shared 2–4 diver Fox Island charter ($675; private solo barge charter runs $1,125)."
+        },
+        "itinerary": [
+          "Day 1 (Jun 29): Finish NOLS Denali in Anchorage, pick up drysuit gear at Dive Alaska + 4x4 SUV at ANC, drive Seward Highway south to Seward.",
+          "Day 2 (Jun 30): Full-day Resurrection Bay drysuit scuba charter to Fox Island Spit — kelp forests, wolf eels, rockfish walls & glacial fjord drop-offs.",
+          "Day 3 (Jul 1): Alpine recovery push up the 8.2-mile Harding Icefield Trail (3,500 ft gain) overlooking the 700-square-mile icefield.",
+          "Day 4 (Jul 2): Morning Caines Head coastal trail or optional Whittier/Resurrection shore dive; evening waterfront king crab & sauna recovery.",
+          "Day 5 (Jul 3–4): Scenic drive back north via Turnagain Arm & Girdwood Alyeska ridge hike, drop SUV at ANC, evening nonstop flight home to SEA."
+        ],
+        "sources": [
+          "https://divealaska.net/guided-diving/",
+          "https://divealaska.net/scuba-gear/",
+          "https://www.pursuit.com/stays/seward-windsong-lodge/",
+          "https://harbor360hotel.com/"
+        ]
+      },
+      {
+        "id": "jun-2027-iceland-midnight-sun",
+        "title": "Iceland Express Midnight Sun: Snæfellsnes & Silfra 5-Day Strike",
+        "country": "Iceland",
+        "region": "Þingvellir, West Iceland & Snæfellsnes Peninsula",
+        "coordinates": "64.8211° N, 23.3853° W",
+        "isNordic": true,
+        "categories": [
+          "Mountains",
+          "Scuba",
+          "4x4 Overland"
+        ],
+        "window": "Jun 1–5, 2027 (or Denali Backup Strike)",
+        "days": 5,
+        "nights": 4,
+        "offSeasonScore": 84,
+        "crowdLevel": "Low",
+        "activityIntensity": "High",
+        "calendarFit": "High-impact Nordic backup strike if NOLS Denali shifts, or an early-June pre-peak solstice sprint taking advantage of Seattle's nonstop KEF flight.",
+        "heroImage": "iceland_winter",
+        "tagline": "Drysuit-dive between tectonic plates at Silfra and summit glacier-capped Snæfellsjökull under 22-hour early-June daylight.",
+        "whyNow": "Early June sits right before peak July/August tour-bus crowds and pricing, yet snowpack on Snæfellsjökull is prime for crampon glacier travel and 22-hour light lets you dive Silfra at dusk or dawn with zero crowds.",
+        "flights": {
+          "route": "SEA → KEF (Nonstop)",
+          "airlines": "Icelandair (seasonal nonstop; Alaska Airlines codeshare)",
+          "duration": "7h 30m outbound / 7h 45m return",
+          "estimatedRoundtripUsd": 780,
+          "notes": "Direct overnight flight from Seattle lands at KEF ~6:30 AM — pick up 4x4 immediately and start Day 1 without burning a hotel night."
+        },
+        "hotels": [
+          {
+            "name": "Hótel Búðir",
+            "location": "Búðir, Snæfellsnes Peninsula",
+            "style": "Iconic Lava-Field Boutique Solitude Hotel",
+            "roomType": "Mountain & Glacier View Solo/Double Room",
+            "nightlyRateUsd": 385,
+            "soloFriendly": true,
+            "highlights": [
+              "Isolated beside the historic black wooden Búðakirkja church with direct Snæfellsjökull glacier views",
+              "Acclaimed Nordic-Icelandic tasting kitchen (lamb, Arctic char, local langoustine)",
+              "Steps from coastal basalt trails and golden-hour midnight sun solitude"
+            ],
+            "bookingUrl": "https://hotelbudir.is/"
+          },
+          {
+            "name": "ION Adventure Hotel",
+            "location": "Nesjavellir (15 min from Þingvellir / Silfra)",
+            "style": "Design Hotels Geothermal Mountain Lodge",
+            "roomType": "Single Sub-Parterre / Standard Mountain View Room",
+            "nightlyRateUsd": 365,
+            "soloFriendly": true,
+            "highlights": [
+              "Cantilevered lava-field architecture 15 minutes from the Silfra dive platform",
+              "Outdoor heated geothermal lap pool, sauna, and Silfra Restaurant overlooking Lake Þingvallavatn",
+              "Dedicated solo-friendly room category with strong early-June shoulder pricing vs peak winter"
+            ],
+            "bookingUrl": "https://www.designhotels.com/hotels/iceland/selfoss/ion-luxury-adventure-hotel/"
+          },
+          {
+            "name": "Hótel Húsafell",
+            "location": "Húsafell, Borgarfjörður (West Iceland)",
+            "style": "Geothermal Highland-Edge Boutique Hotel",
+            "roomType": "Standard Solo/Double Room (Breakfast & Pools Included)",
+            "nightlyRateUsd": 335,
+            "soloFriendly": true,
+            "highlights": [
+              "Powered 100% by local geothermal & hydro energy at the edge of Langjökull glacier",
+              "Direct access to Húsafell Canyon Baths and Hraunfossar lava waterfalls",
+              "Ideal midway base linking Þingvellir diving with the Snæfellsnes Peninsula"
+            ],
+            "bookingUrl": "https://www.hotelhusafell.com/"
+          }
+        ],
+        "vehicle": {
+          "needed": true,
+          "recommendedClass": "Toyota RAV4 Automatic 4x4 (or Dacia Duster 4x4)",
+          "provider": "Blue Car Rental (KEF Airport, 4-min walk)",
+          "dailyRateUsd": 125,
+          "days": 5,
+          "insuranceAndFuelUsd": 210,
+          "notes": "2026/2027 Blue Car Rental RAV4 starts ~16,564 ISK ($120/day); budget includes zero-excess Liability Waiver (gravel/ash/wind) + 750 km fuel loop."
+        },
+        "activities": [
+          {
+            "name": "Diving Silfra Fissure — Drysuit Scuba (Meet on Location, 100m Visibility)",
+            "operator": "DIVE.IS",
+            "costUsd": 285,
+            "optional": false,
+            "url": "https://www.dive.is/diving-snorkeling-tours/diving-day-tours/diving-silfra-midnight-sun"
+          },
+          {
+            "name": "Snæfellsjökull Glacier Summit Hike (Guided Crampon & Rope Ascent)",
+            "operator": "Arctic Adventures / Summit Guides Iceland",
+            "costUsd": 265,
+            "optional": false,
+            "url": "https://adventures.is/"
+          },
+          {
+            "name": "Húsafell Canyon Baths Guided Geothermal Soak",
+            "operator": "Húsafell Activities",
+            "costUsd": 95,
+            "optional": true,
+            "url": "https://www.hotelhusafell.com/"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 110,
+        "theoreticalBooking": {
+          "targetBookBy": "March 2027 (or 6 weeks prior if triggered as Denali backup)",
+          "cancellationFlex": "Blue Car Rental allows free cancellation up to 24–48h prior; DIVE.IS free cancel 48h prior; ION collects payment 16 days prior.",
+          "budgetNote": "Total solo strike ~$4,175 (nonstop SEA–KEF $780 + 4n boutique lodging ~$1,460 + 4x4 $835 + Silfra/glacier $550 + dining $550)."
+        },
+        "itinerary": [
+          "Day 1: Arrive KEF 6:30 AM, collect Blue Car Rental 4x4, drive to Þingvellir for afternoon DIVE.IS Silfra drysuit scuba dive; check in at ION Adventure Hotel.",
+          "Day 2: Drive north through Hvalfjörður fjord to Borgarfjörður, hike Glymur canyon waterfall (or Hraunfossar), soak in Húsafell Canyon Baths.",
+          "Day 3: Cross into Snæfellsnes Peninsula, check in at Hótel Búðir, hike the Arnarstapi-to-Hellnar basalt sea cliffs under late-evening midnight sun.",
+          "Day 4: Full-day guided crampon summit push up Snæfellsjökull stratovolcano (1,446 m) + Kirkjufell coastal ridge golden hour.",
+          "Day 5: Morning lava-field coffee at Búðir, coastal drive south to KEF Airport for afternoon nonstop Icelandair return to Seattle."
+        ],
+        "sources": [
+          "https://www.dive.is/diving-snorkeling-tours/diving-day-tours/diving-silfra-midnight-sun",
+          "https://www.bluecarrental.is/our-cars/toyota-rav4-automatic/",
+          "https://guide.michelin.com/en/hotels-stays/selfoss/ion-adventure-hotel-7019",
+          "https://www.icelandair.com/en-us/flights/flights-from-seattle-to-reykjavik"
+        ]
+      },
+      {
+        "id": "jun-2027-north-cascades-hood-canal",
+        "title": "North Cascades / Methow Valley Alpine Hut & Hood Canal Cold-Water Dive",
+        "country": "United States (Washington)",
+        "region": "Methow Valley / North Cascades & Hood Canal",
+        "coordinates": "48.5918° N, 120.4023° W",
+        "isNordic": false,
+        "categories": [
+          "Mountains",
+          "Hut Hiking",
+          "Scuba"
+        ],
+        "window": "Jun 1–4, 2027 (Pre-Denali Window)",
+        "days": 4,
+        "nights": 3,
+        "offSeasonScore": 88,
+        "crowdLevel": "Low",
+        "activityIntensity": "High",
+        "calendarFit": "Fits cleanly into the Jun 1–3/4 open slot right before NOLS Denali — zero flights, drive straight from Kitsap Peninsula for a final drysuit dive + high-alpine gear shakedown.",
+        "heroImage": "solitude_lodge",
+        "tagline": "Pair a Giant Pacific Octopus drysuit dive in Hood Canal with early-June Methow backcountry huts and freshly opened North Cascades passes.",
+        "whyNow": "SR-20 North Cascades Highway typically opens in late May, making early June an ultra-quiet shoulder window before July hiker congestion and wildfire smoke, while Hood Canal water clarity peaks ahead of summer plankton blooms.",
+        "flights": {
+          "route": "No flight needed — drive direct from Kitsap Peninsula via Bainbridge/Kingston Ferry & SR-20",
+          "airlines": "Washington State Ferries + personal vehicle",
+          "duration": "4h 15m Kitsap → Mazama (after Hood Canal Day 1 dive)",
+          "estimatedRoundtripUsd": 0,
+          "notes": "Zero airfare and zero airport friction — maximizes all 4 days in the open pre-Denali window."
+        },
+        "hotels": [
+          {
+            "name": "Freestone Inn & Cabins",
+            "location": "Mazama, Methow Valley",
+            "style": "Rustic-Refined Alpine Creekside Inn",
+            "roomType": "Lakeside Lodge Room with Gas Fireplace & Veranda",
+            "nightlyRateUsd": 235,
+            "soloFriendly": true,
+            "highlights": [
+              "Set on Wilson Ranch meadow 20 minutes east of Washington Pass trailheads",
+              "Cozy river-rock fireplace lodge rooms with hot tub and direct Methow Trail access",
+              "Steps from Mazama Store espresso, fresh baguettes, and quiet pine-forest solitude"
+            ],
+            "bookingUrl": "https://www.freestoneinn.com/"
+          },
+          {
+            "name": "Sun Mountain Lodge",
+            "location": "Patterson Lake Ridge, Winthrop",
+            "style": "Hilltop Panoramic Mountain Solitude Resort",
+            "roomType": "Main Lodge Mountain View King Room",
+            "nightlyRateUsd": 280,
+            "soloFriendly": true,
+            "highlights": [
+              "Perched 3,000 ft above the Methow Valley with 360° North Cascades peak panoramas",
+              "Fine Pacific Northwest dining room, wine cellar, spa, and direct ridge trail network",
+              "Ideal upscale mountain retreat after a chilly Hood Canal dive and long alpine traverse"
+            ],
+            "bookingUrl": "https://sunmountainlodge.com/"
+          },
+          {
+            "name": "Methow Rendezvous Huts",
+            "location": "Okanogan-Wenatchee National Forest (Cub Creek)",
+            "style": "Off-Grid Backcountry Alpine Hut",
+            "roomType": "Exclusive-Use Backcountry Hut (Gardner or Grizzly Hut)",
+            "nightlyRateUsd": 240,
+            "soloFriendly": true,
+            "highlights": [
+              "True Nordic-style hike-in timber hut with woodstove, propane burners, and ridge panoramas",
+              "Complete wilderness solitude — exclusive reservation gives you the entire hut to yourself",
+              "7 gallons of water stocked; crisp early-June spring wildflowers and snow-dusted peaks"
+            ],
+            "bookingUrl": "https://www.rendezvoushuts.com/new-page-27"
+          }
+        ],
+        "vehicle": {
+          "needed": false,
+          "recommendedClass": "Personal AWD/4x4 Vehicle from Kitsap Peninsula",
+          "provider": "Own Vehicle",
+          "dailyRateUsd": 0,
+          "days": 4,
+          "insuranceAndFuelUsd": 135,
+          "notes": "Covers ~550 miles roundtrip fuel (Kitsap → Hoodsport → SR-20 North Cascades → Mazama → Kitsap), WSF ferry crossings, and NW Forest Pass."
+        },
+        "activities": [
+          {
+            "name": "Sund Rock Marine Preserve Private Guided Drysuit Dive (2 Tanks — Giant Pacific Octopus & Wolf Eels)",
+            "operator": "Seattle Dive Tours / Hoodsport 'N Dive",
+            "costUsd": 295,
+            "optional": false,
+            "url": "https://seattledivetours.com/charters/sund-rock-marine-preserve"
+          },
+          {
+            "name": "Puget Sound 6-Pack Cold-Water Boat Dive Charter (Optional Upgrade)",
+            "operator": "Sea Ya Diving Charters / Sound Dive Center",
+            "costUsd": 165,
+            "optional": true,
+            "url": "https://sounddivecenter.com/charters/sea-ya-diving-charters"
+          },
+          {
+            "name": "Washington Pass / Maple Pass & Blue Lake Alpine Shakedown Hikes",
+            "operator": "Self-Guided (Okanogan-Wenatchee National Forest)",
+            "costUsd": 10,
+            "optional": false,
+            "url": "https://www.wta.org/"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 85,
+        "theoreticalBooking": {
+          "targetBookBy": "April 2027 (book Rendezvous Hut via Methow Reservations 60+ days ahead)",
+          "cancellationFlex": "Freestone Inn & Sun Mountain Lodge allow changes 14 days prior; dive tours refundable 7 days prior.",
+          "budgetNote": "Ultra-efficient ~$1,500 solo strike ($720 lodging + $135 fuel/ferry + $305 core dive/pass + $340 food) — saves budget for big July/August Nordic expeditions."
+        },
+        "itinerary": [
+          "Day 1 (Jun 1): Early drive south from Kitsap to Hoodsport for 2-tank guided drysuit dives at Sund Rock Marine Preserve (Giant Pacific Octopus, wolf eels, lingcod); drive north across SR-20 to Mazama.",
+          "Day 2 (Jun 2): Early alpine start at Rainy Pass / Blue Lake or Cutthroat Pass snow-and-granite loop (great Denali boot/pack shakedown); evening fireplace dinner at Freestone Inn.",
+          "Day 3 (Jun 3): Hike 5–8 miles up Cub Creek into Methow Rendezvous Huts (Gardner Hut) for an off-grid solo backcountry alpine hut night under clear eastern-slope skies.",
+          "Day 4 (Jun 4): Morning ridge descent, coffee & pastries at Mazama Store, scenic drive back over Washington Pass and Diablo Lake to Kitsap Peninsula."
+        ],
+        "sources": [
+          "https://seattledivetours.com/charters/sund-rock-marine-preserve",
+          "https://www.freestoneinn.com/",
+          "https://sunmountainlodge.com/",
+          "https://www.rendezvoushuts.com/"
+        ]
+      }
+    ]
+  },
+  {
+    "monthId": "2027-07",
+    "monthLabel": "July 2027",
+    "shortLabel": "Jul '27",
+    "seasonTag": "Open Month — Prime Nordic Hut-to-Hut & Arctic Off-Season",
+    "availabilityStatus": "open",
+    "recommendedDuration": "8–14 day expedition",
+    "calendarEvents": [],
+    "openWindows": [
+      "Jul 1–31 (100% Open — Prime Long-Haul Window)"
+    ],
+    "advisorNote": "July is your completely open Q3 flagship window. Go big with a 9–10 day Nordic expedition: either Sweden's iconic 105 km Kungsleden hut-to-hut + Kebnekaise summit, Iceland's supported Laugavegur & Fimmvörðuháls traverse paired with Highland Base Kerlingarfjöll, or Finnish Lapland's summer off-season where 5-star Arctic solitude lodges slash rates 50–75% below winter.",
+    "adventures": [
+      {
+        "id": "jul-2027-sweden-kungsleden",
+        "title": "Sweden Kungsleden Supported Hut-to-Hut Trek: Abisko to Nikkaluokta + Kebnekaise",
+        "country": "Sweden",
+        "region": "Swedish Lapland (Abisko, Kebnekaise & Kiruna)",
+        "coordinates": "68.3495° N, 18.8312° E",
+        "isNordic": true,
+        "categories": [
+          "Hut Hiking",
+          "Mountains",
+          "Cold Solitude Resort"
+        ],
+        "window": "Jul 8–18, 2027",
+        "days": 10,
+        "nights": 9,
+        "offSeasonScore": 81,
+        "crowdLevel": "Low",
+        "activityIntensity": "Expedition",
+        "calendarFit": "Owns the middle of your fully open July window (10 days) with 2 weeks of recovery buffer before Norway NOLS begins Aug 5.",
+        "heroImage": "lapland_huts",
+        "tagline": "Trek 105 km of Arctic tundra above the Circle from STF hut to wood-fired bastu sauna, capped by Sweden's highest peak.",
+        "whyNow": "Mid-July unlocks the short 10-week Kungsleden hut season right as Tjäktja Pass (1,150 m) melts clear, snowbridges stabilize on Kebnekaise's Eastern Route, and 24-hour Arctic sun eliminates headlamps.",
+        "flights": {
+          "route": "SEA → ARN (Stockholm) → KRN (Kiruna) via KEF or CPH",
+          "airlines": "Icelandair / SAS (Scandinavian Airlines)",
+          "duration": "15h 30m total (including ARN domestic hop)",
+          "estimatedRoundtripUsd": 1120,
+          "notes": "Icelandair SEA–ARN + SAS ARN–KRN roundtrip (or SJ Arctic Circle overnight sleeper train from Stockholm directly into Abisko Turiststation)."
+        },
+        "hotels": [
+          {
+            "name": "STF Kungsleden Mountain Huts (Abiskojaure, Alesjaure, Sälka, Singi)",
+            "location": "Northern Kungsleden Trail, Swedish Lapland",
+            "style": "Self-Service Arctic Alpine Huts with Wood-Fired Saunas",
+            "roomType": "Pre-Booked STF Member Bunk Bed (Shared Cabin + Bastu Access)",
+            "nightlyRateUsd": 52,
+            "soloFriendly": true,
+            "highlights": [
+              "2026/2027 STF member rate ~480 SEK ($48) pre-booked; huts spaced 12–21 km apart",
+              "Wood-fired lakeside & riverside bastu saunas at Abiskojaure, Alesjaure, and Sälka",
+              "Stocked mountain shops sell dehydrated meals, fuel, and local provisions so you travel light"
+            ],
+            "bookingUrl": "https://www.swedishtouristassociation.com/stays/stay/stay-stf-mountain-cabin/"
+          },
+          {
+            "name": "STF Abisko Turiststation & STF Kebnekaise Mountain Station",
+            "location": "Abisko National Park & Foot of Kebnekaise",
+            "style": "Full-Service Arctic Mountain Stations",
+            "roomType": "Private Mountain Hotel Room (Member Rate, En-Suite & Restaurant)",
+            "nightlyRateUsd": 165,
+            "soloFriendly": true,
+            "highlights": [
+              "Bookend the hut trek with hot showers, private rooms, drying rooms, and reindeer/char dining",
+              "STF Kebnekaise sits directly beneath Sweden's highest massif with certified alpine guides",
+              "Direct Arctic train platform right outside STF Abisko Turiststation"
+            ],
+            "bookingUrl": "https://www.swedishtouristassociation.com/facilities/stf-kebnekaise-mountain-station/"
+          },
+          {
+            "name": "Camp Ripan",
+            "location": "Kiruna, Swedish Lapland",
+            "style": "Post-Trek Arctic Solitude Spa Chalets",
+            "roomType": "Private Hotel Cabin with Aurora Spa & Breakfast",
+            "nightlyRateUsd": 215,
+            "soloFriendly": true,
+            "highlights": [
+              "Detached Nordic timber chalets with private entrances set on Kiruna's wooded hillside",
+              "Award-winning Aurora Spa blends Swedish, Sámi, and Tornedalian thermal/mineral rituals",
+              "Summer off-season rate (~1,836 SEK / $195–$220) is less than half peak winter aurora pricing"
+            ],
+            "bookingUrl": "https://ripan.se/en/"
+          }
+        ],
+        "vehicle": {
+          "needed": false,
+          "recommendedClass": "Arctic Circle Train (Vy/SJ) + Nikkaluokta Express Bus & Lake Boat",
+          "provider": "SJ / Vy Rail & Nikkaluoktaexpressen",
+          "dailyRateUsd": 0,
+          "days": 0,
+          "insuranceAndFuelUsd": 145,
+          "notes": "Zero rental car needed — point-to-point rail from Kiruna to Abisko Turiststation, Lake Láddjujávri boat shuttle, and bus back from Nikkaluokta to Kiruna."
+        },
+        "activities": [
+          {
+            "name": "STF Annual Membership + 5-Hut Kungsleden Pre-Booking & Lake Láddjujávri Shuttle",
+            "operator": "Swedish Tourist Association (STF)",
+            "costUsd": 340,
+            "optional": false,
+            "url": "https://www.swedishtouristassociation.com/guides/mountains/payment/"
+          },
+          {
+            "name": "Guided Kebnekaise South Peak Summit Ascent (Östra Leden Glacier & Via Ferrata)",
+            "operator": "STF Kebnekaise Mountain Guides",
+            "costUsd": 245,
+            "optional": false,
+            "url": "https://www.swedishtouristassociation.com/facilities/stf-kebnekaise-mountain-station/"
+          },
+          {
+            "name": "Aurora Spa Thermal Circuit & Lapland Tasting Dinner",
+            "operator": "Camp Ripan Kiruna",
+            "costUsd": 125,
+            "optional": true,
+            "url": "https://ripan.se/en/"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 85,
+        "theoreticalBooking": {
+          "targetBookBy": "January 2027 (STF summer hut bookings & Kebnekaise guided slots fill early)",
+          "cancellationFlex": "STF pre-booked cabin beds refundable up to 7 days before arrival; Camp Ripan flexible 48h prior.",
+          "budgetNote": "Blended 9-night stay (5 STF huts + 2 nights mountain stations + 2 nights Camp Ripan = ~$1,020 lodging) brings total expedition to ~$3,720 including flights, Kebnekaise guide & food."
+        },
+        "itinerary": [
+          "Day 1 (Jul 8): Depart SEA on overnight trans-Atlantic flight to Stockholm (ARN).",
+          "Day 2 (Jul 9): Fly ARN → Kiruna (KRN), ride scenic Arctic Circle Train to STF Abisko Turiststation; gear check & dinner.",
+          "Day 3 (Jul 10): Trek Abisko → Abiskojaure (15 km) through birch canyon; evening lakeside wood-fired bastu sauna.",
+          "Day 4 (Jul 11): Ascend onto open Arctic tundra to STF Alesjaure (20 km) overlooking glacial valleys.",
+          "Day 5 (Jul 12): Cross Tjäktja Pass (1,150 m, highest point on Kungsleden) and descend to STF Sälka (25 km); sauna & cold river plunge.",
+          "Day 6 (Jul 13): Valley traverse Sälka → Singi → STF Kebnekaise Mountain Station (26 km, or split night at Singi for lighter pacing).",
+          "Day 7 (Jul 14): Guided alpine summit climb of Kebnekaise (Östra Leden glacier crossing & fixed-rope ridge) with STF guides.",
+          "Day 8 (Jul 15): Hike out 19 km (with optional Lake Láddjujávri boat shave) to Nikkaluokta; bus to Kiruna and check into Camp Ripan.",
+          "Day 9 (Jul 16–17): Full recovery day at Camp Ripan Aurora Spa + Lapland tasting dinner.",
+          "Day 10 (Jul 18): Fly KRN → ARN → SEA arriving back in Seattle same evening."
+        ],
+        "sources": [
+          "https://takeahike.io/blog/how-the-stf-huts-on-the-kungsleden-really-work/",
+          "https://www.swedishtouristassociation.com/guides/mountains/payment/",
+          "https://www.swedishtouristassociation.com/facilities/stf-kebnekaise-mountain-station/",
+          "https://www.icelandair.com/en-us/flights/flights-from-seattle-to-stockholm"
+        ]
+      },
+      {
+        "id": "jul-2027-iceland-laugavegur-highlands",
+        "title": "Iceland Laugavegur & Fimmvörðuháls Supported Hut-to-Hut Trek + Highland Base",
+        "country": "Iceland",
+        "region": "Southern Highlands & Kerlingarfjöll Central Highlands",
+        "coordinates": "63.9908° N, 19.0612° W",
+        "isNordic": true,
+        "categories": [
+          "Hut Hiking",
+          "Mountains",
+          "Cold Solitude Resort"
+        ],
+        "window": "Jul 12–22, 2027",
+        "days": 10,
+        "nights": 9,
+        "offSeasonScore": 72,
+        "crowdLevel": "Moderate-Low",
+        "activityIntensity": "Expedition",
+        "calendarFit": "Hits the peak narrow highland-access window right in the middle of your open July calendar with 2 full weeks before Norway NOLS.",
+        "heroImage": "iceland_winter",
+        "tagline": "Cross Iceland's rhyolite ridges, black obsidian deserts, and Eyjafjallajökull volcanic pass with daily 4x4 bag transfers — then vanish into Kerlingarfjöll's highland spa.",
+        "whyNow": "F-roads into Landmannalaugar and Kerlingarfjöll only open reliably from late June through August; mid-July delivers the safest river crossings, snow-bridged geothermal valleys, and long bright evenings.",
+        "flights": {
+          "route": "SEA → KEF (Nonstop)",
+          "airlines": "Icelandair",
+          "duration": "7h 30m outbound / 7h 45m return",
+          "estimatedRoundtripUsd": 960,
+          "notes": "Direct Seattle–Keflavik flight avoids European layovers; book 6–8 months ahead to lock sub-$1,000 peak-July Economy Standard fares."
+        },
+        "hotels": [
+          {
+            "name": "Ferðafélag Íslands (FÍ) Laugavegur Mountain Huts",
+            "location": "Landmannalaugar, Álftavatn, Emstrur & Þórsmörk",
+            "style": "Iconic Icelandic Alpine Trekking Huts",
+            "roomType": "Pre-Reserved FÍ Hut Bunk (with Supported 4x4 Luggage Drop)",
+            "nightlyRateUsd": 135,
+            "soloFriendly": true,
+            "highlights": [
+              "2026/2027 official FÍ tariff ~17,000 ISK ($125–$135/night); bookings for 2027 open early",
+              "Carry only a 7 kg daypack while 4x4 support vehicles haul your main duffel hut-to-hut",
+              "Natural geothermal hot river soak right beside Landmannalaugar hut on Night 1"
+            ],
+            "bookingUrl": "https://www.fi.is/en/mountain-huts/terms-and-conditions"
+          },
+          {
+            "name": "Highland Base at Kerlingarfjöll",
+            "location": "Kerlingarfjöll, Central Highlands (F347)",
+            "style": "Remote Michelin-Listed Geothermal Mountain Resort",
+            "roomType": "Private Highland Base A-Frame Hut (with Highland Baths Access)",
+            "nightlyRateUsd": 310,
+            "soloFriendly": true,
+            "highlights": [
+              "Private A-Frame Huts run ~37,000 ISK ($292–$310/night; Hamar Wing Hotel Deluxe runs ~$656/night)",
+              "Steaming geothermal baths, cold plunge, and sauna surrounded by ochre rhyolite peaks",
+              "True highland solitude 200 km from Reykjavík — ultimate 2-night post-trek recovery"
+            ],
+            "bookingUrl": "https://highlandbase.is/"
+          },
+          {
+            "name": "Sand Hotel by Keahotels",
+            "location": "Laugavegur 34, Central Reykjavík",
+            "style": "Refined Nordic Boutique City Base",
+            "roomType": "Standard Solo/Double Boutique Room",
+            "nightlyRateUsd": 340,
+            "soloFriendly": true,
+            "highlights": [
+              "Steps from Arctic Adventures / Midgard pickup points and downtown Reykjavík gear shops",
+              "Direct internal doorway into legendary Sandholt artisanal bakery for breakfast",
+              "Quiet courtyard rooms ideal for pre-trek staging and final night decompression"
+            ],
+            "bookingUrl": "https://www.keahotels.is/sand-hotel"
+          }
+        ],
+        "vehicle": {
+          "needed": true,
+          "recommendedClass": "Highland F-Road 4x4 SUV (Dacia Duster 4x4 or Toyota RAV4)",
+          "provider": "Blue Car Rental (3-Day Post-Trek Highland Recovery Rental)",
+          "dailyRateUsd": 140,
+          "days": 3,
+          "insuranceAndFuelUsd": 165,
+          "notes": "Days 2–7 use operator 4x4 super-jeep/highland bus transfers; rent a 4x4 for Days 7–10 only to drive F35/F347 into Kerlingarfjöll and return directly to KEF."
+        },
+        "activities": [
+          {
+            "name": "6-Day Supported Laugavegur & Fimmvörðuháls Hut Trek Operations (Guide, 4x4 Luggage Transfers, Highland Bus & Trail Meals)",
+            "operator": "Arctic Adventures / Midgard Adventure",
+            "costUsd": 1850,
+            "optional": false,
+            "url": "https://adventures.is/iceland/multiday-tours/trekking-tours/laugavegur-trekking-and-fimmvorduhals-huts-6days/"
+          },
+          {
+            "name": "Kerlingarfjöll Hveradalir Geothermal Ridge Hike & Highland Baths",
+            "operator": "Highland Base Kerlingarfjöll",
+            "costUsd": 195,
+            "optional": true,
+            "url": "https://highlandbase.is/"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 75,
+        "theoreticalBooking": {
+          "targetBookBy": "October–December 2026 (2027 FÍ huts & Arctic Adventures hut departures sell out 8–10 months ahead!)",
+          "cancellationFlex": "FÍ refunds 75% if cancelled 56+ days out; Arctic Adventures offers flexible date shifts; Blue Car Rental 48h free cancel.",
+          "budgetNote": "All-inclusive Arctic Adventures 6-day Laugavegur+Fimmvörðuháls hut package runs ~$2,650 (which already bundles 5 hut nights + all trek meals), plus 2n Sand Hotel + 2n Highland Base A-Frame = ~$5,650 all-in."
+        },
+        "itinerary": [
+          "Day 1 (Jul 12): Overnight nonstop SEA → KEF; arrive Reykjavík, check into Sand Hotel, final gear check.",
+          "Day 2 (Jul 13): 4x4 highland bus to Landmannalaugar; trek past obsidian flows & hot springs to Hrafntinnusker/Álftavatn.",
+          "Day 3 (Jul 14): Descend rhyolite ridges across glacial streams to Álftavatn lakeside hut.",
+          "Day 4 (Jul 15): Cross Mælifellssandur black ash desert to Emstrur hut overlooking Mýrdalsjökull ice cap.",
+          "Day 5 (Jul 16): Traverse Markarfljótsgljúfur canyon into birch-forested Þórsmörk valley.",
+          "Day 6 (Jul 17): Epic Fimmvörðuháls pass hike (25 km) between Eyjafjallajökull & Mýrdalsjökull glaciers down to Skógafoss; transfer back to Reykjavík.",
+          "Day 7 (Jul 18): Pick up Blue Car Rental 4x4, drive Kjölur Highland Road (F35) to Highland Base Kerlingarfjöll; geothermal baths recovery.",
+          "Day 8 (Jul 19–20): Full solitude day hiking steaming Hveradalir geothermal canyon & soaking in outdoor highland hot pools.",
+          "Day 9 (Jul 21): Drive south via Gullfoss to Reykjavík for final night at Sand Hotel.",
+          "Day 10 (Jul 22): Drop 4x4 at KEF, afternoon nonstop Icelandair flight home to Seattle."
+        ],
+        "sources": [
+          "https://adventures.is/iceland/multiday-tours/trekking-tours/laugavegur-trekking-and-fimmvorduhals-huts-6days/",
+          "https://www.stokedtotravel.com/icelands-highlands-staying-highland-base-hotel/",
+          "https://rumbomundo.com/laugavegur-2027-hut-bookings-open/",
+          "https://www.fi.is/en/mountain-huts/terms-and-conditions"
+        ]
+      },
+      {
+        "id": "jul-2027-finnish-lapland-offseason",
+        "title": "Finnish Lapland Summer Off-Season: Hetta–Pallas Fell Huts & Arctic Solitude Lodges",
+        "country": "Finland",
+        "region": "Finnish Lapland (Pallas-Yllästunturi, Saariselkä & Rovaniemi)",
+        "coordinates": "68.0468° N, 24.0631° E",
+        "isNordic": true,
+        "categories": [
+          "Hut Hiking",
+          "Cold Solitude Resort",
+          "4x4 Overland"
+        ],
+        "window": "Jul 16–25, 2027",
+        "days": 9,
+        "nights": 8,
+        "offSeasonScore": 96,
+        "crowdLevel": "Ultra-Low",
+        "activityIntensity": "High",
+        "calendarFit": "Ultimate off-season arbitrage inside your open July window — summer IS Lapland's true quiet season, delivering 50–75% off iconic Arctic solitude lodges and empty fell ridgelines.",
+        "heroImage": "solitude_lodge",
+        "tagline": "Hike Finland's oldest 55 km Arctic fell ridge from wooden wilderness sauna-huts, then stay at winter's $1,500/night Lapland design lodges for a fraction of the price.",
+        "whyNow": "While winter Santa/aurora tourism pushes Lapland lodges to $1,200–$1,700/night, July brings ultra-low occupancy, 24-hour sub-Arctic daylight, crystal-clear fell lakes, and wide-open trails across Pallas-Yllästunturi.",
+        "flights": {
+          "route": "SEA → HEL (Helsinki) → RVN (Rovaniemi) or KTT (Kittilä)",
+          "airlines": "Icelandair / Finnair (one-stop via KEF or LHR + Finnair domestic)",
+          "duration": "15h 15m outbound / 15h 45m return",
+          "estimatedRoundtripUsd": 1180,
+          "notes": "SEA–HEL fares via Icelandair start around $725 + Finnair HEL–RVN/KTT domestic connection (~$220–$350 roundtrip)."
+        },
+        "hotels": [
+          {
+            "name": "Arctic TreeHouse Hotel",
+            "location": "Rovaniemi, Arctic Circle",
+            "style": "Award-Winning Nordic Design Forest Suites",
+            "roomType": "Arctic TreeHouse Suite (North-Facing Glass Wall, Breakfast Included)",
+            "nightlyRateUsd": 345,
+            "soloFriendly": true,
+            "highlights": [
+              "Summer/early-autumn rates (~$345/night) are 70%+ below December's $1,550+/night peak",
+              "Includes Rakas gourmet Lappish breakfast & complimentary fat-bike/trail gear loan",
+              "Note: Confirm annual summer opening window when booking (if closed for July maintenance, pivot to Arctic Light Hotel or Nova Skyland)"
+            ],
+            "bookingUrl": "https://arctictreehousehotel.com/"
+          },
+          {
+            "name": "Jávri Lodge",
+            "location": "Saariselkä, Urho Kekkonen National Park",
+            "style": "Adults-Only Boutique Wilderness Chalet (13 Rooms)",
+            "roomType": "Cozy Lodge Double (Solo Rate, Indoor Pool & Sauna)",
+            "nightlyRateUsd": 360,
+            "soloFriendly": true,
+            "highlights": [
+              "Former Finnish presidential retreat 250 km north of the Arctic Circle — strict adults-only calm",
+              "Intimate 13-room log chalet with open fireplace, indoor lap pool, Finnish sauna & organic fine dining",
+              "Summer off-season delivers extraordinary solitude compared to winter's €900+/night packages"
+            ],
+            "bookingUrl": "https://www.javri.fi/"
+          },
+          {
+            "name": "Jeris Lakeside Resort (Hotel Jeris)",
+            "location": "Lake Jerisjärvi, Muonio (Gateway to Pallas-Yllästunturi)",
+            "style": "Lakeside Wilderness & Arctic Sauna Resort",
+            "roomType": "Lakeside Hotel Room / Cabin (Arctic Sauna World Access)",
+            "nightlyRateUsd": 175,
+            "soloFriendly": true,
+            "highlights": [
+              "Directly on pristine Lake Jerisjärvi 15 minutes from the Pallas trailhead finish",
+              "Home to Arctic Sauna World — wood-fired smoke sauna + bracing cold plunge straight into the lake",
+              "Unbeatable basecamp before and after the 55 km Hetta–Pallas wilderness hut traverse"
+            ],
+            "bookingUrl": "https://harriniva.fi/en/3-wilderness-resorts/jeris-lakeside-resort/"
+          }
+        ],
+        "vehicle": {
+          "needed": true,
+          "recommendedClass": "AWD Crossover / 4x4 SUV (Volvo XC40 AWD or VW Tiguan 4Motion)",
+          "provider": "Sixt / Hertz at Rovaniemi (RVN) or Kittilä (KTT)",
+          "dailyRateUsd": 95,
+          "days": 8,
+          "insuranceAndFuelUsd": 190,
+          "notes": "KAYAK Rovaniemi 4x4 rentals start ~$91/day in July; links Rovaniemi, Pallas/Hetta, and Saariselkä on empty forest highways (watch for reindeer!)."
+        },
+        "activities": [
+          {
+            "name": "Hetta–Pallas 55 km Fell Ridge Hut-to-Hut Traverse (3 Nights Eräluvat Reservable Huts + Ounasjärvi Boat + Car Relocation)",
+            "operator": "Metsähallitus (Eräluvat.fi) & Local Car Transfer",
+            "costUsd": 210,
+            "optional": false,
+            "url": "https://www.luontoon.fi/en/trails/hetta-pallas-hiking-trail-summer-enontekio-190940-en"
+          },
+          {
+            "name": "Arctic Sauna World Traditional Smoke Sauna & Cold Lake Plunge",
+            "operator": "Jeris Lakeside Resort / Harriniva",
+            "costUsd": 45,
+            "optional": false,
+            "url": "https://harriniva.fi/en/lapland-summer-holiday-at-jeris-lakeside-resort/"
+          },
+          {
+            "name": "Midnight Sun Wilderness Packrafting / River Canoe Float",
+            "operator": "Harriniva Wilderness Guides",
+            "costUsd": 195,
+            "optional": true,
+            "url": "https://harriniva.fi/en/summer-holiday-in-lapland/"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 85,
+        "theoreticalBooking": {
+          "targetBookBy": "May 2026–January 2027 (Eräluvat 2027 reservable huts open May 5, 2026 on eraluvat.fi)",
+          "cancellationFlex": "Sixt/Hertz & Hotel Jeris offer free cancellation; verify Arctic TreeHouse & Jávri summer calendars before locking non-refundable tiers.",
+          "budgetNote": "Blended 8-night stay (3 trail huts bundled in activity + 2n Hotel Jeris + 2n Jávri Lodge + 1n Arctic TreeHouse = ~$1,415 lodging) puts full 9-day expedition right around ~$4,550."
+        },
+        "itinerary": [
+          "Day 1 (Jul 16): Depart SEA via Helsinki to Rovaniemi (RVN); pick up 4x4 SUV, check into Arctic TreeHouse Hotel for midnight sun arrival.",
+          "Day 2 (Jul 17): Scenic Arctic highway drive north to Lake Jerisjärvi (Hotel Jeris); evening smoke sauna & cold lake plunge.",
+          "Day 3 (Jul 18): Drop car at Hetta (relocated to Pallas), cross Lake Ounasjärvi by boat, hike 15 km onto treeless fells to Sioskuru reservable hut.",
+          "Day 4 (Jul 19): Ridge traverse over Pyhäkero & Lumikero fells to Hannukuru hut (15 km); legendary backcountry wood-fired sauna.",
+          "Day 5 (Jul 20): High alpine tundra walk to Nammalakuru hut (14 km) with sweeping 360° Lapland panoramas.",
+          "Day 6 (Jul 21): Final 12 km cresting Taivaskero (809 m, highest peak in Pallas) down to Pallas hotel; drive 15 min back to Jeris Lakeside Resort.",
+          "Day 7 (Jul 22): Drive east across Arctic tundra to adults-only Jávri Lodge in Saariselkä; afternoon trail run/hike in Urho Kekkonen National Park.",
+          "Day 8 (Jul 23–24): Full solitude recovery day at Jávri Lodge (sauna, lap pool, fell trails, Lappish fine dining).",
+          "Day 9 (Jul 25): Drive south to RVN/IVL, return 4x4, fly home via Helsinki to Seattle."
+        ],
+        "sources": [
+          "https://www.eraluvat.fi/en/areas/nammalakuru-1142",
+          "https://www.luontoon.fi/en/trails/hetta-pallas-hiking-trail-summer-enontekio-190940-en",
+          "https://harriniva.fi/en/3-wilderness-resorts/jeris-lakeside-resort/",
+          "https://jetmeaway.co.uk/blog/best-hotels-rovaniemi-2026"
+        ]
+      }
+    ]
+  },
+  {
+    "monthId": "2027-08",
+    "monthLabel": "August 2027",
+    "shortLabel": "Aug '27",
+    "seasonTag": "Post-Norway NOLS Seamless Nordic Extensions",
+    "availabilityStatus": "partial",
+    "recommendedDuration": "7–9 day post-NOLS extension",
+    "calendarEvents": [
+      {
+        "title": "Norway NOLS",
+        "start": "2027-08-05",
+        "end": "2027-08-14",
+        "status": "confirmed"
+      }
+    ],
+    "openWindows": [
+      "Aug 1–4 (Pre-NOLS Buffer)",
+      "Aug 15–31 (Already in Norway — Zero Extra Trans-Atlantic Flight!)"
+    ],
+    "advisorNote": "You are ALREADY in Norway through Aug 14 for Norway NOLS! Extending Aug 15–24 eliminates $1,100+ of trans-Atlantic airfare and jet lag — choose between a full-board DNT alpine hut traverse across Jotunheimen & Hardangervidda, an Arctic domestic hop to dive Saltstraumen's maelstrom + hike Lofoten, or a restorative southbound Havila/Hurtigruten coastal voyage from Kirkenes to Bergen.",
+    "adventures": [
+      {
+        "id": "aug-2027-jotunheimen-dnt-traverse",
+        "title": "Post-Norway NOLS: Jotunheimen & Hardangervidda DNT Hut-to-Hut Traverse",
+        "country": "Norway",
+        "region": "Hardangervidda, Jotunheimen & Oslo",
+        "coordinates": "61.4917° N, 8.8131° E",
+        "isNordic": true,
+        "categories": [
+          "Hut Hiking",
+          "Mountains"
+        ],
+        "window": "Aug 15–23, 2027",
+        "days": 8,
+        "nights": 7,
+        "offSeasonScore": 86,
+        "crowdLevel": "Low",
+        "activityIntensity": "Expedition",
+        "calendarFit": "Zero extra trans-Atlantic flight — step straight off Norway NOLS onto the Bergen Line train to Finse and into Norway's premier DNT staffed alpine lodges.",
+        "heroImage": "norway_fjords",
+        "tagline": "Link Europe's highest mountain plateau and Scandinavia's tallest peak via historic DNT full-board mountain lodges and mountaineering icon Turtagrø.",
+        "whyNow": "Mid-to-late August is prime Norwegian *fjell* season: European school holidays wind down (cutting Besseggen & Jotunheimen trail volume), glacial streams drop to safe levels, and early autumn gold begins tinging the high tundra.",
+        "flights": {
+          "route": "Already in Norway post-NOLS → simply push OSL–SEA return flight out by 8 days",
+          "airlines": "Existing Norway NOLS ticket (Icelandair / SAS / Delta)",
+          "duration": "Zero extra flight time",
+          "estimatedRoundtripUsd": 0,
+          "notes": "Zero incremental airfare since you are already on the ground in Norway on Aug 14; rail and mountain bus transfers are budgeted below."
+        },
+        "hotels": [
+          {
+            "name": "DNT Staffed Mountain Lodges (Finsehytta, Gjendesheim, Glitterheim, Memurubu)",
+            "location": "Hardangervidda & Jotunheimen National Park",
+            "style": "Classic Full-Board Norwegian Alpine Lodges",
+            "roomType": "DNT Member 1–3 Bed Room (Full Board: 3-Course Dinner, Breakfast & Packed Lunch)",
+            "nightlyRateUsd": 125,
+            "soloFriendly": true,
+            "highlights": [
+              "Verified 2026/2027 DNT Oslo member full-board rate: 1,315 NOK (~$125/night) incl. 3-course dinner & hot shower",
+              "No heavy cooking gear needed — carry just a sleeping bag liner & day layers",
+              "Social communal mountain tables with Norwegian trekkers and crisp glacier views"
+            ],
+            "bookingUrl": "https://www.dnt.no/en/Cabins/staffed-cabins/gjendesheim/english/booking/"
+          },
+          {
+            "name": "Turtagrø Hotel",
+            "location": "Fortun / Hurrungane Peaks, West Jotunheimen (884 m)",
+            "style": "Historic Mountaineer Boutique Hotel (Est. 1888)",
+            "roomType": "Modern Alpine Single/Double Room (Half Board)",
+            "nightlyRateUsd": 265,
+            "soloFriendly": true,
+            "highlights": [
+              "Cradle of Norwegian alpinism sitting beneath the jagged spires of Store Skagastølstind",
+              "Renowned mountain library, architectural timber lounge, and seasonal 3-course Nordic dinners",
+              "Direct trailhead to Fannaråki (2,068 m), Scandinavia's highest staffed glacier hut"
+            ],
+            "bookingUrl": "https://turtagro.no/english/"
+          },
+          {
+            "name": "Sommerro (alt. Amerikalinjen)",
+            "location": "Frogner, Central Oslo",
+            "style": "Art Deco Luxury Wellness & Recovery Hotel",
+            "roomType": "Standard Solo/Double Room (Breakfast & Rooftop Sauna/Pool)",
+            "nightlyRateUsd": 355,
+            "soloFriendly": true,
+            "highlights": [
+              "Restored 1930s landmark with Vestkantbadet Roman baths, infrared saunas & year-round rooftop pool",
+              "Celebratory Oslo finale night after two weeks of NOLS + Jotunheimen trail grit",
+              "10 minutes to Flytoget airport express train for effortless OSL–SEA departure"
+            ],
+            "bookingUrl": "https://www.sommerrohouse.com/en/"
+          }
+        ],
+        "vehicle": {
+          "needed": false,
+          "recommendedClass": "Bergen Line Scenic Rail (Vy) + Valdresekspressen Mountain Coach & Gjende Boat",
+          "provider": "Vy Rail / Nor-Way Bussekspress / Gjendebåten",
+          "dailyRateUsd": 0,
+          "days": 0,
+          "insuranceAndFuelUsd": 195,
+          "notes": "Norway's public mountain transport connects Oslo ↔ Finse ↔ Jotunheimen ↔ Sognefjellet seamlessly without paying for a parked rental car during hut-to-hut days."
+        },
+        "activities": [
+          {
+            "name": "DNT Annual Membership (Saves ~400 NOK/Night) + Lake Gjende Boat Crossing",
+            "operator": "Den Norske Turistforening (DNT) & Gjendebåten",
+            "costUsd": 115,
+            "optional": false,
+            "url": "https://www.dnt.no/en/"
+          },
+          {
+            "name": "Guided Galdhøpiggen (2,469 m) Roped Styggebreen Glacier Summit",
+            "operator": "Juvasshytta Certified Glacier Guides",
+            "costUsd": 110,
+            "optional": false,
+            "url": "https://www.juvasshytta.no/"
+          },
+          {
+            "name": "Guided Fannaråki Glacier Crossing (2,068 m) from Turtagrø",
+            "operator": "Turtagrø / DNT Mountain Guides",
+            "costUsd": 135,
+            "optional": true,
+            "url": "https://turtagro.no/english/"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 65,
+        "theoreticalBooking": {
+          "targetBookBy": "March 2027 (book Finsehytta, Gjendesheim & Turtagrø rooms 4–5 months out)",
+          "cancellationFlex": "DNT refunds full board minus 300 NOK admin fee up to 8 days prior; Sommerro flexible 48h prior.",
+          "budgetNote": "Unbelievable value: 5 nights DNT lodges ($625) + 1n Turtagrø ($265) + 1n Sommerro ($355) + rail/bus ($195) + guides ($225) + misc ($520) = ~$2,185 total post-NOLS add-on!"
+        },
+        "itinerary": [
+          "Day 1 (Aug 15): Ride the iconic Bergen Line train to car-free Finse (1,222 m); check into DNT Finsehytta & warm-up hike toward Hardangerjøkulen glacier.",
+          "Day 2 (Aug 16): Train/coach transfer across Sognefjord/Valdresflye plateau into Jotunheimen; check into DNT Gjendesheim.",
+          "Day 3 (Aug 17): Take early Gjende boat to Memurubu and hike the dramatic Besseggen knife-edge ridge back above emerald Lake Gjende.",
+          "Day 4 (Aug 18): Trek interior valley north from Gjendesheim to quiet DNT Glitterheim (1,384 m) surrounded by wild reindeer.",
+          "Day 5 (Aug 19): Cross high alpine pass to Spiterstulen / Juvasshytta for guided roped glacier summit of Galdhøpiggen (2,469 m, Northern Europe's highest peak).",
+          "Day 6 (Aug 20): Scenic Sognefjellet National Tourist Route coach to historic Turtagrø Hotel; afternoon Hurrungane ridge scramble & 3-course mountaineer dinner.",
+          "Day 7 (Aug 21–22): Optional morning Fannaråki glacier hike, afternoon express bus to Oslo; check into Sommerro for Vestkantbadet spa & rooftop soak.",
+          "Day 8 (Aug 23): Flytoget train to OSL for trans-Atlantic return flight to Seattle."
+        ],
+        "sources": [
+          "https://www.dnt.no/globalassets/foreninger/dnt-oslo-og-omegn/priser/2026_priser_betjente-hytter_gjester_en.pdf",
+          "https://www.norgetravel.com/en/travel-guides/planning/dnt-cabin-guide/",
+          "https://turtagro.no/english/",
+          "https://www.expedia.com/Oslo-Hotels-Sommerro.h70553567.Hotel-Information"
+        ]
+      },
+      {
+        "id": "aug-2027-saltstraumen-lofoten-scuba",
+        "title": "Post-Norway NOLS: Saltstraumen & Lofoten Cold-Water Scuba + Granite Ridges",
+        "country": "Norway",
+        "region": "Bodø / Saltstraumen & Lofoten Islands (Nordland)",
+        "coordinates": "67.2292° N, 14.6119° E",
+        "isNordic": true,
+        "categories": [
+          "Scuba",
+          "Mountains",
+          "4x4 Overland"
+        ],
+        "window": "Aug 16–24, 2027",
+        "days": 8,
+        "nights": 7,
+        "offSeasonScore": 83,
+        "crowdLevel": "Low",
+        "activityIntensity": "High",
+        "calendarFit": "Quick 1h 25m domestic hop north from Oslo/Bergen right after Norway NOLS — pairs one of National Geographic's top 10 dive sites with Lofoten's vertical granite peaks.",
+        "heroImage": "arctic_scuba",
+        "tagline": "Drysuit-dive the world's strongest tidal maelstrom at Saltstraumen, then ferry a 4x4 across Vestfjorden to climb Lofoten's knife-edge granite spires.",
+        "whyNow": "Late August is the sweet spot in Northern Norway: European motorhome crowds thin sharply after Aug 15, water temps hit their yearly peak (~52°F) with vibrant kelp & pollock schools in Saltstraumen, and nights grow dark enough for early-season aurora flickers.",
+        "flights": {
+          "route": "OSL → BOO (Bodø) outbound / SVJ or EVE → OSL return (domestic extension)",
+          "airlines": "SAS / Norwegian / Widerøe",
+          "duration": "1h 25m domestic hop each way",
+          "estimatedRoundtripUsd": 245,
+          "notes": "Verified domestic Norway fares start ~$85–$125 each way when booked 3–5 months ahead; connects seamlessly into your existing Norway NOLS international ticket."
+        },
+        "hotels": [
+          {
+            "name": "Saltstraumen Hotel og Fjordhytter",
+            "location": "Saltstraumen (30 min from Bodø Airport)",
+            "style": "Waterfront Fjord Dive Base Hotel",
+            "roomType": "Fjord-View Standard Room (Breakfast Included)",
+            "nightlyRateUsd": 195,
+            "soloFriendly": true,
+            "highlights": [
+              "5-minute walk to the Saltstraumen bridge & NORD&NE dive quay overlooking whirlpools",
+              "Easy gear-drying space, free parking, and hearty Norwegian coastal breakfast",
+              "Ideal 2-night base to time dives cleanly around slack-tide current windows"
+            ],
+            "bookingUrl": "https://saltstraumenhotel.no/en/"
+          },
+          {
+            "name": "Hattvika Lodge",
+            "location": "Ballstad, Vestvågøy (Central Lofoten)",
+            "style": "Boutique Restored Fisherman's Cabins & Sauna",
+            "roomType": "Historic Rorbu Cabin (Myklebustbua / Hillside Suite)",
+            "nightlyRateUsd": 295,
+            "soloFriendly": true,
+            "highlights": [
+              "Authentic 1880s cod-fishermen's cabins reimagined with modern Nordic design right on Ballstad harbor",
+              "Steps from Lofoten Diving AS boat dock and on-site Fangst restaurant & fjordside sauna",
+              "Central Vestvågøy position cuts driving time to both northern & southern granite peaks"
+            ],
+            "bookingUrl": "https://hattvikalodge.no/"
+          },
+          {
+            "name": "Reine Rorbuer by Classic Norway Hotels",
+            "location": "Reine, Moskenesøy (Outer Lofoten)",
+            "style": "Iconic Over-Water Fjord Rorbu Cabins",
+            "roomType": "Classic Waterfront Solo/Double Rorbu Cabin",
+            "nightlyRateUsd": 275,
+            "soloFriendly": true,
+            "highlights": [
+              "Perched on wooden stilts directly facing Reinefjorden and the jagged Olstinden wall",
+              "5-minute walk to Reinebringen stone staircase trailhead for sunrise crowd-free ascents",
+              "Cozy Gammelbua restaurant serves local Arctic stockfish and Lofoten lamb"
+            ],
+            "bookingUrl": "https://www.classicnorway.com/hotels/reine-rorbuer/"
+          }
+        ],
+        "vehicle": {
+          "needed": true,
+          "recommendedClass": "Mid-Size 4x4 SUV (Toyota RAV4 AWD or Skoda Kodiaq 4x4)",
+          "provider": "Hertz / Sixt Bodø Airport (BOO)",
+          "dailyRateUsd": 125,
+          "days": 8,
+          "insuranceAndFuelUsd": 245,
+          "notes": "Pick up at BOO, drive to Saltstraumen, roll onto the Bodø → Moskenes car ferry (~$85 incl. in fee), and return to BOO (or one-way drop at EVE/SVJ)."
+        },
+        "activities": [
+          {
+            "name": "Saltstraumen Maelstrom Guided Cold-Water Drysuit Scuba (2-Tank Current Drift + Full Drysuit Kit)",
+            "operator": "NORD&NE Diving AS",
+            "costUsd": 285,
+            "optional": false,
+            "url": "https://nordogne.no/english/"
+          },
+          {
+            "name": "Lofoten Arctic Kelp Forest & Wall Boat Dive (2 Tanks, Ballstad)",
+            "operator": "Lofoten Diving AS",
+            "costUsd": 265,
+            "optional": true,
+            "url": "https://lofoten-diving.no/"
+          },
+          {
+            "name": "Reinefjorden Boat Shuttle to Vindstad / Bunes Beach + Reinebringen & Ryten Ridges",
+            "operator": "Reinefjorden Sjøtaxi / Self-Guided",
+            "costUsd": 55,
+            "optional": false,
+            "url": "https://www.visitlofoten.com/"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 105,
+        "theoreticalBooking": {
+          "targetBookBy": "February 2027 (Lofoten rorbuer & Moskenes car ferry reservations fill 5–6 months ahead)",
+          "cancellationFlex": "Classic Norway & Saltstraumen Hotel offer 48–72h flexible tiers; Hertz/Sixt free cancel up to 48h prior.",
+          "budgetNote": "Total solo extension ~$4,525 ($1,855 blended 7n lodging + $245 domestic hops + $1,245 4x4/ferry + $340 core diving/shuttle + $840 food)."
+        },
+        "itinerary": [
+          "Day 1 (Aug 16): Fly OSL → Bodø (BOO), collect 4x4 SUV, drive 30 min to Saltstraumen Hotel; scout tidal current tables from the bridge.",
+          "Day 2 (Aug 17): Full-day 2-tank guided drysuit scuba dives with NORD&NE in Saltstraumen — walls carpeted in anemones, massive coalfish schools & wolffish.",
+          "Day 3 (Aug 18): Board scenic Bodø → Moskenes car ferry across Vestfjorden into outer Lofoten; check into Reine Rorbuer.",
+          "Day 4 (Aug 19): Dawn ascent of Reinebringen stone steps before day-trippers arrive, followed by Reinefjorden boat shuttle to Vindstad & Bunes Beach amphitheater.",
+          "Day 5 (Aug 20): Drive scenic E10 to Fredvang for the Ryten summit & Kvalvika granite-walled cove loop; check into Hattvika Lodge in Ballstad.",
+          "Day 6 (Aug 21): Optional 2-tank Arctic kelp & fjord-wall boat dive with Lofoten Diving AS out of Ballstad harbor; evening wood-fired sauna & Fangst dinner.",
+          "Day 7 (Aug 22–23): Hike Offersøykammen or Hoven ridge; return ferry or coastal drive via Henningsvær to Svolvær/Evenes.",
+          "Day 8 (Aug 24): Drop 4x4, fly BOO/SVJ → OSL to connect onto your trans-Atlantic flight back to SEA."
+        ],
+        "sources": [
+          "https://nordogne.no/english/",
+          "https://lofoten-diving.no/",
+          "https://lofotenislands.tours/guides/where-to-stay-in-lofoten",
+          "https://saltstraumenhotel.no/en/accomodation/cabins/"
+        ]
+      },
+      {
+        "id": "aug-2027-coastal-express-southbound",
+        "title": "Post-Norway NOLS: Havila / Hurtigruten Southbound Coastal Express (Kirkenes → Bergen)",
+        "country": "Norway",
+        "region": "Finnmark, Arctic Norway, Lofoten, Helgeland & Bergen",
+        "coordinates": "69.7271° N, 30.0458° E",
+        "isNordic": true,
+        "categories": [
+          "Cruise",
+          "Mountains"
+        ],
+        "window": "Aug 16–23, 2027",
+        "days": 7,
+        "nights": 6,
+        "offSeasonScore": 82,
+        "crowdLevel": "Low",
+        "activityIntensity": "Moderate",
+        "calendarFit": "Ideal restorative post-NOLS Arctic sailing — fly 2h north from Oslo to Kirkenes, then glide 1,250 nautical miles south through 33 ports, Trollfjord & Helgeland straight into Bergen.",
+        "heroImage": "arctic_cruise",
+        "tagline": "Sail quietly on battery-hybrid power through 33 Arctic ports, Trollfjord walls, and Helgeland mountains with full-board Nordic dining and zero packing/unpacking.",
+        "whyNow": "Late August delivers smooth coastal seas, vibrant late-summer daylight across Lofoten and Raftsundet (which the southbound route transits in prime daytime!), and strong solo-cabin discounts on Havila's modern hybrid ships as peak European summer recedes.",
+        "flights": {
+          "route": "OSL → KKN (Kirkenes) outbound / BGO (Bergen) → OSL (or open-jaw BGO → SEA home)",
+          "airlines": "Norwegian / SAS (domestic), Icelandair / KLM (open-jaw home)",
+          "duration": "2h 05m OSL → KKN",
+          "estimatedRoundtripUsd": 215,
+          "notes": "Verified OSL–KKN one-way fares start ~$64–$115 on Norwegian/SAS + ~$95 BGO–OSL (or book open-jaw SEA–OSL / BGO–SEA on your main Norway NOLS ticket to eliminate the return hop)."
+        },
+        "hotels": [
+          {
+            "name": "Havila Voyages — Interior Solo Cabin (+ 1 Night Opus XVI Bergen)",
+            "location": "Kirkenes → Bergen Coastal Express (5 Nights Aboard + 1 Night Bergen)",
+            "style": "Hybrid Expedition Vessel (Value Solo Tier) + Historic Boutique Finale",
+            "roomType": "Interior Solo Cabin (Full Board All Meals) + Opus XVI Classic Room",
+            "nightlyRateUsd": 305,
+            "soloFriendly": true,
+            "highlights": [
+              "Verified Havila Voyage South interior fares from $1,161–$1,432 solo (full board included) + 1n Opus XVI Bergen (~$310)",
+              "Zero single-supplement shock with Havila's up-to-40% solo traveler campaigns",
+              "Spend daylight hours in panoramic Observation Lounges & open decks; quiet dark sleeping cabin"
+            ],
+            "bookingUrl": "https://www.havilavoyages.com/en/voyages/voyage-south"
+          },
+          {
+            "name": "Havila Voyages — Seaview Superior Solo (+ 1 Night Opus XVI Bergen)",
+            "location": "Kirkenes → Bergen Coastal Express (5 Nights Aboard + 1 Night Bergen)",
+            "style": "Modern Nordic Seaview Cabin + Small Luxury Hotel Finale",
+            "roomType": "Seaview Superior Cabin (Full Board + Picture Window) + Opus XVI Superior Room",
+            "nightlyRateUsd": 410,
+            "soloFriendly": true,
+            "highlights": [
+              "Verified Havila Voyage South Seaview fares from ~$1,813 solo (full board) + 1n Opus XVI Bergen",
+              "Large floor-to-ceiling coastal fjord window, sofa alcove, and à la carte regional Norwegian menus",
+              "Silent 4-hour battery-electric cruising right into narrow vertical-walled Trollfjord"
+            ],
+            "bookingUrl": "https://www.havilavoyages.com/en/voyages/voyage-south"
+          },
+          {
+            "name": "Havila / Hurtigruten — Balcony Suite (+ 1 Night Opus XVI Bergen)",
+            "location": "Kirkenes → Bergen Coastal Express (5 Nights Aboard + 1 Night Bergen)",
+            "style": "Private Balcony Expedition Cabin + Heritage Luxury Finale",
+            "roomType": "Balcony Deluxe / Lighthouse Suite (Full Board + Priority Dining) + Opus XVI Heritage Suite",
+            "nightlyRateUsd": 565,
+            "soloFriendly": true,
+            "highlights": [
+              "Verified Havila Suite tier from ~$2,787 + 1n Opus XVI Bergen (Edvard Grieg Heritage SLH property)",
+              "Private open-air balcony for watching Lofoten peaks & midnight Tromsø arrivals in solitude",
+              "Includes upgraded Hildring Fine Dining access, jacuzzi deck, and onboard gym/sauna"
+            ],
+            "bookingUrl": "https://www.hurtigruten.com/en-us/cruises/coastal-express-south"
+          }
+        ],
+        "vehicle": {
+          "needed": false,
+          "recommendedClass": "Hybrid Coastal Express Ship + Airport/Port Shuttles",
+          "provider": "Havila Voyages / Hurtigruten & Bergen Bybanen Light Rail",
+          "dailyRateUsd": 0,
+          "days": 0,
+          "insuranceAndFuelUsd": 65,
+          "notes": "Zero car rental required — covers Kirkenes airport-to-pier shuttle, Bergen port-to-Opus XVI transfer, and Bergen Bybanen airport rail."
+        },
+        "activities": [
+          {
+            "name": "Trollfjord & Lofoten Sea Eagle Safari (Open-RIB Expedition from Ship)",
+            "operator": "Havila Voyages / Hurtigruten Shore Excursions",
+            "costUsd": 225,
+            "optional": false,
+            "url": "https://www.havilavoyages.com/en/excursions"
+          },
+          {
+            "name": "Helgeland Coast Torghatten Mountain Tunnel & Seven Sisters Guided Hike",
+            "operator": "Havila / Local Nordland Guides",
+            "costUsd": 135,
+            "optional": false,
+            "url": "https://www.havilavoyages.com/en/excursions"
+          },
+          {
+            "name": "Tromsø Arctic Cathedral Midnight Concert & Bergen Vidden Ridge Hike",
+            "operator": "Havila Excursions & Fløibanen",
+            "costUsd": 110,
+            "optional": true,
+            "url": "https://www.hurtigruten.com/en-us/cruises/coastal-express-south"
+          }
+        ],
+        "foodAndMiscPerDayUsd": 55,
+        "theoreticalBooking": {
+          "targetBookBy": "January–March 2027 (watch Havila & Hurtigruten solo-supplement-waiver sales)",
+          "cancellationFlex": "Havila Gold/Flex fares allow free changes/refunds up to 60–90 days prior; Opus XVI offers refundable rates 48h prior.",
+          "budgetNote": "Seaview Superior tier + Opus XVI Bergen ($2,460) + OSL–KKN/BGO hops ($215) + transfers ($65) + active excursions ($360) + misc ($385) = ~$3,485 all-in with full-board coastal dining!"
+        },
+        "itinerary": [
+          "Day 1 (Aug 16): Morning flight OSL → Kirkenes (KKN); board Havila/Hurtigruten southbound ship at 12:30 PM, sail past Vardø & the Varanger Peninsula.",
+          "Day 2 (Aug 17): Hammerfest port walk & Arctic Circle coastal fjords; arrive Tromsø at 11:45 PM for optional Arctic Cathedral Midnight Concert.",
+          "Day 3 (Aug 18): Prime daytime sailing through Vesterålen, narrow Raftsundet strait & silent battery-powered entry into Trollfjord; RIB Sea Eagle Safari + Svolvær/Lofoten evening.",
+          "Day 4 (Aug 19): Cross the Arctic Circle southbound along the dramatic Helgeland Coast (Seven Sisters peaks) with guided shore hike at Brønnøysund / Torghatten.",
+          "Day 5 (Aug 20): Morning port stop in historic Trondheim (walk Nidaros Cathedral & Bakklandet) followed by Kristiansund & Molde fjord passage.",
+          "Day 6 (Aug 21): Disembark in Bergen at 2:45 PM; check into boutique Opus XVI (Edvard Grieg Heritage Hotel) & sunset hike up Mount Fløyen/Ulriken.",
+          "Day 7 (Aug 22–23): Morning Bryggen waterfront espresso, Bybanen rail to BGO for flight home to Seattle."
+        ],
+        "sources": [
+          "https://www.havilavoyages.com/en/voyages/voyage-south",
+          "https://www.hurtigruten.com/en-us/cruises/coastal-express-south",
+          "https://www.booking.com/hotel/no/opus-xvi.html",
+          "https://www.expedia.com/lp/flights/osl/kkn/oslo-to-kirkenes"
+        ]
+      }
+    ]
+  }
+]

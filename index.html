@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nordic Atlas — Off-Season Adventure Advisor (2026–2027)</title>
+  <meta
+    name="description"
+    content="Agentic 12-month off-season Nordic & alpine adventure advisor synced to Google Adventure Calendar. Evaluate real boutique hotel rooms, 4x4 rentals, drysuit scuba, hut-to-hut treks, Arctic cruises, and solo theoretical bookings."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Nordic Atlas Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="2.2" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <span class="brand-title">Nordic Atlas</span>
+          <span class="brand-sub">Antigravity Adventure Advisor</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#calendar-section" class="nav-link">12-Month Calendar</a>
+        <a href="#expeditions-section" class="nav-link">Expeditions</a>
+        <button type="button" class="nav-link nav-btn" id="open-agents-btn">Research Agents</button>
+        <button type="button" class="shortlist-pill" id="open-planner-btn">
+          <span class="shortlist-dot" aria-hidden="true"></span>
+          <span>My Plan</span>
+          <span class="mono" id="header-shortlist-count">0</span>
+          <span class="shortlist-divider" aria-hidden="true">·</span>
+          <span class="mono" id="header-shortlist-cost">$0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Editorial Masthead -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-contour" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Dec 2026 – Nov 2027 · Synced with Adventure Calendar · Hub: SEA</p>
+          <h1 id="hero-heading">Twelve Months of Off-Season Nordic &amp; Alpine Expeditions</h1>
+          <p class="hero-lead">
+            An agentic travel dossier engineered for solo mountain, hut-to-hut, drysuit scuba, and cold-solitude travel.
+            Compare real off-season hotel rooms, 4x4 rentals, Arctic cruise cabins, and live solo booking totals mapped directly around your committed calendar.
+          </p>
+          <div class="hero-actions">
+            <a href="#expeditions-section" class="btn btn-primary">Explore 36 Expeditions</a>
+            <button type="button" class="btn btn-ghost-light" id="hero-sweet-spot-btn">Filter Sweet Spot ($3k–$6k)</button>
+          </div>
+        </div>
+
+        <aside class="hero-brief" aria-label="Traveler Profile & Calendar Sync">
+          <div class="brief-header">
+            <span class="brief-kicker">Calendar &amp; Dossier Telemetry</span>
+            <span class="mono brief-date" id="meta-generated">Loading…</span>
+          </div>
+          <dl class="brief-metrics">
+            <div>
+              <dt>Curated Options</dt>
+              <dd class="mono" id="stat-total-adventures">36</dd>
+            </div>
+            <div>
+              <dt>Nordic / Arctic Priority</dt>
+              <dd class="mono" id="stat-nordic-ratio">78%</dd>
+            </div>
+            <div>
+              <dt>Open Months (8–14d)</dt>
+              <dd class="mono" id="stat-open-months">6</dd>
+            </div>
+            <div>
+              <dt>Solo Sweet Spot</dt>
+              <dd class="mono">$3k–$6k</dd>
+            </div>
+          </dl>
+          <div class="brief-commitments">
+            <span class="brief-sublabel">Committed Anchor Events Respected</span>
+            <ul class="commitment-list" id="hero-commitments">
+              <li><span>Dec 19–23</span> Wilderness Medicine (Bainbridge)</li>
+              <li><span>Jan 9–31</span> Avy Safety &amp; Rainier Denali Prep</li>
+              <li><span>Feb 11–Mar 12</span> NOLS New Zealand</li>
+              <li><span>Jun 4–29</span> NOLS Denali (Tentative)</li>
+              <li><span>Aug 5–14</span> Norway NOLS</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 12-Month Calendar Ribbon -->
+    <section class="calendar-section" id="calendar-section" aria-labelledby="calendar-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Calendar-Aware Routing</p>
+            <h2 id="calendar-heading">Select a Month to Inspect Windows &amp; Options</h2>
+          </div>
+          <div class="calendar-legend" aria-label="Availability Legend">
+            <span class="legend-item"><i class="dot dot-open"></i> Wide Open (8–14d)</span>
+            <span class="legend-item"><i class="dot dot-partial"></i> NOLS Extension Window</span>
+            <span class="legend-item"><i class="dot dot-busy"></i> Busy (4–6d Strikes)</span>
+            <button type="button" class="btn btn-subtle btn-sm" id="show-all-months-btn">Show All 12 Months</button>
+          </div>
+        </div>
+
+        <div class="month-ribbon" id="month-ribbon" role="tablist" aria-label="Months from December 2026 to November 2027">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Active Month Context Banner -->
+        <div class="month-briefing" id="month-briefing" hidden>
+          <!-- Populated dynamically when a single month is selected -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters & Expedition Discovery -->
+    <section class="expeditions-section" id="expeditions-section" aria-labelledby="expeditions-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Interactive Room, 4x4 &amp; Cost Evaluation</p>
+            <h2 id="expeditions-heading">Curated Expeditions</h2>
+          </div>
+          <div class="results-summary mono" id="results-count">Loading dataset…</div>
+        </div>
+
+        <div class="filter-panel" aria-label="Filter and sort expeditions">
+          <div class="filter-row filter-row-top">
+            <div class="search-field">
+              <label for="search-input" class="sr-only">Search destinations, hotels, dive sites, or trails</label>
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Search Silfra, Lofoten, Kungsleden, Juvet, Havila, drysuit…"
+              />
+            </div>
+
+            <div class="filter-controls-inline">
+              <label class="select-wrap">
+                <span class="control-label">Region</span>
+                <select id="region-filter">
+                  <option value="all">All Regions</option>
+                  <option value="nordic">Nordic &amp; Arctic Only</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="Norway">Norway &amp; Svalbard</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Finland">Finland</option>
+                  <option value="Faroe Islands">Faroe Islands</option>
+                  <option value="wildcard">Global Mountain Wildcards</option>
+                </select>
+              </label>
+
+              <label class="select-wrap">
+                <span class="control-label">Duration</span>
+                <select id="duration-filter">
+                  <option value="all">Any Duration</option>
+                  <option value="strike">Short Strikes (4–6d)</option>
+                  <option value="expedition">Full Expeditions (7–14d)</option>
+                </select>
+              </label>
+
+              <label class="select-wrap">
+                <span class="control-label">Sort By</span>
+                <select id="sort-select">
+                  <option value="chronological">Chronological (Dec → Nov)</option>
+                  <option value="offseason">Highest Off-Season Score</option>
+                  <option value="price-asc">Lowest Solo Total</option>
+                  <option value="price-desc">Highest Solo Total</option>
+                  <option value="days-asc">Shortest Duration</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-row filter-row-bottom">
+            <div class="chip-group" id="category-chips" role="group" aria-label="Filter by activity category">
+              <button type="button" class="chip active" data-category="all">All Styles</button>
+              <button type="button" class="chip" data-category="Mountains">Mountains</button>
+              <button type="button" class="chip" data-category="Hut Hiking">Hut Hiking</button>
+              <button type="button" class="chip" data-category="Scuba">Scuba</button>
+              <button type="button" class="chip" data-category="Cold Solitude Resort">Cold Solitude Resort</button>
+              <button type="button" class="chip" data-category="Cruise">Cruise</button>
+              <button type="button" class="chip" data-category="4x4 Overland">4x4 Overland</button>
+            </div>
+
+            <div class="budget-control">
+              <label for="budget-slider" class="budget-label">
+                <span>Max Solo Cost:</span>
+                <strong class="mono" id="budget-slider-val">$12,000</strong>
+              </label>
+              <input type="range" id="budget-slider" min="1500" max="12000" step="250" value="12000" />
+              <button type="button" class="text-btn" id="reset-filters-btn">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="adventures-container" id="adventures-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong class="footer-brand">Nordic Atlas · Adventure Advisor</strong>
+        <p class="footer-note">
+          Built with parallel Antigravity research agents. Pricing represents researched off-season solo estimates in USD from Seattle (SEA) and should be verified directly with properties and operators before booking.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/gfinley/adventure-advisor" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
+        <button type="button" class="text-btn" id="footer-agents-btn">Agent Research Methodology</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Comparison Tray -->
+  <div class="compare-tray" id="compare-tray" hidden aria-live="polite">
+    <div class="compare-tray-inner">
+      <div class="compare-tray-items" id="compare-tray-items"></div>
+      <div class="compare-tray-actions">
+        <button type="button" class="btn btn-primary btn-sm" id="open-compare-btn">Compare Side-by-Side</button>
+        <button type="button" class="text-btn light" id="clear-compare-btn">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Expedition Evaluator Drawer / Modal -->
+  <div class="modal-backdrop" id="evaluator-modal" hidden role="dialog" aria-modal="true" aria-labelledby="eval-title">
+    <div class="evaluator-sheet">
+      <div class="evaluator-topbar">
+        <div class="evaluator-crumbs">
+          <span class="mono" id="eval-month-badge"></span>
+          <span id="eval-window-badge"></span>
+        </div>
+        <button type="button" class="icon-close" id="close-evaluator-btn" aria-label="Close evaluator">✕</button>
+      </div>
+      <div class="evaluator-body" id="evaluator-body">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Side-by-Side Comparison Modal -->
+  <div class="modal-backdrop" id="compare-modal" hidden role="dialog" aria-modal="true" aria-labelledby="compare-modal-title">
+    <div class="modal-panel modal-wide">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">Side-by-Side Matrix</p>
+          <h2 id="compare-modal-title">Compare Expeditions, Rooms &amp; Solo Costs</h2>
+        </div>
+        <button type="button" class="icon-close" id="close-compare-btn" aria-label="Close comparison">✕</button>
+      </div>
+      <div class="modal-content" id="compare-modal-body">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Annual Shortlist & Calendar Export Modal -->
+  <div class="modal-backdrop" id="planner-modal" hidden role="dialog" aria-modal="true" aria-labelledby="planner-modal-title">
+    <div class="modal-panel modal-wide">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">2026–2027 Annual Shortlist</p>
+          <h2 id="planner-modal-title">My Adventure Plan &amp; Budget Ledger</h2>
+        </div>
+        <button type="button" class="icon-close" id="close-planner-btn" aria-label="Close plan">✕</button>
+      </div>
+      <div class="modal-content" id="planner-modal-body">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Antigravity Research Agents Modal -->
+  <div class="modal-backdrop" id="agents-modal" hidden role="dialog" aria-modal="true" aria-labelledby="agents-modal-title">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <p class="section-kicker">Multi-Agent Architecture</p>
+          <h2 id="agents-modal-title">Antigravity Parallel Research Fleet</h2>
+        </div>
+        <button type="button" class="icon-close" id="close-agents-btn" aria-label="Close research info">✕</button>
+      </div>
+      <div class="modal-content" id="agents-modal-body">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
