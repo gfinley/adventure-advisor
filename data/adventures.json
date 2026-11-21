@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nordic & Off-Season Adventure Advisor",
-    "generatedAt": "2026-11-21T06:46:04Z",
+    "generatedAt": "2026-11-21T06:46:56Z",
     "homeAirport": "SEA (Seattle-Tacoma International)",
     "travelerProfile": "Solo active adventurer — mountains, supported hut hiking, cold-water drysuit scuba, Arctic cruises & cold mountain solitude lodges",
     "targetSweetSpotUsd": [
@@ -11,9 +11,9 @@
     "calendarSource": "Google Calendar: Adventure Calendar",
     "coverage": "December 2026 – November 2027",
     "monthCount": 12,
-    "adventureCount": 44,
-    "nordicCount": 36,
-    "customResearchCount": 8,
+    "adventureCount": 45,
+    "nordicCount": 37,
+    "customResearchCount": 9,
     "researchAgents": [
       {
         "id": "q1-agent",
@@ -2420,6 +2420,148 @@
       ],
       "advisorNote": "May 2027 is completely open and serves as your prime pre-Denali conditioning window plus peak Nordic shoulder season. Jotunheimen & Lysefjord DNT hut-to-hut delivers relentless steep vertical gain with snow-patch crampon/microspike work and zero July crowds; the Faroe Islands offer 18+ hours of dramatic North Atlantic cliff trekking plus cold-water kelp diving; and mid-May marks the opening of Svalbard's dramatic spring pack-ice expedition cruise season (higher cruise budget transparently detailed below).",
       "adventures": [
+        {
+          "id": "custom-2027-05-norway-havila-denali-taper",
+          "title": "Pre-Denali Taper: Havila Northbound Fjord Solitude Voyage (Bergen → Kirkenes)",
+          "country": "Norway",
+          "region": "Norwegian Coast & Arctic Fjords",
+          "coordinates": "69.65° N, 18.96° E",
+          "isNordic": true,
+          "categories": [
+            "Cruise",
+            "Cold Solitude Resort"
+          ],
+          "window": "May 20–27, 2027",
+          "days": 7,
+          "nights": 6,
+          "offSeasonScore": 90,
+          "crowdLevel": "Low",
+          "activityIntensity": "Moderate",
+          "calendarFit": "Purpose-built Pre-Denali taper window (May 20–27): returns 8 days before June 4 Denali departure with zero ankle-injury risk, full recovery sleep, and Nordic nutrition.",
+          "heroImage": "arctic_cruise",
+          "tagline": "Glide silently on zero-emission battery power from Bergen through UNESCO Geirangerfjord, the Lofoten Wall, and Midnight-Sun Tromsø to Kirkenes aboard Havila Castor — six restorative nights of Nordic à la carte nutrition, Deck 8 saunas and outdoor hot tubs, and gentle zero-injury-risk coastal strolls right before Denali.",
+          "whyNow": "Late May hits the sweet spot between heavy spring Denali conditioning and your June 4 Alaska departure. Havila Castor's verified May 21–27, 2027 Bergen–Kirkenes northbound sailing falls inside Havila's extended Geirangerfjord season (Apr 1–Aug 31) with peak snowmelt waterfalls roaring, right as the Midnight Sun takes over above the Arctic Circle in Lofoten, Tromsø, and Finnmark — yet ahead of June–August peak cruise crowds and pricing. With full-board farm-to-fjord dining, daily Deck 8 sauna/jacuzzi recovery, light mobility access in Deck 7's two gym studios, and zero high-consequence terrain, you return to Seattle on May 27 fully rested with an 8-day home buffer to pack and taper for Denali.",
+          "flights": {
+            "route": "SEA → BGO / KKN → OSL → SEA",
+            "airlines": "SAS / KLM / Icelandair",
+            "duration": "~13h 30m",
+            "estimatedRoundtripUsd": 940,
+            "notes": "Open-jaw multi-city itinerary: depart Seattle (SEA) afternoon May 20 on 1-stop Icelandair (via KEF) or KLM/Delta (via AMS) to Bergen Flesland (BGO, ~12h 30m–14h 15m), arriving morning/midday May 21 well before Havila's 15:30 check-in and 20:30 departure. After disembarking Kirkenes at 09:00 on May 27, fly SAS or Norwegian nonstop KKN→OSL (2h 15m, late-morning departure) connecting westbound OSL→SEA via CPH/AMS/KEF — landing back in Seattle same evening May 27 thanks to the 9-hour westward time gain. Main-cabin checked-bag fares run ~$880–$1,020 in late May."
+          },
+          "hotels": [
+            {
+              "name": "Havila Castor — Interior Solo Cabin (INT, 8–10 m²)",
+              "location": "Bergen → 34 Norwegian Coastal Ports → Kirkenes (Voyage North, May 21–27, 2027)",
+              "style": "Expedition Ship Cabin (Full Board)",
+              "roomType": "Interior Cabin Solo Occupancy (Full Board À La Carte Included)",
+              "nightlyRateUsd": 340,
+              "soloFriendly": true,
+              "highlights": [
+                "Verified May 2027 Voyage North 6-night solo promo rate (~$2,040 total with Havila's Up to 40% Solo Discount on selected departures booked 60+ days ahead; standard undiscounted solo ~$2,850)",
+                "Full-board regional Norwegian à la carte breakfast, lunch, and dinner in Havrand Restaurant (plus coffee, tea & water) — ideal high-protein, omega-3 Nordic taper nutrition with zero meal planning",
+                "Complimentary access to Deck 8 panoramic saunas, two aft outdoor heated hot tubs, Deck 7 dual cardio/strength fitness studios, Deck 9 glass-roofed Havblikk lounge, free Wi-Fi, and Deck 4 self-service laundry"
+              ],
+              "bookingUrl": "https://www.havilavoyages.com/en/offers/solo"
+            },
+            {
+              "name": "Havila Castor — Seaview Superior Solo Cabin (SSD/SSK, 15–16 m²)",
+              "location": "Bergen → 34 Norwegian Coastal Ports → Kirkenes (Voyage North, May 21–27, 2027)",
+              "style": "Expedition Ship Cabin (Full Board)",
+              "roomType": "Seaview Superior Double / King Cabin Solo Occupancy (Full Board Included)",
+              "nightlyRateUsd": 465,
+              "soloFriendly": true,
+              "highlights": [
+                "Recommended cold-solitude upgrade (~$2,790 total for 6 nights under Havila's Solo Offer; Havila's official Voyage North solo promos start at $2,732 USD)",
+                "Spacious 15–16 m² Nordic-designed stateroom with king or double bed, sofa seating area, refrigerator, and large picture window framing fjords and Midnight Sun straight from bed",
+                "Includes full-board Havrand à la carte dining, Deck 8 saunas & outdoor jacuzzis, Deck 7 gym, free Wi-Fi, and whisper-quiet LNG/battery-hybrid sailing through Geirangerfjord"
+              ],
+              "bookingUrl": "https://www.havilavoyages.com/en/voyages/voyage-north"
+            },
+            {
+              "name": "Havila Castor — Balcony Suite (ZJB, 25–28 m²) / Lighthouse Suite Upgrade",
+              "location": "Deck 8 Upper Promenade — Bergen → Kirkenes (Voyage North, May 21–27, 2027)",
+              "style": "Expedition Ship Suite (Full Board + Suite Benefits)",
+              "roomType": "Deck 8 Balcony Suite Solo Occupancy (Full Board + Hildring & Havly Café Perks)",
+              "nightlyRateUsd": 790,
+              "soloFriendly": true,
+              "highlights": [
+                "Private fjord-facing balcony (25–28 m² suite) for uninterrupted morning coffee and Midnight Sun solitude; ultra-splurge Deck 8 Lighthouse Suite (ZHA, 48 m²) adds a private balcony jacuzzi, fireplace lounge, and bathtub (~$990/nt solo)",
+                "Full Havila Suite Benefits: priority check-in/boarding in Bergen, peaceful breakfast & lunch in Hildring Fine Dining, and 24/7 Havly Café Package included (specialty barista coffee, bakery, wraps & hot dishes)",
+                "Includes sparkling welcome gift, plush bathrobes/slippers, full-board à la carte dining, plus complimentary Deck 8 saunas, outdoor hot tubs, and Deck 7 fitness studios"
+              ],
+              "bookingUrl": "https://www.havilavoyages.com/en/cabins/lighthouse-suite"
+            }
+          ],
+          "vehicle": {
+            "needed": false,
+            "recommendedClass": "Car-Free Coastal Voyage (Airport Flybussen Transfers)",
+            "provider": "Havila Voyages & Airport Express",
+            "dailyRateUsd": 0,
+            "days": 0,
+            "insuranceAndFuelUsd": 95,
+            "notes": "100% car-free, stress-free recovery logistics. Covers Bergen Airport (BGO) Flybussen express coach to central Bergen (NOK 189 / ~$18, 25–30 min; or Bybanen light rail NOK 51) + short luggage hop to Hurtigruten/Havila Terminal (Nøstegaten 30), Kirkenes pier-to-KKN Airport transfer via Snelandia bus Fb92 (NOK 55–80) or direct 15-min taxi (NOK 340–410 / ~$38), plus local Tromsø Bus 26 fares and transit buffer (~$39)."
+          },
+          "activities": [
+            {
+              "name": "Tromsø: Fjellheisen Cable Car & Arctic Cathedral Panoramic Recovery Afternoon (Day 5, 14:15–18:15 Port Stop)",
+              "operator": "Fjellheisen Tromsø, Arctic Cathedral & Tromsø Bus 26 (or Guided Havila TOSN1)",
+              "costUsd": 95,
+              "optional": false,
+              "url": "https://www.havilavoyages.com/en/excursions/tromso-highlights-arctic-cathedral-and-cable-car"
+            },
+            {
+              "name": "Geirangerfjord Fjord Ranger Adventure (GEIN2) & Ålesund Art Nouveau Waterfront Stroll (Day 2, Optional Easy Aksla Lower Steps)",
+              "operator": "Havila Voyages Excursions (GEIN2) & Self-Guided Ålesund",
+              "costUsd": 255,
+              "optional": true,
+              "url": "https://www.havilavoyages.com/en/excursions/geiranger-fjord-ranger-adventure"
+            },
+            {
+              "name": "Arctic Floating Harbor Sauna Contrast Session (Pust Tromsø / Bodø) & Lofoten Svolvær Midnight-Sun Harbor Stroll (Days 4–5)",
+              "operator": "Pust Floating Sauna & Self-Guided Svolvær Harbour",
+              "costUsd": 40,
+              "optional": true,
+              "url": "https://www.visitnorway.com/listings/pust-sauna/267887/"
+            }
+          ],
+          "foodAndMiscPerDayUsd": 45,
+          "theoreticalBooking": {
+            "targetBookBy": "November 2026 – February 2027 (3–6 months out to capture Havila's Up to 40% Solo Discount offered on selected departures booked 60+ days ahead and secure quiet midship cabins on the May 21, 2027 Havila Castor sailing)",
+            "cancellationFlex": "Book Havila's Flex fare (20% deposit at booking, changeable and refundable per Havila Terms & Conditions, final balance due 42 days prior to departure) rather than non-refundable Saver while final June 4 Denali expedition dates lock in. Pair with changeable SAS/KLM/Icelandair multi-city airfare.",
+            "budgetNote": "Canonical solo taper baseline using Havila Castor Interior Solo ($340/nt × 6n = $2,040 full board) + open-jaw flights ($940) + airport transfers ($95) + core Tromsø Fjellheisen/Arctic Cathedral afternoon ($95) + onboard drinks/Hildring tasting/transit snacks buffer ($45/d × 7d = $315) = $3,485 USD all-in ($3,780 with both optional shore experiences). Upgrading to the recommended Seaview Superior Solo cabin ($465/nt × 6n = $2,790) brings the all-in total to $4,235 ($4,530 with all optional excursions), while Deck 8 Balcony Suite Solo ($790/nt × 6n = $4,740 with Hildring & 24/7 Havly Café perks) totals $6,185 ($6,480 with optional excursions; Lighthouse Suite with private balcony jacuzzi ~$7,385+)."
+          },
+          "itinerary": [
+            "Day 1 (May 20–21): Seattle → Bergen Embarkation (Havila Castor, Dep. 20:30) — Fly overnight 1-stop SEA→BGO via KEF or AMS arriving May 21 morning/midday; take Flybussen to Nøstegaten 30 terminal for 15:30 check-in and 16:00 boarding. Unpack once, enjoy your first regional Norwegian à la carte dinner at Havrand Restaurant, and unwind in the Deck 8 sauna and aft outdoor jacuzzi as Havila Castor sails quietly north out of Bergen.",
+            "Day 2 (May 22): Ålesund & Silent Battery-Powered UNESCO Geirangerfjord (09:45–20:00) — Glide emission-free on Havila's massive battery pack into snowmelt-fed Geirangerfjord past the Seven Sisters and Suitor waterfalls (departing Ålesund 10:00, reaching Geiranger 14:25, returning Ålesund 19:00). Join the optional easy Geiranger Fjord Ranger excursion (GEIN2, Norsk Fjordsenter + waffles + optional waterfall boardwalk) or savor pure shipboard solitude on Deck 9, then take a gentle Art Nouveau harbor stroll in Ålesund (optional unhurried warm-up on the paved lower Mount Aksla steps — zero ankle strain).",
+            "Day 3 (May 23): Historic Trondheim Riverside Stroll & Taper Recovery (09:45–12:45) — Easy 3-hour flat recovery walk from the pier along the Nidelva River's colorful wooden wharves, Old Town Bridge, Bakklandet cafés, and Gothic Nidaros Cathedral. Afternoon light mobility/foam-rolling session in Deck 7's gym, Deck 8 sauna heat-acclimation soak, and Trøndelag coastal tasting dinner at Havrand.",
+            "Day 4 (May 24): Arctic Circle Crossing, Bodø & Midnight-Sun Lofoten Wall (Svolvær 21:20–22:15) — Cross 66°33'N in the morning, stretch legs on a flat waterfront walk in Bodø (13:05–15:20), then watch the jagged granite spires of the Lofoten Wall rise across serene Vestfjord. Step ashore in Svolvær (21:20–22:15) for a calm, glowing late-evening harbor stroll under the Arctic Midnight Sun before sailing into dramatic Raftsundet.",
+            "Day 5 (May 25): Vesterålen Fjords & Tromsø — Fjellheisen Cable Car, Arctic Cathedral & Floating Sauna (14:15–18:15) — Enjoy a slow morning gliding through Risøyrenna channel with coffee under Havblikk Bar's glass roof. During the generous 4-hour Tromsø stop, take the zero-impact Fjellheisen cable car up to Storsteinen (421m) for snow-rimmed fjord views, visit the iconic Arctic Cathedral, and add an optional 1-hour Pust floating harbor sauna + cold-fjord plunge before reboarding at 18:00.",
+            "Day 6 (May 26): Finnmark Coast & Honningsvåg / North Cape (10:55–14:30) — Sail past Hammerfest along Norway's raw Barents Sea coastline to Honningsvåg (71°N). Choose either an easy scenic coach out to the North Cape plateau (optional HVGN1, $192) or stay aboard for deep taper sleep, reading in the bow lounge, a final sunset-free Midnight Sun hot-tub soak on Deck 8, and a celebratory Arctic king crab / wild-fish dinner.",
+            "Day 7 (May 27): Disembark Kirkenes (09:00) & Return KKN → OSL → SEA — Enjoy an unhurried final Havrand breakfast overlooking Varangerfjord, disembark at Kirkenes quay at 09:00, and take the 15-minute transfer to Kirkenes Airport (KKN). Catch the late-morning nonstop flight to Oslo (OSL) connecting westbound back to Seattle (SEA), arriving home the evening of May 27 refreshed and injury-free with 8 full days before your June 4 Denali departure."
+          ],
+          "sources": [
+            "Havila Voyages — Voyage North & 2027 Sailing Schedule",
+            "Havila Voyages — Up to 40% Solo Offer & Flex Fare Terms",
+            "Havila Voyages — Official Excursion Price List (GEIN2 / TOSN1 / HVGN1)",
+            "Fjellheisen Tromsø & Arctic Cathedral (2026/27 Tariffs)",
+            "Visit Norway — Pust Floating Harbor Sauna (Tromsø / Bodø)",
+            "Icelandair / SAS / KLM Multi-City SEA–BGO / KKN–SEA Fares",
+            "Flybussen Bergen & Snelandia Kirkenes Transfers"
+          ],
+          "isCustomResearch": true,
+          "researchPrompt": "Relaxing Pre-Denali taper trip in late May — Norway Havila northbound fjord cruise with saunas, great food, and zero injury risk",
+          "researchedAt": "2026-11-21T06:45:00Z",
+          "computedCosts": {
+            "flightsUsd": 940,
+            "lodgingUsd": 2040,
+            "vehicleAndTransportUsd": 95,
+            "coreActivitiesUsd": 95,
+            "allActivitiesUsd": 390,
+            "foodAndMiscUsd": 315,
+            "baseTotalUsd": 3485,
+            "fullTotalUsd": 3780
+          }
+        },
         {
           "id": "custom-2027-05-iceland-4x4-mountain-overland",
           "title": "Iceland May 4x4 Overland: Snæfellsnes, Westfjords & Glacier Ridges",
