@@ -6,6 +6,7 @@
   "use strict";
 
   const STORAGE_KEY = "nordic-atlas-state-v1";
+  const STARS_COOKIE_NAME = "nordic_atlas_stars";
   const BACKEND_STORAGE_KEY = "nordic-atlas-backend-v1";
   const SESSION_TOKEN_KEY = "nordic-atlas-google-idtoken";
 
@@ -33,17 +34,53 @@
   };
 
   // ---------- Persistence ----------
+  function readStarsCookie() {
+    const parts = document.cookie.split(";").map((s) => s.trim());
+    for (const part of parts) {
+      if (part.startsWith(STARS_COOKIE_NAME + "=")) {
+        try {
+          const decoded = decodeURIComponent(part.slice(STARS_COOKIE_NAME.length + 1));
+          const arr = JSON.parse(decoded);
+          if (Array.isArray(arr)) return arr.filter((x) => typeof x === "string");
+        } catch {
+          // ignore malformed cookie
+        }
+      }
+    }
+    return null;
+  }
+
+  function writeStarsCookie(ids) {
+    try {
+      const maxAgeSec = 60 * 60 * 24 * 365; // 365 days
+      const secureFlag = window.location.protocol === "https:" ? "; Secure" : "";
+      const encoded = encodeURIComponent(JSON.stringify(ids));
+      document.cookie = `${STARS_COOKIE_NAME}=${encoded}; Max-Age=${maxAgeSec}; Path=/; SameSite=Strict${secureFlag}`;
+    } catch {
+      // ignore cookie errors
+    }
+  }
+
   function loadPersisted() {
+    let loadedStarsFromLs = false;
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) {
         const parsed = JSON.parse(raw);
-        if (Array.isArray(parsed.shortlistIds)) state.shortlistIds = parsed.shortlistIds;
+        if (Array.isArray(parsed.shortlistIds)) {
+          state.shortlistIds = parsed.shortlistIds;
+          loadedStarsFromLs = true;
+        }
         if (Array.isArray(parsed.compareIds)) state.compareIds = parsed.compareIds.slice(0, 4);
         if (parsed.configs && typeof parsed.configs === "object") state.configs = parsed.configs;
       }
     } catch {
       // ignore storage errors
+    }
+
+    if (!loadedStarsFromLs) {
+      const cookieStars = readStarsCookie();
+      if (cookieStars) state.shortlistIds = cookieStars;
     }
 
     // Load backend URL & Google Client ID (config.js defaults, overridden by localStorage if set)
@@ -65,6 +102,7 @@
   }
 
   function savePersisted() {
+    writeStarsCookie(state.shortlistIds);
     try {
       localStorage.setItem(
         STORAGE_KEY,
@@ -247,7 +285,9 @@
 
     if (pricing.totalUsd > state.maxBudget) return false;
 
-    if (state.category === "custom") {
+    if (state.category === "starred") {
+      if (!state.shortlistIds.includes(adv.id)) return false;
+    } else if (state.category === "custom") {
       if (!adv.isCustomResearch) return false;
     } else if (state.category !== "all" && !adv.categories.includes(state.category)) {
       return false;
@@ -273,20 +313,28 @@
     if (state.duration === "expedition" && adv.days < 7) return false;
 
     if (state.searchQuery.trim()) {
-      const q = state.searchQuery.trim().toLowerCase();
+      const tokens = state.searchQuery.trim().toLowerCase().split(/\s+/);
+      const found = findAdventure(adv.id);
+      const monthLabel = found ? `${found.month.monthLabel} ${found.month.shortLabel}` : "";
+      const routeNames = adv.routePlan && Array.isArray(adv.routePlan.waypoints)
+        ? adv.routePlan.waypoints.map((w) => w.name).join(" ")
+        : "";
       const hay = [
+        monthLabel,
+        adv.window,
         adv.title,
         adv.country,
         adv.region,
         adv.tagline,
         adv.whyNow,
+        routeNames,
         adv.categories.join(" "),
         adv.hotels.map((h) => `${h.name} ${h.roomType} ${h.style}`).join(" "),
         adv.activities.map((a) => `${a.name} ${a.operator}`).join(" "),
       ]
         .join(" ")
         .toLowerCase();
-      if (!hay.includes(q)) return false;
+      if (!tokens.every((t) => hay.includes(t))) return false;
     }
 
     return true;
@@ -346,6 +394,8 @@
     }
     document.getElementById("header-shortlist-count").textContent = String(count);
     document.getElementById("header-shortlist-cost").textContent = fmtUsd(total);
+    const chipCount = document.getElementById("chip-starred-count");
+    if (chipCount) chipCount.textContent = String(count);
   }
 
   function renderMonthRibbon() {
@@ -493,9 +543,21 @@
                     : ""
                 }
               </div>
-              <span class="media-score" title="Off-Season Optimality Score">
-                Off-Season ${adv.offSeasonScore}/100
-              </span>
+              <div style="display:flex;align-items:center;gap:6px">
+                <span class="media-score" title="Off-Season Optimality Score">
+                  Off-Season ${adv.offSeasonScore}/100
+                </span>
+                <button
+                  type="button"
+                  class="card-star-fab ${isShortlisted ? "starred" : ""}"
+                  data-toggle-shortlist="${escapeHtml(adv.id)}"
+                  onclick="event.stopPropagation()"
+                  aria-label="${isShortlisted ? "Unstar trip" : "Star trip for later"}"
+                  title="${isShortlisted ? "Starred — click to remove" : "Star this trip to come back to it"}"
+                >
+                  ${isShortlisted ? "★" : "☆"}
+                </button>
+              </div>
             </div>
             <div class="media-bottom">
               <span class="media-coords">${escapeHtml(adv.coordinates)}</span>
@@ -546,9 +608,9 @@
               type="button"
               class="btn btn-sm ${isShortlisted ? "btn-shortlisted" : "btn-subtle"}"
               data-toggle-shortlist="${escapeHtml(adv.id)}"
-              title="Add or remove from your 2027 plan"
+              title="Star or unstar this trip"
             >
-              ${isShortlisted ? "★ Saved" : "☆ Plan"}
+              ${isShortlisted ? "★ Starred" : "☆ Star"}
             </button>
             <label class="compare-check" title="Select up to 4 trips to compare side-by-side">
               <input type="checkbox" data-toggle-compare="${escapeHtml(adv.id)}" ${isCompared ? "checked" : ""} />
@@ -641,6 +703,15 @@
   }
 
   function renderEmptyState() {
+    if (state.category === "starred" && state.shortlistIds.length === 0) {
+      return `
+        <div class="empty-state">
+          <h3>No starred trips yet</h3>
+          <p>Click the <strong>☆</strong> star icon on any expedition card (or inside the Room Evaluator) to bookmark trips you want to come back to.</p>
+          <button type="button" class="btn btn-primary" id="empty-reset-btn">Browse All Expeditions</button>
+        </div>
+      `;
+    }
     return `
       <div class="empty-state">
         <h3>No expeditions match those exact filters</h3>
@@ -661,7 +732,8 @@
     });
 
     root.querySelectorAll("[data-toggle-shortlist]").forEach((btn) => {
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
         toggleShortlist(btn.dataset.toggleShortlist);
       });
     });
@@ -997,7 +1069,7 @@
 
           <div class="calc-action-stack">
             <button type="button" class="btn ${isShortlisted ? "btn-shortlisted" : "btn-primary"}" id="eval-shortlist-btn">
-              ${isShortlisted ? "★ Saved in My 2027 Plan" : "☆ Add to My 2027 Plan"}
+              ${isShortlisted ? "★ Starred Trip" : "☆ Star This Trip"}
             </button>
             <button type="button" class="btn btn-subtle" id="eval-compare-btn">
               ${isCompared ? "✓ In Side-by-Side Compare" : "+ Add to Side-by-Side Compare"}
@@ -1435,8 +1507,8 @@
     if (items.length === 0) {
       body.innerHTML = `
         <div class="empty-state">
-          <h3>Your 2026–2027 Adventure Shortlist is Empty</h3>
-          <p>Click <strong>☆ Plan</strong> on any expedition card (or inside the Room Evaluator) to assemble your year-in-adventure budget and export directly to Google Calendar (.ics).</p>
+          <h3>No Starred Trips Yet</h3>
+          <p>Click the <strong>☆</strong> star icon on any expedition card (or inside the Room Evaluator) to bookmark trips you want to come back to, track your annual budget, and export directly to Google Calendar (.ics).</p>
           <button type="button" class="btn btn-primary" id="planner-close-go">Browse Expeditions</button>
         </div>
       `;
@@ -1452,7 +1524,7 @@
 
       body.innerHTML = `
         <div class="planner-summary-grid">
-          <div class="planner-stat"><span>Shortlisted Trips</span><strong>${priced.length}</strong></div>
+          <div class="planner-stat"><span>Starred Trips</span><strong>${priced.length}</strong></div>
           <div class="planner-stat"><span>Total Travel Days</span><strong>${totalDays}d</strong></div>
           <div class="planner-stat"><span>Annual Budget Est.</span><strong>${fmtUsd(totalSpend)}</strong></div>
           <div class="planner-stat"><span>Avg Cost / Trip</span><strong>${fmtUsd(avgTrip)}</strong></div>
@@ -1475,7 +1547,7 @@
                 <div style="display:flex;align-items:center;gap:12px">
                   <strong class="mono" style="font-size:1.1rem">${fmtUsd(p.totalUsd)}</strong>
                   <button type="button" class="btn btn-subtle btn-sm" data-plan-eval="${escapeHtml(adv.id)}">Edit</button>
-                  <button type="button" class="text-btn" data-plan-remove="${escapeHtml(adv.id)}">Remove</button>
+                  <button type="button" class="text-btn" data-plan-remove="${escapeHtml(adv.id)}">Unstar</button>
                 </div>
               </div>
             `
@@ -1488,7 +1560,7 @@
             <button type="button" class="btn btn-primary" id="export-plan-ics">↓ Export All to Google Calendar (.ics)</button>
             <button type="button" class="btn btn-subtle" id="export-plan-md">↓ Download Markdown Dossier (.md)</button>
           </div>
-          <button type="button" class="text-btn" id="clear-plan-btn">Clear Shortlist</button>
+          <button type="button" class="text-btn" id="clear-plan-btn">Clear All Stars</button>
         </div>
       `;
 
@@ -1679,6 +1751,8 @@
     state.maxBudget = 12000;
     state.sortBy = "chronological";
 
+    const headerSearch = document.getElementById("header-search-input");
+    if (headerSearch) headerSearch.value = "";
     document.getElementById("search-input").value = "";
     document.getElementById("region-filter").value = "all";
     document.getElementById("duration-filter").value = "all";
@@ -1713,9 +1787,44 @@
       document.getElementById("expeditions-section").scrollIntoView({ behavior: "smooth" });
     });
 
-    document.getElementById("search-input").addEventListener("input", (e) => {
-      state.searchQuery = e.target.value;
+    const headerSearchInput = document.getElementById("header-search-input");
+    const headerSearchForm = document.getElementById("header-search-form");
+    const panelSearchInput = document.getElementById("search-input");
+
+    function handleSearchUpdate(rawValue, sourceEl) {
+      state.searchQuery = rawValue;
+      if (headerSearchInput && sourceEl !== headerSearchInput) {
+        headerSearchInput.value = rawValue;
+      }
+      if (panelSearchInput && sourceEl !== panelSearchInput) {
+        panelSearchInput.value = rawValue;
+      }
+      if (rawValue.trim() && state.selectedMonth !== "all") {
+        state.selectedMonth = "all";
+        renderMonthRibbon();
+      }
       renderAdventures();
+    }
+
+    if (headerSearchInput) {
+      headerSearchInput.addEventListener("input", (e) => {
+        handleSearchUpdate(e.target.value, headerSearchInput);
+      });
+    }
+
+    if (headerSearchForm) {
+      headerSearchForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (headerSearchInput) {
+          handleSearchUpdate(headerSearchInput.value, headerSearchInput);
+        }
+        const target = document.getElementById("expeditions-section");
+        if (target) target.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+
+    panelSearchInput.addEventListener("input", (e) => {
+      handleSearchUpdate(e.target.value, panelSearchInput);
     });
 
     document.getElementById("region-filter").addEventListener("change", (e) => {
@@ -1826,6 +1935,27 @@
         document.getElementById("planner-modal").hidden = true;
         document.getElementById("agents-modal").hidden = true;
         document.body.style.overflow = "";
+        return;
+      }
+
+      if (
+        e.key === "/" &&
+        !e.metaKey &&
+        !e.ctrlKey &&
+        !e.altKey &&
+        !document.getElementById("app-shell").hidden
+      ) {
+        const tag = (document.activeElement && document.activeElement.tagName) || "";
+        const isTyping =
+          tag === "INPUT" ||
+          tag === "TEXTAREA" ||
+          tag === "SELECT" ||
+          (document.activeElement && document.activeElement.isContentEditable);
+        if (!isTyping && headerSearchInput) {
+          e.preventDefault();
+          headerSearchInput.focus();
+          headerSearchInput.select();
+        }
       }
     });
   }

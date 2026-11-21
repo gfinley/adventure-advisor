@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="styles.css?v=20261121a" />
+  <link rel="stylesheet" href="styles.css?v=20261121b" />
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -22,7 +22,7 @@
   />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
   <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <script src="config.js?v=20261121a"></script>
+  <script src="config.js?v=20261121b"></script>
 </head>
 <body>
   <!-- Private AES-256-GCM Vault Gate (shown until passphrase or 365-day cookie unlocks data/adventures.enc.json) -->
@@ -75,21 +75,34 @@
         </span>
         <span class="brand-copy">
           <span class="brand-title">Nordic Atlas</span>
-          <span class="brand-sub">Antigravity Adventure Advisor</span>
+          <span class="brand-sub">Adventure Advisor</span>
         </span>
       </a>
 
+      <form class="header-search" id="header-search-form" role="search">
+        <label for="header-search-input" class="sr-only">Search all trips, countries, months, hotels, or trails</label>
+        <svg class="header-search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <input
+          type="search"
+          id="header-search-input"
+          placeholder="Search Iceland, Japan, Kumano, May, hotels… ( / )"
+          autocomplete="off"
+        />
+      </form>
+
       <nav class="main-nav" aria-label="Primary">
-        <a href="#agent-studio-section" class="nav-link">Spawn Agents</a>
         <a href="#calendar-section" class="nav-link">Calendar</a>
-        <a href="#expeditions-section" class="nav-link">Expeditions</a>
+        <a href="#expeditions-section" class="nav-link">Trips</a>
         <button type="button" class="nav-link nav-btn" id="open-agents-btn">Fleet</button>
         <div class="auth-header-slot" id="auth-header-slot">
-          <button type="button" class="auth-btn" id="open-connect-btn">Connect Backend</button>
+          <button type="button" class="auth-btn" id="open-connect-btn">Backend</button>
         </div>
-        <button type="button" class="shortlist-pill" id="open-planner-btn">
-          <span class="shortlist-dot" aria-hidden="true"></span>
-          <span>My Plan</span>
+        <button type="button" class="shortlist-pill" id="open-planner-btn" title="View all starred trips & annual budget">
+          <span class="star-glyph" aria-hidden="true">★</span>
+          <span>Starred</span>
           <span class="mono" id="header-shortlist-count">0</span>
           <span class="shortlist-divider" aria-hidden="true">·</span>
           <span class="mono" id="header-shortlist-cost">$0</span>
@@ -344,7 +357,8 @@
           <div class="filter-row filter-row-bottom">
             <div class="chip-group" id="category-chips" role="group" aria-label="Filter by activity category">
               <button type="button" class="chip active" data-category="all">All Styles</button>
-              <button type="button" class="chip" data-category="custom">★ New Agent Picks</button>
+              <button type="button" class="chip chip-starred" data-category="starred">★ Starred (<span id="chip-starred-count">0</span>)</button>
+              <button type="button" class="chip" data-category="custom">New Agent Picks</button>
               <button type="button" class="chip" data-category="Mountains">Mountains</button>
               <button type="button" class="chip" data-category="Hut Hiking">Hut Hiking</button>
               <button type="button" class="chip" data-category="Scuba">Scuba</button>
@@ -434,8 +448,8 @@
     <div class="modal-panel modal-wide">
       <div class="modal-header">
         <div>
-          <p class="section-kicker">2026–2027 Annual Shortlist</p>
-          <h2 id="planner-modal-title">My Adventure Plan &amp; Budget Ledger</h2>
+          <p class="section-kicker">Starred Expeditions · 2026–2027</p>
+          <h2 id="planner-modal-title">Starred Trips &amp; Budget Ledger</h2>
         </div>
         <button type="button" class="icon-close" id="close-planner-btn" aria-label="Close plan">✕</button>
       </div>
@@ -508,6 +522,6 @@
   </div>
   </div><!-- /#app-shell -->
 
-  <script src="app.js?v=20261121a" defer></script>
+  <script src="app.js?v=20261121b" defer></script>
 </body>
 </html>
