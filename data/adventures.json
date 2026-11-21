@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nordic & Off-Season Adventure Advisor",
-    "generatedAt": "2026-11-21T06:34:58Z",
+    "generatedAt": "2026-11-21T06:37:44Z",
     "homeAirport": "SEA (Seattle-Tacoma International)",
     "travelerProfile": "Solo active adventurer — mountains, supported hut hiking, cold-water drysuit scuba, Arctic cruises & cold mountain solitude lodges",
     "targetSweetSpotUsd": [
@@ -11,9 +11,9 @@
     "calendarSource": "Google Calendar: Adventure Calendar",
     "coverage": "December 2026 – November 2027",
     "monthCount": 12,
-    "adventureCount": 42,
-    "nordicCount": 34,
-    "customResearchCount": 6,
+    "adventureCount": 43,
+    "nordicCount": 35,
+    "customResearchCount": 7,
     "researchAgents": [
       {
         "id": "q1-agent",
@@ -2413,6 +2413,157 @@
       ],
       "advisorNote": "May 2027 is completely open and serves as your prime pre-Denali conditioning window plus peak Nordic shoulder season. Jotunheimen & Lysefjord DNT hut-to-hut delivers relentless steep vertical gain with snow-patch crampon/microspike work and zero July crowds; the Faroe Islands offer 18+ hours of dramatic North Atlantic cliff trekking plus cold-water kelp diving; and mid-May marks the opening of Svalbard's dramatic spring pack-ice expedition cruise season (higher cruise budget transparently detailed below).",
       "adventures": [
+        {
+          "id": "custom-2027-05-iceland-4x4-mountain-overland",
+          "title": "Iceland May 4x4 Overland: Snæfellsnes, Westfjords & Glacier Ridges",
+          "country": "Iceland",
+          "region": "Snæfellsnes, Westfjords & South Coast",
+          "coordinates": "65.72° N, 23.12° W",
+          "isNordic": true,
+          "categories": [
+            "4x4 Overland",
+            "Mountains",
+            "Cold Solitude Resort"
+          ],
+          "window": "May 8–18, 2027",
+          "days": 10,
+          "nights": 9,
+          "offSeasonScore": 93,
+          "crowdLevel": "Low",
+          "activityIntensity": "High",
+          "calendarFit": "May 2027 is completely open on your Adventure Calendar — ideal 10-day pre-Denali leg-conditioning & 4x4 overland expedition before June 4.",
+          "heroImage": "iceland_winter",
+          "tagline": "Condition your legs for Denali on roped Vatnajökull blue-ice walls and the 1,446m Snæfellsjökull glacier volcano, then pilot a 4x4 across open May Westfjords gravel passes, 440m Atlantic sea cliffs, and remote geothermal pools.",
+          "whyNow": "Mid-May hits Iceland's premier pre-summer shoulder window: 18–20 hours of sub-Arctic daylight, snow-draped alpine peaks, thunderous snowmelt cascades at Dynjandi, returning puffin colonies along Látrabjarg's 440m sea cliffs, and freshly reopened Westfjords lodges (May 1) — all weeks before June–August tour buses arrive. Because high-interior Highland F-roads (F208, F88, F26, F35) remain closed for spring thaw (leisingar) until June–July, this route focuses honestly on Iceland's open May gravel mountain passes, Westfjords headlands, Snæfellsnes stratovolcano, and Skaftafell glacier tongues for serious crampon, vertical-gain, and cold-solitude conditioning ahead of June's Denali climb.",
+          "flights": {
+            "route": "SEA → KEF",
+            "airlines": "Icelandair nonstop (FI680 / FI681)",
+            "duration": "7h 30m",
+            "estimatedRoundtripUsd": 630,
+            "notes": "Verified Icelandair daily nonstop SEA–KEF roundtrips start from $449 Economy Light and typically average $590–$650 in May shoulder; budgeting $630 covers Economy Standard with a checked mountaineering duffel for boots, crampons, and hardshells. FI680 departs SEA mid-afternoon arriving KEF ~6:15–6:45 AM; return FI681 departs KEF ~5:00 PM arriving SEA same afternoon."
+          },
+          "hotels": [
+            {
+              "name": "Fosshotel Westfjords",
+              "location": "Aðalstræti 100, 450 Patreksfjörður (Southern Westfjords)",
+              "style": "Fjord-Front Overland Base Hotel",
+              "roomType": "Standard Fjord-View Room (Solo Occupancy)",
+              "nightlyRateUsd": 205,
+              "soloFriendly": true,
+              "highlights": [
+                "Reopens May 1 after its Oct–Apr winter closure, offering crisp, uncrowded fjord-front solitude right on Patreksfjörður harbour",
+                "Prime 4x4 overland launchpad: 55 km from Látrabjarg's 440m seabird cliffs, 40 km from Rauðasandur red-sand cove, 60 km from Brjánslækur Baldur ferry, and 75 km from Dynjandi waterfall",
+                "On-site Nordic seafood restaurant and quick evening drive to geothermal shoreline tubs at Pollurinn (Tálknafjörður) and Hellulaug (Flókalundur)"
+              ],
+              "bookingUrl": "https://www.islandshotel.is/hotels-in-iceland/fosshotel-westfjords/"
+            },
+            {
+              "name": "Fosshotel Glacier Lagoon",
+              "location": "Hnappavellir, 785 Öræfi (Vatnajökull / Skaftafell South Coast)",
+              "style": "Contemporary Nordic Glacier-View Design Lodge",
+              "roomType": "Standard Double Room (Solo Occupancy, Mountain & Glacier-Plain View)",
+              "nightlyRateUsd": 225,
+              "soloFriendly": true,
+              "highlights": [
+                "Positioned 25 minutes east of Skaftafell Base Camp and 15 minutes from Múlagljúfur Canyon and Jökulsárlón — ideal base for dawn starts before day-trippers",
+                "Outdoor geothermal hot tubs and panoramic sauna overlooking Vatnajökull's glacial outwash plain for post-ice-climbing recovery",
+                "Green Key sustainability-certified 4-star design lodge with acclaimed on-site restaurant serving locally caught langoustine and lamb"
+              ],
+              "bookingUrl": "https://www.islandshotel.is/hotels-in-iceland/fosshotel-glacier-lagoon/"
+            },
+            {
+              "name": "Hótel Búðir",
+              "location": "Búðir 356, Snæfellsbær (Snæfellsnes Peninsula)",
+              "style": "Michelin-Selected Remote Lava-Field Boutique Country Hotel",
+              "roomType": "Standard Lava-Field & Mountain View Room (Solo Occupancy)",
+              "nightlyRateUsd": 295,
+              "soloFriendly": true,
+              "highlights": [
+                "Isolated dark-timber boutique lodge set alone between Búðahraun lava field, the iconic 19th-century black church (Búðakirkja), and the Atlantic seal estuary",
+                "Direct views of the 1,446m Snæfellsjökull glacier volcano and just 15 minutes from Arnarstapi's summit-hike staging point",
+                "Renowned farm-and-sea regional dining room and cozy panoramic fireplace lounge — a quiet 2h 45m coastal drive from KEF for departure day"
+              ],
+              "bookingUrl": "https://www.hotelbudir.is/rooms"
+            }
+          ],
+          "vehicle": {
+            "needed": true,
+            "recommendedClass": "Compact 4x4 SUV (Dacia Duster 4x4 Manual/Auto — Zero-Excess Gravel & Sand/Ash Cover)",
+            "provider": "Blue Car Rental / Zero Car at Keflavík International Airport (KEF)",
+            "dailyRateUsd": 95,
+            "days": 10,
+            "insuranceAndFuelUsd": 550,
+            "notes": "Verified May shoulder Dacia Duster 4x4 rate via Blue Car Rental / Zero Car with Full Protection (0 ISK deductible: CDW, SCDW, Gravel Protection, Sand & Ash Protection, Roadside Assistance) runs ~$95/day (base Duster from 8,458 ISK/d; full zero-excess bundle from 13,358 ISK/d in 2026–27). The $550 fuel/tax/transit estimate covers ~2,050 km diesel/petrol (~130 L @ ~$2.18/L ≈ $283), Iceland's mandatory 2027 kílómetragjald road tax (1,770 ISK/day rental fleet rate = 17,700 ISK ≈ $142 for 10 days, replacing pump fuel tax at 6.95 ISK/km statutory rate with unlimited mileage), and the one-way Baldur 4x4 car ferry across Breiðafjörður (Stykkishólmur → Brjánslækur: 7,700 ISK car + 7,700 ISK driver = 15,400 ISK ≈ $124). High-interior F-roads remain closed in May; check umferdin.is daily for Westfjords mountain pass snow conditions (Hálfdán, Miklidalur, Dynjandisheiði)."
+          },
+          "activities": [
+            {
+              "name": "Skaftafell Glacier Hike & Ice Climbing (4.5h Technical Falljökull / Vatnajökull Ascent — Crampons, Ice Axes & Vertical Blue-Ice Wall)",
+              "operator": "Icelandic Mountain Guides (Skaftafell Base Camp)",
+              "costUsd": 265,
+              "optional": false,
+              "url": "https://www.mountainguides.is/tour/skf-glacier-walk-ice-climb"
+            },
+            {
+              "name": "Snæfellsjökull Stratovolcano Glacier Summit Ascent (1,446m, 7h Roped Alpine Climb — 750m Vertical Gain)",
+              "operator": "Icelandic Mountain Guides (Arnarstapi / Snæfellsnes)",
+              "costUsd": 435,
+              "optional": false,
+              "url": "https://www.mountainguides.is/tour/snaefellsjokull-glacier-hike"
+            },
+            {
+              "name": "Húsafell Canyon Baths Guided Wilderness Hike & Remote Highland Flagstone Geothermal Soak (1h 45m)",
+              "operator": "Húsafell Resort / Húsafell Canyon Baths",
+              "costUsd": 88,
+              "optional": true,
+              "url": "https://www.husafell.com/activities/husafell-canyon-baths"
+            }
+          ],
+          "foodAndMiscPerDayUsd": 95,
+          "theoreticalBooking": {
+            "targetBookBy": "December 2026 – February 2027 (Hótel Búðir has only 49 rooms, Fosshotel Westfjords reopens May 1 with limited fjord-view inventory, and IMG's Snæfellsjökull summit departures cap small rope teams; book the Baldur ferry vehicle slot 4–6 weeks ahead)",
+            "cancellationFlex": "Blue Car Rental / Zero Car includes free cancellation up to 24h before pickup with zero deposit; Íslandshótel (Fosshotel) flexible direct rates and Hótel Búðir offer refundable booking tiers; Icelandic Mountain Guides reschedules or refunds full-price summit/ice climbs if May alpine weather cancels departures.",
+            "budgetNote": "Canonical solo baseline (using Fosshotel Westfjords at $205/nt across 9 nights) totals ~$5,625 USD ($5,713 with optional Húsafell Canyon Baths). Actual recommended 9-night split stay — 3 nights Fosshotel Glacier Lagoon ($675) + 3 nights Fosshotel Westfjords ($615) + 3 nights Hótel Búðir ($885) = $2,175 lodging (+$330 over baseline) — lands at ~$5,955 USD all-in ($6,043 with optional Canyon Baths), right inside the $3k–$6k solo target."
+          },
+          "itinerary": [
+            "Day 1 (May 8): Depart Seattle (SEA) on Icelandair nonstop FI680 (~7h 30m overnight flight to Keflavík) with mountaineering boots, crampon-compatible layers, and daypack.",
+            "Day 2 (May 9): Land at KEF early morning (~6:30 AM), collect 4x4 Dacia Duster from Blue Car Rental, stock up on trail provisions at Bónus in Selfoss, and drive Ring Road 1 east past Seljalandsfoss, Skógafoss, and Reynisfjara basalt cliffs to Fosshotel Glacier Lagoon (370 km / 4h 45m). Loosen travel legs on the Svínafellsjökull moraine trail and recover in the hotel's outdoor geothermal hot tubs and sauna (Night 1: Fosshotel Glacier Lagoon).",
+            "Day 3 (May 10): Pre-Denali technical glacier day at Vatnajökull National Park (25 min west) — join Icelandic Mountain Guides (max 6 per AIMG guide) for the 4.5-hour Skaftafell Glacier Hike & Ice Climbing ascent on Falljökull's crevassed blue-ice walls, followed by an afternoon climb past Svartifoss to the Sjónarnípa ridge overlook (Night 2: Fosshotel Glacier Lagoon).",
+            "Day 4 (May 11): Dawn leg-conditioning push up Múlagljúfur Canyon (6 km / 400m vertical gain to Hangandifoss overlook with zero tour crowds), followed by an extended ridge hike along Kristínartindar's snow-rimmed lower slopes above Skaftafellsjökull and golden-hour stops at Fjallsárlón and Jökulsárlón Glacier Lagoon (Night 3: Fosshotel Glacier Lagoon).",
+            "Day 5 (May 12): Full overland drive west from Vatnajökull to West Iceland (~475 km / 5h 45m on paved Ring Road 1 & scenic Hvalfjörður Route 47), with an optional detour into Borgarfjörður for the guided Húsafell Canyon Baths wilderness hike and highland flagstone thermal soak before checking into Hótel Búðir beside the black church on Snæfellsnes (Night 4: Hótel Búðir).",
+            "Day 6 (May 13): Drive north across Snæfellsnes past Kirkjufell and along the rough Berserkjahraun volcanic gravel track to Stykkishólmur (65 km / 1h); board the Baldur 4x4 car ferry across Breiðafjörður (2h 10m) to Brjánslækur. Navigate open May gravel coastal Route 62 to Fosshotel Westfjords in Patreksfjörður (60 km / 55m), capping the evening in the cliffside Pollurinn hot tubs overlooking Tálknafjörður (Night 5: Fosshotel Westfjords).",
+            "Day 7 (May 14): Edge-of-Europe 4x4 gravel & ridge-conditioning day — pilot unpaved cliffside Route 612 to Látrabjarg (440m North Atlantic bird cliffs, Europe's westernmost point) for an exposed 10 km rim hike among returning mid-May Atlantic puffins and razorbills, then descend the steep gravel switchbacks of Route 614 into Rauðasandur's 10 km red-sand flats and the rusting Garðar BA 64 hull (Night 6: Fosshotel Westfjords).",
+            "Day 8 (May 15): Westfjords open mountain-pass overland loop — check umferdin.is and drive Route 63 over the dramatic Hálfdán and Miklidalur passes to thunderous Dynjandi (100m tiered bridal-veil waterfall roaring with May snowmelt). Hike the steep granite trail beside all seven tiers, explore Arnarfjörður's gravel fjord tracks (and Sandafell ridge overlook near Þingeyri if snow-free), then soak at oceanfront stone hot spring Hellulaug in Flókalundur (Night 7: Fosshotel Westfjords).",
+            "Day 9 (May 16): Overland out of the Westfjords via Route 60/68 gravel-and-paved passes (Klettsháls & Brattabrekka) — with an optional scenic coastal detour up to Strandir / Drangsnes for a soak in its free shoreline geothermal hot pots on Steingrímsfjörður — returning to Hótel Búðir (~335 km / 4h 30m direct; ~440 km / 6h via Drangsnes) to prep rope-team gear for tomorrow's summit push (Night 8: Hótel Búðir).",
+            "Day 10 (May 17–18): Summit Day (May 17) — meet Icelandic Mountain Guides at Arnarstapi (15 min away) for the challenging 7-hour roped Snæfellsjökull Stratovolcano Glacier Summit Ascent (1,446m peak, ~750m vertical gain on snow-covered glacier slopes — peak pre-Denali conditioning, squarely in IMG's mid-May summit window), followed by a celebratory final dinner and Night 9 at Hótel Búðir. On May 18, enjoy an unhurried 2h 45m drive back to Keflavík (KEF), drop off the 4x4, and board Icelandair nonstop FI681 (~5:00 PM) home to Seattle (SEA)."
+          ],
+          "sources": [
+            "Icelandair Nonstop SEA–KEF Fares & Schedule (FI680/FI681, ~7h 30m, Economy Light from $449 / typical $590+): https://www.icelandair.com/en-us/flights/flights-from-seattle-to-reykjavik",
+            "Blue Car Rental & Zero Car Dacia Duster 4x4 Pricing (from 8,458 ISK/d base; 13,358 ISK/d with Zero Excess & Roadside Waiver): https://www.zerocar.is/icelandic-rental-cars/dacia-duster-diesel-4x4-manual",
+            "Iceland 2026–2027 Per-Kilometer Road Tax (kílómetragjald: 6.95 ISK/km statutory; 1,550 ISK/day in 2026 stepping to 1,770 ISK/day in 2027 for rental fleets): https://www.reykjavikrentacar.is/visit-iceland/iceland-per-kilometer-road-tax",
+            "Iceland Fuel Prices (Nov 2026: gasoline ~271 ISK/L ≈ $2.18/L): https://www.globalpetrolprices.com/Iceland/gasoline_prices/",
+            "Baldur Ferry Stykkishólmur–Brjánslækur Rates (7,700 ISK adult + 7,700 ISK car up to 5m, 2h 10m crossing): https://mapoficeland.is/guides/baldur-ferry/",
+            "Vegagerðin / Umferðin Iceland Road & Highland F-Road Status (May F-road closures & live Westfjords pass conditions): https://umferdin.is/en/region/westfjords",
+            "Fosshotel Westfjords (Reopens May 1; rates from $198/nt): https://www.islandshotel.is/hotels-in-iceland/fosshotel-westfjords/",
+            "Fosshotel Glacier Lagoon (4-star Öræfi/Skaftafell base; Standard/Double rates from $162–$245/nt shoulder): https://www.islandshotel.is/hotels-in-iceland/fosshotel-glacier-lagoon/",
+            "Hótel Búðir Snæfellsnes (Official rooms & Michelin-selected shoulder rates $288–$339+): https://www.hotelbudir.is/rooms",
+            "Icelandic Mountain Guides — Skaftafell Glacier Hike & Ice Climbing (4.5h, 32,999 ISK ≈ $265 USD): https://www.mountainguides.is/tour/skf-glacier-walk-ice-climb",
+            "Icelandic Mountain Guides — Snæfellsjökull Summit Hike (7h, May–Sept, 53,999 ISK / $432–$436 USD): https://www.mountainguides.is/tour/snaefellsjokull-glacier-hike",
+            "Húsafell Canyon Baths Guided Wilderness Hike & Geothermal Soak (9,900–10,900 ISK ≈ $88 USD): https://www.husafell.com/activities/husafell-canyon-baths"
+          ],
+          "isCustomResearch": true,
+          "researchPrompt": "May 2027 Iceland 4x4 overland and mountain solitude expedition (no scuba, pre-Denali conditioning)",
+          "researchedAt": "2026-11-21T06:35:00Z",
+          "computedCosts": {
+            "flightsUsd": 630,
+            "lodgingUsd": 1845,
+            "vehicleAndTransportUsd": 1500,
+            "coreActivitiesUsd": 700,
+            "allActivitiesUsd": 788,
+            "foodAndMiscUsd": 950,
+            "baseTotalUsd": 5625,
+            "fullTotalUsd": 5713
+          }
+        },
         {
           "id": "custom-2027-05-scotland-torridon-skye-scapa",
           "title": "Scottish Highlands: Torridon & Isle of Skye Supported Ridge Trek",
