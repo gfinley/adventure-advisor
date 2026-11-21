@@ -577,13 +577,12 @@
       },
       {
         "id": "jan-2027-iceland-snaefellsnes",
-        "title": "Snæfellsnes & West Iceland Winter Solitude + Silfra Dive",
+        "title": "Snæfellsnes & West Iceland Winter 4x4 Solitude + Glacier Ridges",
         "country": "Iceland",
         "region": "Snæfellsnes Peninsula, Borgarfjörður & Þingvellir",
         "coordinates": "64.82° N, 23.39° W",
         "isNordic": true,
         "categories": [
-          "Scuba",
           "Mountains",
           "Cold Solitude Resort",
           "4x4 Overland"
@@ -596,7 +595,7 @@
         "activityIntensity": "High",
         "calendarFit": "Uses your wide-open Jan 1–8 window right after New Year's Day and lands you back in Seattle Jan 7—two full days before your Jan 9–10 Avalanche Safety Primary course.",
         "heroImage": "iceland_winter",
-        "tagline": "Pair wild North Atlantic basalt sea cliffs and Snæfellsjökull glacier solitude with highland canyon hot springs and a frigid tectonic drysuit dive.",
+        "tagline": "Empty winter basalt peninsulas, Snæfellsjökull glacier hikes, and geothermal canyon baths in deep January quiet.",
         "whyNow": "The first week of January sees tourist volumes plunge across West Iceland: Snæfellsnes boutique hotels hit their yearly low-season floor ($185–$395/night), Kirkjufell and Arnarstapi cliffs are wind-swept and empty, and Icelandair SEA–KEF fares dip to winter minimums.",
         "flights": {
           "route": "SEA → KEF",
@@ -660,13 +659,6 @@
         },
         "activities": [
           {
-            "name": "Silfra Fissure Certified Drysuit Scuba Dive (Meet on Location)",
-            "operator": "DIVE.IS",
-            "costUsd": 335,
-            "optional": false,
-            "url": "https://www.dive.is/dive-sites/silfra"
-          },
-          {
             "name": "Snæfellsjökull Winter Glacier Approach & Vatnshellir 8,000-Year Lava Tube Guided Tour",
             "operator": "Summit Guides / Arctic Adventures",
             "costUsd": 185,
@@ -679,6 +671,13 @@
             "costUsd": 89,
             "optional": false,
             "url": "https://www.husafell.com/things-to-do/canyon-baths"
+          },
+          {
+            "name": "Langjökull Glacier Ice Tunnel & 4x4 Highland Approach",
+            "operator": "Into The Glacier (Húsafell)",
+            "costUsd": 175,
+            "optional": true,
+            "url": "https://intotheglacier.is/"
           }
         ],
         "foodAndMiscPerDayUsd": 105,

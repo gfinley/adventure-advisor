@@ -21,7 +21,7 @@
     "adventures": [
       {
         "id": "mar-2027-nz-routeburn-scuba",
-        "title": "Post-NOLS New Zealand: Routeburn Supported Hut-to-Hut + Milford & Poor Knights Scuba",
+        "title": "Post-NOLS New Zealand: Routeburn Supported Hut-to-Hut & Fiordland Ridges",
         "country": "New Zealand",
         "region": "Fiordland, Mt. Aspiring & Tutukaka Coast",
         "coordinates": "44.72° S, 168.18° E",
@@ -29,7 +29,6 @@
         "categories": [
           "Mountains",
           "Hut Hiking",
-          "Scuba",
           "4x4 Overland"
         ],
         "window": "Mar 13–22, 2027",
@@ -40,7 +39,7 @@
         "activityIntensity": "High",
         "calendarFit": "Seamless zero-jetlag extension starting Mar 13 immediately after NOLS New Zealand concludes on Mar 12; fly home AKL–SEA on Mar 22 with 9 days still open in March.",
         "heroImage": "norway_fjords",
-        "tagline": "Leverage your existing NZ ticket for an alpine Great Walk in private mountain lodges plus cold-water Fiordland black coral and Poor Knights marine reserve diving.",
+        "tagline": "Zero extra transpacific airfare: link straight off NOLS NZ into luxury supported Routeburn Track huts and Fiordland alpine ridges.",
         "whyNow": "Mid-March is early autumn shoulder in New Zealand: summer school holiday crowds have vanished, the Southern Alps have crisp stable high-pressure weather before April snowstorms close Great Walk passes, and Poor Knights water visibility peaks (15–25m) while Milford Sound's deep-water black coral walls stay dramatic and quiet.",
         "flights": {
           "route": "ZQN → AKL (domestic positioning; existing NOLS SEA–NZ return open-jawed out of AKL)",
@@ -111,18 +110,18 @@
             "url": "https://www.ultimatehikes.co.nz/multi-day-guided-walks/routeburn-track"
           },
           {
-            "name": "Poor Knights Islands 2-Tank Certified Scuba Charter (Volcanic Arches, Kelp & Caves, Full Gear Hire)",
-            "operator": "Dive! Tutukaka",
-            "costUsd": 245,
+            "name": "Kepler Track Alpine Ridge Guided Heli-Hike (Luxmore Hut Panorama)",
+            "operator": "Trips & Tramps Fiordland",
+            "costUsd": 345,
             "optional": false,
-            "url": "https://www.diving.co.nz/diving"
+            "url": "https://www.tripsandtramps.com/"
           },
           {
-            "name": "Milford Sound 2-Tank Cold-Water Fjord & Black Coral Wall Dive (Full 8mm/Drysuit-Ready Gear)",
-            "operator": "Sound Diving NZ",
-            "costUsd": 270,
+            "name": "Milford Sound Early-Morning Wilderness Kayak & Bowen Falls",
+            "operator": "Rosco’s Milford Kayaks",
+            "costUsd": 165,
             "optional": true,
-            "url": "https://www.sounddiving.nz/milford-sound-diving"
+            "url": "https://www.roscosmilfordkayaks.com/"
           }
         ],
         "foodAndMiscPerDayUsd": 85,
@@ -832,7 +831,7 @@
     "adventures": [
       {
         "id": "may-2027-faroe-sea-cliffs",
-        "title": "Faroe Islands Sea-Cliff Ridge Traverses & Cold-Water Solitude",
+        "title": "Faroe Islands Sea-Cliff Ridge Traverses & Atlantic Mountain Solitude",
         "country": "Faroe Islands",
         "region": "Streymoy, Eysturoy, Kalsoy & Vágar",
         "coordinates": "62.01° N, 6.77° W",
@@ -840,7 +839,6 @@
         "categories": [
           "Mountains",
           "4x4 Overland",
-          "Scuba",
           "Cold Solitude Resort"
         ],
         "window": "May 6–15, 2027",
@@ -929,11 +927,11 @@
             "url": "https://guidetofaroeislands.fo/destinations/torshavn/"
           },
           {
-            "name": "North Atlantic Cold-Water Drysuit Scuba Dive (8.5-hr Guided Kelp Forest & Basalt Cave Dive, All Gear)",
-            "operator": "North Atlantic Diving",
-            "costUsd": 435,
+            "name": "Mykines & Vestmanna Sea-Cliff Boat Approach + Coastal Ridge Walk",
+            "operator": "62°N Faroe Islands",
+            "costUsd": 135,
             "optional": true,
-            "url": "https://guidetofaroeislands.fo/tour-operator-tours-holiday/north-atlantic-diving/"
+            "url": "https://www.62n.fo/"
           }
         ],
         "foodAndMiscPerDayUsd": 95,

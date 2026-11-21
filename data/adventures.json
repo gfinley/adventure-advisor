@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nordic & Off-Season Adventure Advisor",
-    "generatedAt": "2026-11-21T06:27:31Z",
+    "generatedAt": "2026-11-21T06:34:58Z",
     "homeAirport": "SEA (Seattle-Tacoma International)",
     "travelerProfile": "Solo active adventurer — mountains, supported hut hiking, cold-water drysuit scuba, Arctic cruises & cold mountain solitude lodges",
     "targetSweetSpotUsd": [
@@ -666,13 +666,12 @@
         },
         {
           "id": "jan-2027-iceland-snaefellsnes",
-          "title": "Snæfellsnes & West Iceland Winter Solitude + Silfra Dive",
+          "title": "Snæfellsnes & West Iceland Winter 4x4 Solitude + Glacier Ridges",
           "country": "Iceland",
           "region": "Snæfellsnes Peninsula, Borgarfjörður & Þingvellir",
           "coordinates": "64.82° N, 23.39° W",
           "isNordic": true,
           "categories": [
-            "Scuba",
             "Mountains",
             "Cold Solitude Resort",
             "4x4 Overland"
@@ -685,7 +684,7 @@
           "activityIntensity": "High",
           "calendarFit": "Uses your wide-open Jan 1–8 window right after New Year's Day and lands you back in Seattle Jan 7—two full days before your Jan 9–10 Avalanche Safety Primary course.",
           "heroImage": "iceland_winter",
-          "tagline": "Pair wild North Atlantic basalt sea cliffs and Snæfellsjökull glacier solitude with highland canyon hot springs and a frigid tectonic drysuit dive.",
+          "tagline": "Empty winter basalt peninsulas, Snæfellsjökull glacier hikes, and geothermal canyon baths in deep January quiet.",
           "whyNow": "The first week of January sees tourist volumes plunge across West Iceland: Snæfellsnes boutique hotels hit their yearly low-season floor ($185–$395/night), Kirkjufell and Arnarstapi cliffs are wind-swept and empty, and Icelandair SEA–KEF fares dip to winter minimums.",
           "flights": {
             "route": "SEA → KEF",
@@ -749,13 +748,6 @@
           },
           "activities": [
             {
-              "name": "Silfra Fissure Certified Drysuit Scuba Dive (Meet on Location)",
-              "operator": "DIVE.IS",
-              "costUsd": 335,
-              "optional": false,
-              "url": "https://www.dive.is/dive-sites/silfra"
-            },
-            {
               "name": "Snæfellsjökull Winter Glacier Approach & Vatnshellir 8,000-Year Lava Tube Guided Tour",
               "operator": "Summit Guides / Arctic Adventures",
               "costUsd": 185,
@@ -768,6 +760,13 @@
               "costUsd": 89,
               "optional": false,
               "url": "https://www.husafell.com/things-to-do/canyon-baths"
+            },
+            {
+              "name": "Langjökull Glacier Ice Tunnel & 4x4 Highland Approach",
+              "operator": "Into The Glacier (Húsafell)",
+              "costUsd": 175,
+              "optional": true,
+              "url": "https://intotheglacier.is/"
             }
           ],
           "foodAndMiscPerDayUsd": 105,
@@ -796,11 +795,11 @@
             "flightsUsd": 610,
             "lodgingUsd": 740,
             "vehicleAndTransportUsd": 615,
-            "coreActivitiesUsd": 609,
-            "allActivitiesUsd": 609,
+            "coreActivitiesUsd": 274,
+            "allActivitiesUsd": 449,
             "foodAndMiscUsd": 525,
-            "baseTotalUsd": 3099,
-            "fullTotalUsd": 3099
+            "baseTotalUsd": 2764,
+            "fullTotalUsd": 2939
           }
         },
         {
@@ -1400,7 +1399,7 @@
       "adventures": [
         {
           "id": "mar-2027-nz-routeburn-scuba",
-          "title": "Post-NOLS New Zealand: Routeburn Supported Hut-to-Hut + Milford & Poor Knights Scuba",
+          "title": "Post-NOLS New Zealand: Routeburn Supported Hut-to-Hut & Fiordland Ridges",
           "country": "New Zealand",
           "region": "Fiordland, Mt. Aspiring & Tutukaka Coast",
           "coordinates": "44.72° S, 168.18° E",
@@ -1408,7 +1407,6 @@
           "categories": [
             "Mountains",
             "Hut Hiking",
-            "Scuba",
             "4x4 Overland"
           ],
           "window": "Mar 13–22, 2027",
@@ -1419,7 +1417,7 @@
           "activityIntensity": "High",
           "calendarFit": "Seamless zero-jetlag extension starting Mar 13 immediately after NOLS New Zealand concludes on Mar 12; fly home AKL–SEA on Mar 22 with 9 days still open in March.",
           "heroImage": "norway_fjords",
-          "tagline": "Leverage your existing NZ ticket for an alpine Great Walk in private mountain lodges plus cold-water Fiordland black coral and Poor Knights marine reserve diving.",
+          "tagline": "Zero extra transpacific airfare: link straight off NOLS NZ into luxury supported Routeburn Track huts and Fiordland alpine ridges.",
           "whyNow": "Mid-March is early autumn shoulder in New Zealand: summer school holiday crowds have vanished, the Southern Alps have crisp stable high-pressure weather before April snowstorms close Great Walk passes, and Poor Knights water visibility peaks (15–25m) while Milford Sound's deep-water black coral walls stay dramatic and quiet.",
           "flights": {
             "route": "ZQN → AKL (domestic positioning; existing NOLS SEA–NZ return open-jawed out of AKL)",
@@ -1490,18 +1488,18 @@
               "url": "https://www.ultimatehikes.co.nz/multi-day-guided-walks/routeburn-track"
             },
             {
-              "name": "Poor Knights Islands 2-Tank Certified Scuba Charter (Volcanic Arches, Kelp & Caves, Full Gear Hire)",
-              "operator": "Dive! Tutukaka",
-              "costUsd": 245,
+              "name": "Kepler Track Alpine Ridge Guided Heli-Hike (Luxmore Hut Panorama)",
+              "operator": "Trips & Tramps Fiordland",
+              "costUsd": 345,
               "optional": false,
-              "url": "https://www.diving.co.nz/diving"
+              "url": "https://www.tripsandtramps.com/"
             },
             {
-              "name": "Milford Sound 2-Tank Cold-Water Fjord & Black Coral Wall Dive (Full 8mm/Drysuit-Ready Gear)",
-              "operator": "Sound Diving NZ",
-              "costUsd": 270,
+              "name": "Milford Sound Early-Morning Wilderness Kayak & Bowen Falls",
+              "operator": "Rosco’s Milford Kayaks",
+              "costUsd": 165,
               "optional": true,
-              "url": "https://www.sounddiving.nz/milford-sound-diving"
+              "url": "https://www.roscosmilfordkayaks.com/"
             }
           ],
           "foodAndMiscPerDayUsd": 85,
@@ -1531,11 +1529,11 @@
             "flightsUsd": 240,
             "lodgingUsd": 2120,
             "vehicleAndTransportUsd": 618,
-            "coreActivitiesUsd": 1455,
-            "allActivitiesUsd": 1725,
+            "coreActivitiesUsd": 1555,
+            "allActivitiesUsd": 1720,
             "foodAndMiscUsd": 765,
-            "baseTotalUsd": 5198,
-            "fullTotalUsd": 5468
+            "baseTotalUsd": 5298,
+            "fullTotalUsd": 5463
           }
         },
         {
@@ -2417,14 +2415,13 @@
       "adventures": [
         {
           "id": "custom-2027-05-scotland-torridon-skye-scapa",
-          "title": "Scottish Highlands: Torridon & Skye Supported Ridge Trek + Scapa Flow Scuba Option",
+          "title": "Scottish Highlands: Torridon & Isle of Skye Supported Ridge Trek",
           "country": "Scotland (United Kingdom)",
           "region": "Wester Ross (Torridon), Isle of Skye & Orkney (Scapa Flow)",
           "coordinates": "57.55° N, 5.52° W",
           "isNordic": false,
           "categories": [
             "Mountains",
-            "Scuba",
             "Cold Solitude Resort",
             "4x4 Overland"
           ],
@@ -2436,7 +2433,7 @@
           "activityIntensity": "High",
           "calendarFit": "May 2027 is completely open on your Adventure Calendar — prime 10-day pre-midge Scottish Highland ridge scrambling & optional Scapa Flow drysuit wreck dive expedition.",
           "heroImage": "norway_fjords",
-          "tagline": "Scramble the 750-million-year-old sandstone battlements of Liathach and Skye's jagged Cuillin/Quiraing ridges with local WMCI guides, then cross the Pentland Firth to optionally dive the scuttled WWI German High Seas Fleet in Scapa Flow.",
+          "tagline": "Scotland’s driest pre-midge off-season window linking Torridon Munros, Skye’s Black Cuillin ridges, and classic Highland solitude lodges.",
           "whyNow": "Mid-May is Scotland's undisputed insider sweet spot: statistically the driest, brightest month in the Northwest Highlands with 17+ hours of daylight, snow-free sandstone scrambles, zero Highland midges (which hatch in June), far lower crowds than July–August, and Scapa Flow's clearest pre-plankton-bloom underwater visibility (10–15m+ in 7–9°C water).",
           "flights": {
             "route": "SEA → LHR/AMS → INV (Inverness, Scottish Highlands)",
@@ -2514,11 +2511,11 @@
               "url": "https://www.climbtorridon.co.uk/courses/skye-cuillin/"
             },
             {
-              "name": "Scapa Flow 2-Tank Scuttled WWI German High Seas Fleet & WWII Blockship Drysuit Dive Day Charter (Incl. Full Drysuit/Twin-Set Kit Hire & Nitrox 32%)",
-              "operator": "MV Invincible / Kraken Diving & Scapa Scuba (Stromness)",
-              "costUsd": 395,
+              "name": "Guided Knoydart / Loch Coruisk Boat-In Remote Mountain Traverse",
+              "operator": "Skye Guides / Misty Isle Boat Trips",
+              "costUsd": 210,
               "optional": true,
-              "url": "https://www.scapa-flow.co.uk/"
+              "url": "https://www.skyeguides.co.uk/"
             }
           ],
           "foodAndMiscPerDayUsd": 85,
@@ -2555,15 +2552,15 @@
             "lodgingUsd": 2025,
             "vehicleAndTransportUsd": 1070,
             "coreActivitiesUsd": 880,
-            "allActivitiesUsd": 1275,
+            "allActivitiesUsd": 1090,
             "foodAndMiscUsd": 850,
             "baseTotalUsd": 5645,
-            "fullTotalUsd": 6040
+            "fullTotalUsd": 5855
           }
         },
         {
           "id": "may-2027-faroe-sea-cliffs",
-          "title": "Faroe Islands Sea-Cliff Ridge Traverses & Cold-Water Solitude",
+          "title": "Faroe Islands Sea-Cliff Ridge Traverses & Atlantic Mountain Solitude",
           "country": "Faroe Islands",
           "region": "Streymoy, Eysturoy, Kalsoy & Vágar",
           "coordinates": "62.01° N, 6.77° W",
@@ -2571,7 +2568,6 @@
           "categories": [
             "Mountains",
             "4x4 Overland",
-            "Scuba",
             "Cold Solitude Resort"
           ],
           "window": "May 6–15, 2027",
@@ -2660,11 +2656,11 @@
               "url": "https://guidetofaroeislands.fo/destinations/torshavn/"
             },
             {
-              "name": "North Atlantic Cold-Water Drysuit Scuba Dive (8.5-hr Guided Kelp Forest & Basalt Cave Dive, All Gear)",
-              "operator": "North Atlantic Diving",
-              "costUsd": 435,
+              "name": "Mykines & Vestmanna Sea-Cliff Boat Approach + Coastal Ridge Walk",
+              "operator": "62°N Faroe Islands",
+              "costUsd": 135,
               "optional": true,
-              "url": "https://guidetofaroeislands.fo/tour-operator-tours-holiday/north-atlantic-diving/"
+              "url": "https://www.62n.fo/"
             }
           ],
           "foodAndMiscPerDayUsd": 95,
@@ -2695,10 +2691,10 @@
             "lodgingUsd": 1880,
             "vehicleAndTransportUsd": 1145,
             "coreActivitiesUsd": 410,
-            "allActivitiesUsd": 845,
+            "allActivitiesUsd": 545,
             "foodAndMiscUsd": 855,
             "baseTotalUsd": 5380,
-            "fullTotalUsd": 5815
+            "fullTotalUsd": 5515
           }
         },
         {
@@ -3142,14 +3138,13 @@
         },
         {
           "id": "jun-2027-iceland-midnight-sun",
-          "title": "Iceland Express Midnight Sun: Snæfellsnes & Silfra 5-Day Strike",
+          "title": "Iceland Express Midnight Sun: Snæfellsnes 4x4 & Glacier 5-Day Strike",
           "country": "Iceland",
           "region": "Þingvellir, West Iceland & Snæfellsnes Peninsula",
           "coordinates": "64.8211° N, 23.3853° W",
           "isNordic": true,
           "categories": [
             "Mountains",
-            "Scuba",
             "4x4 Overland"
           ],
           "window": "Jun 1–5, 2027 (or Denali Backup Strike)",
@@ -3224,13 +3219,6 @@
           },
           "activities": [
             {
-              "name": "Diving Silfra Fissure — Drysuit Scuba (Meet on Location, 100m Visibility)",
-              "operator": "DIVE.IS",
-              "costUsd": 285,
-              "optional": false,
-              "url": "https://www.dive.is/diving-snorkeling-tours/diving-day-tours/diving-silfra-midnight-sun"
-            },
-            {
               "name": "Snæfellsjökull Glacier Summit Hike (Guided Crampon & Rope Ascent)",
               "operator": "Arctic Adventures / Summit Guides Iceland",
               "costUsd": 265,
@@ -3243,6 +3231,13 @@
               "costUsd": 95,
               "optional": true,
               "url": "https://www.hotelhusafell.com/"
+            },
+            {
+              "name": "Glymur Waterfall Canyon & Hvalfjörður High-Ridge Loop (Self-Guided w/ Local GPX)",
+              "operator": "Independent 4x4 Trailhead Access",
+              "costUsd": 15,
+              "optional": false,
+              "url": "https://www.visiticeland.com/"
             }
           ],
           "foodAndMiscPerDayUsd": 110,
@@ -3268,24 +3263,23 @@
             "flightsUsd": 780,
             "lodgingUsd": 1540,
             "vehicleAndTransportUsd": 835,
-            "coreActivitiesUsd": 550,
-            "allActivitiesUsd": 645,
+            "coreActivitiesUsd": 280,
+            "allActivitiesUsd": 375,
             "foodAndMiscUsd": 550,
-            "baseTotalUsd": 4255,
-            "fullTotalUsd": 4350
+            "baseTotalUsd": 3985,
+            "fullTotalUsd": 4080
           }
         },
         {
           "id": "jun-2027-north-cascades-hood-canal",
-          "title": "North Cascades / Methow Valley Alpine Hut & Hood Canal Cold-Water Dive",
+          "title": "North Cascades & Methow Valley Alpine Hut Shakedown Strike",
           "country": "United States (Washington)",
           "region": "Methow Valley / North Cascades & Hood Canal",
           "coordinates": "48.5918° N, 120.4023° W",
           "isNordic": false,
           "categories": [
             "Mountains",
-            "Hut Hiking",
-            "Scuba"
+            "Hut Hiking"
           ],
           "window": "Jun 1–4, 2027 (Pre-Denali Window)",
           "days": 4,
@@ -3294,8 +3288,8 @@
           "crowdLevel": "Low",
           "activityIntensity": "High",
           "calendarFit": "Fits cleanly into the Jun 1–3/4 open slot right before NOLS Denali — zero flights, drive straight from Kitsap Peninsula for a final drysuit dive + high-alpine gear shakedown.",
-          "heroImage": "solitude_lodge",
-          "tagline": "Pair a Giant Pacific Octopus drysuit dive in Hood Canal with early-June Methow backcountry huts and freshly opened North Cascades passes.",
+          "heroImage": "lapland_huts",
+          "tagline": "Zero-flight Kitsap drive to Washington Pass granite peaks and backcountry Methow huts right before or between June commitments.",
           "whyNow": "SR-20 North Cascades Highway typically opens in late May, making early June an ultra-quiet shoulder window before July hiker congestion and wildfire smoke, while Hood Canal water clarity peaks ahead of summer plankton blooms.",
           "flights": {
             "route": "No flight needed — drive direct from Kitsap Peninsula via Bainbridge/Kingston Ferry & SR-20",
@@ -3359,25 +3353,25 @@
           },
           "activities": [
             {
-              "name": "Sund Rock Marine Preserve Private Guided Drysuit Dive (2 Tanks — Giant Pacific Octopus & Wolf Eels)",
-              "operator": "Seattle Dive Tours / Hoodsport 'N Dive",
-              "costUsd": 295,
+              "name": "Washington Pass / Maple Pass & Cascade Pass High-Alpine Shakedown Hikes",
+              "operator": "North Cascades National Park (Northwest Forest Pass)",
+              "costUsd": 30,
               "optional": false,
-              "url": "https://seattledivetours.com/charters/sund-rock-marine-preserve"
+              "url": "https://www.nps.gov/noca/"
             },
             {
-              "name": "Puget Sound 6-Pack Cold-Water Boat Dive Charter (Optional Upgrade)",
-              "operator": "Sea Ya Diving Charters / Sound Dive Center",
-              "costUsd": 165,
+              "name": "Methow Valley Backcountry Rendezvous Hut Overnight Pass",
+              "operator": "Rendezvous Huts",
+              "costUsd": 120,
+              "optional": false,
+              "url": "https://www.rendezvoushuts.com/"
+            },
+            {
+              "name": "Guided Washington Pass Liberty Bell Alpine Rock / Scramble Day",
+              "operator": "North Cascades Mountain Guides",
+              "costUsd": 425,
               "optional": true,
-              "url": "https://sounddivecenter.com/charters/sea-ya-diving-charters"
-            },
-            {
-              "name": "Washington Pass / Maple Pass & Blue Lake Alpine Shakedown Hikes",
-              "operator": "Self-Guided (Okanogan-Wenatchee National Forest)",
-              "costUsd": 10,
-              "optional": false,
-              "url": "https://www.wta.org/"
+              "url": "https://www.ncmountainguides.com/"
             }
           ],
           "foodAndMiscPerDayUsd": 85,
@@ -3402,11 +3396,11 @@
             "flightsUsd": 0,
             "lodgingUsd": 705,
             "vehicleAndTransportUsd": 135,
-            "coreActivitiesUsd": 305,
-            "allActivitiesUsd": 470,
+            "coreActivitiesUsd": 150,
+            "allActivitiesUsd": 575,
             "foodAndMiscUsd": 340,
-            "baseTotalUsd": 1485,
-            "fullTotalUsd": 1650
+            "baseTotalUsd": 1330,
+            "fullTotalUsd": 1755
           }
         }
       ]
@@ -5164,14 +5158,13 @@
         },
         {
           "id": "oct-2027-iceland-ring-road-silfra",
-          "title": "Iceland Off-Season Ring Road 4x4: Highlands Edge, Eastfjords & Silfra Dive",
+          "title": "Iceland Off-Season Ring Road 4x4: Highlands Edge, Vatnajökull & Eastfjords",
           "country": "Iceland",
           "region": "Central Highlands Edge, South Coast & Eastfjords",
           "coordinates": "64.6475° N, 19.2869° W",
           "isNordic": true,
           "categories": [
             "4x4 Overland",
-            "Scuba",
             "Mountains",
             "Cold Solitude Resort"
           ],
@@ -5247,13 +5240,6 @@
           },
           "activities": [
             {
-              "name": "Silfra Fissure Drysuit Scuba Diving (2-Tank Tectonic Rift Dive, Full Drysuit Gear Included)",
-              "operator": "DIVE.IS",
-              "costUsd": 295,
-              "optional": false,
-              "url": "https://www.dive.is/"
-            },
-            {
               "name": "Skaftafell / Falljökull Advanced Glacier Trek on Vatnajökull (5h Crampon Expedition)",
               "operator": "Troll Expeditions",
               "costUsd": 157,
@@ -5266,6 +5252,13 @@
               "costUsd": 210,
               "optional": true,
               "url": "https://guidetoiceland.is/travel-iceland/drive/highland-baths-kerlingarfjoll"
+            },
+            {
+              "name": "Borgarfjörður Eystri & Stuðlagil Basalt Canyon Coastal Ridge Hike",
+              "operator": "Eastfjords Trail Network",
+              "costUsd": 20,
+              "optional": false,
+              "url": "https://www.east.is/"
             }
           ],
           "foodAndMiscPerDayUsd": 95,
@@ -5298,22 +5291,21 @@
             "flightsUsd": 640,
             "lodgingUsd": 2350,
             "vehicleAndTransportUsd": 1198,
-            "coreActivitiesUsd": 452,
-            "allActivitiesUsd": 662,
+            "coreActivitiesUsd": 177,
+            "allActivitiesUsd": 387,
             "foodAndMiscUsd": 1045,
-            "baseTotalUsd": 5685,
-            "fullTotalUsd": 5895
+            "baseTotalUsd": 5410,
+            "fullTotalUsd": 5620
           }
         },
         {
           "id": "oct-2027-lofoten-gulen-scuba-storms",
-          "title": "Norway Lofoten & Steigen/Gulen Storm-Watching, Autumn Ridges & Cold-Water Scuba",
+          "title": "Norway Lofoten & Steigen Storm-Watching, Sea Cabins & Autumn Ridges",
           "country": "Norway",
           "region": "Lofoten Archipelago & Steigen (Alt: Gulen / Sognefjord)",
           "coordinates": "68.0342° N, 13.3472° E",
           "isNordic": true,
           "categories": [
-            "Scuba",
             "Mountains",
             "Cold Solitude Resort",
             "4x4 Overland"
@@ -5390,13 +5382,6 @@
           },
           "activities": [
             {
-              "name": "Full-Day Arctic Kelp Forest & Fjord Wall Drysuit Boat Scuba Diving (2 Dives, Full Gear)",
-              "operator": "Lofoten Diving AS (Ballstad)",
-              "costUsd": 290,
-              "optional": false,
-              "url": "https://lofoten-diving.no/book-full-day-scuba-diving-in-lofoten/"
-            },
-            {
               "name": "Guided Autumn Ridge Traverse: Ryten (543m) & Kvalvika Beach Overlook",
               "operator": "Northern Alpine Guides / Lofoten Aktiv",
               "costUsd": 165,
@@ -5409,6 +5394,13 @@
               "costUsd": 145,
               "optional": true,
               "url": "https://brimexplorer.com/"
+            },
+            {
+              "name": "Guided Hermannsdalstinden / Reinebringen Autumn Granite Ridge Day",
+              "operator": "Northern Alpine Guides Lofoten",
+              "costUsd": 225,
+              "optional": false,
+              "url": "https://www.alpineguides.no/"
             }
           ],
           "foodAndMiscPerDayUsd": 90,
@@ -5440,11 +5432,11 @@
             "flightsUsd": 960,
             "lodgingUsd": 2385,
             "vehicleAndTransportUsd": 1140,
-            "coreActivitiesUsd": 455,
-            "allActivitiesUsd": 600,
+            "coreActivitiesUsd": 390,
+            "allActivitiesUsd": 535,
             "foodAndMiscUsd": 900,
-            "baseTotalUsd": 5840,
-            "fullTotalUsd": 5985
+            "baseTotalUsd": 5775,
+            "fullTotalUsd": 5920
           }
         },
         {
@@ -5758,7 +5750,6 @@
           "coordinates": "70.0311° N, 20.9714° E",
           "isNordic": true,
           "categories": [
-            "Scuba",
             "Mountains",
             "Cold Solitude Resort",
             "4x4 Overland"
@@ -6044,8 +6035,7 @@
           "categories": [
             "Mountains",
             "Cold Solitude Resort",
-            "4x4 Overland",
-            "Scuba"
+            "4x4 Overland"
           ],
           "window": "Nov 12–21, 2027",
           "days": 9,
@@ -6133,11 +6123,11 @@
               "url": "https://troll.is/tour/skaftafell-blue-ice-cave-glacier-hike/"
             },
             {
-              "name": "Silfra Fissure Winter Drysuit Scuba Dive (2-Tank, 15 min from ION — or Strýtan North Iceland Alt)",
-              "operator": "DIVE.IS",
-              "costUsd": 295,
+              "name": "Highland Base Kerlingarfjöll Guided Hveradalir Steaming Valley Snowshoe",
+              "operator": "Highland Base Kerlingarfjöll",
+              "costUsd": 195,
               "optional": true,
-              "url": "https://www.dive.is/"
+              "url": "https://highlandbase.is/"
             }
           ],
           "foodAndMiscPerDayUsd": 95,
@@ -6170,10 +6160,10 @@
             "lodgingUsd": 3120,
             "vehicleAndTransportUsd": 945,
             "coreActivitiesUsd": 319,
-            "allActivitiesUsd": 614,
+            "allActivitiesUsd": 514,
             "foodAndMiscUsd": 855,
             "baseTotalUsd": 5829,
-            "fullTotalUsd": 6124
+            "fullTotalUsd": 6024
           }
         }
       ]

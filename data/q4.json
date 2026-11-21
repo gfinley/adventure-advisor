@@ -421,14 +421,13 @@
     "adventures": [
       {
         "id": "oct-2027-iceland-ring-road-silfra",
-        "title": "Iceland Off-Season Ring Road 4x4: Highlands Edge, Eastfjords & Silfra Dive",
+        "title": "Iceland Off-Season Ring Road 4x4: Highlands Edge, Vatnajökull & Eastfjords",
         "country": "Iceland",
         "region": "Central Highlands Edge, South Coast & Eastfjords",
         "coordinates": "64.6475° N, 19.2869° W",
         "isNordic": true,
         "categories": [
           "4x4 Overland",
-          "Scuba",
           "Mountains",
           "Cold Solitude Resort"
         ],
@@ -504,13 +503,6 @@
         },
         "activities": [
           {
-            "name": "Silfra Fissure Drysuit Scuba Diving (2-Tank Tectonic Rift Dive, Full Drysuit Gear Included)",
-            "operator": "DIVE.IS",
-            "costUsd": 295,
-            "optional": false,
-            "url": "https://www.dive.is/"
-          },
-          {
             "name": "Skaftafell / Falljökull Advanced Glacier Trek on Vatnajökull (5h Crampon Expedition)",
             "operator": "Troll Expeditions",
             "costUsd": 157,
@@ -523,6 +515,13 @@
             "costUsd": 210,
             "optional": true,
             "url": "https://guidetoiceland.is/travel-iceland/drive/highland-baths-kerlingarfjoll"
+          },
+          {
+            "name": "Borgarfjörður Eystri & Stuðlagil Basalt Canyon Coastal Ridge Hike",
+            "operator": "Eastfjords Trail Network",
+            "costUsd": 20,
+            "optional": false,
+            "url": "https://www.east.is/"
           }
         ],
         "foodAndMiscPerDayUsd": 95,
@@ -554,13 +553,12 @@
       },
       {
         "id": "oct-2027-lofoten-gulen-scuba-storms",
-        "title": "Norway Lofoten & Steigen/Gulen Storm-Watching, Autumn Ridges & Cold-Water Scuba",
+        "title": "Norway Lofoten & Steigen Storm-Watching, Sea Cabins & Autumn Ridges",
         "country": "Norway",
         "region": "Lofoten Archipelago & Steigen (Alt: Gulen / Sognefjord)",
         "coordinates": "68.0342° N, 13.3472° E",
         "isNordic": true,
         "categories": [
-          "Scuba",
           "Mountains",
           "Cold Solitude Resort",
           "4x4 Overland"
@@ -637,13 +635,6 @@
         },
         "activities": [
           {
-            "name": "Full-Day Arctic Kelp Forest & Fjord Wall Drysuit Boat Scuba Diving (2 Dives, Full Gear)",
-            "operator": "Lofoten Diving AS (Ballstad)",
-            "costUsd": 290,
-            "optional": false,
-            "url": "https://lofoten-diving.no/book-full-day-scuba-diving-in-lofoten/"
-          },
-          {
             "name": "Guided Autumn Ridge Traverse: Ryten (543m) & Kvalvika Beach Overlook",
             "operator": "Northern Alpine Guides / Lofoten Aktiv",
             "costUsd": 165,
@@ -656,6 +647,13 @@
             "costUsd": 145,
             "optional": true,
             "url": "https://brimexplorer.com/"
+          },
+          {
+            "name": "Guided Hermannsdalstinden / Reinebringen Autumn Granite Ridge Day",
+            "operator": "Northern Alpine Guides Lofoten",
+            "costUsd": 225,
+            "optional": false,
+            "url": "https://www.alpineguides.no/"
           }
         ],
         "foodAndMiscPerDayUsd": 90,
@@ -837,7 +835,6 @@
         "coordinates": "70.0311° N, 20.9714° E",
         "isNordic": true,
         "categories": [
-          "Scuba",
           "Mountains",
           "Cold Solitude Resort",
           "4x4 Overland"
@@ -1103,8 +1100,7 @@
         "categories": [
           "Mountains",
           "Cold Solitude Resort",
-          "4x4 Overland",
-          "Scuba"
+          "4x4 Overland"
         ],
         "window": "Nov 12–21, 2027",
         "days": 9,
@@ -1192,11 +1188,11 @@
             "url": "https://troll.is/tour/skaftafell-blue-ice-cave-glacier-hike/"
           },
           {
-            "name": "Silfra Fissure Winter Drysuit Scuba Dive (2-Tank, 15 min from ION — or Strýtan North Iceland Alt)",
-            "operator": "DIVE.IS",
-            "costUsd": 295,
+            "name": "Highland Base Kerlingarfjöll Guided Hveradalir Steaming Valley Snowshoe",
+            "operator": "Highland Base Kerlingarfjöll",
+            "costUsd": 195,
             "optional": true,
-            "url": "https://www.dive.is/"
+            "url": "https://highlandbase.is/"
           }
         ],
         "foodAndMiscPerDayUsd": 95,

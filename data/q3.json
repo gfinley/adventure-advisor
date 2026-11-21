@@ -148,14 +148,13 @@
       },
       {
         "id": "jun-2027-iceland-midnight-sun",
-        "title": "Iceland Express Midnight Sun: Snæfellsnes & Silfra 5-Day Strike",
+        "title": "Iceland Express Midnight Sun: Snæfellsnes 4x4 & Glacier 5-Day Strike",
         "country": "Iceland",
         "region": "Þingvellir, West Iceland & Snæfellsnes Peninsula",
         "coordinates": "64.8211° N, 23.3853° W",
         "isNordic": true,
         "categories": [
           "Mountains",
-          "Scuba",
           "4x4 Overland"
         ],
         "window": "Jun 1–5, 2027 (or Denali Backup Strike)",
@@ -230,13 +229,6 @@
         },
         "activities": [
           {
-            "name": "Diving Silfra Fissure — Drysuit Scuba (Meet on Location, 100m Visibility)",
-            "operator": "DIVE.IS",
-            "costUsd": 285,
-            "optional": false,
-            "url": "https://www.dive.is/diving-snorkeling-tours/diving-day-tours/diving-silfra-midnight-sun"
-          },
-          {
             "name": "Snæfellsjökull Glacier Summit Hike (Guided Crampon & Rope Ascent)",
             "operator": "Arctic Adventures / Summit Guides Iceland",
             "costUsd": 265,
@@ -249,6 +241,13 @@
             "costUsd": 95,
             "optional": true,
             "url": "https://www.hotelhusafell.com/"
+          },
+          {
+            "name": "Glymur Waterfall Canyon & Hvalfjörður High-Ridge Loop (Self-Guided w/ Local GPX)",
+            "operator": "Independent 4x4 Trailhead Access",
+            "costUsd": 15,
+            "optional": false,
+            "url": "https://www.visiticeland.com/"
           }
         ],
         "foodAndMiscPerDayUsd": 110,
@@ -273,15 +272,14 @@
       },
       {
         "id": "jun-2027-north-cascades-hood-canal",
-        "title": "North Cascades / Methow Valley Alpine Hut & Hood Canal Cold-Water Dive",
+        "title": "North Cascades & Methow Valley Alpine Hut Shakedown Strike",
         "country": "United States (Washington)",
         "region": "Methow Valley / North Cascades & Hood Canal",
         "coordinates": "48.5918° N, 120.4023° W",
         "isNordic": false,
         "categories": [
           "Mountains",
-          "Hut Hiking",
-          "Scuba"
+          "Hut Hiking"
         ],
         "window": "Jun 1–4, 2027 (Pre-Denali Window)",
         "days": 4,
@@ -290,8 +288,8 @@
         "crowdLevel": "Low",
         "activityIntensity": "High",
         "calendarFit": "Fits cleanly into the Jun 1–3/4 open slot right before NOLS Denali — zero flights, drive straight from Kitsap Peninsula for a final drysuit dive + high-alpine gear shakedown.",
-        "heroImage": "solitude_lodge",
-        "tagline": "Pair a Giant Pacific Octopus drysuit dive in Hood Canal with early-June Methow backcountry huts and freshly opened North Cascades passes.",
+        "heroImage": "lapland_huts",
+        "tagline": "Zero-flight Kitsap drive to Washington Pass granite peaks and backcountry Methow huts right before or between June commitments.",
         "whyNow": "SR-20 North Cascades Highway typically opens in late May, making early June an ultra-quiet shoulder window before July hiker congestion and wildfire smoke, while Hood Canal water clarity peaks ahead of summer plankton blooms.",
         "flights": {
           "route": "No flight needed — drive direct from Kitsap Peninsula via Bainbridge/Kingston Ferry & SR-20",
@@ -355,25 +353,25 @@
         },
         "activities": [
           {
-            "name": "Sund Rock Marine Preserve Private Guided Drysuit Dive (2 Tanks — Giant Pacific Octopus & Wolf Eels)",
-            "operator": "Seattle Dive Tours / Hoodsport 'N Dive",
-            "costUsd": 295,
+            "name": "Washington Pass / Maple Pass & Cascade Pass High-Alpine Shakedown Hikes",
+            "operator": "North Cascades National Park (Northwest Forest Pass)",
+            "costUsd": 30,
             "optional": false,
-            "url": "https://seattledivetours.com/charters/sund-rock-marine-preserve"
+            "url": "https://www.nps.gov/noca/"
           },
           {
-            "name": "Puget Sound 6-Pack Cold-Water Boat Dive Charter (Optional Upgrade)",
-            "operator": "Sea Ya Diving Charters / Sound Dive Center",
-            "costUsd": 165,
+            "name": "Methow Valley Backcountry Rendezvous Hut Overnight Pass",
+            "operator": "Rendezvous Huts",
+            "costUsd": 120,
+            "optional": false,
+            "url": "https://www.rendezvoushuts.com/"
+          },
+          {
+            "name": "Guided Washington Pass Liberty Bell Alpine Rock / Scramble Day",
+            "operator": "North Cascades Mountain Guides",
+            "costUsd": 425,
             "optional": true,
-            "url": "https://sounddivecenter.com/charters/sea-ya-diving-charters"
-          },
-          {
-            "name": "Washington Pass / Maple Pass & Blue Lake Alpine Shakedown Hikes",
-            "operator": "Self-Guided (Okanogan-Wenatchee National Forest)",
-            "costUsd": 10,
-            "optional": false,
-            "url": "https://www.wta.org/"
+            "url": "https://www.ncmountainguides.com/"
           }
         ],
         "foodAndMiscPerDayUsd": 85,

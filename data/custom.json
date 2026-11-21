@@ -143,14 +143,13 @@
     "createdAt": "2026-11-21T06:25:00Z",
     "adventure": {
       "id": "custom-2027-05-scotland-torridon-skye-scapa",
-      "title": "Scottish Highlands: Torridon & Skye Supported Ridge Trek + Scapa Flow Scuba Option",
+      "title": "Scottish Highlands: Torridon & Isle of Skye Supported Ridge Trek",
       "country": "Scotland (United Kingdom)",
       "region": "Wester Ross (Torridon), Isle of Skye & Orkney (Scapa Flow)",
       "coordinates": "57.55° N, 5.52° W",
       "isNordic": false,
       "categories": [
         "Mountains",
-        "Scuba",
         "Cold Solitude Resort",
         "4x4 Overland"
       ],
@@ -162,7 +161,7 @@
       "activityIntensity": "High",
       "calendarFit": "May 2027 is completely open on your Adventure Calendar — prime 10-day pre-midge Scottish Highland ridge scrambling & optional Scapa Flow drysuit wreck dive expedition.",
       "heroImage": "norway_fjords",
-      "tagline": "Scramble the 750-million-year-old sandstone battlements of Liathach and Skye's jagged Cuillin/Quiraing ridges with local WMCI guides, then cross the Pentland Firth to optionally dive the scuttled WWI German High Seas Fleet in Scapa Flow.",
+      "tagline": "Scotland’s driest pre-midge off-season window linking Torridon Munros, Skye’s Black Cuillin ridges, and classic Highland solitude lodges.",
       "whyNow": "Mid-May is Scotland's undisputed insider sweet spot: statistically the driest, brightest month in the Northwest Highlands with 17+ hours of daylight, snow-free sandstone scrambles, zero Highland midges (which hatch in June), far lower crowds than July–August, and Scapa Flow's clearest pre-plankton-bloom underwater visibility (10–15m+ in 7–9°C water).",
       "flights": {
         "route": "SEA → LHR/AMS → INV (Inverness, Scottish Highlands)",
@@ -240,11 +239,11 @@
           "url": "https://www.climbtorridon.co.uk/courses/skye-cuillin/"
         },
         {
-          "name": "Scapa Flow 2-Tank Scuttled WWI German High Seas Fleet & WWII Blockship Drysuit Dive Day Charter (Incl. Full Drysuit/Twin-Set Kit Hire & Nitrox 32%)",
-          "operator": "MV Invincible / Kraken Diving & Scapa Scuba (Stromness)",
-          "costUsd": 395,
+          "name": "Guided Knoydart / Loch Coruisk Boat-In Remote Mountain Traverse",
+          "operator": "Skye Guides / Misty Isle Boat Trips",
+          "costUsd": 210,
           "optional": true,
-          "url": "https://www.scapa-flow.co.uk/"
+          "url": "https://www.skyeguides.co.uk/"
         }
       ],
       "foodAndMiscPerDayUsd": 85,

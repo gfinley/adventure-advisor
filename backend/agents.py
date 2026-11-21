@@ -269,9 +269,9 @@ async def run_parallel_research(
     field_ops_task = (
         f"USER REQUEST: {user_prompt}\n{month_clause}\n{duration_clause}\n\n"
         "Research 3 real active operators & guided/permitted experiences matching the request "
-        "(e.g., cold-water drysuit scuba diving operators, supported hut-to-hut passes/luggage transfer, guided glacier/alpine climbs, "
-        "Arctic wildlife/whale expeditions, or active fjord shore excursions). Include real operator names, realistic USD prices, "
-        "official website URLs, mark 2 core + 1 optional add-on. "
+        "(prioritize mountain summits, supported hut-to-hut passes/luggage transfers, glacier hikes, ridge traverses, "
+        "4x4 overland waypoints, or Arctic cruises — ONLY include scuba diving if the user explicitly asks for scuba/diving!). "
+        "Include real operator names, realistic USD prices, official website URLs, mark 2 core + 1 optional add-on. "
         "Also report realistic off-season weather/daylight/crowd conditions, geographic coordinates, and a crisp day-by-day active itinerary."
     )
 
