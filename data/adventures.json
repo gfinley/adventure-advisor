@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nordic & Off-Season Adventure Advisor",
-    "generatedAt": "2026-11-21T06:37:44Z",
+    "generatedAt": "2026-11-21T06:39:56Z",
     "homeAirport": "SEA (Seattle-Tacoma International)",
     "travelerProfile": "Solo active adventurer — mountains, supported hut hiking, cold-water drysuit scuba, Arctic cruises & cold mountain solitude lodges",
     "targetSweetSpotUsd": [
@@ -57,10 +57,10 @@
       "recommendedDuration": "4–6 day strike",
       "calendarEvents": [
         {
-          "title": "Movie: above the below",
-          "start": "2026-12-04",
-          "end": "2026-12-04",
-          "status": "scheduled"
+          "title": "Japan — Fukuoka (Korean Air SEA–FUK)",
+          "start": "2026-12-05",
+          "end": "2026-12-11",
+          "status": "confirmed"
         },
         {
           "title": "Wilderness Medicine (Paid) Bainbridge",
@@ -70,10 +70,10 @@
         }
       ],
       "openWindows": [
-        "Dec 1–18",
-        "Dec 24–31"
+        "Dec 12–17 (Post-Japan 5d)",
+        "Dec 24–31 (Post-WFR 6–7d)"
       ],
-      "advisorNote": "December splits cleanly around your paid Bainbridge Wilderness Medicine course (Dec 19–23). The early-to-mid December window (Dec 5–18) is golden for Nordic off-season strikes—pre-Christmas hotel rates in Iceland and Northern Norway sit 25–40% below holiday peaks while Polar Night twilight, blue ice caves, and herring-driven orca runs are at their prime. Use the Dec 24–31 post-course window for a short, high-impact regional mountain strike to the Canadian Rockies (under 2 hours nonstop from SEA) to avoid peak holiday transatlantic fares.",
+      "advisorNote": "December is anchored by Japan (Dec 5–11) and Bainbridge Wilderness Medicine (Dec 19–23), leaving two crisp 5-to-6-day strike windows: Dec 12–17 right after Fukuoka or Dec 24–31 after WFR.",
       "adventures": [
         {
           "id": "dec-2026-iceland-silfra",
@@ -88,13 +88,13 @@
             "Cold Solitude Resort",
             "4x4 Overland"
           ],
-          "window": "Dec 6–11, 2026",
+          "window": "Dec 12–17, 2026",
           "days": 5,
           "nights": 4,
           "offSeasonScore": 95,
           "crowdLevel": "Ultra-Low",
           "activityIntensity": "High",
-          "calendarFit": "Departs SEA evening of Dec 5/6 right after your Dec 4 movie event and returns Dec 11 with a full 8-day buffer before Wilderness Medicine on Bainbridge (Dec 19–23).",
+          "calendarFit": "Shifted cleanly after your Fukuoka return (Dec 11): fly nonstop SEA→KEF evening of Dec 12 and return Dec 17 ahead of Dec 19 Bainbridge Wilderness Medicine (also works Dec 25–30 post-WFR).",
           "heroImage": "arctic_scuba",
           "tagline": "Drift between tectonic plates in 35°F glacial visibility, then push a studded 4x4 into black-ash volcano ice caves under four-hour sub-Arctic twilight.",
           "whyNow": "Early December before the Christmas surge delivers Iceland's lowest boutique lodge pricing, crisp 100m+ Silfra underwater visibility with minimal snorkel-group traffic, newly stabilized Katla blue ice caves, and nearly 20 hours of dark-sky aurora window.",
@@ -226,13 +226,13 @@
             "Cold Solitude Resort",
             "4x4 Overland"
           ],
-          "window": "Dec 10–15, 2026",
+          "window": "Dec 25–30, 2026",
           "days": 5,
           "nights": 4,
           "offSeasonScore": 88,
           "crowdLevel": "Low",
           "activityIntensity": "High",
-          "calendarFit": "Slots cleanly into the middle of your Dec 1–18 open window, returning Dec 15 with 3 full recovery days before Bainbridge Wilderness Medicine starts Dec 19.",
+          "calendarFit": "Shifted out of your Dec 5–11 Japan window into the Dec 24–31 open stretch right after Bainbridge Wilderness Medicine.",
           "heroImage": "norway_fjords",
           "tagline": "Navigate Arctic fjords under pastel Polar Night skies to watch feeding orcas, then retreat to a timber lodge beneath jagged Lyngen Alps couloirs.",
           "whyNow": "Mid-December is peak herring migration in Kvænangen and Skjervøy fjords (prime orca and humpback encounters) paired with surreal 3-hour pink-cobalt Polar Night twilight and quieter early-December occupancy before European Christmas holidays hit Dec 20.",
@@ -947,16 +947,23 @@
       "recommendedDuration": "5–6 day pre-NZ or Nordic strike",
       "calendarEvents": [
         {
+          "title": "Air NZ Flight SEA → Nelson & Pre-NOLS",
+          "start": "2027-02-06",
+          "end": "2027-02-11",
+          "status": "confirmed"
+        },
+        {
           "title": "NOLS New Zealand",
           "start": "2027-02-11",
           "end": "2027-03-12",
-          "status": "paid"
+          "status": "confirmed"
         }
       ],
       "openWindows": [
-        "Feb 1–10"
+        "Feb 1–5 (Pre-departure)",
+        "Feb 8–10 (In NZ before NOLS)"
       ],
-      "advisorNote": "Your 30-day NOLS New Zealand expedition kicks off February 11—making Feb 1–10 an extraordinary tactical pivot. You have two high-leverage Pacific strategies that piggyback directly onto your already-required NZ flight (saving $1,200+ in airfare and eliminating double jet lag): (1) fly to NZ 5 days early to dive Milford Sound's rare black-coral walls and warm up your legs on the Kepler Track, or (2) route SEA → Tokyo → Hokkaido for 5 nights of Asahidake volcanic powder and Shiretoko drift-ice walking before continuing straight south to Auckland. If you prefer a pure Nordic prelude before pivoting to the Southern Hemisphere, Swedish Lapland's Abisko/Riksgränsen hits peak February aurora clarity.",
+      "advisorNote": "Your booked Air New Zealand flight departs SEA on Feb 6 (Nelson stay Feb 8–11 before NOLS starts Feb 11), making Feb 1–5 or quick NZ pre-NOLS days your only open February windows.",
       "adventures": [
         {
           "id": "feb-2027-nz-fiordland-scuba",
@@ -3561,13 +3568,21 @@
       "monthLabel": "July 2027",
       "shortLabel": "Jul '27",
       "seasonTag": "Open Month — Prime Nordic Hut-to-Hut & Arctic Off-Season",
-      "availabilityStatus": "open",
+      "availabilityStatus": "partial",
       "recommendedDuration": "8–14 day expedition",
-      "calendarEvents": [],
-      "openWindows": [
-        "Jul 1–31 (100% Open — Prime Long-Haul Window)"
+      "calendarEvents": [
+        {
+          "title": "IPMS 2027",
+          "start": "2027-07-13",
+          "end": "2027-07-18",
+          "status": "confirmed"
+        }
       ],
-      "advisorNote": "July is your completely open Q3 flagship window. Go big with a 9–10 day Nordic expedition: either Sweden's iconic 105 km Kungsleden hut-to-hut + Kebnekaise summit, Iceland's supported Laugavegur & Fimmvörðuháls traverse paired with Highland Base Kerlingarfjöll, or Finnish Lapland's summer off-season where 5-star Arctic solitude lodges slash rates 50–75% below winter.",
+      "openWindows": [
+        "Jul 1–12 (12 days)",
+        "Jul 19–31 (13 days)"
+      ],
+      "advisorNote": "July has IPMS 2027 anchored mid-month (Jul 13–18), leaving two generous 10–12 day expedition windows: Jul 1–12 (early July) and Jul 19–31 (late July before Norway NOLS in August).",
       "adventures": [
         {
           "id": "custom-2027-07-east-greenland-expedition-cruise",
@@ -3580,13 +3595,13 @@
             "Cruise",
             "Mountains"
           ],
-          "window": "Jul 10–21, 2027",
+          "window": "Jul 20–31, 2027",
           "days": 11,
           "nights": 10,
           "offSeasonScore": 91,
           "crowdLevel": "Ultra-Low",
           "activityIntensity": "Expedition",
-          "calendarFit": "July 2027 is completely open between tentative NOLS Denali (Jun 4–29) and Norway NOLS (Aug) — prime navigable high-Arctic window with nonstop SEA→KEF access.",
+          "calendarFit": "Shifted cleanly into the open Jul 19–31 window after IPMS 2027 (Jul 13–18) — late July also improves pack-ice access toward Scoresby Sund and links cleanly before Norway NOLS (Aug 5).",
           "heroImage": "arctic_cruise",
           "tagline": "Cross the Denmark Strait pack-ice edge from Reykjavík aboard an ice-strengthened expedition vessel for Zodiac glacier landings and basalt ridge hikes across uninhabited East Greenland.",
           "whyNow": "Mid-July delivers 22+ hours of sub-Arctic daylight, active sea-ice breakup along the East Greenland Current, and surging tabular icebergs pouring out of Helheim Glacier into Sermilik Icefjord. Because East Greenland has zero roads and fewer than 3,500 residents across a thousand miles of alpine coast, small expedition ships (108–189 guests) unlock raw solitude even in high summer. Note: mid-July voyages focus on Denmark Strait pack ice, Ammassalik/Tasiilaq, Sermilik Icefjord, Ikateq, and the Blosseville Coast (plus Iceland's Westfjords on Lindblad's exact Jul 10, 2027 sailing), whereas deep inner Scoresby Sund opens reliably from late July into August–September.",
@@ -3727,13 +3742,13 @@
             "Mountains",
             "Cold Solitude Resort"
           ],
-          "window": "Jul 8–18, 2027",
+          "window": "Jul 20–30, 2027",
           "days": 10,
           "nights": 9,
           "offSeasonScore": 81,
           "crowdLevel": "Low",
           "activityIntensity": "Expedition",
-          "calendarFit": "Owns the middle of your fully open July window (10 days) with 2 weeks of recovery buffer before Norway NOLS begins Aug 5.",
+          "calendarFit": "Scheduled in the open Jul 19–31 window right after IPMS 2027 (Jul 13–18) — bonus: late July has less Arctic trail snow and can even chain into Norway NOLS on Aug 5.",
           "heroImage": "lapland_huts",
           "tagline": "Trek 105 km of Arctic tundra above the Circle from STF hut to wood-fired bastu sauna, capped by Sweden's highest peak.",
           "whyNow": "Mid-July unlocks the short 10-week Kungsleden hut season right as Tjäktja Pass (1,150 m) melts clear, snowbridges stabilize on Kebnekaise's Eastern Route, and 24-hour Arctic sun eliminates headlamps.",
@@ -3867,13 +3882,13 @@
             "Mountains",
             "Cold Solitude Resort"
           ],
-          "window": "Jul 12–22, 2027",
+          "window": "Jul 20–30, 2027",
           "days": 10,
           "nights": 9,
           "offSeasonScore": 72,
           "crowdLevel": "Moderate-Low",
           "activityIntensity": "Expedition",
-          "calendarFit": "Hits the peak narrow highland-access window right in the middle of your open July calendar with 2 full weeks before Norway NOLS.",
+          "calendarFit": "Fits cleanly after IPMS 2027 (Jul 13–18) in the open Jul 19–31 window when all Laugavegur highland huts and F-roads are fully open.",
           "heroImage": "iceland_winter",
           "tagline": "Cross Iceland's rhyolite ridges, black obsidian deserts, and Eyjafjallajökull volcanic pass with daily 4x4 bag transfers — then vanish into Kerlingarfjöll's highland spa.",
           "whyNow": "F-roads into Landmannalaugar and Kerlingarfjöll only open reliably from late June through August; mid-July delivers the safest river crossings, snow-bridged geothermal valleys, and long bright evenings.",
@@ -4000,13 +4015,13 @@
             "Cold Solitude Resort",
             "4x4 Overland"
           ],
-          "window": "Jul 16–25, 2027",
+          "window": "Jul 2–11, 2027",
           "days": 9,
           "nights": 8,
           "offSeasonScore": 96,
           "crowdLevel": "Ultra-Low",
           "activityIntensity": "High",
-          "calendarFit": "Ultimate off-season arbitrage inside your open July window — summer IS Lapland's true quiet season, delivering 50–75% off iconic Arctic solitude lodges and empty fell ridgelines.",
+          "calendarFit": "Fits cleanly in the open Jul 1–12 window before IPMS 2027 (Jul 13–18) with deep Lapland summer off-season hotel discounts.",
           "heroImage": "solitude_lodge",
           "tagline": "Hike Finland's oldest 55 km Arctic fell ridge from wooden wilderness sauna-huts, then stay at winter's $1,500/night Lapland design lodges for a fraction of the price.",
           "whyNow": "While winter Santa/aurora tourism pushes Lapland lodges to $1,200–$1,700/night, July brings ultra-low occupancy, 24-hour sub-Arctic daylight, crystal-clear fell lakes, and wide-open trails across Pallas-Yllästunturi.",

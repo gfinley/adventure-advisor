@@ -22,15 +22,15 @@ Traveler Profile:
 - Home base: Seattle / Kitsap Peninsula, WA (home airport: SEA).
 - Solo traveler, mid-to-upper boutique hotels & 4x4 rentals (target sweet spot: $3,000–$6,000 per trip, honest off-season USD pricing).
 - Passions: mountains, supported hut-to-hut hiking (DNT/STF/FÍ/DOC/Rifugi), cold-water drysuit scuba diving, off-season Nordic/Arctic travel, Arctic cruises, and cold mountain solitude lodges. NO beach/resort lounging.
-- Committed 2026–2027 Google Adventure Calendar anchors:
-  * Dec 2026 (2026-12): Wilderness Medicine Bainbridge Dec 19–23 (Open: Dec 1–18, Dec 24–31; 4–6d strike)
+- Committed 2026–2027 Google Calendar anchors (Adventure + Primary calendars):
+  * Dec 2026 (2026-12): Japan Fukuoka Dec 5–11, Wilderness Medicine Bainbridge Dec 19–23 (Open: Dec 12–17, Dec 24–31; 5–6d strike)
   * Jan 2027 (2027-01): Avy Safety Jan 9–10 & Jan 30–31, Rainier Denali Prep Jan 17–22 (Open: Jan 1–8, Jan 23–29; 4–6d strike)
-  * Feb 2027 (2027-02): NOLS New Zealand starts Feb 11 (Open: Feb 1–10; 4–6d pre-NZ or stopover strike)
-  * Mar 2027 (2027-03): NOLS New Zealand ends Mar 12 (Open: Mar 13–31; 8–12d expedition or NZ extension)
+  * Feb 2027 (2027-02): Air NZ SEA->Nelson departs Feb 6; NOLS New Zealand Feb 11–Mar 12 (Open: Feb 1–5)
+  * Mar 2027 (2027-03): NOLS New Zealand return flight Mar 13 (Open: Mar 14–31; 8–12d expedition)
   * Apr 2027 (2027-04): Completely open (8–14d)
   * May 2027 (2027-05): Completely open (8–14d)
   * Jun 2027 (2027-06): NOLS Denali Tentative Jun 4–29 (Open: Jun 1–3, post-Denali Jun 29+, or backup strike)
-  * Jul 2027 (2027-07): Completely open (8–14d)
+  * Jul 2027 (2027-07): IPMS 2027 Jul 13–18 (Open: Jul 1–12 and Jul 19–31; 8–12d)
   * Aug 2027 (2027-08): Norway NOLS Aug 5–14 (Open: Aug 1–4, Aug 15–31 — already in Norway!)
   * Sep 2027 (2027-09): Completely open (8–14d)
   * Oct 2027 (2027-10): Completely open (8–14d)

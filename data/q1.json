@@ -8,10 +8,10 @@
     "recommendedDuration": "4–6 day strike",
     "calendarEvents": [
       {
-        "title": "Movie: above the below",
-        "start": "2026-12-04",
-        "end": "2026-12-04",
-        "status": "scheduled"
+        "title": "Japan — Fukuoka (Korean Air SEA–FUK)",
+        "start": "2026-12-05",
+        "end": "2026-12-11",
+        "status": "confirmed"
       },
       {
         "title": "Wilderness Medicine (Paid) Bainbridge",
@@ -21,10 +21,10 @@
       }
     ],
     "openWindows": [
-      "Dec 1–18",
-      "Dec 24–31"
+      "Dec 12–17 (Post-Japan 5d)",
+      "Dec 24–31 (Post-WFR 6–7d)"
     ],
-    "advisorNote": "December splits cleanly around your paid Bainbridge Wilderness Medicine course (Dec 19–23). The early-to-mid December window (Dec 5–18) is golden for Nordic off-season strikes—pre-Christmas hotel rates in Iceland and Northern Norway sit 25–40% below holiday peaks while Polar Night twilight, blue ice caves, and herring-driven orca runs are at their prime. Use the Dec 24–31 post-course window for a short, high-impact regional mountain strike to the Canadian Rockies (under 2 hours nonstop from SEA) to avoid peak holiday transatlantic fares.",
+    "advisorNote": "December is anchored by Japan (Dec 5–11) and Bainbridge Wilderness Medicine (Dec 19–23), leaving two crisp 5-to-6-day strike windows: Dec 12–17 right after Fukuoka or Dec 24–31 after WFR.",
     "adventures": [
       {
         "id": "dec-2026-iceland-silfra",
@@ -39,13 +39,13 @@
           "Cold Solitude Resort",
           "4x4 Overland"
         ],
-        "window": "Dec 6–11, 2026",
+        "window": "Dec 12–17, 2026",
         "days": 5,
         "nights": 4,
         "offSeasonScore": 95,
         "crowdLevel": "Ultra-Low",
         "activityIntensity": "High",
-        "calendarFit": "Departs SEA evening of Dec 5/6 right after your Dec 4 movie event and returns Dec 11 with a full 8-day buffer before Wilderness Medicine on Bainbridge (Dec 19–23).",
+        "calendarFit": "Shifted cleanly after your Fukuoka return (Dec 11): fly nonstop SEA→KEF evening of Dec 12 and return Dec 17 ahead of Dec 19 Bainbridge Wilderness Medicine (also works Dec 25–30 post-WFR).",
         "heroImage": "arctic_scuba",
         "tagline": "Drift between tectonic plates in 35°F glacial visibility, then push a studded 4x4 into black-ash volcano ice caves under four-hour sub-Arctic twilight.",
         "whyNow": "Early December before the Christmas surge delivers Iceland's lowest boutique lodge pricing, crisp 100m+ Silfra underwater visibility with minimal snorkel-group traffic, newly stabilized Katla blue ice caves, and nearly 20 hours of dark-sky aurora window.",
@@ -167,13 +167,13 @@
           "Cold Solitude Resort",
           "4x4 Overland"
         ],
-        "window": "Dec 10–15, 2026",
+        "window": "Dec 25–30, 2026",
         "days": 5,
         "nights": 4,
         "offSeasonScore": 88,
         "crowdLevel": "Low",
         "activityIntensity": "High",
-        "calendarFit": "Slots cleanly into the middle of your Dec 1–18 open window, returning Dec 15 with 3 full recovery days before Bainbridge Wilderness Medicine starts Dec 19.",
+        "calendarFit": "Shifted out of your Dec 5–11 Japan window into the Dec 24–31 open stretch right after Bainbridge Wilderness Medicine.",
         "heroImage": "norway_fjords",
         "tagline": "Navigate Arctic fjords under pastel Polar Night skies to watch feeding orcas, then retreat to a timber lodge beneath jagged Lyngen Alps couloirs.",
         "whyNow": "Mid-December is peak herring migration in Kvænangen and Skjervøy fjords (prime orca and humpback encounters) paired with surreal 3-hour pink-cobalt Polar Night twilight and quieter early-December occupancy before European Christmas holidays hit Dec 20.",
@@ -838,16 +838,23 @@
     "recommendedDuration": "5–6 day pre-NZ or Nordic strike",
     "calendarEvents": [
       {
+        "title": "Air NZ Flight SEA → Nelson & Pre-NOLS",
+        "start": "2027-02-06",
+        "end": "2027-02-11",
+        "status": "confirmed"
+      },
+      {
         "title": "NOLS New Zealand",
         "start": "2027-02-11",
         "end": "2027-03-12",
-        "status": "paid"
+        "status": "confirmed"
       }
     ],
     "openWindows": [
-      "Feb 1–10"
+      "Feb 1–5 (Pre-departure)",
+      "Feb 8–10 (In NZ before NOLS)"
     ],
-    "advisorNote": "Your 30-day NOLS New Zealand expedition kicks off February 11—making Feb 1–10 an extraordinary tactical pivot. You have two high-leverage Pacific strategies that piggyback directly onto your already-required NZ flight (saving $1,200+ in airfare and eliminating double jet lag): (1) fly to NZ 5 days early to dive Milford Sound's rare black-coral walls and warm up your legs on the Kepler Track, or (2) route SEA → Tokyo → Hokkaido for 5 nights of Asahidake volcanic powder and Shiretoko drift-ice walking before continuing straight south to Auckland. If you prefer a pure Nordic prelude before pivoting to the Southern Hemisphere, Swedish Lapland's Abisko/Riksgränsen hits peak February aurora clarity.",
+    "advisorNote": "Your booked Air New Zealand flight departs SEA on Feb 6 (Nelson stay Feb 8–11 before NOLS starts Feb 11), making Feb 1–5 or quick NZ pre-NOLS days your only open February windows.",
     "adventures": [
       {
         "id": "feb-2027-nz-fiordland-scuba",
