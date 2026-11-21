@@ -38,7 +38,8 @@ Type any custom trip directly into the **Spawn Parallel Agents** bar on the web 
 - **Single-User Google Sign-In:** Cryptographically verifies Google ID tokens server-side and locks all `/api/*` endpoints exclusively to `matthewgfinley@gmail.com`.
 - **3 Parallel Grounded Gemini Agents:** Runs concurrent Google-Search-grounded agents for **Lodging & Solitude**, **Flights & 4x4**, and **Field Ops & Scuba**, streams live progress over SSE, and synthesizes a validated booking card in ~10–20s.
 - **GitHub Auto-Save:** Atomically commits each researched trip to [`data/custom.json`](data/custom.json) and [`data/adventures.json`](data/adventures.json) so it persists permanently on GitHub Pages.
-- **Setup & 1-Command Deploy:** See [`backend/SETUP.md`](backend/SETUP.md) and [`backend/deploy.sh`](backend/deploy.sh).
+- **GCP Tagging & Auditing:** Every GCP resource (Cloud Run, Secret Manager, Artifact Registry) is labeled `app=nordic-atlas`, runs under a dedicated least-privilege IAM SA (`nordic-atlas-runner`), and emits structured Cloud Logging audit events. Inspect or tear down anytime with [`backend/audit_and_cleanup.sh`](backend/audit_and_cleanup.sh).
+- **Architecture Map & Setup:** See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`backend/SETUP.md`](backend/SETUP.md), and [`backend/deploy.sh`](backend/deploy.sh).
 
 ## Local Preview
 

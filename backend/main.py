@@ -1,13 +1,16 @@
-"""Nordic Atlas Cloud Run Backend — Single-User Google Auth + Streaming Multi-Agent Research."""
+"""Nordic Atlas Cloud Run Backend — Single-User Google Auth, Structured Cloud Audit Logs & Streaming Agents."""
 
 from __future__ import annotations
 
 import asyncio
 import json
 import os
-from typing import AsyncIterator
+import sys
+import time
+from datetime import datetime, timezone
+from typing import Any, AsyncIterator
 
-from fastapi import Depends, FastAPI, Header, HTTPException, status
+from fastapi import Depends, FastAPI, Header, HTTPException, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from google.auth.transport import requests as google_requests
@@ -36,10 +39,28 @@ CORS_ORIGINS = [
     ).split(",")
     if o.strip()
 ]
+APP_ENV = os.getenv("APP_ENV", "prod").strip()
+
+# ---------- Structured Cloud Logging Audit Helper ----------
+def audit_log(event: str, severity: str = "INFO", **fields: Any) -> None:
+    """Emit structured JSON to stdout for automatic Google Cloud Logging ingestion & auditing."""
+    record = {
+        "severity": severity,
+        "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "app": "nordic-atlas",
+        "component": "adventure-advisor-agents",
+        "env": APP_ENV,
+        "owner": "gfinley",
+        "event": event,
+        **fields,
+    }
+    sys.stdout.write(json.dumps(record, ensure_ascii=False) + "\n")
+    sys.stdout.flush()
+
 
 app = FastAPI(
     title="Nordic Atlas Agentic Backend",
-    version="1.0.0",
+    version="1.1.0",
     docs_url=None,
     redoc_url=None,
 )
@@ -54,15 +75,21 @@ app.add_middleware(
 
 
 # ---------- Single-User Google Sign-In Verification ----------
-def verify_google_owner(authorization: str | None = Header(default=None)) -> dict:
+def verify_google_owner(
+    request: Request,
+    authorization: str | None = Header(default=None),
+) -> dict:
     """Cryptographically verify a Google Sign-In ID token and enforce owner email allowlist."""
+    path = request.url.path
     if not GOOGLE_CLIENT_ID:
+        audit_log("auth_config_error", severity="ERROR", path=path)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Backend GOOGLE_CLIENT_ID is not configured.",
         )
 
     if not authorization or not authorization.startswith("Bearer "):
+        audit_log("auth_denied", severity="WARNING", reason="missing_bearer", path=path)
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Missing Google Sign-In Bearer token.",
@@ -76,6 +103,7 @@ def verify_google_owner(authorization: str | None = Header(default=None)) -> dic
             GOOGLE_CLIENT_ID,
         )
     except Exception as exc:
+        audit_log("auth_denied", severity="WARNING", reason="invalid_token", path=path)
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail=f"Invalid or expired Google ID token: {exc}",
@@ -83,12 +111,14 @@ def verify_google_owner(authorization: str | None = Header(default=None)) -> dic
 
     issuer = idinfo.get("iss")
     if issuer not in {"accounts.google.com", "https://accounts.google.com"}:
+        audit_log("auth_denied", severity="WARNING", reason="invalid_issuer", path=path)
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid token issuer.",
         )
 
     if not idinfo.get("email_verified"):
+        audit_log("auth_denied", severity="WARNING", reason="unverified_email", path=path)
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Google account email is not verified.",
@@ -96,11 +126,19 @@ def verify_google_owner(authorization: str | None = Header(default=None)) -> dic
 
     email = str(idinfo.get("email", "")).lower()
     if email not in ALLOWED_EMAILS:
+        audit_log(
+            "auth_denied",
+            severity="WARNING",
+            reason="email_not_allowlisted",
+            attemptedEmail=email,
+            path=path,
+        )
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail=f"Access denied for {email}. This research backend is locked to the owner account.",
         )
 
+    audit_log("auth_success", severity="INFO", email=email, path=path)
     return {
         "email": email,
         "name": idinfo.get("name", email),
@@ -121,6 +159,8 @@ class ResearchRequest(BaseModel):
 async def health() -> dict:
     return {
         "status": "ok",
+        "app": "nordic-atlas",
+        "env": APP_ENV,
         "researchModel": RESEARCH_MODEL,
         "synthModel": SYNTH_MODEL,
         "githubAutoSave": is_github_sync_enabled(),
@@ -151,13 +191,24 @@ async def research_stream(
         await queue.put(event)
 
     async def worker() -> None:
+        t0 = time.monotonic()
+        prompt_clean = req.prompt.strip()
+        audit_log(
+            "research_started",
+            email=user["email"],
+            prompt=prompt_clean[:200],
+            monthHint=req.monthId,
+            durationHint=req.duration,
+            researchModel=RESEARCH_MODEL,
+            synthModel=SYNTH_MODEL,
+        )
         try:
             await emit({
                 "type": "status",
                 "message": f"Authenticated as {user['email']} — spawning 3 parallel Gemini agents…",
             })
             month_id, adventure = await run_parallel_research(
-                user_prompt=req.prompt.strip(),
+                user_prompt=prompt_clean,
                 month_hint=req.monthId if req.monthId and req.monthId != "auto" else None,
                 duration_hint=req.duration,
                 emit=emit,
@@ -174,7 +225,7 @@ async def research_stream(
                 github_result = await save_custom_adventure_to_github(
                     month_id=month_id,
                     adventure=adventure,
-                    prompt=req.prompt.strip(),
+                    prompt=prompt_clean,
                 )
                 await emit({
                     "type": "agent_done",
@@ -183,6 +234,18 @@ async def research_stream(
                     "message": f"Committed {github_result.get('commitSha', '')} to main (GitHub Pages rebuilding)",
                 })
 
+            elapsed_total = round(time.monotonic() - t0, 1)
+            audit_log(
+                "research_completed",
+                email=user["email"],
+                adventureId=adventure["id"],
+                monthId=month_id,
+                title=adventure["title"],
+                baseTotalUsd=adventure.get("computedCosts", {}).get("baseTotalUsd"),
+                elapsedSec=elapsed_total,
+                githubSaved=github_result.get("saved", False),
+                commitSha=github_result.get("commitSha"),
+            )
             await emit({
                 "type": "complete",
                 "monthId": month_id,
@@ -190,6 +253,13 @@ async def research_stream(
                 "github": github_result,
             })
         except Exception as exc:
+            audit_log(
+                "research_failed",
+                severity="ERROR",
+                email=user["email"],
+                error=str(exc),
+                elapsedSec=round(time.monotonic() - t0, 1),
+            )
             await emit({"type": "error", "message": str(exc)})
         finally:
             await queue.put(None)
@@ -224,6 +294,15 @@ async def delete_adventure(
             detail="Only custom on-demand researched adventures can be deleted via API.",
         )
     try:
-        return await delete_custom_adventure_from_github(adv_id)
+        res = await delete_custom_adventure_from_github(adv_id)
+        audit_log(
+            "adventure_deleted",
+            email=user["email"],
+            adventureId=adv_id,
+            deleted=res.get("deleted", False),
+            commitSha=res.get("commitSha"),
+        )
+        return res
     except Exception as exc:
+        audit_log("adventure_delete_failed", severity="ERROR", adventureId=adv_id, error=str(exc))
         raise HTTPException(status_code=500, detail=str(exc)) from exc
