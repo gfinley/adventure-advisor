@@ -12,7 +12,8 @@ APP_ENV="${APP_ENV:-prod}"
 GOOGLE_CLIENT_ID="${GOOGLE_CLIENT_ID:?Set GOOGLE_CLIENT_ID (Web OAuth Client ID from Google Cloud Console)}"
 GEMINI_API_KEY="${GEMINI_API_KEY:?Set GEMINI_API_KEY (from Google AI Studio linked to your AI Ultra credits)}"
 GITHUB_TOKEN="${GITHUB_TOKEN:?Set GITHUB_TOKEN (fine-grained PAT with Contents Read/Write on gfinley/adventure-advisor)}"
-ALLOWED_EMAILS="${ALLOWED_EMAILS:-matthewgfinley@gmail.com}"
+SITE_VAULT_PASSPHRASE="${SITE_VAULT_PASSPHRASE:?Set SITE_VAULT_PASSPHRASE (your Nordic Atlas AES-256-GCM vault passphrase)}"
+ALLOWED_EMAILS="${ALLOWED_EMAILS:?Set ALLOWED_EMAILS (your owner Gmail address)}"
 GEMINI_RESEARCH_MODEL="${GEMINI_RESEARCH_MODEL:-gemini-3.8-flash}"
 GEMINI_SYNTH_MODEL="${GEMINI_SYNTH_MODEL:-gemini-3.8-flash}"
 
@@ -35,7 +36,7 @@ if ! gcloud iam service-accounts describe "${SA_EMAIL}" --project="${PROJECT_ID}
   gcloud iam service-accounts create "${SA_NAME}" \
     --project="${PROJECT_ID}" \
     --display-name="Nordic Atlas Cloud Run Agent Runner" \
-    --description="Dedicated least-privilege runtime SA for nordic-atlas-agents (secretAccessor on 2 secrets only)"
+    --description="Dedicated least-privilege runtime SA for nordic-atlas-agents (secretAccessor on 3 app secrets only)"
 fi
 
 ensure_secret() {
@@ -58,9 +59,10 @@ ensure_secret() {
 echo "==> [3/5] Storing & labeling secrets in Google Secret Manager"
 ensure_secret "nordic-atlas-gemini-key" "${GEMINI_API_KEY}" "gemini-api"
 ensure_secret "nordic-atlas-github-token" "${GITHUB_TOKEN}" "github-repo-sync"
+ensure_secret "nordic-atlas-vault-passphrase" "${SITE_VAULT_PASSPHRASE}" "site-vault-aes256"
 
-# Bind least-privilege access ONLY to these exact 2 secrets (not project-wide)
-for secret_name in "nordic-atlas-gemini-key" "nordic-atlas-github-token"; do
+# Bind least-privilege access ONLY to these exact 3 secrets (not project-wide)
+for secret_name in "nordic-atlas-gemini-key" "nordic-atlas-github-token" "nordic-atlas-vault-passphrase"; do
   gcloud secrets add-iam-policy-binding "${secret_name}" \
     --project="${PROJECT_ID}" \
     --member="serviceAccount:${SA_EMAIL}" \
@@ -82,7 +84,7 @@ gcloud run deploy "${SERVICE_NAME}" \
   --timeout=180 \
   --memory=512Mi \
   --set-env-vars="APP_ENV=${APP_ENV},GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID},ALLOWED_EMAILS=${ALLOWED_EMAILS},GITHUB_REPO=gfinley/adventure-advisor,GITHUB_BRANCH=main,CORS_ORIGINS=https://gfinley.github.io,GEMINI_RESEARCH_MODEL=${GEMINI_RESEARCH_MODEL},GEMINI_SYNTH_MODEL=${GEMINI_SYNTH_MODEL}" \
-  --set-secrets="GEMINI_API_KEY=nordic-atlas-gemini-key:latest,GITHUB_TOKEN=nordic-atlas-github-token:latest"
+  --set-secrets="GEMINI_API_KEY=nordic-atlas-gemini-key:latest,GITHUB_TOKEN=nordic-atlas-github-token:latest,SITE_VAULT_PASSPHRASE=nordic-atlas-vault-passphrase:latest"
 
 echo "==> [5/5] Tagging Cloud Run Artifact Registry repository (best-effort)"
 if gcloud artifacts repositories describe "cloud-run-source-deploy" --location="${REGION}" --project="${PROJECT_ID}" >/dev/null 2>&1; then

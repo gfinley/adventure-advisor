@@ -1,50 +1,25 @@
-# Nordic Atlas — Agentic Off-Season Adventure Advisor
+# Nordic Atlas — Private Agentic Off-Season Adventure Advisor
 
-Live web app (GitHub Pages): **https://gfinley.github.io/adventure-advisor/**
+Live web app (GitHub Pages, AES-256-GCM encrypted vault): **https://gfinley.github.io/adventure-advisor/**
 
-An agentic, calendar-aware travel dossier and interactive cost/hotel evaluator covering **12 months (December 2026 – November 2027)** of off-season Nordic and alpine adventures departing from **Seattle (SEA)**.
+An agentic, calendar-aware travel dossier and interactive cost, room, and route-map evaluator covering **12 months (December 2026 – November 2027)** of off-season Nordic and alpine adventures.
 
-## What This Project Does
+## Privacy & Client-Side Vault Encryption
 
-- **Synced with Google Adventure Calendar:** Maps 36 curated adventures (3 optimal options per month) directly around committed 2026–2027 anchor events — *Wilderness Medicine Bainbridge* (Dec 19–23), *Avalanche Safety & Rainier Denali Prep* (Jan), *NOLS New Zealand* (Feb 11–Mar 12), *NOLS Denali Tentative* (Jun 4–29), and *Norway NOLS* (Aug 5–14) — proposing 4–6 day strikes in busy months, zero-extra-long-haul extensions around NOLS trips, and 8–14 day expeditions in wide-open months.
-- **Nordic-First, Active-Only Curation:** Prioritizes Iceland, Norway, Sweden, Finland, Svalbard, and the Faroe Islands alongside targeted mountain wildcards. Built for **mountains, supported hut-to-hut trekking (DNT, STF, FÍ, DOC, Rifugi), cold-water drysuit scuba diving, Arctic/fjord coastal voyages, and cold mountain solitude lodges** — zero beach lounging.
-- **Interactive Room, 4x4 & Theoretical Booking Evaluator:** Every expedition includes 3 real researched lodging/cabin options, 4x4 rental vs. car-free transport pricing, toggleable guided dives/treks, trip-length steppers, solo vs. 2-person split calculators, side-by-side comparison (up to 4 trips), and a persistent **My 2027 Plan** shortlist with 1-click **`.ics` Google Calendar** and **Markdown** exports.
+- **AES-256-GCM Encrypted at Rest:** All personal calendar dates, open windows, and researched trip dossiers are encrypted via **PBKDF2-SHA256 (210,000 iterations) + AES-256-GCM** into `data/adventures.enc.json` and decrypted strictly in-browser via the Web Crypto API (`crypto.subtle`).
+- **365-Day Auto-Unlock Cookie:** Enter your passphrase once on a trusted browser to stay automatically unlocked via a `SameSite=Strict; Secure` cookie, or click **Lock** in the header anytime to clear it.
+- **No Plaintext Calendar on `main`:** Plaintext working datasets (`data/q1–q4.json`, `data/custom.json`, `data/routes.json`, `data/adventures.json`) are excluded via `.gitignore`.
 
-## Antigravity Multi-Agent Research Architecture
+## Key Features
 
-Pricing, hotel room categories, 4x4 rental rates, dive operators, hut passes, and SEA flight routes are researched in parallel by four quarterly Antigravity subagents:
+- **49 Curated Off-Season Expeditions (Real Location Photos):** Nordic & Arctic priority (Iceland, Norway, Sweden, Finland, Faroes, Svalbard, Greenland) plus iconic guided & loosely guided luggage-transfer treks (Japan Kumano Kodo, Camino Primitivo, Camino Portugués, Tour du Mont Blanc, Dolomites, Scottish Highlands).
+- **Interactive Route Maps & Travel Math:** Every trip includes a live Leaflet (`Map` / `Topo Relief`) GPS route map, total distance (`mi`/`km`), transit hours, hiking elevation gain, leg-by-leg breakdown, and a 1-click multi-stop **Google Maps** launcher.
+- **Interactive Room, 4x4 & Theoretical Booking Evaluator:** Compare 3 researched hotels/huts/cabins per trip, toggle 4x4 rentals and optional excursions, adjust trip length & occupancy, compare up to 4 trips side by side, and export your shortlist as `.ics` or Markdown.
+- **On-Demand Cloud Run Multi-Agent Backend:** See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`backend/SETUP.md`](backend/SETUP.md), [`backend/deploy.sh`](backend/deploy.sh), and [`backend/audit_and_cleanup.sh`](backend/audit_and_cleanup.sh).
 
-| Agent | Months Covered | Dataset File | Focus |
-| --- | --- | --- | --- |
-| `q1-agent` | Dec 2026 – Feb 2027 | [`data/q1.json`](data/q1.json) | Short winter strikes (4–6d) & pre-NOLS NZ options |
-| `q2-agent` | Mar 2027 – May 2027 | [`data/q2.json`](data/q2.json) | Post-NOLS NZ extension, Svalbard polar spring & Nordic shoulder |
-| `q3-agent` | Jun 2027 – Aug 2027 | [`data/q3.json`](data/q3.json) | Denali strikes, Nordic hut-to-hut summer treks & post-Norway NOLS extensions |
-| `q4-agent` | Sep 2027 – Nov 2027 | [`data/q4.json`](data/q4.json) | Lapland *ruska* autumn huts, deep off-season 4x4 & polar night voyages |
-
-### Rebuilding the Dataset
-
-Whenever any quarterly research file (`data/q1.json`–`data/q4.json`) is updated by an Antigravity research agent, validate and merge into the production bundle (`data/adventures.json`):
+## Re-Encrypting Local Updates
 
 ```bash
 python3 scripts/build_dataset.py
+VAULT_PASSPHRASE="your-passphrase" node scripts/encrypt_vault.mjs encrypt data/adventures.json data/adventures.enc.json
 ```
-
-Commit and push to `main` to automatically republish GitHub Pages.
-
-## Live On-Demand Research Backend (Cloud Run + Google AI Ultra Credits)
-
-Type any custom trip directly into the **Spawn Parallel Agents** bar on the web app (e.g., *"Iceland trip in May with drysuit scuba and cold solitude lodges"*):
-
-- **Single-User Google Sign-In:** Cryptographically verifies Google ID tokens server-side and locks all `/api/*` endpoints exclusively to `matthewgfinley@gmail.com`.
-- **3 Parallel Grounded Gemini Agents:** Runs concurrent Google-Search-grounded agents for **Lodging & Solitude**, **Flights & 4x4**, and **Field Ops & Scuba**, streams live progress over SSE, and synthesizes a validated booking card in ~10–20s.
-- **GitHub Auto-Save:** Atomically commits each researched trip to [`data/custom.json`](data/custom.json) and [`data/adventures.json`](data/adventures.json) so it persists permanently on GitHub Pages.
-- **GCP Tagging & Auditing:** Every GCP resource (Cloud Run, Secret Manager, Artifact Registry) is labeled `app=nordic-atlas`, runs under a dedicated least-privilege IAM SA (`nordic-atlas-runner`), and emits structured Cloud Logging audit events. Inspect or tear down anytime with [`backend/audit_and_cleanup.sh`](backend/audit_and_cleanup.sh).
-- **Architecture Map & Setup:** See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`backend/SETUP.md`](backend/SETUP.md), and [`backend/deploy.sh`](backend/deploy.sh).
-
-## Local Preview
-
-```bash
-python3 -m http.server 8080
-```
-
-Then open `http://localhost:8080`.

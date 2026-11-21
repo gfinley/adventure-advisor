@@ -63,7 +63,7 @@ case "${ACTION}" in
     echo "==> Deleting Cloud Run service: ${SERVICE_NAME}"
     gcloud run services delete "${SERVICE_NAME}" --region="${REGION}" --project="${PROJECT_ID}" --quiet || true
 
-    for secret_name in "nordic-atlas-gemini-key" "nordic-atlas-github-token"; do
+    for secret_name in "nordic-atlas-gemini-key" "nordic-atlas-github-token" "nordic-atlas-vault-passphrase"; do
       echo "==> Deleting secret: ${secret_name}"
       gcloud secrets delete "${secret_name}" --project="${PROJECT_ID}" --quiet || true
     done

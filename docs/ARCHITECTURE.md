@@ -54,7 +54,7 @@ flowchart TD
     GSI <-->|"Issues signed JWT ID Token"| OAuth
 
     UI -->|"2. POST /api/research/stream + Bearer ID Token"| Run
-    Run -->|"3. Verify RSA signature, aud, email = matthewgfinley@gmail.com"| OAuth
+    Run -->|"3. Verify RSA signature, aud, email = your-owner-email@gmail.com"| OAuth
     SA -.->|"Runtime Identity (secretAccessor on 2 secrets only)"| Run
     SM1 -->|"Injects GEMINI_API_KEY"| Run
     SM2 -->|"Injects GITHUB_TOKEN"| Run
@@ -90,7 +90,7 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
-    actor Owner as Owner Browser (matthewgfinley@gmail.com)
+    actor Owner as Owner Browser (your-owner-email@gmail.com)
     participant Google as Google OAuth 2.0
     participant CloudRun as Cloud Run (nordic-atlas-agents)
     participant Gemini as Gemini API + Google Search
@@ -101,7 +101,7 @@ sequenceDiagram
     Google-->>Owner: Signed Google ID Token (JWT)
     Owner->>CloudRun: POST /api/research/stream (Prompt + Bearer JWT)
     CloudRun->>Google: Verify JWT signature, audience & email_verified
-    alt Email != matthewgfinley@gmail.com
+    alt Email != your-owner-email@gmail.com
         CloudRun->>Logs: audit_log(auth_denied, WARNING)
         CloudRun-->>Owner: 403 Forbidden (0 Gemini credits spent)
     else Owner Verified
@@ -129,7 +129,7 @@ sequenceDiagram
 | Layer | Service | Purpose | Credentials / Auth | Cost Basis |
 | --- | --- | --- | --- | --- |
 | **Frontend Host** | GitHub Pages (`gfinley.github.io/adventure-advisor`) | Serves static HTML/CSS/JS, generated images, and `data/adventures.json` | Public read; writes restricted to repo owner / scoped PAT | \$0 (Free public repo) |
-| **Identity** | Google Identity Services (OAuth 2.0 Web Client) | Issues signed JWT ID Token to verify `matthewgfinley@gmail.com` | Public `GOOGLE_CLIENT_ID` restricted to `https://gfinley.github.io` | \$0 |
+| **Identity** | Google Identity Services (OAuth 2.0 Web Client) | Issues signed JWT ID Token to verify `your-owner-email@gmail.com` | Public `GOOGLE_CLIENT_ID` restricted to `https://gfinley.github.io` | \$0 |
 | **Compute** | Google Cloud Run (`nordic-atlas-agents`, `us-west1`) | Verifies JWT, runs 3 parallel agents + synthesizer, streams SSE, commits to GitHub | Runs as dedicated SA `nordic-atlas-runner`; enforces Bearer JWT on `/api/*` | Scales to 0 when idle (~\$0/mo; covered by AI Ultra Cloud credits) |
 | **AI & Search** | Gemini API (`gemini-3.8-flash` + `google_search` grounding) | Live web search for hotels, 4x4 rates, flights, scuba/hut operators, and JSON synthesis | `GEMINI_API_KEY` injected from Secret Manager | Covered by AI Ultra monthly Cloud credits (\$40–\$100/mo) |
 | **Secrets** | Google Secret Manager (`2` secrets) | Encrypted storage for `nordic-atlas-gemini-key` and `nordic-atlas-github-token` | Accessible ONLY by `nordic-atlas-runner` (`secretAccessor` per-secret IAM) | Pennies/month (free tier covers first 6 active secret versions) |

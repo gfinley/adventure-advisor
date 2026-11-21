@@ -28,7 +28,7 @@ from github_sync import (
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID", "").strip()
 ALLOWED_EMAILS = {
     e.strip().lower()
-    for e in os.getenv("ALLOWED_EMAILS", "matthewgfinley@gmail.com").split(",")
+    for e in os.getenv("ALLOWED_EMAILS", "").split(",")
     if e.strip()
 }
 CORS_ORIGINS = [

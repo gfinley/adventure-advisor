@@ -3,3 +3,13 @@ __pycache__/
 .env
 .venv/
 .DS_Store
+
+# Keep plaintext calendar & travel datasets private; only AES-256-GCM encrypted vaults (*.enc.json) are committed
+data/q1.json
+data/q2.json
+data/q3.json
+data/q4.json
+data/custom.json
+data/routes.json
+data/adventures.json
+data/_*.json

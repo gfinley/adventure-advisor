@@ -152,19 +152,33 @@ def main() -> None:
         1 for m in months for a in m["adventures"] if a.get("isNordic", False)
     )
 
+    # Derive unique hero anchor commitments dynamically from month calendarEvents
+    anchors: list[dict] = []
+    seen_titles: set[str] = set()
+    for m in months:
+        for ev in m.get("calendarEvents", []):
+            title = ev.get("title", "").strip()
+            if not title or title in seen_titles:
+                continue
+            seen_titles.add(title)
+            s = ev.get("start", "")[5:]
+            e = ev.get("end", "")[5:]
+            anchors.append({"dates": f"{s} → {e}" if s and e else m["shortLabel"], "label": title})
+
     payload = {
         "meta": {
             "title": "Nordic & Off-Season Adventure Advisor",
             "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "homeAirport": "SEA (Seattle-Tacoma International)",
-            "travelerProfile": "Solo active adventurer — mountains, supported hut hiking, cold-water drysuit scuba, Arctic cruises & cold mountain solitude lodges",
+            "travelerProfile": "Solo active adventurer — mountains, loosely guided & hut-to-hut treks, Arctic cruises & cold mountain solitude lodges",
             "targetSweetSpotUsd": [3000, 6000],
-            "calendarSource": "Google Calendar: Adventure Calendar",
+            "calendarSource": "Google Calendar (Adventure + Primary)",
             "coverage": f"{months[0]['monthLabel']} – {months[-1]['monthLabel']}",
             "monthCount": len(months),
             "adventureCount": total_adventures,
             "nordicCount": nordic_count,
             "customResearchCount": custom_count,
+            "anchorCommitments": anchors,
             "researchAgents": [
                 {
                     "id": "q1-agent",

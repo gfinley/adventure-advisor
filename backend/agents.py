@@ -17,28 +17,15 @@ from pydantic import BaseModel, Field
 RESEARCH_MODEL = os.getenv("GEMINI_RESEARCH_MODEL", "gemini-3.8-flash")
 SYNTH_MODEL = os.getenv("GEMINI_SYNTH_MODEL", "gemini-3.8-flash")
 
-CALENDAR_CONTEXT = """
+DEFAULT_CALENDAR_CONTEXT = """
 Traveler Profile:
-- Home base: Seattle / Kitsap Peninsula, WA (home airport: SEA).
-- Solo traveler, mid-to-upper boutique hotels & 4x4 rentals (target sweet spot: $3,000–$6,000 per trip, honest off-season USD pricing).
-- Passions: mountains, guided or loosely guided (self-guided with daily luggage transfer) inn-to-inn & hut-to-hut treks (DNT/STF/FÍ/Rifugi, Camino de Santiago, Japan Kumano Kodo, Tour du Mont Blanc, Rota Vicentina), off-season Nordic/Arctic travel, Arctic cruises, and cold mountain solitude lodges (scuba only when explicitly requested).
-- Denali Conditioning & Recovery Periodization:
-  * Apr – Mid-May 2027: Peak Denali vertical & pack-weight conditioning (active mountain trips welcome).
-  * Mid-to-Late Mar 2027 (post-NOLS NZ), Late May 2027 (May 19–31 pre-Denali taper), and Early Jul 2027 (Jul 1–11 post-Denali recovery): Actively welcome relaxing, low-injury-risk cold-mountain solitude resorts, thermal/sauna sanctuaries, and scenic coastal cruises!
-- Committed 2026–2027 Google Calendar anchors (Adventure + Primary calendars):
-  * Dec 2026 (2026-12): Japan Fukuoka Dec 5–11, Wilderness Medicine Bainbridge Dec 19–23 (Open: Dec 12–17, Dec 24–31; 5–6d strike)
-  * Jan 2027 (2027-01): Avy Safety Jan 9–10 & Jan 30–31, Rainier Denali Prep Jan 17–22 (Open: Jan 1–8, Jan 23–29; 4–6d strike)
-  * Feb 2027 (2027-02): Air NZ SEA->Nelson departs Feb 6; NOLS New Zealand Feb 11–Mar 12 (Open: Feb 1–5)
-  * Mar 2027 (2027-03): NOLS New Zealand return flight Mar 13 (Open: Mar 14–31; 8–12d expedition)
-  * Apr 2027 (2027-04): Completely open (8–14d)
-  * May 2027 (2027-05): Completely open (8–14d)
-  * Jun 2027 (2027-06): NOLS Denali Tentative Jun 4–29 (Open: Jun 1–3, post-Denali Jun 29+, or backup strike)
-  * Jul 2027 (2027-07): IPMS 2027 Jul 13–18 (Open: Jul 1–12 and Jul 19–31; 8–12d)
-  * Aug 2027 (2027-08): Norway NOLS Aug 5–14 (Open: Aug 1–4, Aug 15–31 — already in Norway!)
-  * Sep 2027 (2027-09): Completely open (8–14d)
-  * Oct 2027 (2027-10): Completely open (8–14d)
-  * Nov 2027 (2027-11): Completely open (8–14d)
+- Home base: Seattle, WA (home airport: SEA).
+- Solo active traveler, mid-to-upper boutique hotels & 4x4 rentals (target sweet spot: $3,000–$6,000 per trip, honest off-season USD pricing).
+- Passions: mountains, guided or loosely guided (self-guided with daily luggage transfer) inn-to-inn & hut-to-hut treks (DNT/STF/FÍ/Rifugi, Camino de Santiago, Japan Kumano Kodo, Tour du Mont Blanc), off-season Nordic/Arctic travel, Arctic cruises, and cold mountain solitude lodges (scuba only when explicitly requested).
+- Conditioning & Recovery: Balance active mountain endurance months with relaxing cold-mountain solitude/sauna or coastal cruise recovery trips when requested.
 """
+
+CALENDAR_CONTEXT = os.getenv("PRIVATE_CALENDAR_CONTEXT", DEFAULT_CALENDAR_CONTEXT)
 
 VALID_MONTHS = [
     "2026-12", "2027-01", "2027-02", "2027-03", "2027-04", "2027-05",

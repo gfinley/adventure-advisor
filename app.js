@@ -2236,6 +2236,142 @@
     }
   }
 
+  // ---------- AES-256-GCM Private Vault & 365-Day Auto-Unlock Cookie ----------
+  const VAULT_COOKIE_NAME = "nordic_atlas_vault";
+  const VAULT_LS_KEY = "nordic-atlas-vault-pass";
+  let cachedEncryptedEnvelope = null;
+
+  function b64ToBytes(b64) {
+    const bin = atob(b64);
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return bytes;
+  }
+
+  function getSavedVaultPassphrase() {
+    // 1. Check browser cookie first
+    const parts = document.cookie.split(";").map((s) => s.trim());
+    for (const part of parts) {
+      if (part.startsWith(VAULT_COOKIE_NAME + "=")) {
+        try {
+          return decodeURIComponent(part.slice(VAULT_COOKIE_NAME.length + 1));
+        } catch {
+          // ignore
+        }
+      }
+    }
+    // 2. Fallback to localStorage mirror
+    try {
+      return localStorage.getItem(VAULT_LS_KEY) || "";
+    } catch {
+      return "";
+    }
+  }
+
+  function persistVaultPassphrase(passphrase) {
+    const maxAgeSec = 60 * 60 * 24 * 365; // 365 days
+    const secureFlag = window.location.protocol === "https:" ? "; Secure" : "";
+    document.cookie = `${VAULT_COOKIE_NAME}=${encodeURIComponent(passphrase)}; Max-Age=${maxAgeSec}; Path=/; SameSite=Strict${secureFlag}`;
+    try {
+      localStorage.setItem(VAULT_LS_KEY, passphrase);
+    } catch {
+      // ignore
+    }
+  }
+
+  function clearVaultPassphrase() {
+    const secureFlag = window.location.protocol === "https:" ? "; Secure" : "";
+    document.cookie = `${VAULT_COOKIE_NAME}=; Max-Age=0; Path=/; SameSite=Strict${secureFlag}`;
+    try {
+      localStorage.removeItem(VAULT_LS_KEY);
+    } catch {
+      // ignore
+    }
+  }
+
+  async function decryptVaultEnvelope(envelope, passphrase) {
+    const enc = new TextEncoder();
+    const keyMaterial = await window.crypto.subtle.importKey(
+      "raw",
+      enc.encode(passphrase),
+      "PBKDF2",
+      false,
+      ["deriveKey"]
+    );
+    const aesKey = await window.crypto.subtle.deriveKey(
+      {
+        name: "PBKDF2",
+        salt: b64ToBytes(envelope.salt),
+        iterations: envelope.iterations || 210000,
+        hash: "SHA-256",
+      },
+      keyMaterial,
+      { name: "AES-GCM", length: 256 },
+      false,
+      ["decrypt"]
+    );
+    const plainBuf = await window.crypto.subtle.decrypt(
+      { name: "AES-GCM", iv: b64ToBytes(envelope.iv) },
+      aesKey,
+      b64ToBytes(envelope.ciphertext)
+    );
+    const plainText = new TextDecoder().decode(plainBuf);
+    return JSON.parse(plainText);
+  }
+
+  async function loadEncryptedEnvelope() {
+    if (cachedEncryptedEnvelope) return cachedEncryptedEnvelope;
+    const res = await fetch("data/adventures.enc.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error(`Vault HTTP ${res.status}`);
+    cachedEncryptedEnvelope = await res.json();
+    return cachedEncryptedEnvelope;
+  }
+
+  function showUnlockedApp(dataset) {
+    state.dataset = dataset;
+    document.getElementById("vault-gate").hidden = true;
+    document.getElementById("app-shell").hidden = false;
+    renderHeaderStats();
+    renderAll();
+  }
+
+  function lockVault() {
+    clearVaultPassphrase();
+    closeEvaluator();
+    state.dataset = null;
+    document.getElementById("hero-commitments").innerHTML = "";
+    document.getElementById("adventures-container").innerHTML = "";
+    document.getElementById("app-shell").hidden = true;
+    document.getElementById("vault-gate").hidden = false;
+    const input = document.getElementById("vault-passphrase");
+    input.value = "";
+    input.focus();
+  }
+
+  async function attemptUnlock(passphrase, remember) {
+    const errEl = document.getElementById("vault-error");
+    const btn = document.getElementById("vault-unlock-btn");
+    errEl.hidden = true;
+    btn.disabled = true;
+    btn.textContent = "Decrypting…";
+    try {
+      const envelope = await loadEncryptedEnvelope();
+      const dataset = await decryptVaultEnvelope(envelope, passphrase.trim());
+      if (remember) {
+        persistVaultPassphrase(passphrase.trim());
+      }
+      showUnlockedApp(dataset);
+      return true;
+    } catch {
+      errEl.hidden = false;
+      errEl.textContent = "Incorrect passphrase — decryption failed.";
+      return false;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Unlock Dossier";
+    }
+  }
+
   async function init() {
     loadPersisted();
     bindGlobalUI();
@@ -2245,19 +2381,24 @@
       verifySessionWithBackend();
     }
 
-    try {
-      const res = await fetch("data/adventures.json", { cache: "no-cache" });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      state.dataset = await res.json();
-      renderHeaderStats();
-      renderAll();
-    } catch (err) {
-      document.getElementById("adventures-container").innerHTML = `
-        <div class="empty-state">
-          <h3>Unable to load adventure dataset</h3>
-          <p class="mono">${escapeHtml(err.message)}</p>
-        </div>
-      `;
+    const lockBtn = document.getElementById("lock-vault-btn");
+    if (lockBtn) lockBtn.addEventListener("click", lockVault);
+
+    document.getElementById("vault-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const pass = document.getElementById("vault-passphrase").value;
+      const remember = document.getElementById("vault-remember-cookie").checked;
+      await attemptUnlock(pass, remember);
+    });
+
+    // Seamless auto-unlock if this browser already has a valid vault cookie
+    const savedPass = getSavedVaultPassphrase();
+    if (savedPass) {
+      const ok = await attemptUnlock(savedPass, true);
+      if (!ok) {
+        clearVaultPassphrase();
+        document.getElementById("vault-error").hidden = true;
+      }
     }
   }
 

@@ -25,6 +25,45 @@
   <script src="config.js"></script>
 </head>
 <body>
+  <!-- Private AES-256-GCM Vault Gate (shown until passphrase or 365-day cookie unlocks data/adventures.enc.json) -->
+  <section class="vault-gate" id="vault-gate" aria-labelledby="vault-heading">
+    <div class="vault-card">
+      <div class="vault-mark" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="2.2" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="vault-kicker mono">AES-256-GCM Encrypted Private Dossier</p>
+      <h1 id="vault-heading">Nordic Atlas</h1>
+      <p class="vault-sub">
+        Your personal travel calendar, routes, and theoretical bookings are encrypted at rest. Enter your vault passphrase once — this browser will stay unlocked via a secure cookie.
+      </p>
+
+      <form id="vault-form" class="vault-form" autocomplete="on">
+        <label for="vault-passphrase" class="sr-only">Vault passphrase</label>
+        <input
+          type="password"
+          id="vault-passphrase"
+          name="password"
+          autocomplete="current-password"
+          placeholder="Enter vault passphrase…"
+          required
+          autofocus
+        />
+        <label class="vault-remember">
+          <input type="checkbox" id="vault-remember-cookie" checked />
+          <span>Remember this browser automatically (365-day cookie)</span>
+        </label>
+        <button type="submit" class="btn btn-primary vault-submit" id="vault-unlock-btn">
+          Unlock Dossier
+        </button>
+        <p class="vault-error mono" id="vault-error" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <div id="app-shell" hidden>
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Nordic Atlas Home">
@@ -55,6 +94,7 @@
           <span class="shortlist-divider" aria-hidden="true">·</span>
           <span class="mono" id="header-shortlist-cost">$0</span>
         </button>
+        <button type="button" class="auth-btn" id="lock-vault-btn" title="Clear browser cookie and lock dossier">Lock</button>
       </nav>
     </div>
   </header>
@@ -65,11 +105,11 @@
       <div class="hero-contour" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">Dec 2026 – Nov 2027 · Synced with Adventure Calendar · Hub: SEA</p>
+          <p class="eyebrow">Dec 2026 – Nov 2027 · Private Calendar Sync · Hub: SEA</p>
           <h1 id="hero-heading">Twelve Months of Off-Season Nordic &amp; Alpine Expeditions</h1>
           <p class="hero-lead">
-            An agentic travel dossier engineered for solo mountain, hut-to-hut, drysuit scuba, and cold-solitude travel.
-            Compare real off-season hotel rooms, 4x4 rentals, Arctic cruise cabins, and live solo booking totals mapped directly around your committed calendar.
+            An agentic travel dossier engineered for solo mountain, loosely guided &amp; hut-to-hut trekking, Arctic cruises, and cold-solitude travel.
+            Compare real off-season hotel rooms, 4x4 rentals, interactive route maps, and live solo booking totals mapped directly around your committed calendar.
           </p>
           <div class="hero-actions">
             <a href="#expeditions-section" class="btn btn-primary">Explore All Expeditions</a>
@@ -80,20 +120,20 @@
         <aside class="hero-brief" aria-label="Traveler Profile & Calendar Sync">
           <div class="brief-header">
             <span class="brief-kicker">Calendar &amp; Dossier Telemetry</span>
-            <span class="mono brief-date" id="meta-generated">Loading…</span>
+            <span class="mono brief-date" id="meta-generated">Encrypted…</span>
           </div>
           <dl class="brief-metrics">
             <div>
               <dt>Curated Options</dt>
-              <dd class="mono" id="stat-total-adventures">36</dd>
+              <dd class="mono" id="stat-total-adventures">—</dd>
             </div>
             <div>
               <dt>Nordic / Arctic Priority</dt>
-              <dd class="mono" id="stat-nordic-ratio">78%</dd>
+              <dd class="mono" id="stat-nordic-ratio">—</dd>
             </div>
             <div>
               <dt>Open Months (8–14d)</dt>
-              <dd class="mono" id="stat-open-months">6</dd>
+              <dd class="mono" id="stat-open-months">—</dd>
             </div>
             <div>
               <dt>Solo Sweet Spot</dt>
@@ -103,13 +143,7 @@
           <div class="brief-commitments">
             <span class="brief-sublabel">Committed Anchor Events Respected</span>
             <ul class="commitment-list" id="hero-commitments">
-              <li><span>Dec 5–11</span> Japan — Fukuoka (Korean Air)</li>
-              <li><span>Dec 19–23</span> Wilderness Medicine (Bainbridge)</li>
-              <li><span>Jan 9–31</span> Avy Safety &amp; Rainier Denali Prep</li>
-              <li><span>Feb 6–Mar 13</span> Air NZ &amp; NOLS New Zealand</li>
-              <li><span>Jun 4–29</span> NOLS Denali (Tentative)</li>
-              <li><span>Jul 13–18</span> IPMS 2027</li>
-              <li><span>Aug 5–14</span> Norway NOLS</li>
+              <!-- Populated only after AES-256-GCM decryption -->
             </ul>
           </div>
         </aside>
@@ -136,24 +170,24 @@
               <input
                 type="text"
                 id="agent-prompt-input"
-                placeholder='e.g. "Iceland trip in May with drysuit scuba, 4x4 rental, and cold mountain solitude lodges"'
+                placeholder='e.g. "Iceland 4x4 trip in May with coastal gravel passes and remote mountain lodges"'
                 maxlength="500"
                 required
               />
               <select id="agent-month-select" aria-label="Target month">
                 <option value="auto">Month: Auto-detect</option>
-                <option value="2026-12">Dec 2026 (Strike)</option>
-                <option value="2027-01">Jan 2027 (Strike)</option>
-                <option value="2027-02">Feb 2027 (Pre-NZ)</option>
-                <option value="2027-03">Mar 2027 (Post-NZ)</option>
-                <option value="2027-04">Apr 2027 (Open)</option>
-                <option value="2027-05">May 2027 (Open)</option>
-                <option value="2027-06">Jun 2027 (Strike)</option>
-                <option value="2027-07">Jul 2027 (Open)</option>
-                <option value="2027-08">Aug 2027 (Post-Norway)</option>
-                <option value="2027-09">Sep 2027 (Open)</option>
-                <option value="2027-10">Oct 2027 (Open)</option>
-                <option value="2027-11">Nov 2027 (Open)</option>
+                <option value="2026-12">Dec 2026</option>
+                <option value="2027-01">Jan 2027</option>
+                <option value="2027-02">Feb 2027</option>
+                <option value="2027-03">Mar 2027</option>
+                <option value="2027-04">Apr 2027</option>
+                <option value="2027-05">May 2027</option>
+                <option value="2027-06">Jun 2027</option>
+                <option value="2027-07">Jul 2027</option>
+                <option value="2027-08">Aug 2027</option>
+                <option value="2027-09">Sep 2027</option>
+                <option value="2027-10">Oct 2027</option>
+                <option value="2027-11">Nov 2027</option>
               </select>
               <select id="agent-duration-select" aria-label="Trip duration preference">
                 <option value="auto">Length: Auto</option>
@@ -439,7 +473,7 @@
       </div>
       <div class="modal-content">
         <p style="margin-top:0;color:var(--ink-secondary);font-size:0.9rem">
-          Your live research backend runs on <strong>Google Cloud Run</strong> (paid by your Google AI Ultra monthly Cloud credits), verifies your <strong>Google Sign-In ID token</strong> server-side (locked exclusively to <code>matthewgfinley@gmail.com</code>), spawns 3 parallel Google-Search-grounded Gemini agents, and auto-commits results into <code>gfinley/adventure-advisor</code>.
+          Your live research backend runs on <strong>Google Cloud Run</strong> (paid by your Google AI Ultra monthly Cloud credits), verifies your <strong>Google Sign-In ID token</strong> server-side (locked exclusively to your configured owner email), spawns 3 parallel Google-Search-grounded Gemini agents, and auto-commits results into your encrypted repo vault.
         </p>
 
         <form id="connect-form" class="connect-form">
@@ -472,6 +506,7 @@
       </div>
     </div>
   </div>
+  </div><!-- /#app-shell -->
 
   <script src="app.js" defer></script>
 </body>
