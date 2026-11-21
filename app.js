@@ -471,11 +471,13 @@
     const isShortlisted = state.shortlistIds.includes(adv.id);
     const isCompared = state.compareIds.includes(adv.id);
 
+    const photoSrc = adv.photoPath || adv.photoUrl || "";
+
     return `
       <article class="adventure-card" data-adv-id="${escapeHtml(adv.id)}">
         <div class="card-media" data-open-eval="${escapeHtml(adv.id)}">
           <img
-            src="assets/images/${escapeHtml(adv.heroImage)}.jpg"
+            src="${escapeHtml(photoSrc)}"
             alt="${escapeHtml(adv.title)}"
             loading="lazy"
           />
