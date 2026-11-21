@@ -11,6 +11,12 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 QUARTER_FILES = ["q1.json", "q2.json", "q3.json", "q4.json"]
 CUSTOM_FILE = DATA_DIR / "custom.json"
+PHOTO_CREDITS_FILE = DATA_DIR / "photo_credits.json"
+
+PHOTO_CREDITS: dict[str, dict] = {}
+if PHOTO_CREDITS_FILE.exists():
+    with PHOTO_CREDITS_FILE.open("r", encoding="utf-8") as _pfh:
+        PHOTO_CREDITS = json.load(_pfh)
 
 VALID_CATEGORIES = {
     "Mountains",
@@ -80,6 +86,12 @@ def normalize_adventure(adv: dict, seen_ids: set[str]) -> dict:
         adv["heroImage"] = "norway_fjords"
     if len(adv.get("hotels", [])) < 1:
         raise ValueError(f"Adventure {adv_id} has no hotels")
+
+    credit = PHOTO_CREDITS.get(adv_id)
+    if credit:
+        adv["photoPath"] = credit["photoPath"]
+        adv["photoCredit"] = f"{credit.get('artist', 'Wikimedia Commons')} ({credit.get('license', 'CC')})"
+        adv["photoSourceUrl"] = credit.get("sourceUrl", "https://commons.wikimedia.org/")
 
     adv["computedCosts"] = compute_base_total(adv)
     return adv

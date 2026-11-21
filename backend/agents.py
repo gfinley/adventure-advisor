@@ -396,13 +396,82 @@ STRICT RULES:
     adv_dict["researchedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     adv_dict["computedCosts"] = _compute_costs(adv_dict)
 
+    # Fetch a real, CC-licensed landscape photograph from Wikimedia Commons for this destination
+    photo_meta = await _fetch_wikimedia_photo(f"{adv_dict['region']} {adv_dict['country']} landscape")
+    if photo_meta:
+        adv_dict["photoUrl"] = photo_meta["photoUrl"]
+        adv_dict["photoCredit"] = photo_meta["photoCredit"]
+        adv_dict["photoSourceUrl"] = photo_meta["photoSourceUrl"]
+
     elapsed_s = round(time.monotonic() - t_synth, 1)
     await emit({
         "type": "agent_done",
         "agent": "synthesizer",
         "label": "Synthesizer & Schema Validator",
         "elapsedSec": elapsed_s,
-        "message": f"Validated structured dossier & room pricing in {elapsed_s}s",
+        "message": f"Validated structured dossier & real location photo in {elapsed_s}s",
     })
 
     return month_id, adv_dict
+
+
+async def _fetch_wikimedia_photo(query: str) -> dict[str, str] | None:
+    """Fetch a verified real landscape JPEG from Wikimedia Commons for any new destination."""
+    import httpx
+
+    bad_re = re.compile(r"(map|locator|flag|coat|logo|diagram|chart|portrait|svg|png|gif)", re.I)
+    params = {
+        "action": "query",
+        "generator": "search",
+        "gsrnamespace": "6",
+        "gsrsearch": f"{query} filetype:bitmap",
+        "gsrlimit": "12",
+        "prop": "imageinfo",
+        "iiprop": "url|size|mime|extmetadata",
+        "iiurlwidth": "1000",
+        "format": "json",
+    }
+    try:
+        async with httpx.AsyncClient(
+            headers={"User-Agent": "NordicAtlasAgents/1.0 (https://github.com/gfinley/adventure-advisor)"},
+            timeout=10.0,
+        ) as hclient:
+            resp = await hclient.get("https://commons.wikimedia.org/w/api.php", params=params)
+            resp.raise_for_status()
+            pages = (resp.json().get("query") or {}).get("pages") or {}
+    except Exception:
+        return None
+
+    candidates = []
+    for p in pages.values():
+        title = p.get("title", "")
+        if bad_re.search(title):
+            continue
+        infos = p.get("imageinfo") or []
+        if not infos:
+            continue
+        ii = infos[0]
+        if ii.get("mime") not in {"image/jpeg", "image/jpg"}:
+            continue
+        w, h = int(ii.get("width", 0)), int(ii.get("height", 0))
+        if w < 900 or h < 500 or not (1.25 <= (w / max(1, h)) <= 2.4):
+            continue
+        thumb = ii.get("thumburl") or ii.get("url")
+        if not thumb:
+            continue
+        meta = ii.get("extmetadata") or {}
+        artist = re.sub(r"<[^>]+>", "", (meta.get("Artist") or {}).get("value", "Wikimedia Commons")).strip()[:60]
+        lic = re.sub(r"<[^>]+>", "", (meta.get("LicenseShortName") or {}).get("value", "CC")).strip()[:30]
+        candidates.append({
+            "photoUrl": thumb,
+            "photoCredit": f"{artist or 'Wikimedia Commons'} ({lic or 'CC'})",
+            "photoSourceUrl": ii.get("descriptionurl", "https://commons.wikimedia.org/"),
+            "ratioDiff": abs((w / h) - 1.6),
+        })
+
+    if not candidates:
+        return None
+    candidates.sort(key=lambda x: x["ratioDiff"])
+    best = candidates[0]
+    best.pop("ratioDiff", None)
+    return best

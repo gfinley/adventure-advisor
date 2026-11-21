@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Nordic & Off-Season Adventure Advisor",
-    "generatedAt": "2026-11-21T06:54:01Z",
+    "generatedAt": "2026-11-21T07:09:49Z",
     "homeAirport": "SEA (Seattle-Tacoma International)",
     "travelerProfile": "Solo active adventurer — mountains, supported hut hiking, cold-water drysuit scuba, Arctic cruises & cold mountain solitude lodges",
     "targetSweetSpotUsd": [
@@ -203,6 +203,9 @@
             "Icelandic Mountain Guides",
             "Icelandair"
           ],
+          "photoPath": "assets/photos/dec-2026-iceland-silfra.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 640,
             "lodgingUsd": 1540,
@@ -341,6 +344,9 @@
             "Tromsø Outdoor",
             "Icelandair"
           ],
+          "photoPath": "assets/photos/dec-2026-tromso-lyngen.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 820,
             "lodgingUsd": 980,
@@ -478,6 +484,9 @@
             "Discover Banff Tours",
             "Google Flights"
           ],
+          "photoPath": "assets/photos/dec-2026-canadian-rockies.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 395,
             "lodgingUsd": 885,
@@ -653,6 +662,9 @@
             "Hertz Finland",
             "Finnair"
           ],
+          "photoPath": "assets/photos/jan-2027-finnish-lapland.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 860,
             "lodgingUsd": 1360,
@@ -791,6 +803,9 @@
             "Lotus Car Rental",
             "Arctic Adventures"
           ],
+          "photoPath": "assets/photos/jan-2027-iceland-snaefellsnes.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 610,
             "lodgingUsd": 740,
@@ -925,6 +940,9 @@
             "Explore Salten",
             "Google Flights"
           ],
+          "photoPath": "assets/photos/jan-2027-norway-coastal-express.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 890,
             "lodgingUsd": 1160,
@@ -1093,6 +1111,9 @@
             "NZ Department of Conservation",
             "Ezi Car Rental"
           ],
+          "photoPath": "assets/photos/feb-2027-nz-fiordland-scuba.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 285,
             "lodgingUsd": 700,
@@ -1232,6 +1253,9 @@
             "Sixt Kiruna",
             "SAS"
           ],
+          "photoPath": "assets/photos/feb-2027-swedish-lapland-abisko.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 840,
             "lodgingUsd": 780,
@@ -1371,6 +1395,9 @@
             "Toyota Rent a Car Hokkaido",
             "ANA"
           ],
+          "photoPath": "assets/photos/feb-2027-hokkaido-winter-strike.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 520,
             "lodgingUsd": 1325,
@@ -1532,6 +1559,9 @@
             "Sound Diving NZ Milford Sound Black Coral Diving: https://www.sounddiving.nz/milford-sound-diving",
             "Kamana Lakehouse Queenstown: https://kamana.co.nz/"
           ],
+          "photoPath": "assets/photos/mar-2027-nz-routeburn-scuba.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 240,
             "lodgingUsd": 2120,
@@ -1670,6 +1700,9 @@
             "Isfjord Radio Sauna & 2026 Package Pricing: https://norwegiansaunas.com/saunas/isfjord-radio-kokeriet/",
             "SEA–LYR SAS Flights: https://www.expedia.com/lp/flights/sea/lyr/seattle-to-longyearbyen"
           ],
+          "photoPath": "assets/photos/mar-2027-svalbard-polar-spring.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 980,
             "lodgingUsd": 2275,
@@ -1810,6 +1843,9 @@
             "Manshausen Single Cabin Rate (NOK 5,500) & Brim Explorer (NOK 1,490): https://www.norwaytourism.org/norway-honeymoon/",
             "Hattvika Lodge 2026 Rates (NOK 3,119 avg): https://www.agoda.com/hattvika-lodge/hotel/ballstad-no.html"
           ],
+          "photoPath": "assets/photos/mar-2027-lofoten-narvik-wrecks.jpg",
+          "photoCredit": "Russo Francesco F R P I X C O M (CC BY 3.0)",
+          "photoSourceUrl": "https://commons.wikimedia.org/wiki/File:Night_In_Paradise_(138497861).jpeg",
           "computedCosts": {
             "flightsUsd": 860,
             "lodgingUsd": 2480,
@@ -1971,6 +2007,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Norway Gulen Dive Resort cold-water WWII wreck scuba and Sognefjord alpine cabin solitude in April",
           "researchedAt": "2026-11-21T06:25:00Z",
+          "photoPath": "assets/photos/custom-2027-04-norway-gulen-sognefjord-scuba.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 760,
             "lodgingUsd": 1485,
@@ -2116,6 +2155,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Japan Kumano Kodo Nakahechi Trail (Camino sister route) loosely guided ryokan and onsen trek in April",
           "researchedAt": "2026-11-21T06:55:00Z",
+          "photoPath": "assets/photos/custom-2027-04-japan-kumano-kodo-nakahechi.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 1050,
             "lodgingUsd": 1755,
@@ -2256,6 +2298,9 @@
             "Juvet Landscape Hotel Official Booking: https://juvet.com/en/booking-og-vilkar",
             "SEA–AES Flights & AES Rental Cars: https://www.expedia.com/lp/flights/sea/aes/seattle-to-alesund"
           ],
+          "photoPath": "assets/photos/apr-2027-norway-sunnmore-fjords.jpg",
+          "photoCredit": "Ertennoy (CC BY-SA 3.0)",
+          "photoSourceUrl": "https://commons.wikimedia.org/wiki/File:Hj%C3%B8rundfjord_Molaup_Strandab%C3%B8.jpg",
           "computedCosts": {
             "flightsUsd": 840,
             "lodgingUsd": 3780,
@@ -2397,6 +2442,9 @@
             "Guide to Iceland 2026 Hotel Study (Sigló Hótel & Fosshotel Mývatn): https://guidetoiceland.is/best-of-iceland/best-hotels-in-iceland",
             "Blue Car Rental KEF 4x4 & Icelandair SEA–KEF Nonstop: https://www.bluecarrental.is/"
           ],
+          "photoPath": "assets/photos/apr-2027-iceland-strytan-highlands.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 590,
             "lodgingUsd": 4770,
@@ -2539,6 +2587,9 @@
             "Hurtigruten Solo Reduced Supplement: https://www.hurtigruten.com/en/deals/solo-travel",
             "SEA–BGO Flights (Icelandair/SAS from $577): https://www.skyscanner.com/flights-to/bgo/cheap-flights-to-bergen-airport.html"
           ],
+          "photoPath": "assets/photos/apr-2027-norway-coastal-express.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 760,
             "lodgingUsd": 2915,
@@ -2699,6 +2750,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Spain Camino Primitivo Asturian Mountains Oviedo to Santiago loosely guided Parador and mountain inn trek in May",
           "researchedAt": "2026-11-21T06:55:00Z",
+          "photoPath": "assets/photos/custom-2027-05-spain-camino-primitivo.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 940,
             "lodgingUsd": 1550,
@@ -2844,6 +2898,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Scottish Highlands Torridon and Isle of Skye supported ridge trek with optional Scapa Flow WWII wreck drysuit scuba in May",
           "researchedAt": "2026-11-21T06:25:00Z",
+          "photoPath": "assets/photos/custom-2027-05-scotland-torridon-skye-scapa.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 820,
             "lodgingUsd": 2025,
@@ -2986,6 +3043,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Relaxing Pre-Denali taper trip in late May — Norway Havila northbound fjord cruise with saunas, great food, and zero injury risk",
           "researchedAt": "2026-11-21T06:45:00Z",
+          "photoPath": "assets/photos/custom-2027-05-norway-havila-denali-taper.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 940,
             "lodgingUsd": 2040,
@@ -3137,6 +3197,9 @@
           "isCustomResearch": true,
           "researchPrompt": "May 2027 Iceland 4x4 overland and mountain solitude expedition (no scuba, pre-Denali conditioning)",
           "researchedAt": "2026-11-21T06:35:00Z",
+          "photoPath": "assets/photos/custom-2027-05-iceland-4x4-mountain-overland.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 630,
             "lodgingUsd": 1845,
@@ -3276,6 +3339,9 @@
             "Gjáargarður Guesthouse Gjógv: https://www.gjaargardur.fo/welcome-to-gjaargardur-guesthouse",
             "Faroe Islands 2027 Sustainable Tourism Law & Subsea Tunnel Tolls: https://www.penguintrampoline.com/blog/trip-to-the-faroe-islands"
           ],
+          "photoPath": "assets/photos/may-2027-faroe-sea-cliffs.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 1090,
             "lodgingUsd": 1880,
@@ -3416,6 +3482,9 @@
             "Rødne Lysefjord Scenic Car Ferry (Starts May 15, NOK 1,290 car): https://rodne.no/en/fjord-experiences/sandnes/lysefjord-scenic-car-ferry-connecting-fjord-and-mountains/",
             "Made to Hike Norway Mountain Guides & Trail Data: https://madetohike.com/hiking/norway"
           ],
+          "photoPath": "assets/photos/may-2027-norway-jotunheimen-lysefjord.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 790,
             "lodgingUsd": 1755,
@@ -3556,6 +3625,9 @@
             "Oceanwide Expeditions 2027 Spitsbergen Shared Twin Cabins (from $4,700–$4,800): https://oceanwide-expeditions.com/trips/dates-rates",
             "Quark Expeditions Svalbard: https://www.quarkexpeditions.com/arctic/svalbard"
           ],
+          "photoPath": "assets/photos/may-2027-svalbard-pack-ice-cruise.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 1040,
             "lodgingUsd": 5220,
@@ -3715,6 +3787,9 @@
             "https://www.pursuit.com/stays/seward-windsong-lodge/",
             "https://harbor360hotel.com/"
           ],
+          "photoPath": "assets/photos/jun-2027-kenai-fjords-scuba.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 150,
             "lodgingUsd": 1260,
@@ -3849,6 +3924,9 @@
             "https://guide.michelin.com/en/hotels-stays/selfoss/ion-adventure-hotel-7019",
             "https://www.icelandair.com/en-us/flights/flights-from-seattle-to-reykjavik"
           ],
+          "photoPath": "assets/photos/jun-2027-iceland-midnight-sun.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 780,
             "lodgingUsd": 1540,
@@ -3982,6 +4060,9 @@
             "https://sunmountainlodge.com/",
             "https://www.rendezvoushuts.com/"
           ],
+          "photoPath": "assets/photos/jun-2027-north-cascades-hood-canal.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 0,
             "lodgingUsd": 705,
@@ -4149,6 +4230,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Relaxing Post-Denali recovery trip in early July before IPMS — Iceland geothermal cold-mountain solitude resorts, hot springs, and deep rest",
           "researchedAt": "2026-11-21T06:45:00Z",
+          "photoPath": "assets/photos/custom-2027-07-iceland-geothermal-recovery.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 910,
             "lodgingUsd": 2910,
@@ -4295,6 +4379,9 @@
           "isCustomResearch": true,
           "researchPrompt": "East Greenland small-ship Arctic expedition cruise from Reykjavik with glacier hikes in July",
           "researchedAt": "2026-11-21T06:25:00Z",
+          "photoPath": "assets/photos/custom-2027-07-east-greenland-expedition-cruise.jpg",
+          "photoCredit": "Jerzy Strzelecki (CC BY-SA 3.0)",
+          "photoSourceUrl": "https://commons.wikimedia.org/wiki/File:Greenland,_Rhode_Fjord_(js)1.jpg",
           "computedCosts": {
             "flightsUsd": 980,
             "lodgingUsd": 7950,
@@ -4435,6 +4522,9 @@
             "https://www.swedishtouristassociation.com/facilities/stf-kebnekaise-mountain-station/",
             "https://www.icelandair.com/en-us/flights/flights-from-seattle-to-stockholm"
           ],
+          "photoPath": "assets/photos/jul-2027-sweden-kungsleden.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 1120,
             "lodgingUsd": 468,
@@ -4568,6 +4658,9 @@
             "https://rumbomundo.com/laugavegur-2027-hut-bookings-open/",
             "https://www.fi.is/en/mountain-huts/terms-and-conditions"
           ],
+          "photoPath": "assets/photos/jul-2027-iceland-laugavegur-highlands.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 960,
             "lodgingUsd": 1215,
@@ -4707,6 +4800,9 @@
             "https://harriniva.fi/en/3-wilderness-resorts/jeris-lakeside-resort/",
             "https://jetmeaway.co.uk/blog/best-hotels-rovaniemi-2026"
           ],
+          "photoPath": "assets/photos/jul-2027-finnish-lapland-offseason.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 1180,
             "lodgingUsd": 2760,
@@ -4867,6 +4963,9 @@
             "https://turtagro.no/english/",
             "https://www.expedia.com/Oslo-Hotels-Sommerro.h70553567.Hotel-Information"
           ],
+          "photoPath": "assets/photos/aug-2027-jotunheimen-dnt-traverse.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 0,
             "lodgingUsd": 875,
@@ -5005,6 +5104,9 @@
             "https://lofotenislands.tours/guides/where-to-stay-in-lofoten",
             "https://saltstraumenhotel.no/en/accomodation/cabins/"
           ],
+          "photoPath": "assets/photos/aug-2027-saltstraumen-lofoten-scuba.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 245,
             "lodgingUsd": 1365,
@@ -5141,6 +5243,9 @@
             "https://www.booking.com/hotel/no/opus-xvi.html",
             "https://www.expedia.com/lp/flights/osl/kkn/oslo-to-kirkenes"
           ],
+          "photoPath": "assets/photos/aug-2027-coastal-express-southbound.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 215,
             "lodgingUsd": 1830,
@@ -5303,6 +5408,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Norway Rondane National Park golden-tundra DNT hut-to-hut trek with mountain solitude lodge finale in September",
           "researchedAt": "2026-11-21T06:25:00Z",
+          "photoPath": "assets/photos/custom-2027-09-norway-rondane-dnt-huts.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 790,
             "lodgingUsd": 1260,
@@ -5450,6 +5558,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Tour du Mont Blanc late-season loosely guided refuge and luggage-transfer alpine trek in September",
           "researchedAt": "2026-11-21T06:55:00Z",
+          "photoPath": "assets/photos/custom-2027-09-alps-tour-du-mont-blanc.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 890,
             "lodgingUsd": 2025,
@@ -5591,6 +5702,9 @@
             "https://www.karhunkierros.fi/en/karhunkierros/",
             "https://www.mytrailfinland.com/oulanka-canyon"
           ],
+          "photoPath": "assets/photos/sep-2027-finnish-lapland-ruska.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 980,
             "lodgingUsd": 1755,
@@ -5732,6 +5846,9 @@
             "https://www.lyngenlodge.com/",
             "https://brimexplorer.com/"
           ],
+          "photoPath": "assets/photos/sep-2027-senja-lyngen-alps.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 920,
             "lodgingUsd": 2150,
@@ -5872,6 +5989,9 @@
             "https://www.hoteldelen.it/en/",
             "https://www.alpineexploratory.com/walking-guides/alta-via-1.html"
           ],
+          "photoPath": "assets/photos/sep-2027-dolomites-alta-via-1.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 920,
             "lodgingUsd": 1305,
@@ -6035,6 +6155,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Camino Portugues Coastal and Spiritual Variant loosely guided inn-to-inn trek from Porto to Santiago in October",
           "researchedAt": "2026-11-21T06:55:00Z",
+          "photoPath": "assets/photos/custom-2027-10-portugal-spain-camino-portugues.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 940,
             "lodgingUsd": 1395,
@@ -6182,6 +6305,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Iceland Westfjords deep off-season 4x4 overland with remote hot pots and sea-cliff hikes in October",
           "researchedAt": "2026-11-21T06:25:00Z",
+          "photoPath": "assets/photos/custom-2027-10-iceland-westfjords-overland.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 595,
             "lodgingUsd": 1755,
@@ -6324,6 +6450,9 @@
             "https://www.booking.com/hotel/is/blabjorg-guesthouse.html",
             "https://troll.is/glacier-hiking-tours-in-iceland/"
           ],
+          "photoPath": "assets/photos/oct-2027-iceland-ring-road-silfra.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 640,
             "lodgingUsd": 2350,
@@ -6465,6 +6594,9 @@
             "https://lofoten-diving.no/book-full-day-scuba-diving-in-lofoten/",
             "https://brimexplorer.com/"
           ],
+          "photoPath": "assets/photos/oct-2027-lofoten-gulen-scuba-storms.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 960,
             "lodgingUsd": 2385,
@@ -6605,6 +6737,9 @@
             "https://www.icehotel.com/icehotel-365",
             "https://lightsoverlapland.com/booking/the-ultimate-aurora-photo-adventure/"
           ],
+          "photoPath": "assets/photos/oct-2027-sweden-abisko-arctic-bath.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 940,
             "lodgingUsd": 4960,
@@ -6768,6 +6903,9 @@
           "isCustomResearch": true,
           "researchPrompt": "Finnish Lapland Pyhä-Luosto and Riisitunturi pre-Christmas polar solitude sanctuary with fell huts in November",
           "researchedAt": "2026-11-21T06:25:00Z",
+          "photoPath": "assets/photos/custom-2027-11-finland-pyha-riisitunturi-solitude.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 1020,
             "lodgingUsd": 2205,
@@ -6909,6 +7047,9 @@
             "https://www.malangenresort.com/",
             "https://www.strawberryhotels.com/hotels/norway/tromso/clarion-hotel-the-edge/"
           ],
+          "photoPath": "assets/photos/nov-2027-tromso-skjervoy-orcas-lyngen.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 860,
             "lodgingUsd": 3375,
@@ -7051,6 +7192,9 @@
             "https://www.havilavoyages.com/en/excursion-price-list",
             "https://www.havilavoyages.com/en/excursions"
           ],
+          "photoPath": "assets/photos/nov-2027-havila-northern-lights-voyage.jpg",
+          "photoCredit": "Wikimedia Commons Contributor (CC / Open License)",
+          "photoSourceUrl": "https://commons.wikimedia.org/",
           "computedCosts": {
             "flightsUsd": 740,
             "lodgingUsd": 2915,
@@ -7192,6 +7336,9 @@
             "https://www.designhotels.com/hotels/iceland/selfoss/ion-luxury-adventure-hotel/",
             "https://www.dive.is/"
           ],
+          "photoPath": "assets/photos/nov-2027-iceland-ice-caves-highland-base.jpg",
+          "photoCredit": "Kenny Muir (CC BY 2.0)",
+          "photoSourceUrl": "https://commons.wikimedia.org/wiki/File:Jokulsarlon_lake,_Iceland.jpg",
           "computedCosts": {
             "flightsUsd": 590,
             "lodgingUsd": 3120,

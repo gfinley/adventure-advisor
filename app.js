@@ -842,10 +842,16 @@
       })
       .join("");
 
+    const evalPhotoSrc = adv.photoPath || adv.photoUrl || "";
+    const creditHtml = adv.photoCredit
+      ? `<div style="font-size:0.72rem;color:var(--ink-muted);margin:-12px 0 14px;text-align:right">Real location photo: <a href="${escapeHtml(adv.photoSourceUrl || "https://commons.wikimedia.org/")}" target="_blank" rel="noopener noreferrer">${escapeHtml(adv.photoCredit)}</a> · Wikimedia Commons</div>`
+      : "";
+
     document.getElementById("evaluator-body").innerHTML = `
       <div class="evaluator-layout">
         <div>
-          <img class="eval-hero-img" src="assets/images/${escapeHtml(adv.heroImage)}.jpg" alt="${escapeHtml(adv.title)}" />
+          <img class="eval-hero-img" src="${escapeHtml(evalPhotoSrc)}" alt="${escapeHtml(adv.title)}" />
+          ${creditHtml}
           <h2 class="eval-title" id="eval-title">${escapeHtml(adv.title)}</h2>
           <div class="eval-meta-strip">
             <span><strong>${escapeHtml(adv.country)}</strong> — ${escapeHtml(adv.region)}</span>
